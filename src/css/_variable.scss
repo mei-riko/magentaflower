@@ -1,0 +1,88 @@
+$white:                     #ffffff;
+$black:                     #000000;
+$light-grey:                #f3f3f3;
+$grey:                      #56585a;
+$dark-grey:                 #2f3236;
+$red:                       #ef081e;
+
+$link-color:                #232323 !default;
+$link-hover-color:          #ef081e !default;
+$link-decoration:           none !default;
+$link-hover-decoration:     underline !default;
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           40px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1280px
+) !default;
+
+$body-color:                #000000;
+$body-bg:                   #ffffff;
+
+$font-family-base:            "Noto Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:            1rem;
+$font-weight-base:          400;
+$font-weight-bolder:        600;
+$font-weight-bold:          700;
+$line-height-base:          1.3;
+
+$dt-font-weight:            $font-weight-bold !default;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+$headings-margin-bottom:        $spacer / 2 !default;
+$headings-font-family:          null !default;
+$headings-font-weight:          500 !default;
+$headings-line-height:          1.2 !default;
+$headings-color:                null !default;
+
+$paragraph-margin-bottom:       40px !default;
+
+$table-cell-padding:            10px !default;
+$table-cell-padding-sm:         6px !default;
+$table-caption-color:           #242424 !default;
+
+$label-margin-bottom:           10px;
+
+$enable-grid-classes:               true !default;
+$enable-pointer-cursor-for-buttons: true !default;
+
+// Utilities
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
+
+
+// Printing
+
+$print-page-size:                   a3 !default;
+$print-body-min-width:              map-get($grid-breakpoints, "lg") !default;

@@ -1,0 +1,129 @@
+html(lang="ru")
+    include chunks/head.pug
+    body
+        script(src="/js/jquery.min.js")
+        include chunks/header.pug
+        section.header-block
+            .container
+                .row
+                    .col-6
+                        p.header-block__subtitle экспресс-курс
+                        h1.header-block__title Освойте флористику  всего за 5 дней
+                        .row
+                            .col-6
+                                .subtitle.text-uppercase Сроки
+                                .header-block__info 40 ак. часов
+                                .header-block__offer 80% практики и 20% теории
+                            .col-6                    
+                                .subtitle.text-uppercase Уровень
+                                .header-block___info обучение с нуля
+                                .header-block__offer лучший способ начать освоение профессии
+        section.content
+            .container
+                p.h2 Кому подходит экспресс-курс?
+                .row
+                    .col-4
+                        p.icon-block желающим быстро получить и освоить новые навыки
+                    .col-4
+                        p.icon-block получить знания в области флористики для себя
+                    .col-4
+                        p.icon-block мечтающим работать помощником флориста
+                .row
+                    .col-6
+                        p.h2 Как устроено обучение в школе «Маджента»? 
+                    .col-6
+                        p Обучение организовано так, чтобы студент смог максимально погрузиться в свою специальность, не отвлекаясь на лишнее. В начале занятий вы получаете теоретические знания. Многократно применяя новые знания, решая задачи, вы тренируете умения и навык. Именно их все работодатели высоко ценят. После сдачи экзамена выпускники школы могут сразу найти работу по профессии.               
+        section.content
+            .container
+                p.h3 После окончания курса вы сможете:
+                .row.justify-content-between
+                    .col-4
+                        .icon-list
+                            .icon.icon_default
+                            p Правильно подбирать цветы к каждой работе, учитывая фактуру, цвет и законы композиции
+                    .col-4
+                        .icon-list
+                            .icon.icon_default
+                            p Делать композиции в кашпо и коробках в различных стилях и техниках
+                    .col-4
+                        .icon-list
+                            .icon.icon_default
+                            p Составлять букеты и модно их упаковывать. Профессионально работать с флористической губкой
+                    .col-4
+                        .icon-list
+                            .icon.icon_default
+                            p Креативно исполнять свадебные букеты (на своих ногах и в портбукетнице)
+                    .col-4
+                        .icon-list
+                            .icon.icon_default
+                            p Устроиться на работу на должности «Флорист» (помощник флориста)
+        section.content
+            h3.text-center Работы выпускников экспресс-курса
+            .container
+                .row.no-gutters.portfolio
+                    .col-3.portfolio__item
+                        img.img-fluid(src="/img/01.png")
+                    .col-3.portfolio__item
+                        img.img-fluid(src="/img/02.png")
+                    .col-3.portfolio__item
+                        img.img-fluid(src="/img/03.png")
+                    .col-3.portfolio__item
+                        img.img-fluid(src="/img/04.png")
+                    .col-3.portfolio__item
+                        img.img-fluid(src="/img/03.png")
+                    .col-3.portfolio__item
+                        img.img-fluid(src="/img/01.png")
+                    .col-3.portfolio__item
+                        img.img-fluid(src="/img/04.png")
+                    .col-3.portfolio__item
+                        img.img-fluid(src="/img/02.png")
+                .text-center
+                    a.btn.btn_action(href="#") Хочу записаться
+        section.content.programm
+            .container
+                p.h2.text-center Программа курса
+                .programm__item.programm__item_slide
+                    .row
+                        p.programm__title.col-7 1 день: «Инструменты и материалы»
+                        p.programm__time.col-5 2 часа теории   +   4 часа практики
+                    .programm__content
+                        p.subtitle Теория
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                        p.subtitle Практика
+                        p спиральная техника
+                .programm__item.programm__item_slide
+                    .row
+                        p.programm__title.col-7 2 день: «Свежесрезанные цветы»
+                        p.programm__time.col-5 2 часа теории   +   4 часа практики
+                    .programm__content
+                        p.subtitle Теория
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                        p.subtitle Практика
+                        p спиральная техника
+                .programm__item.programm__item_slide
+                    .row
+                        p.programm__title.col-7 3 день: «Цвет и настроение»
+                        p.programm__time.col-5 2 часа теории   +   4 часа практики
+                    .programm__content
+                        p.subtitle Теория
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                        p.subtitle Практика
+                        p спиральная техника
+        section.content
+            .container
+                .row
+                    .col-5.sertificate
+                        img.img-fluid.sertificate__image(src="", alt="")
+                        p.sertificate__content 100% работодателей отдадут предпочтение сотруднику прошедшему обучение у нас
+                    .col-6
+                        p.h4 Вот чем мы лучше многих:
+                        ul.list.list_advantage
+                            li.list__item Преподаватели с 10-летним опытом
+                            li.list__item После наших курсов открывают свой бизнес
+                            li.list__item Помогаем с трудоустройством и конкурсами
+                            li.list__item Выдаем сертификат
+                            li.list__item Работаем со свежими живыми цветами
+                            li.list__item 80% времени — практика, 20% — теория
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js") 
