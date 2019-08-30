@@ -20,7 +20,7 @@ html(lang="ru")
                                 .header-block__offer лучший способ начать освоение профессии
         section.content
             .container
-                p.h2 Кому подходит экспресс-курс?
+                p.h2.mb-60.text-bold Кому подходит экспресс-курс?
                 .row
                     .col-4
                         p.icon-block желающим быстро получить и освоить новые навыки
@@ -82,29 +82,29 @@ html(lang="ru")
         section.content.programm
             .container
                 p.h2.text-center Программа курса
-                .programm__item.programm__item_slide
+                .programm__item.item-slide
                     .row
                         p.programm__title.col-7 1 день: «Инструменты и материалы»
                         p.programm__time.col-5 2 часа теории   +   4 часа практики
-                    .programm__content
+                    .programm__content.item-slide__content
                         p.subtitle Теория
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
                         p.subtitle Практика
                         p спиральная техника
-                .programm__item.programm__item_slide
+                .programm__item.item-slide
                     .row
                         p.programm__title.col-7 2 день: «Свежесрезанные цветы»
                         p.programm__time.col-5 2 часа теории   +   4 часа практики
-                    .programm__content
+                    .programm__content.item-slide__content
                         p.subtitle Теория
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
                         p.subtitle Практика
                         p спиральная техника
-                .programm__item.programm__item_slide
+                .programm__item.item-slide
                     .row
                         p.programm__title.col-7 3 день: «Цвет и настроение»
                         p.programm__time.col-5 2 часа теории   +   4 часа практики
-                    .programm__content
+                    .programm__content.item-slide__content
                         p.subtitle Теория
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
                         p.subtitle Практика
@@ -124,6 +124,56 @@ html(lang="ru")
                             li.list__item Выдаем сертификат
                             li.list__item Работаем со свежими живыми цветами
                             li.list__item 80% времени — практика, 20% — теория
+        section.content
+            .container
+                p.h2 
+                    span.text-pink Более 3500 
+                    | человек из разных городов остались довольны
+                .row.align-items-center.justify-content-between
+                    .col-5
+                        p Наш учебный центр расположен в Санкт-Петербурге и не смотря на это, около 10% всех наших студентов приезжают к нам из других городов.
+                        p.mb-0
+                            a.link-inverse.text-uppercase.text-bold + отзывы наших выпускников 
+                    .col-6
+                        img.img-fluid(src="/img/maps.png")
+        section.cta-block
+            .container.p-relative
+                .cta-block__info
+                    p.subtitle Ближайшая группа
+                    p.h4 с 15 июля по 19 июля
+                    a.link-grey.text-small(href="#") + подробное расписание
+                .cta-block__info
+                    p.subtitle Обычная цена
+                    p
+                        span.price-old 19 000
+                        span.price 15 800 р.
+                    p.text-grey.text-small(href="#") цена действительно до 12 июля
+                p.h1.cta-block__title Оставьте заявку на обучение
+                p.cta-block__offer Запишитесь на курс online и 
+                    span.text-bold.text-pink получите скидку 15%!
+                form.form.cta-block__form(action="")
+                    input.form__input.form__input_name(placeholder="Ваше имя")
+                    input.form__input.form__input_phone(placeholder="Телефон")
+                    button.btn.btn_action(type="submit") Хочу записаться
+                    .form__agree.checkbox
+                        input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                        label.checkbox__label(for="agree") согласен с 
+                            a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+        section.content
+            .container
+                p.h1 Популярные вопросы
+                .item-slide
+                    p.text-bold Какие инструменты нужны для занятий?
+                    .item-slide__content
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                .item-slide
+                    p.text-bold Какие инструменты нужны для занятий?
+                    .item-slide__content
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                .item-slide
+                    p.text-bold Какие инструменты нужны для занятий?
+                    .item-slide__content
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
         include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js") 

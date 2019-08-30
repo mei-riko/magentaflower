@@ -11,3 +11,10 @@
 @import "other/form.scss";
 @import "other/button.scss";
 @import "other/footer.scss";
+
+.content{
+    padding: 90px 0;
+    .row + .row{
+        padding-top: 90px;
+    }
+}
