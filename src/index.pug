@@ -23,29 +23,34 @@ html(lang="ru")
                 p.h2.mb-60.text-bold Кому подходит экспресс-курс?
                 .row
                     .col-4
-                        p.icon-block желающим быстро получить и освоить новые навыки
+                        p.icon-block.mb-0 желающим быстро получить  
+                            span.text-bold и&nbsp;освоить новые навыки
                     .col-4
-                        p.icon-block получить знания в области флористики для себя
+                        p.icon-block.mb-0 
+                            span.text-bold получить знания 
+                            | в области флористики для себя
                     .col-4
-                        p.icon-block мечтающим работать помощником флориста
+                        p.icon-block.mb-0 мечтающим 
+                            span.text-bold работать 
+                            | помощником&nbsp;флориста
                 .row
                     .col-6
-                        p.h2 Как устроено обучение в школе «Маджента»? 
+                        p.h2.text-bold Как устроено обучение в&nbsp;школе «Маджента»? 
                     .col-6
-                        p Обучение организовано так, чтобы студент смог максимально погрузиться в свою специальность, не отвлекаясь на лишнее. В начале занятий вы получаете теоретические знания. Многократно применяя новые знания, решая задачи, вы тренируете умения и навык. Именно их все работодатели высоко ценят. После сдачи экзамена выпускники школы могут сразу найти работу по профессии.               
-        section.content
+                        p.text-top Обучение организовано так, чтобы студент смог максимально погрузиться в свою специальность, не отвлекаясь на лишнее. В начале занятий вы получаете теоретические знания. Многократно применяя новые знания, решая задачи, вы тренируете умения и навык. Именно их все работодатели высоко ценят. После сдачи экзамена выпускники школы могут сразу найти работу по профессии.               
+        section.content.bg-light-grey
             .container
-                p.h3 После окончания курса вы сможете:
+                p.h3.text-bold.mb-60 После окончания курса вы сможете:
                 .row.justify-content-between
-                    .col-4
+                    .col-4.mb-30
                         .icon-list
                             .icon.icon_default
                             p Правильно подбирать цветы к каждой работе, учитывая фактуру, цвет и законы композиции
-                    .col-4
+                    .col-4.mb-30
                         .icon-list
                             .icon.icon_default
                             p Делать композиции в кашпо и коробках в различных стилях и техниках
-                    .col-4
+                    .col-4.mb-30
                         .icon-list
                             .icon.icon_default
                             p Составлять букеты и модно их упаковывать. Профессионально работать с флористической губкой
@@ -58,31 +63,31 @@ html(lang="ru")
                             .icon.icon_default
                             p Устроиться на работу на должности «Флорист» (помощник флориста)
         section.content
-            h3.text-center Работы выпускников экспресс-курса
+            h3.text-center.text-bold.mb-60 Работы выпускников экспресс-курса
             .container
-                .row.no-gutters.portfolio
-                    .col-3.portfolio__item
+                .row.no-gutters.portfolio.mb-60
+                    .col-3.portfolio__item(data-fancybox="gallery" href="/img/01.png")
                         img.img-fluid(src="/img/01.png")
-                    .col-3.portfolio__item
+                    .col-3.portfolio__item(data-fancybox="gallery" href="/img/02.png")
                         img.img-fluid(src="/img/02.png")
-                    .col-3.portfolio__item
+                    .col-3.portfolio__item(data-fancybox="gallery" href="/img/03.png")
                         img.img-fluid(src="/img/03.png")
-                    .col-3.portfolio__item
+                    .col-3.portfolio__item(data-fancybox="gallery" href="/img/04.png")
                         img.img-fluid(src="/img/04.png")
-                    .col-3.portfolio__item
+                    .col-3.portfolio__item(data-fancybox="gallery" href="/img/03.png")
                         img.img-fluid(src="/img/03.png")
-                    .col-3.portfolio__item
+                    .col-3.portfolio__item(data-fancybox="gallery" href="/img/01.png")
                         img.img-fluid(src="/img/01.png")
-                    .col-3.portfolio__item
+                    .col-3.portfolio__item(data-fancybox="gallery" href="/img/04.png")
                         img.img-fluid(src="/img/04.png")
                     .col-3.portfolio__item
                         img.img-fluid(src="/img/02.png")
                 .text-center
                     a.btn.btn_action(href="#") Хочу записаться
-        section.content.programm
+        section.content.programm.bg-light-grey
             .container
-                p.h2.text-center Программа курса
-                .programm__item.item-slide
+                p.h2.text-center.text-bold.mb-60 Программа курса
+                .programm__item.item-slide.mb-30
                     .row
                         p.programm__title.col-7 1 день: «Инструменты и материалы»
                         p.programm__time.col-5 2 часа теории   +   4 часа практики
@@ -91,7 +96,7 @@ html(lang="ru")
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
                         p.subtitle Практика
                         p спиральная техника
-                .programm__item.item-slide
+                .programm__item.item-slide.mb-30
                     .row
                         p.programm__title.col-7 2 день: «Свежесрезанные цветы»
                         p.programm__time.col-5 2 часа теории   +   4 часа практики
@@ -175,5 +180,6 @@ html(lang="ru")
                     .item-slide__content
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
         include chunks/footer.pug
+        script(src="./js/jquery.fancybox.min.js")
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js") 

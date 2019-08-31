@@ -31,6 +31,7 @@ p {
     font-size: 1rem;
     margin-top: 0;
     margin-bottom: 1.25rem;
+    line-height: 1.6;
     &.small{
         font-size: .9em;
     }
@@ -61,6 +62,7 @@ a{
 .text-white{color: $white;}
 .text-black{color: $black;}
 .text-grey{color: $grey;}
+.text-pink{color: $pink;}
 
 .text-uppercase{text-transform: uppercase;}
 .text-bold,strong,b{font-weight: 700;}
