@@ -2,6 +2,10 @@
     position: relative;
     padding: 0 0 90px;
     background: $light-grey url("/img/bg-demo-contact.jpg") right center / cover;
+
+    &_pt{
+        padding-top: 90px;
+    }
     .cta-block__info{
         display: inline-block;
         max-width: 100%;

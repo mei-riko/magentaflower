@@ -124,7 +124,7 @@ a {
 }
 
 a:hover {
-  color: #c04e81;
+  color: #dd5287;
   text-decoration: underline;
 }
 
@@ -411,7 +411,7 @@ a:hover, a:focus {
 }
 
 a.link-inverse {
-  color: #c04e81;
+  color: #dd5287;
 }
 
 a.link-inverse:hover {
@@ -454,18 +454,18 @@ a.link-inverse:hover {
 }
 
 .text-pink {
-  color: #c04e81;
+  color: #dd5287;
 }
 
 .text-uppercase {
   text-transform: uppercase;
 }
 
-.text-bold, strong, b {
+.text-bold, .timetable-nav .timetable-nav__link--active, .timetable-title, .timetable-period, .timetable-btn, strong, b {
   font-weight: 700;
 }
 
-.text-small, .header-block .header-block__offer, small, .small {
+.text-small, .header-block .header-block__offer, .timetable-info, small, .small {
   font-size: 12px;
   line-height: 16px;
 }
@@ -474,7 +474,7 @@ a.link-inverse:hover {
   text-align: right;
 }
 
-.text-center {
+.text-center, .timetable-btn {
   text-align: center;
 }
 
@@ -1140,14 +1140,6 @@ a.link-inverse:hover {
   align-items: center !important;
 }
 
-.header-fixed .header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 11;
-}
-
 .header {
   padding: 20px 0;
 }
@@ -1172,6 +1164,32 @@ a.link-inverse:hover {
   background: url("/img/logo.svg") no-repeat center/contain;
   width: 100%;
   height: 160px;
+}
+
+.header-fixed .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.header-top .header {
+  position: relative;
+}
+
+.header-top .header:after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 84px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #feeef4;
+  -webkit-box-shadow: 0px 6px 6px 0px #ede2e5;
+  box-shadow: 0px 6px 6px 0px #ede2e5;
+  z-index: -1;
 }
 
 .contacts {
@@ -1271,7 +1289,7 @@ a.link-inverse:hover {
 .checkbox__input:checked + .checkbox__label:after {
   content: '';
   display: block;
-  background-color: #c04e81;
+  background-color: #dd5287;
   width: 6px;
   height: 6px;
   position: absolute;
@@ -1319,14 +1337,14 @@ a.link-inverse:hover {
 }
 
 .btn_action {
-  background: #c04e81;
+  background: #dd5287;
   color: #ffffff;
   font-weight: bold;
 }
 
 .btn_action:hover {
   color: #ffffff;
-  background: #a23968;
+  background: #d3296a;
 }
 
 .list_advantage {
@@ -1364,7 +1382,7 @@ a.link-inverse:hover {
   position: absolute;
   left: 12px;
   top: calc(50% - 4px);
-  background: #c04e81;
+  background: #dd5287;
 }
 
 .item-slide {
@@ -1418,7 +1436,7 @@ a.link-inverse:hover {
 }
 
 .item-slide_programm.item-slide--active {
-  border-color: #c04e81;
+  border-color: #dd5287;
 }
 
 .item-slide_faq {
@@ -1428,7 +1446,7 @@ a.link-inverse:hover {
 }
 
 .item-slide_faq:hover .item-slide__title {
-  color: #c04e81;
+  color: #dd5287;
 }
 
 .icon-block {
@@ -1476,6 +1494,10 @@ a.link-inverse:hover {
   padding: 90px 0;
 }
 
+.content_inside {
+  padding: 60px;
+}
+
 .content .row + .row {
   padding-top: 90px;
 }
@@ -1485,7 +1507,7 @@ a.link-inverse:hover {
 }
 
 .subtitle {
-  color: #c04e81;
+  color: #dd5287;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
@@ -1604,6 +1626,10 @@ a.link-inverse:hover {
   background: #f6f6f6 url("/img/bg-demo-contact.jpg") right center/cover;
 }
 
+.cta-block_pt {
+  padding-top: 90px;
+}
+
 .cta-block .cta-block__info {
   display: inline-block;
   max-width: 100%;
@@ -1656,4 +1682,113 @@ a.link-inverse:hover {
 
 .cta-block .cta-block__form .form__input {
   width: 100%;
+}
+
+.timetable-nav .timetable-nav__item + .timetable-nav__item {
+  margin-top: 10px;
+}
+
+.timetable-nav .timetable-nav__link--active {
+  color: #dd5287;
+  padding: 8px 0;
+  padding-left: 30px;
+  background: url("/img/icon-circle.svg") no-repeat left center/20px;
+}
+
+.timetable-block {
+  position: relative;
+  border: 1px solid #b8b8b8;
+  border-radius: 24px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px 0px #f0d5dd;
+  box-shadow: 0px 0px 15px 0px #f0d5dd;
+  padding-top: 140px;
+  padding-bottom: 24px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.timetable-block:hover .timetable-btn {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.timetable-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background-position: center;
+  background-size: cover;
+}
+
+.timetable-category {
+  padding: 6px 20px;
+  text-transform: uppercase;
+  color: #dd5287;
+}
+
+.timetable-category_type-1 {
+  background: #fae7ee;
+}
+
+.timetable-category_type-2 {
+  background: #fbebf1;
+}
+
+.timetable-category_type-3 {
+  background: #fcf0f4;
+}
+
+.timetable-category_type-4 {
+  background: #fdf4f7;
+}
+
+.timetable-category_type-5 {
+  color: #726d72;
+  background: #f6f6f6;
+}
+
+.timetable-title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  padding: 20px 20px 10px;
+}
+
+.timetable-period {
+  color: #dd5287;
+  padding: 0 20px;
+}
+
+.timetable-teacher {
+  padding: 0 20px 20px;
+}
+
+.timetable-info {
+  padding-left: 60px;
+  background: url("/img/time-left-light.svg") no-repeat 20px center/26px;
+  color: #3d3e40;
+}
+
+.timetable-btn {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  display: block;
+  width: 100%;
+  background: #dd5287;
+  color: #ffffff;
+  padding: 16px 20px 18px;
+  text-transform: uppercase;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.timetable-btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: #d3296a;
 }

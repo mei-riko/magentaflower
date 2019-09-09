@@ -7,6 +7,9 @@
 
 .content{
     padding: 90px 0;
+    &_inside{
+        padding: 60px;
+    }
     .row + .row{
         padding-top: 90px;
     }
