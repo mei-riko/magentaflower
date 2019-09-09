@@ -1,0 +1,23 @@
+.bg-light-grey{
+    background: $light-grey;
+}
+.bg-flowers_01{
+    background: url("/img/bg-demo.jpg") no-repeat center bottom / cover;
+}
+
+.content{
+    padding: 90px 0;
+    .row + .row{
+        padding-top: 90px;
+    }
+    .text-top{
+        padding-top: 10px;
+    }
+}
+
+.subtitle{
+    color: $pink;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,21 @@
+.sertificate{
+    position: relative;
+    padding-bottom: 80px;
+    &__content{
+        font-size: 1.2em;
+        padding: 200px 40px 40px;
+        background: $light-grey;
+        
+        position: absolute;
+        bottom: -90px;
+        right: -110px;
+
+        margin-bottom: 0;
+        width: 330px;
+        max-width: 100%;
+    }
+    &__image{
+        position: relative;
+        z-index: 11;
+    }
+}

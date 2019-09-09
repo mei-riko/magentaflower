@@ -1,0 +1,40 @@
+.header-block{
+    position: relative;
+    padding: 230px 0 150px;
+    background: $light-grey url("/img/bg-demo-header.jpg") no-repeat right bottom / contain ;
+    .header-block__subtitle{
+        display: inline-block;
+        background: #e2e2e2;
+        color: #797979;
+        padding: 8px 24px 10px;
+        border-radius: 28px;
+        margin: 0 0 2rem;
+    }
+    .header-block__title{
+        font-size: 3.25rem;
+        font-weight: bold;
+        margin: 0 0 4rem;
+    }
+    .header-block__info{
+        font-family: 'Noto Serif';
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+    .header-block__offer{
+        color: #797979;
+        @extend .text-small;
+        width: 150px;
+        max-width: 100%;
+    }
+    .header-block__container{
+        position: relative;
+        z-index: 2;
+    }
+    .header-block__image{
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+        z-index: 1;
+    }
+}

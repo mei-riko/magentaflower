@@ -1,0 +1,28 @@
+.programm{
+    padding: 60px 0;
+    .programm__item{
+        padding: 30px 40px;
+        background: $white;
+        border: 1px solid #d3d3d3;
+        border-radius: 20px;
+    }
+    .programm__title{
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    .programm__time{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: $grey;
+        &:before{
+            content:'';
+            display: inline-block;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            background: url("/img/time-left-light.svg") no-repeat center / contain;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.cta-block{
+    position: relative;
+    padding: 0 0 90px;
+    background: $light-grey url("/img/bg-demo-contact.jpg") right center / cover;
+    .cta-block__info{
+        display: inline-block;
+        max-width: 100%;
+        margin-right: 20px;
+        transform: translateY(-50px);
+
+        padding: 40px 50px;
+        border: 1px solid #b8b8b8;
+        border-radius: 24px;
+        background-color: $white;
+        box-shadow: 0px 0px 15px 0px rgba(240, 213, 221, 1);
+
+        .subtitle{
+            margin-bottom: .5rem;
+        }
+        .price-old{
+            font-family: 'Noto Serif';
+            text-decoration: line-through;
+            & + .price{
+                margin-left: .75rem;
+            }
+        }
+        .cta-block__info-title{
+            margin: 0 0 .75rem;
+        }
+    }
+    .cta-block__title{
+        font-weight: bold;
+        width: 360px;
+        max-width: 100%;
+        margin: 0 0 2rem;
+    }
+    .cta-block__offer{
+        width: 260px;
+        max-width: 100%;
+        margin: 0 0 2rem;
+        @extend .lead;
+    }
+    .cta-block__form{
+        width: 400px;
+        max-width: 100%;
+        .form__input{
+            width: 100%;
+        }
+    }
+}
