@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+
+    &_right{
+        justify-content: flex-end;
+    }
+
+    .navbar__link{
+        text-transform: uppercase;
+        & + .navbar__link{
+            margin-left: 40px;
+        }
+        &:hover{
+            text-decoration: none;
+        }
+    }   
+}

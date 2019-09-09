@@ -1,23 +1,24 @@
 html(lang="ru")
     include chunks/head.pug
-    body
+    body.header-fixed
         script(src="/js/jquery.min.js")
         include chunks/header.pug
         section.header-block
-            .container
+            .container.header-block__container
                 .row
                     .col-6
-                        p.header-block__subtitle экспресс-курс
+                        p.header-block__subtitle #экспресс-курс
                         h1.header-block__title Освойте флористику  всего за 5 дней
                         .row
                             .col-6
                                 .subtitle.text-uppercase Сроки
                                 .header-block__info 40 ак. часов
-                                .header-block__offer 80% практики и 20% теории
+                                .header-block__offer 80% практики и&nbsp;20%&nbsp;теории
                             .col-6                    
                                 .subtitle.text-uppercase Уровень
-                                .header-block___info обучение с нуля
+                                .header-block__info обучение с нуля
                                 .header-block__offer лучший способ начать освоение профессии
+            img.header-block__image(src="/img/flowers.png")
         section.content
             .container
                 p.h2.mb-60.text-bold Кому подходит экспресс-курс?
@@ -38,7 +39,7 @@ html(lang="ru")
                         p.h2.text-bold Как устроено обучение в&nbsp;школе «Маджента»? 
                     .col-6
                         p.text-top Обучение организовано так, чтобы студент смог максимально погрузиться в свою специальность, не отвлекаясь на лишнее. В начале занятий вы получаете теоретические знания. Многократно применяя новые знания, решая задачи, вы тренируете умения и навык. Именно их все работодатели высоко ценят. После сдачи экзамена выпускники школы могут сразу найти работу по профессии.               
-        section.content.bg-light-grey
+        section.content.bg-light-grey.bg-flowers_01
             .container
                 p.h3.text-bold.mb-60 После окончания курса вы сможете:
                 .row.justify-content-between
@@ -88,27 +89,27 @@ html(lang="ru")
             .container
                 p.h2.text-center.text-bold.mb-60 Программа курса
                 .programm__item.item-slide.mb-30
-                    .row
-                        p.programm__title.col-7 1 день: «Инструменты и материалы»
-                        p.programm__time.col-5 2 часа теории   +   4 часа практики
+                    .row.align-items-center
+                        p.programm__title.col-7.mb-0 1 день: «Инструменты и материалы»
+                        p.programm__time.col-5.mb-0 2 часа теории   +   4 часа практики
                     .programm__content.item-slide__content
                         p.subtitle Теория
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
                         p.subtitle Практика
                         p спиральная техника
                 .programm__item.item-slide.mb-30
-                    .row
-                        p.programm__title.col-7 2 день: «Свежесрезанные цветы»
-                        p.programm__time.col-5 2 часа теории   +   4 часа практики
+                    .row.align-items-center
+                        p.programm__title.col-7.mb-0 2 день: «Свежесрезанные цветы»
+                        p.programm__time.col-5.mb-0 2 часа теории   +   4 часа практики
                     .programm__content.item-slide__content
                         p.subtitle Теория
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
                         p.subtitle Практика
                         p спиральная техника
                 .programm__item.item-slide
-                    .row
-                        p.programm__title.col-7 3 день: «Цвет и настроение»
-                        p.programm__time.col-5 2 часа теории   +   4 часа практики
+                    .row.align-items-center
+                        p.programm__title.col-7.mb-0 3 день: «Цвет и настроение»
+                        p.programm__time.col-5.mb-0 2 часа теории   +   4 часа практики
                     .programm__content.item-slide__content
                         p.subtitle Теория
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
@@ -116,45 +117,47 @@ html(lang="ru")
                         p спиральная техника
         section.content
             .container
-                .row
-                    .col-5.sertificate
-                        img.img-fluid.sertificate__image(src="", alt="")
+                .row.justify-content-between
+                    .col-4.sertificate
+                        img.img-fluid.sertificate__image(src="/img/sertificate.jpg", alt="")
                         p.sertificate__content 100% работодателей отдадут предпочтение сотруднику прошедшему обучение у нас
                     .col-6
-                        p.h4 Вот чем мы лучше многих:
+                        p.h4.text-bold.mb-30 Вот чем мы лучше многих:
                         ul.list.list_advantage
-                            li.list__item Преподаватели с 10-летним опытом
-                            li.list__item После наших курсов открывают свой бизнес
-                            li.list__item Помогаем с трудоустройством и конкурсами
+                            li.list__item Преподаватели с 10-летним&nbsp;опытом
+                            li.list__item После наших курсов открывают свой&nbsp;бизнес
+                            li.list__item Помогаем с&nbsp;трудоустройством и&nbsp;конкурсами
                             li.list__item Выдаем сертификат
-                            li.list__item Работаем со свежими живыми цветами
-                            li.list__item 80% времени — практика, 20% — теория
+                            li.list__item Работаем со свежими живыми&nbsp;цветами
+                            li.list__item 80% времени — практика, 20%&nbsp;—&nbsp;теория
         section.content
             .container
-                p.h2 
-                    span.text-pink Более 3500 
-                    | человек из разных городов остались довольны
-                .row.align-items-center.justify-content-between
+                .row
+                    .col-9
+                        p.h1.text-bold
+                            span.text-pink Более 3500 
+                            | человек из разных городов остались довольны
+                .row.align-items-center.justify-content-between(style="padding-top:0;")
                     .col-5
-                        p Наш учебный центр расположен в Санкт-Петербурге и не смотря на это, около 10% всех наших студентов приезжают к нам из других городов.
+                        p.mb-30 Наш учебный центр расположен в Санкт-Петербурге и не смотря на это, около 10% всех наших студентов приезжают к нам из других городов.
                         p.mb-0
-                            a.link-inverse.text-uppercase.text-bold + отзывы наших выпускников 
+                            a.link-inverse.text-uppercase.text-bold(href="#") + отзывы наших выпускников 
                     .col-6
                         img.img-fluid(src="/img/maps.png")
         section.cta-block
             .container.p-relative
                 .cta-block__info
                     p.subtitle Ближайшая группа
-                    p.h4 с 15 июля по 19 июля
+                    p.h5.cta-block__info-title.text-bold с 15 июля по 19 июля
                     a.link-grey.text-small(href="#") + подробное расписание
                 .cta-block__info
                     p.subtitle Обычная цена
-                    p
-                        span.price-old 19 000
-                        span.price 15 800 р.
-                    p.text-grey.text-small(href="#") цена действительно до 12 июля
+                    p.cta-block__info-title
+                        span.price-old 19 000 р.
+                        span.price.h5.text-bold 15 800 р.
+                    p.text-grey.text-small.mb-0 цена действительно до 12 июля
                 p.h1.cta-block__title Оставьте заявку на обучение
-                p.cta-block__offer Запишитесь на курс online и 
+                p.cta-block__offer Запишитесь на курс online и&nbsp;
                     span.text-bold.text-pink получите скидку 15%!
                 form.form.cta-block__form(action="")
                     input.form__input.form__input_name(placeholder="Ваше имя")
@@ -166,19 +169,21 @@ html(lang="ru")
                             a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
         section.content
             .container
-                p.h1 Популярные вопросы
-                .item-slide
-                    p.text-bold Какие инструменты нужны для занятий?
+                p.h1.text-bold.mb-30 Популярные вопросы
+                .item-slide.item-slide_faq
+                    .item-slide__title Какие инструменты нужны для занятий?
                     .item-slide__content
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
-                .item-slide
-                    p.text-bold Какие инструменты нужны для занятий?
+                .item-slide.item-slide_faq
+                    .item-slide__title Какие инструменты нужны для занятий?
                     .item-slide__content
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
-                .item-slide
-                    p.text-bold Какие инструменты нужны для занятий?
+                .item-slide.item-slide_faq
+                    .item-slide__title Какие инструменты нужны для занятий?
                     .item-slide__content
                         p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                p.mb-0.mt-60
+                    a.link-inverse.text-uppercase.text-bold(href="#") + Все вопросы
         include chunks/footer.pug
         script(src="./js/jquery.fancybox.min.js")
         script(src="./js/jquery.inputmask.js")
