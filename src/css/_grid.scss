@@ -234,6 +234,10 @@
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .col-sm-1{
         flex: 0 0 8.33333%;
         max-width: 8.33333%

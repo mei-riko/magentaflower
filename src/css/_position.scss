@@ -186,7 +186,7 @@
 //     align-self: stretch!important
 // }
 
-// @media (max-width: map-get($grid-breakpoints, 'sm')) {
+@media (max-width: map-get($grid-breakpoints, 'sm')) {
 //     .flex-sm-column,.flex-sm-row {
 //         -webkit-box-orient:horizontal!important;
 //         -webkit-box-direction: normal!important;
@@ -207,11 +207,11 @@
 //         flex-direction: row-reverse!important
 //     }
 
-//     .flex-sm-column-reverse {
-//         -webkit-box-orient: vertical!important;
-//         -ms-flex-direction: column-reverse!important;
-//         flex-direction: column-reverse!important
-//     }
+    .flex-sm-column-reverse {
+        -webkit-box-orient: vertical!important;
+        -ms-flex-direction: column-reverse!important;
+        flex-direction: column-reverse!important
+    }
 
 //     .flex-sm-wrap {
 //         -ms-flex-wrap: wrap!important;
@@ -374,7 +374,7 @@
 //         -ms-flex-item-align: stretch!important;
 //         align-self: stretch!important
 //     }
-// }
+}
 
 // @media (max-width: map-get($grid-breakpoints, 'md')) {
 //     .flex-md-column,.flex-md-row {

@@ -57,3 +57,13 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .item-slide{
+        padding-right: 60px!important;
+        &_faq {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}

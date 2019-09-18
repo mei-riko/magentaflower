@@ -1,25 +1,54 @@
-header.header
-    .container
-        .row
-            .col-4
-                .header__line
-                    ul.contacts.contacts_inline
-                        li.contacts__item.contacts__item_phone
-                            a.header__link(href="tel:88001112233") 8 800 111-22-33
-                        li.contacts__item.contacts__item_phone
-                            a.header__link(href="tel:88001112233") 8 800 111-22-33
-                .header__line
-                    nav.navbar
-                        a.navbar__link(href="#") Курсы
-                        a.navbar__link(href="#") О школе
-                        a.navbar__link(href="#") Преподаватели
-            .col-4
-                a.header__logo(href="/")
-            .col-4
-                .header__line.text-right
-                    a.header__btn.btn.btn_default(href="#") Актуальное расписание курсов
-                .header__line
-                    nav.navbar.navbar_right
-                        a.navbar__link(href="#") Портфолио
-                        a.navbar__link(href="#") Отзывы
-                        a.navbar__link(href="#") Блог
+header
+    .header
+        .container
+            .row
+                .col-4.col-lg-5
+                    .header__line
+                        ul.contacts.contacts_inline
+                            li.contacts__item.contacts__item_phone
+                                a.header__link(href="tel:88001112233") 8 800 111-22-33
+                            li.contacts__item.contacts__item_phone
+                                a.header__link(href="tel:88001112233") 8 800 111-22-33
+                    .header__line
+                        nav.navbar
+                            a.navbar__link(href="#") Курсы
+                            a.navbar__link(href="#") О школе
+                            a.navbar__link(href="#") Преподаватели
+                .col-4.col-lg-2
+                    a.header__logo(href="/")
+                .col-4.col-lg-5
+                    .header__line.text-right
+                        a.header-btn.btn.btn_default(href="#") Актуальное расписание курсов
+                    .header__line
+                        nav.navbar.navbar_right
+                            a.navbar__link(href="#") Портфолио
+                            a.navbar__link(href="#") Отзывы
+                            a.navbar__link(href="#") Блог
+    .header-mobile-only
+        .container
+            .row.align-items-center
+                .col-6
+                    a.header__logo(href="/")
+                .col-6.text-right
+                    svg.nav-btn#nav(viewBox="0 0 24.00 24.00" xml:space="preserve")
+                        path(fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z")
+.navbar-mobile
+    nav.navbar
+        .navbar__item
+            a.navbar__link(href="#") Курсы
+        .navbar__item
+            a.navbar__link(href="#") О школе
+        .navbar__item
+            a.navbar__link(href="#") Преподаватели
+        .navbar__item
+            a.navbar__link(href="#") Портфолио
+        .navbar__item
+            a.navbar__link(href="#") Отзывы
+        .navbar__item
+            a.navbar__link(href="#") Блог
+    ul.contacts
+        li.contacts__item.contacts__item_phone
+            a.header__link(href="tel:88001112233") 8 800 111-22-33
+        li.contacts__item.contacts__item_phone
+            a.header__link(href="tel:88001112233") 8 800 111-22-33
+    a.header-btn.btn.btn_default(href="#") Актуальное расписание курсов    

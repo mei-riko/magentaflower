@@ -19,3 +19,30 @@
         z-index: 11;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .sertificate{
+        &__image{
+            width: 200px;
+            margin-left: 0;
+        }
+        &__content{
+            font-size: 1rem;
+            padding: 140px 30px 30px;
+            bottom: 60px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .sertificate{
+        padding-bottom: 0;
+        &__image{
+            width: 100%;
+            margin-left: auto;
+        }
+        &__content{
+            position: unset;
+            padding: 30px;
+            margin-top: 20px;
+        }
+    }
+}

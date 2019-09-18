@@ -81,6 +81,37 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         (0, _jquery2.default)(this).toggleClass("item-slide--active");
         (0, _jquery2.default)(this).find(".item-slide__content").slideToggle();
     });
+
+    // Mobile Navbar
+    (0, _jquery2.default)(".nav-btn#nav").on("click", function () {
+        if (!(0, _jquery2.default)(this).hasClass("nav-btn--active")) {
+            (0, _jquery2.default)(this).addClass("nav-btn--active");
+            (0, _jquery2.default)(".navbar-mobile").addClass("navbar-mobile--active");
+            (0, _jquery2.default)("body").attr("style", "position: fixed; overflow: hidden;");
+        } else {
+            (0, _jquery2.default)(this).removeClass("nav-btn--active");
+            (0, _jquery2.default)(".navbar-mobile").removeClass("navbar-mobile--active");
+            (0, _jquery2.default)("body").attr("style", "");
+        }
+    });
+    (0, _jquery2.default)(document).mouseup(function (e) {
+        // событие клика по веб-документу
+        var dropdownActive = (0, _jquery2.default)(".navbar-mobile.navbar-mobile--active"); // элемент
+
+        if (!dropdownActive.is(e.target) // клик был не по блоку
+        && dropdownActive.has(e.target).length === 0 // и не по его дочерним элементам
+        && !(0, _jquery2.default)(".nav-btn#nav").is(e.target)) {
+            dropdownActive.removeClass("navbar-mobile--active");
+            (0, _jquery2.default)("body").attr("style", "");
+        }
+    });
+    // Hide Navigation on Mobile
+    (0, _jquery2.default)(window).resize(function () {
+        if ((0, _jquery2.default)(window).width() > 991) {
+            (0, _jquery2.default)(".navbar-mobile.navbar-mobile--active").removeClass("navbar-mobile--active");
+            (0, _jquery2.default)("body").attr("style", "");
+        }
+    });
 });
 
 /***/ }),

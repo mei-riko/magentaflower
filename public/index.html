@@ -5,48 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Cources Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
     <link href="./css/jquery.fancybox.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
   <body class="header-fixed">
     <script src="/js/jquery.min.js"></script>
-    <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <div class="header__line">
-              <ul class="contacts contacts_inline">
-                <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-                <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-              </ul>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-lg-5">
+              <div class="header__line">
+                <ul class="contacts contacts_inline">
+                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+                </ul>
+              </div>
+              <div class="header__line">
+                <nav class="navbar"><a class="navbar__link" href="#">Курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="#">Преподаватели</a></nav>
+              </div>
             </div>
-            <div class="header__line">
-              <nav class="navbar"><a class="navbar__link" href="#">Курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="#">Преподаватели</a></nav>
+            <div class="col-4 col-lg-2"><a class="header__logo" href="/"></a></div>
+            <div class="col-4 col-lg-5">
+              <div class="header__line text-right"><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов</a></div>
+              <div class="header__line">
+                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Блог</a></nav>
+              </div>
             </div>
           </div>
-          <div class="col-4"><a class="header__logo" href="/"></a></div>
-          <div class="col-4">
-            <div class="header__line text-right"><a class="header__btn btn btn_default" href="#">Актуальное расписание курсов</a></div>
-            <div class="header__line">
-              <nav class="navbar navbar_right"><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Блог</a></nav>
+        </div>
+      </div>
+      <div class="header-mobile-only">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6"><a class="header__logo" href="/"></a></div>
+            <div class="col-6 text-right">
+              <svg class="nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
+                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
+              </svg>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <div class="navbar-mobile">
+      <nav class="navbar">
+        <div class="navbar__item"><a class="navbar__link" href="#">Курсы</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">О школе</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Преподаватели</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Портфолио</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Блог</a></div>
+      </nav>
+      <ul class="contacts">
+        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+      </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
+    </div>
     <section class="header-block">
       <div class="container header-block__container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-md-12 col-lg-10">
             <p class="header-block__subtitle">#экспресс-курс</p>
-            <h1 class="header-block__title">Освойте флористику  всего за 5 дней</h1>
+            <h1 class="header-block__title">Освойте флористику  всего за&nbsp;5&nbsp;дней</h1>
             <div class="row">
-              <div class="col-6">
+              <div class="col-6 col-sm-12 mb-sm-20 col-md-4 col-lg-4">
                 <div class="subtitle text-uppercase">Сроки</div>
                 <div class="header-block__info">40 ак. часов</div>
                 <div class="header-block__offer">80% практики и&nbsp;20%&nbsp;теории</div>
               </div>
-              <div class="col-6">                   
+              <div class="col-6 col-sm-12 col-md-4 col-lg-5">
                 <div class="subtitle text-uppercase">Уровень</div>
                 <div class="header-block__info">обучение с нуля</div>
                 <div class="header-block__offer">лучший способ начать освоение профессии</div>
@@ -58,23 +87,23 @@
     </section>
     <section class="content">
       <div class="container">
-        <p class="h2 mb-60 text-bold">Кому подходит экспресс-курс?</p>
+        <p class="h2 mb-40 text-bold">Кому подходит экспресс-курс?</p>
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 col-sm-10 mb-sm-20 col-lg-6">
             <p class="icon-block mb-0">желающим быстро получить  <span class="text-bold">и&nbsp;освоить новые навыки</span></p>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-sm-10 mb-sm-20 col-lg-6">
             <p class="icon-block mb-0"> <span class="text-bold">получить знания </span>в области флористики для себя</p>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-sm-10 col-lg-6">
             <p class="icon-block mb-0">мечтающим <span class="text-bold">работать </span>помощником&nbsp;флориста</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-md-12 col-lg-8">
             <p class="h2 text-bold">Как устроено обучение в&nbsp;школе «Маджента»? </p>
           </div>
-          <div class="col-6">
+          <div class="col-6 col-md-12 col-lg-10">
             <p class="text-top">Обучение организовано так, чтобы студент смог максимально погрузиться в свою специальность, не отвлекаясь на лишнее. В начале занятий вы получаете теоретические знания. Многократно применяя новые знания, решая задачи, вы тренируете умения и навык. Именно их все работодатели высоко ценят. После сдачи экзамена выпускники школы могут сразу найти работу по профессии.               </p>
           </div>
         </div>
@@ -82,33 +111,33 @@
     </section>
     <section class="content bg-light-grey bg-flowers_01">
       <div class="container">
-        <p class="h3 text-bold mb-60">После окончания курса вы сможете:</p>
+        <p class="h3 text-bold mb-40">После окончания курса вы сможете:</p>
         <div class="row justify-content-between">
-          <div class="col-4 mb-30">
+          <div class="col-4 mb-20 col-sm-12 col-lg-6">
             <div class="icon-list">
               <div class="icon icon_default"></div>
               <p>Правильно подбирать цветы к каждой работе, учитывая фактуру, цвет и законы композиции</p>
             </div>
           </div>
-          <div class="col-4 mb-30">
+          <div class="col-4 mb-20 col-sm-12 col-lg-6">
             <div class="icon-list">
               <div class="icon icon_default"></div>
               <p>Делать композиции в кашпо и коробках в различных стилях и техниках</p>
             </div>
           </div>
-          <div class="col-4 mb-30">
+          <div class="col-4 mb-20 col-sm-12 col-lg-6">
             <div class="icon-list">
               <div class="icon icon_default"></div>
               <p>Составлять букеты и модно их упаковывать. Профессионально работать с флористической губкой</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-sm-12 mb-sm-20 col-lg-6">
             <div class="icon-list">
               <div class="icon icon_default"></div>
               <p>Креативно исполнять свадебные букеты (на своих ногах и в портбукетнице)</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-sm-12 col-lg-6">
             <div class="icon-list">
               <div class="icon icon_default"></div>
               <p>Устроиться на работу на должности «Флорист» (помощник флориста)</p>
@@ -118,28 +147,28 @@
       </div>
     </section>
     <section class="content">
-      <h3 class="text-center text-bold mb-60">Работы выпускников экспресс-курса</h3>
       <div class="container">
-        <div class="row no-gutters portfolio mb-60">
-          <div class="col-3 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
-          <div class="col-3 portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
-          <div class="col-3 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
-          <div class="col-3 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
-          <div class="col-3 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
-          <div class="col-3 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
-          <div class="col-3 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
-          <div class="col-3 portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
+        <h3 class="text-center text-bold mb-40">Работы выпускников экспресс-курса</h3>
+        <div class="row no-gutters portfolio mb-40">
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
         </div>
         <div class="text-center"><a class="btn btn_action" href="#">Хочу записаться</a></div>
       </div>
     </section>
     <section class="content programm bg-light-grey">
       <div class="container">
-        <p class="h2 text-center text-bold mb-60">Программа курса</p>
-        <div class="programm__item item-slide item-slide_programm mb-30">
+        <p class="h2 text-center text-bold mb-40">Программа курса</p>
+        <div class="programm__item item-slide item-slide_programm mb-40 mb-sm-20">
           <div class="row align-items-center">
-            <p class="programm__title col-7 mb-0">1 день: «Инструменты и материалы»</p>
-            <p class="programm__time col-5 mb-0">2 часа теории   +   4 часа практики</p>
+            <p class="programm__title col-7 col-sm-12 col-md-6">1 день: «Инструменты и материалы»</p>
+            <p class="programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
           </div>
           <div class="programm__content item-slide__content">
             <p class="subtitle">Теория</p>
@@ -148,10 +177,10 @@
             <p class="mb-0">спиральная техника</p>
           </div>
         </div>
-        <div class="programm__item item-slide item-slide_programm mb-30">
+        <div class="programm__item item-slide item-slide_programm mb-40 mb-sm-20">
           <div class="row align-items-center">
-            <p class="programm__title col-7 mb-0">2 день: «Свежесрезанные цветы»</p>
-            <p class="programm__time col-5 mb-0">2 часа теории   +   4 часа практики</p>
+            <p class="programm__title col-7 col-sm-12 col-md-6">2 день: «Свежесрезанные цветы»</p>
+            <p class="programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
           </div>
           <div class="programm__content item-slide__content">
             <p class="subtitle">Теория</p>
@@ -162,8 +191,8 @@
         </div>
         <div class="programm__item item-slide item-slide_programm">
           <div class="row align-items-center">
-            <p class="programm__title col-7 mb-0">3 день: «Цвет и настроение»</p>
-            <p class="programm__time col-5 mb-0">2 часа теории   +   4 часа практики</p>
+            <p class="programm__title col-7 col-sm-12 col-md-6">3 день: «Цвет и настроение»</p>
+            <p class="programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
           </div>
           <div class="programm__content item-slide__content">
             <p class="subtitle">Теория</p>
@@ -176,12 +205,12 @@
     </section>
     <section class="content">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-4 sertificate"><img class="img-fluid sertificate__image" src="/img/sertificate.jpg" alt=""/>
+        <div class="row justify-content-between flex-sm-column-reverse">
+          <div class="col-4 col-sm-12 col-md-5 sertificate"><img class="img-fluid sertificate__image" src="/img/sertificate.jpg" alt=""/>
             <p class="sertificate__content">100% работодателей отдадут предпочтение сотруднику прошедшему обучение у нас</p>
           </div>
-          <div class="col-6">
-            <p class="h4 text-bold mb-30">Вот чем мы лучше многих:</p>
+          <div class="col-6 col-sm-12 mb-sm-40 col-md-7">
+            <p class="h4 text-bold mb-20">Вот чем мы лучше многих:</p>
             <ul class="list list_advantage">
               <li class="list__item">Преподаватели с 10-летним&nbsp;опытом</li>
               <li class="list__item">После наших курсов открывают свой&nbsp;бизнес</li>
@@ -194,19 +223,19 @@
         </div>
       </div>
     </section>
-    <section class="content">
+    <section class="content pt-lg-0">
       <div class="container">
         <div class="row">
-          <div class="col-9">
-            <p class="h1 text-bold"><span class="text-pink">Более 3500 </span>человек из разных городов остались довольны</p>
+          <div class="col-9 col-md-12 col-lg-10">
+            <p class="h1 text-bold mb-md-40"><span class="text-pink">Более 3500 </span>человек из&nbsp;разных городов остались довольны</p>
           </div>
         </div>
         <div class="row align-items-center justify-content-between" style="padding-top:0;">
-          <div class="col-5">
-            <p class="mb-30">Наш учебный центр расположен в Санкт-Петербурге и не смотря на это, около 10% всех наших студентов приезжают к нам из других городов.</p>
+          <div class="col-5 col-sm-12 mb-sm-40 col-md-7">
+            <p class="mb-20">Наш учебный центр расположен в Санкт-Петербурге и не смотря на это, около 10% всех наших студентов приезжают к нам из других городов.</p>
             <p class="mb-0"><a class="link-inverse text-uppercase text-bold" href="#">+ отзывы наших выпускников </a></p>
           </div>
-          <div class="col-6"><img class="img-fluid" src="/img/maps.png"/></div>
+          <div class="col-6 col-sm-12 col-md-5"><img class="img-fluid" src="/img/maps.png"/></div>
         </div>
       </div>
     </section>
@@ -221,7 +250,7 @@
           <p class="cta-block__info-title"><span class="price-old">19 000 р.</span><span class="price h5 text-bold">15 800 р.</span></p>
           <p class="text-grey text-small mb-0">цена действительно до 12 июля</p>
         </div>
-        <p class="h1 cta-block__title">Оставьте заявку на обучение</p>
+        <p class="h1 cta-block__title">Оставьте заявку на&nbsp;обучение</p>
         <p class="cta-block__offer">Запишитесь на курс online и&nbsp;<span class="text-bold text-pink">получите скидку 15%!</span></p>
         <form class="form cta-block__form" action="">
           <input class="form__input form__input_name" placeholder="Ваше имя"/>
@@ -236,7 +265,7 @@
     </section>
     <section class="content">
       <div class="container">
-        <p class="h1 text-bold mb-30">Популярные вопросы</p>
+        <p class="h1 text-bold mb-20">Популярные вопросы</p>
         <div class="item-slide item-slide_faq">
           <div class="item-slide__title">Какие инструменты нужны для занятий?</div>
           <div class="item-slide__content">
@@ -255,7 +284,7 @@
             <p>инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. </p>
           </div>
         </div>
-        <p class="mb-0 mt-60"><a class="link-inverse text-uppercase text-bold" href="#">+ Все вопросы</a></p>
+        <p class="mb-0 mt-40"><a class="link-inverse text-uppercase text-bold" href="#">+ Все вопросы</a></p>
       </div>
     </section>
     <script src="./js/jquery.fancybox.min.js"></script>

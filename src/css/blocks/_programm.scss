@@ -9,6 +9,7 @@
     .programm__title{
         font-weight: bold;
         font-size: 1.5rem;
+        line-height: 1.2;
         margin-bottom: 0;
     }
     .programm__time{
@@ -23,6 +24,27 @@
             width: 30px;
             height: 30px;
             background: url("/img/time-left-light.svg") no-repeat center / contain;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .programm{
+        .programm__title{
+            font-size: 1.25rem;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .programm{
+        .programm__item {
+            padding: 20px 30px;
+        }
+        .programm__title{
+            margin-bottom: 20px;
+        }
+        .programm__time{
+            justify-content: flex-start;
         }
     }
 }
