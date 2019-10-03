@@ -82,6 +82,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         (0, _jquery2.default)(this).find(".item-slide__content").slideToggle();
     });
 
+    var $mediaElements = (0, _jquery2.default)(".timetable-col");
+    (0, _jquery2.default)('.timetable-nav .timetable-nav__link').click(function (e) {
+        e.preventDefault();
+        var filterVal = (0, _jquery2.default)(this).data('filter');
+
+        if (!(0, _jquery2.default)(this).hasClass("timetable-nav__link--active")) {
+            (0, _jquery2.default)('.timetable-nav .timetable-nav__link.timetable-nav__link--active').removeClass("timetable-nav__link--active");
+            (0, _jquery2.default)(this).addClass("timetable-nav__link--active");
+            if (filterVal === 'all') {
+                $mediaElements.show();
+            } else {
+                // hide all then filter the ones to show
+                $mediaElements.hide().filter('.' + filterVal).show();
+            }
+        }
+    });
+
     // Mobile Navbar
     (0, _jquery2.default)(".nav-btn#nav").on("click", function () {
         if (!(0, _jquery2.default)(this).hasClass("nav-btn--active")) {

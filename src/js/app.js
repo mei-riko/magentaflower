@@ -5,6 +5,23 @@ $(document).ready(() =>{
         $(this).find(".item-slide__content").slideToggle();
     });
 
+    let $mediaElements = $(".timetable-col");
+    $('.timetable-nav .timetable-nav__link').click(function(e){
+        e.preventDefault();
+        let filterVal = $(this).data('filter');
+
+        if( !$(this).hasClass("timetable-nav__link--active")){
+            $('.timetable-nav .timetable-nav__link.timetable-nav__link--active').removeClass("timetable-nav__link--active");
+            $(this).addClass("timetable-nav__link--active");
+            if(filterVal === 'all'){
+                $mediaElements.show();
+            }else{
+                // hide all then filter the ones to show
+                $mediaElements.hide().filter('.' + filterVal).show();
+            }
+        }
+    });
+
     // Mobile Navbar
     $(".nav-btn#nav").on("click", function(){
         if( !$(this).hasClass("nav-btn--active")){

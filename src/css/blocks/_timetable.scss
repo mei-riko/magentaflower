@@ -7,12 +7,15 @@
             }
         }
         .timetable-nav__link{
+            text-decoration: none;
+            background: url("/img/icon-circle.svg") no-repeat left center;
+            background-size: 0px;
             &--active{
                 @extend .text-bold;
                 color: $pink;
                 padding: 8px 0;
                 padding-left: 30px;
-                background: url("/img/icon-circle.svg") no-repeat left center / 20px;
+                background-size: 20px;
             }
         }
     }
@@ -94,7 +97,7 @@
         transform: translateY(100%);
 
         cursor: pointer;
-        
+
         &:hover{
             color: $white;
             text-decoration: none;
