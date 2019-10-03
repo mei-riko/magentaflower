@@ -3,11 +3,11 @@ html(lang="ru")
     body.header-top
         script(src="/js/jquery.min.js")
         include chunks/header.pug
-        section.content.content_inside
+        section.content
             .container
-                h1.text-bold.mb-60 Актуальное расписание курсов
+                h1.text-bold.mb-40.mb-md-20 Актуальное расписание курсов
                 .row
-                    .col-3
+                    .col-3.col-sm-12.col-md-5
                         .timetable-nav
                             .timetable-nav__item
                                 a.timetable-nav__link.timetable-nav__link--active(href="#") Все курсы
@@ -21,9 +21,9 @@ html(lang="ru")
                                 a.timetable-nav__link(href="#") Мастер-классы
                             .timetable-nav__item
                                 a.timetable-nav__link.timetable-nav__link--disable(href="#") Архив курсов
-                    .col-9
+                    .col-9.col-sm-12.col-md-7.mt-sm-40
                         .timetable-row.row
-                            .col-4
+                            .col-4.col-md-12.col-lg-6
                                 .timetable-block
                                     .timetable-img(style="background-image: url('./img/test-01.jpg');")
                                     .timetable-category.timetable-category_type-1 Базовые курсы
@@ -34,7 +34,7 @@ html(lang="ru")
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
                                     a.timetable-btn(href="#") Записаться
-                            .col-4
+                            .col-4.col-md-12.col-lg-6
                                 .timetable-block
                                     .timetable-img(style="background-image: url('./img/test-02.jpg');")
                                     .timetable-category.timetable-category_type-2 Свадебные курсы
@@ -45,7 +45,7 @@ html(lang="ru")
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
                                     a.timetable-btn(href="#") Записаться
-                            .col-4
+                            .col-4.col-md-12.col-lg-6
                                 .timetable-block
                                     .timetable-img(style="background-image: url('./img/test-03.jpg');")
                                     .timetable-category.timetable-category_type-3 Семинары
@@ -56,8 +56,8 @@ html(lang="ru")
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
                                     a.timetable-btn(href="#") Записаться
-                            .col-4
-                                .timetable-block
+                            .col-4.col-md-12.col-lg-6
+                                .timetable-block.mb-0.mb-md-40
                                     .timetable-img(style="background-image: url('./img/test-04.jpg');")
                                     .timetable-category.timetable-category_type-4 Мастер-классы
                                     .timetable-title Название курса
@@ -67,8 +67,8 @@ html(lang="ru")
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
                                     a.timetable-btn(href="#") Записаться
-                            .col-4
-                                .timetable-block
+                            .col-4.col-md-12.col-lg-6
+                                .timetable-block.mb-0
                                     .timetable-img(style="background-image: url('./img/test-05.jpg');")
                                     .timetable-category.timetable-category_type-5 Архив курсов
                                     .timetable-title Название курса
@@ -80,7 +80,7 @@ html(lang="ru")
                                     a.timetable-btn(href="#") Записаться
         section.cta-block.cta-block_pt
             .container.p-relative
-                p.h1.cta-block__title Оставьте заявку на обучение
+                p.h1.cta-block__title.mt-0 Оставьте заявку на обучение
                 p.cta-block__offer Запишитесь на курс online и&nbsp;
                     span.text-bold.text-pink получите скидку 15%!
                 form.form.cta-block__form(action="")

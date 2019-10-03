@@ -42,7 +42,11 @@
         }
     }
     .contacts{
-        margin: 40px 0;
+        margin: 10px 0 20px;
+        .contacts__item{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
     }
     
     .header-btn{

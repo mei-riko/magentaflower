@@ -34,3 +34,14 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .list{
+        &_advantage{
+            .list__item{
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+}

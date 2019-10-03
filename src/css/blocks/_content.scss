@@ -17,31 +17,32 @@
         padding-top: 10px;
     }
 }
-
 .subtitle{
     color: $pink;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
 }
+
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
-    .content{
-        &.pt-lg-0{padding-top: 0;}
-    }
     .bg-flowers_01{
         padding-bottom: 160px;
         background-size: 1100px;
         background-color: $light-grey;
     }
+    .content{
+        &.pt-lg-0{padding-top: 0;}
+        &.bg-flowers_01{padding-bottom: 160px;}
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .content{
+        padding: 40px 0;
         &.pt-md-0{padding-top: 0;}
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .content{
-        padding: 60px 0;
         .row + .row{
             padding-top: 60px;
         }

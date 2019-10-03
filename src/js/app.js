@@ -29,10 +29,10 @@ $(document).ready(() =>{
         
     });
     // Hide Navigation on Mobile
-  $(window).resize(function(){
-    if ( $(window).width() > 991 ){
-      $(".navbar-mobile.navbar-mobile--active").removeClass("navbar-mobile--active");
-      $("body").attr("style", "");
-    }
-  });
+    $(window).resize(function(){
+      if ( $(window).width() > 991 ){
+        $(".navbar-mobile.navbar-mobile--active").removeClass("navbar-mobile--active");
+        $("body").attr("style", "");
+      }
+    });
 });

@@ -46,3 +46,18 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .sertificate{
+        &__image{
+            width: 240px;
+            max-width: 100%;
+            margin-left: 0;
+        }
+        &__content{
+            padding: 0;
+            background: inherit;
+            color: $grey;
+        }
+    }
+}
