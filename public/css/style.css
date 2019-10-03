@@ -1208,9 +1208,9 @@ a.link-inverse:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #feeef4;
-  -webkit-box-shadow: 0px 6px 6px 0px #ede2e5;
-  box-shadow: 0px 6px 6px 0px #ede2e5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#feeef4), to(#ffd9d2));
+  background: -o-linear-gradient(#feeef4, #ffd9d2);
+  background: linear-gradient(#feeef4, #ffd9d2);
   z-index: -1;
 }
 
@@ -1293,7 +1293,9 @@ a.link-inverse:hover {
     display: block;
   }
   .header-top .header-mobile-only {
-    background: #feeef4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feeef4), to(#ffd9d2));
+    background: -o-linear-gradient(#feeef4, #ffd9d2);
+    background: linear-gradient(#feeef4, #ffd9d2);
   }
 }
 
@@ -1323,7 +1325,9 @@ a.link-inverse:hover {
 
 .navbar-mobile {
   position: absolute;
-  background: #f6e2e7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#feeef4), to(#ffd9d2));
+  background: -o-linear-gradient(#feeef4, #ffd9d2);
+  background: linear-gradient(#feeef4, #ffd9d2);
   top: 0;
   left: 0;
   z-index: 101;
