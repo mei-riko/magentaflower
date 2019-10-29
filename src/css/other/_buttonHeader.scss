@@ -1,0 +1,22 @@
+header .btn{
+    border: none;
+    padding: 18px 40px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+    
+    &:hover{
+        text-decoration: none;
+        outline: none;
+    }
+    &_action{
+        background: $pink;
+        color: $white;
+        font-weight: bold;
+        &:hover{
+            color: $white;
+            background: darken($pink, 10%);
+        }
+    }
+}
