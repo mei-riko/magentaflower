@@ -3,6 +3,12 @@
     padding: 0 0 90px;
     background: $light-grey url("/img/bg-demo-contact.jpg") right center / cover;
 
+    &_summer{
+        background: $light-grey url("/img/bg-contact-warm.jpg") right center / cover;
+    }
+    &_winter{
+        background: $light-grey url("/img/bg-contact-cold.jpg") right center / cover;
+    }
     &_pt{
         padding-top: 90px;
     }

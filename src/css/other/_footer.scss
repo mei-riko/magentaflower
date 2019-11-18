@@ -1,0 +1,32 @@
+.footer{
+    padding: 60px 0;  
+    background: #faf4f6;  
+    // background: $light-grey url("../img/footer_white.png") no-repeat center bottom / cover;  
+    .footer__logo{
+        background: url("../img/logo.svg") no-repeat left center / contain;
+        max-width: 100%;
+        width: 180px;
+        height: 110px;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .footer__content{
+        color: $grey;
+    }
+    .contacts{
+        padding: 0;
+        & + .contacts{
+            padding-top: 30px;
+        }
+        .contacts__item{
+            font-weight: 400;
+        }
+        &_inline{
+            display: flex;
+            .contacts__item + .contacts__item{
+                margin-top: 0;
+                margin-left: 10px;
+            }
+        }
+    }
+}

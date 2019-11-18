@@ -91,18 +91,18 @@ a{
 
 .blockquote, blockquote{
     padding: 20px;
-    backgroun4: $light-grey;
+    background: $light-grey;
     border-left: 4px solid $grey;
 }
 
 .mt-0{margin-top: 0px;}
-.mt-20{margin-top: 2;}
+.mt-20{margin-top: 20px;}
 .mt-40{margin-top: 40px;}
 .mb-0{margin-bottom: 0px;}
 .mb-20{margin-bottom: 20px;}
 .mb-40{margin-bottom: 40px;}
-.mr-0{margin-right: 0}
-.ml-0{margin-left: 0}
+.mr-0{margin-right: 0;}
+.ml-0{margin-left: 0;}
 
 .pt-0{padding-top: 0px;}
 .pt-20{padding-top: 20px;}
@@ -151,6 +151,9 @@ a{
     .breadcrumbs{
         margin-bottom: 0;
     }
+    .text-md-left{text-align: left;}
+    .text-md-center{text-align: center;}
+    .text-md-right{text-align: right;}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .d-sm-none{display: none;}
