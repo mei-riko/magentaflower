@@ -3,5 +3,159 @@
 @import "gridHeader.scss";
 
 @import "other/header.scss";
+@import "other/footer.scss";
 @import "other/nav.scss";
 @import "other/buttonHeader.scss";
+
+@import "blocks/list.scss";
+
+body{
+    max-width: 100%; 
+}
+
+header *, footer.footer *
+.navbar-mobile * {
+    color: #3d3e40;
+}
+header *, header *::before, header *::after,
+footer.footer *, footer.footer *::before, footer.footer *::after{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header, footer{
+    font-family: 'Roboto';
+    position: initial;
+    height: auto;
+    background: unset;
+    font-size: 14px;
+}
+header .contacts,
+footer .contacts{
+    width: unset;
+    max-width: 100%;
+    float: unset;
+    height: unset;
+    padding: 10px 0 0;
+}
+header .contacts .contacts__item{
+    line-height: 1.2;
+}
+.header-top .header{
+    z-index: 11;
+}
+.header-top.main .header:after{
+    opacity: 0;
+}
+.header-btn{
+    max-width: 100%;
+    display: inline-block;
+    line-height: 18px;
+}
+.header-top.main .header .header__logo {
+    background: url('/manager/templates/magenta2019/img/logo_white.svg') no-repeat center/contain!important;
+}
+.header__logo{
+    display: block;
+}
+.navbar-mobile{
+    font-family: 'Roboto';
+    color: #3d3e40;
+}
+
+section.main{
+    margin-top: -84px;
+}
+
+section.main, section.main .bg_handler img.bg_sl_mp{
+    min-height: 600px;
+    height: calc(100vh - 110px);
+}
+section.main .banner-im{
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+}
+
+.footer{
+    line-height: 1.5;
+    ul.list{
+        padding: 0;
+        li.list__item{
+            list-style: none;
+        }
+    }
+    p {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+        line-height: 1.6;
+    }
+    .text-small, small, .small {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .mb-0{
+        margin-bottom: 0;
+    }
+    .mt-20{
+        margin-top: 20px;
+    }
+}
+body.card section.choice.choice_update,
+section.choice.choice_update{
+    min-height: unset;
+    padding-bottom: 120px;
+}
+section.courses.blog {
+    padding-top: 20px;
+}
+body.other-page section.reviews,
+body.other-page section.teachers,
+section.courses.portfolio {
+    padding-top: 60px;
+}
+section.faq {
+    padding: 100px 0 40px;
+}
+body.other-page section.about {
+    padding-top: 60px;
+    .h1_page{
+        height: auto;
+    }
+}
+footer.footer{
+    position: unset;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-bold{
+    font-weight: 700;
+}
+@media (max-width: 992px){
+    .header .header__logo {
+        background: url('/manager/templates/magenta2019/img/logo.svg') no-repeat center/contain!important;
+    }
+    section.main{
+        margin-top: 0px;
+    }
+    section.main .banner-im{
+        background-position-x: calc(50% + 60px);
+    }
+}
+@media (max-width: 768px){
+    .mt-md-20 {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 576px){
+    .mt-sm-20 {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 420px){
+    section.main .banner-im{
+        background-position-x: calc(50% + 140px);
+    }
+}

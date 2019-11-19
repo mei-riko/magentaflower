@@ -1,4 +1,5 @@
-header .container {
+header .container,
+footer .container {
     width: 100%;
     max-width: map-get($container-max-widths, 'xl');
     padding-right: 40px;
@@ -6,7 +7,8 @@ header .container {
     margin-right: auto;
     margin-left: auto
 }
-header .row{
+header .row,
+footer .row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -20px;
@@ -234,7 +236,8 @@ header .row{
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    header .container{
+    header .container,
+    footer .container{
         padding-left: 20px;
         padding-right: 20px;
     }

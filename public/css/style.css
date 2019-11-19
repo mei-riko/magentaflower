@@ -1350,6 +1350,12 @@ a.link-inverse:hover {
   text-align: center;
 }
 
+@media all and (max-width: 1400px) {
+  .navbar .navbar__link + .navbar__link {
+    margin-left: 25px;
+  }
+}
+
 @media all and (max-width: 992px) {
   .navbar .navbar__link {
     text-transform: none;
@@ -1380,12 +1386,12 @@ a.link-inverse:hover {
 
 .form .form__input_name {
   padding-left: 34px;
-  background: url("/img/profile.svg") no-repeat left center/20px;
+  background: url("../img/profile.svg") no-repeat left center/20px;
 }
 
 .form .form__input_phone {
   padding-left: 34px;
-  background: url("/img/telephone.svg") no-repeat left center/20px;
+  background: url("../img/telephone.svg") no-repeat left center/20px;
 }
 
 .checkbox {
@@ -1662,7 +1668,7 @@ a.link-inverse:hover {
 .item-slide:after {
   display: block;
   content: '';
-  background: url("/img/arrow-down.svg") no-repeat right center/24px;
+  background: url("../img/arrow-down.svg") no-repeat right center/24px;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -1751,7 +1757,7 @@ a.link-inverse:hover {
   display: block;
   width: 26px;
   height: 26px;
-  background: url("/img/icon-circle.svg") no-repeat center/contain;
+  background: url("../img/icon-circle.svg") no-repeat center/contain;
   position: absolute;
   top: 22px;
   left: 22px;
@@ -1803,11 +1809,11 @@ a.link-inverse:hover {
 }
 
 .bg-flowers_01 {
-  background: url("/img/bg-demo.jpg") no-repeat center bottom/cover;
+  background: url("../img/bg-demo.jpg") no-repeat center bottom/cover;
 }
 
 .bg-flowers_02 {
-  background: url("/img/bg-result-01.jpg") no-repeat center bottom/cover;
+  background: url("../img/bg-result-01.jpg") no-repeat center bottom/cover;
 }
 
 .content {
@@ -1868,10 +1874,12 @@ a.link-inverse:hover {
 .header-block {
   position: relative;
   padding: 230px 0 150px;
-  background: #f6f6f6 url("/img/bg-demo-header.jpg") no-repeat right bottom/contain;
+  background: #f6f6f6 url("../img/bg-demo-header.jpg") no-repeat right bottom/contain;
 }
 
 .header-block .header-block__subtitle {
+  font-family: "Noto Sans";
+  font-size: 1rem;
   display: inline-block;
   background: #e2e2e2;
   color: #797979;
@@ -1881,9 +1889,19 @@ a.link-inverse:hover {
 }
 
 .header-block .header-block__title {
+  display: block;
   font-size: 3.25rem;
   font-weight: bold;
+  margin: 0 0 1.5rem;
+}
+
+.header-block .header-block__title_margin {
   margin: 0 0 4rem;
+}
+
+.header-block .header-block__margin {
+  display: block;
+  margin-bottom: 4rem;
 }
 
 .header-block .header-block__info {
@@ -1951,6 +1969,11 @@ a.link-inverse:hover {
   }
   .header-block .header-block__title {
     font-size: 2rem;
+  }
+  .header-block .header-block__title_margin {
+    margin-bottom: 2rem;
+  }
+  .header-block .header-block__margin {
     margin-bottom: 2rem;
   }
   .header-block .header-block__info {
@@ -1995,7 +2018,7 @@ a.link-inverse:hover {
   margin-right: 10px;
   width: 30px;
   height: 30px;
-  background: url("/img/time-left-light.svg") no-repeat center/contain;
+  background: url("../img/time-left-light.svg") no-repeat center/contain;
 }
 
 @media all and (max-width: 768px) {
@@ -2134,15 +2157,15 @@ a.link-inverse:hover {
 .cta-block {
   position: relative;
   padding: 0 0 90px;
-  background: #f6f6f6 url("/img/bg-demo-contact.jpg") right center/cover;
+  background: #f6f6f6 url("../img/bg-demo-contact.jpg") right center/cover;
 }
 
 .cta-block_summer {
-  background: #f6f6f6 url("/img/bg-contact-warm.jpg") right center/cover;
+  background: #f6f6f6 url("../img/bg-contact-warm.jpg") right center/cover;
 }
 
 .cta-block_winter {
-  background: #f6f6f6 url("/img/bg-contact-cold.jpg") right center/cover;
+  background: #f6f6f6 url("../img/bg-contact-cold.jpg") right center/cover;
 }
 
 .cta-block_pt {
@@ -2251,7 +2274,7 @@ a.link-inverse:hover {
 
 .timetable-nav .timetable-nav__link {
   text-decoration: none;
-  background: url("/img/icon-circle.svg") no-repeat left center;
+  background: url("../img/icon-circle.svg") no-repeat left center;
   background-size: 0px;
 }
 
@@ -2343,7 +2366,7 @@ a.link-inverse:hover {
 
 .timetable-info {
   padding-left: 60px;
-  background: url("/img/time-left-light.svg") no-repeat 20px center/26px;
+  background: url("../img/time-left-light.svg") no-repeat 20px center/26px;
   color: #3d3e40;
 }
 

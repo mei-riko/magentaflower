@@ -1,8 +1,10 @@
 .header-block{
     position: relative;
     padding: 230px 0 150px;
-    background: $light-grey url("/img/bg-demo-header.jpg") no-repeat right bottom / contain ;
+    background: $light-grey url("../img/bg-demo-header.jpg") no-repeat right bottom / contain ;
     .header-block__subtitle{
+        font-family: "Noto Sans";
+        font-size: 1rem;
         display: inline-block;
         background: #e2e2e2;
         color: #797979;
@@ -11,10 +13,19 @@
         margin: 0 0 2rem;
     }
     .header-block__title{
+        display: block;
         font-size: 3.25rem;
         font-weight: bold;
-        margin: 0 0 4rem;
+        margin: 0 0 1.5rem;
+        &_margin{
+            margin: 0 0 4rem;
+        }
     }
+    .header-block__margin{
+        display: block;
+        margin-bottom: 4rem;
+    }
+
     .header-block__info{
         font-family: 'Noto Serif', serif;
         font-weight: bold;
@@ -79,6 +90,11 @@
 
         .header-block__title{
             font-size: 2rem;
+            &_margin{
+                margin-bottom: 2rem;
+            }
+        }
+        .header-block__margin{
             margin-bottom: 2rem;
         }
         .header-block__info{

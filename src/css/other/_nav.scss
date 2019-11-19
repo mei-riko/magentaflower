@@ -53,6 +53,15 @@
         text-align: center;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .navbar{
+        .navbar__link{
+            & + .navbar__link{
+                margin-left: 25px;
+            }
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .navbar{
         .navbar__link{

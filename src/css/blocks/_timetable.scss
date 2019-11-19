@@ -8,7 +8,7 @@
         }
         .timetable-nav__link{
             text-decoration: none;
-            background: url("/img/icon-circle.svg") no-repeat left center;
+            background: url("../img/icon-circle.svg") no-repeat left center;
             background-size: 0px;
             &--active{
                 @extend .text-bold;
@@ -78,7 +78,7 @@
     }
     &-info{
         padding-left: 60px;
-        background: url("/img/time-left-light.svg") no-repeat 20px center / 26px;
+        background: url("../img/time-left-light.svg") no-repeat 20px center / 26px;
         @extend .text-small;
         color: $dark-grey;
     }
