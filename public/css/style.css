@@ -2293,6 +2293,7 @@ a.link-inverse:hover {
 
 .timetable-block {
   position: relative;
+  width: 100%;
   border: 1px solid #b8b8b8;
   border-radius: 24px;
   background-color: #ffffff;
