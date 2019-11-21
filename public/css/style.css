@@ -2285,6 +2285,12 @@ a.link-inverse:hover {
   background-size: 20px;
 }
 
+.timetable-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .timetable-block {
   position: relative;
   border: 1px solid #b8b8b8;

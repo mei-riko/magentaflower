@@ -5,7 +5,8 @@ $(document).ready(() =>{
         $(this).find(".item-slide__content").slideToggle();
     });
 
-    let $mediaElements = $(".timetable-col");
+    let $mediaElementsAll = $(".timetable-col");
+    let $mediaElements = $(".timetable-col:not(.archive)");
     $('.timetable-nav .timetable-nav__link').click(function(e){
         e.preventDefault();
         let filterVal = $(this).data('filter');
@@ -14,10 +15,11 @@ $(document).ready(() =>{
             $('.timetable-nav .timetable-nav__link.timetable-nav__link--active').removeClass("timetable-nav__link--active");
             $(this).addClass("timetable-nav__link--active");
             if(filterVal === 'all'){
+                $mediaElementsAll.hide();
                 $mediaElements.show();
             }else{
                 // hide all then filter the ones to show
-                $mediaElements.hide().filter('.' + filterVal).show();
+                $mediaElementsAll.hide().filter('.' + filterVal).show();
             }
         }
     });

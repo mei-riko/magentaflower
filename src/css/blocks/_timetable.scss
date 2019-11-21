@@ -20,6 +20,9 @@
         }
     }
     // Main Area
+    &-col{
+        display: flex;
+    }
     &-block{
         position: relative;
 
