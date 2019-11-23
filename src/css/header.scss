@@ -12,6 +12,12 @@
 body{
     max-width: 100%; 
 }
+body a {
+    color: #232323;
+    &:hover{
+        color: $link-hover-color;
+    }
+}
 
 header *, footer.footer *
 .navbar-mobile * {
