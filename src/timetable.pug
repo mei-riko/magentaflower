@@ -33,7 +33,7 @@ html(lang="ru")
                                     .timetable-info
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
-                                    a.timetable-btn(href="#") Записаться
+                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 1") Записаться
                             .col-4.col-md-12.col-lg-6.timetable-col.wedding
                                 .timetable-block
                                     .timetable-img(style="background-image: url('./img/test-02.jpg');")
@@ -44,7 +44,7 @@ html(lang="ru")
                                     .timetable-info
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
-                                    a.timetable-btn(href="#") Записаться
+                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 2") Записаться
                             .col-4.col-md-12.col-lg-6.timetable-col.seminar
                                 .timetable-block
                                     .timetable-img(style="background-image: url('./img/test-03.jpg');")
@@ -55,7 +55,7 @@ html(lang="ru")
                                     .timetable-info
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
-                                    a.timetable-btn(href="#") Записаться
+                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 3") Записаться
                             .col-4.col-md-12.col-lg-6.timetable-col.masterclass
                                 .timetable-block.mb-0.mb-md-40
                                     .timetable-img(style="background-image: url('./img/test-04.jpg');")
@@ -66,7 +66,7 @@ html(lang="ru")
                                     .timetable-info
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
-                                    a.timetable-btn(href="#") Записаться
+                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 4") Записаться
                             .col-4.col-md-12.col-lg-6.timetable-col.archive
                                 .timetable-block.mb-0
                                     .timetable-img(style="background-image: url('./img/test-05.jpg');")
@@ -77,13 +77,14 @@ html(lang="ru")
                                     .timetable-info
                                         .timetable-info__item 5 часов теории
                                         .timetable-info__item 12 часов практики
-                                    a.timetable-btn(href="#") Записаться
-        section.cta-block.cta-block_pt
+                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 5") Записаться
+        section.cta-block.cta-block_pt#ctaForm
             .container.p-relative
                 p.h1.cta-block__title.mt-0 Оставьте заявку на обучение
                 p.cta-block__offer Запишитесь на курс online и&nbsp;
                     span.text-bold.text-pink получите скидку 15%!
                 form.form.cta-block__form(action="")
+                    input.form__input.form__input_title.d-none(placeholder="")
                     input.form__input.form__input_name(placeholder="Ваше имя")
                     input.form__input.form__input_phone(placeholder="Телефон")
                     button.btn.btn_action(type="submit") Хочу записаться

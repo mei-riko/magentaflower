@@ -77,6 +77,16 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(document).ready(function () {
+    (0, _jquery2.default)("a.scroll").click(function () {
+        (0, _jquery2.default)("html, body").animate({
+            scrollTop: (0, _jquery2.default)((0, _jquery2.default)(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500,
+            easing: "swing"
+        });
+        return false;
+    });
+
     (0, _jquery2.default)(".item-slide").on("click", function () {
         (0, _jquery2.default)(this).toggleClass("item-slide--active");
         (0, _jquery2.default)(this).find(".item-slide__content").slideToggle();
@@ -99,6 +109,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                 $mediaElementsAll.hide().filter('.' + filterVal).show();
             }
         }
+    });
+
+    (0, _jquery2.default)(".timetable-btn").on("click", function () {
+        (0, _jquery2.default)('.cta-block .cta-block__form .form__input_title').val((0, _jquery2.default)(this).data("title"));
     });
 
     // Mobile Navbar

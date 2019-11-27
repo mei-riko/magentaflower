@@ -89,7 +89,7 @@
                   <div class="timetable-info">
                     <div class="timetable-info__item">5 часов теории</div>
                     <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn" href="#">Записаться</a>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 1">Записаться</a>
                 </div>
               </div>
               <div class="col-4 col-md-12 col-lg-6 timetable-col wedding">
@@ -102,7 +102,7 @@
                   <div class="timetable-info">
                     <div class="timetable-info__item">5 часов теории</div>
                     <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn" href="#">Записаться</a>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 2">Записаться</a>
                 </div>
               </div>
               <div class="col-4 col-md-12 col-lg-6 timetable-col seminar">
@@ -115,7 +115,7 @@
                   <div class="timetable-info">
                     <div class="timetable-info__item">5 часов теории</div>
                     <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn" href="#">Записаться</a>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 3">Записаться</a>
                 </div>
               </div>
               <div class="col-4 col-md-12 col-lg-6 timetable-col masterclass">
@@ -128,7 +128,7 @@
                   <div class="timetable-info">
                     <div class="timetable-info__item">5 часов теории</div>
                     <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn" href="#">Записаться</a>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 4">Записаться</a>
                 </div>
               </div>
               <div class="col-4 col-md-12 col-lg-6 timetable-col archive">
@@ -141,7 +141,7 @@
                   <div class="timetable-info">
                     <div class="timetable-info__item">5 часов теории</div>
                     <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn" href="#">Записаться</a>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 5">Записаться</a>
                 </div>
               </div>
             </div>
@@ -149,11 +149,12 @@
         </div>
       </div>
     </section>
-    <section class="cta-block cta-block_pt">
+    <section class="cta-block cta-block_pt" id="ctaForm">
       <div class="container p-relative">
         <p class="h1 cta-block__title mt-0">Оставьте заявку на обучение</p>
         <p class="cta-block__offer">Запишитесь на курс online и&nbsp;<span class="text-bold text-pink">получите скидку 15%!</span></p>
         <form class="form cta-block__form" action="">
+          <input class="form__input form__input_title d-none" placeholder=""/>
           <input class="form__input form__input_name" placeholder="Ваше имя"/>
           <input class="form__input form__input_phone" placeholder="Телефон"/>
           <button class="btn btn_action" type="submit">Хочу записаться</button>

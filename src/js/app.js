@@ -1,5 +1,15 @@
 import $ from 'jquery'
 $(document).ready(() =>{
+    $("a.scroll").click(function() {
+        $("html, body").animate({
+           scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+           duration: 500,
+           easing: "swing"
+        });
+        return false;
+    });
+
     $(".item-slide").on("click", function(){
         $(this).toggleClass("item-slide--active");
         $(this).find(".item-slide__content").slideToggle();
@@ -22,6 +32,10 @@ $(document).ready(() =>{
                 $mediaElementsAll.hide().filter('.' + filterVal).show();
             }
         }
+    });
+
+    $(".timetable-btn").on("click", function(){
+        $('.cta-block .cta-block__form .form__input_title').val( $(this).data("title") );
     });
 
     // Mobile Navbar
