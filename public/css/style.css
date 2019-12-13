@@ -532,6 +532,14 @@ a.link-inverse:hover {
   margin-left: 0;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-left: auto;
+}
+
 .pt-0 {
   padding-top: 0px;
 }
