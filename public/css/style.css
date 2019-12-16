@@ -2236,7 +2236,7 @@ a.link-inverse:hover {
   box-shadow: 0px 0px 15px 0px #f0d5dd;
 }
 
-.cta-block .cta-block__info + .cta-block__info {
+.cta-block .cta-block__info + .cta-block__info.last {
   margin-right: 0px;
 }
 
