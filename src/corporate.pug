@@ -3,96 +3,167 @@ html(lang="ru")
     body.header-top
         script(src="/js/jquery.min.js")
         include chunks/header.pug
+        section.content.bg-corporate
+            .container
+                .row
+                    .col-7.col-md-12.mb-40.mb-sm-20.col-lg-6
+                        h1.h1.text-bold.mb-40.mb-md-20 Корпоративные и&nbsp;выездные мастер-классы
+                        ul.list.list_advantage
+                            li.list__item Расходные материалы включены
+                            li.list__item Расходные материалы включены
+                            li.list__item Расходные материалы включены
+                            li.list__item Расходные материалы включены
+                    .col-5.col-md-12.col-lg-6
+                        .info
+                            p.text-bold.text-pink.text-uppercase Расчет стоимости мастер-класса 
+                            form.form#corporateForm(action="")
+                                input.form__input.form__input_title.d-none(placeholder="")
+                                .form__group
+                                    .form__col.col-6.col-sm-12.mb-sm-20
+                                        .form__label количество человек
+                                        input.form__input(placeholder="" type="number" value="2")
+                                    .form__col.col-6.col-sm-12.mb-sm-20
+                                        .form__label дата мероприятия
+                                        input.form__input(placeholder="" type="date")
+                                input.form__input.form__input_full.form__input_name(placeholder="Имя")
+                                input.form__input.form__input_full.form__input_phone(placeholder="Телефон")
+                                button.btn.btn_action.mt-20(type="submit") Хочу записаться
+                                .form__agree.checkbox
+                                    input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                                    label.checkbox__label(for="agree") согласен с 
+                                        a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
         section.content
             .container
-                h1.text-bold.mb-40.mb-md-20 Актуальное расписание курсов
-                .row
-                    .col-3.col-sm-12.col-md-5
-                        .timetable-nav
-                            .timetable-nav__item
-                                a.timetable-nav__link.timetable-nav__link--active(href="#" data-filter="all") Все курсы
-                            .timetable-nav__item
-                                a.timetable-nav__link(href="#" data-filter="basic") Базовые курсы
-                            .timetable-nav__item
-                                a.timetable-nav__link(href="#" data-filter="wedding") Свадебные курсы
-                            .timetable-nav__item
-                                a.timetable-nav__link(href="#" data-filter="seminar") Семинары
-                            .timetable-nav__item
-                                a.timetable-nav__link(href="#" data-filter="masterclass") Мастер-классы
-                            .timetable-nav__item
-                                a.timetable-nav__link.timetable-nav__link--disable(href="#" data-filter="archive") Архив курсов
-                    .col-9.col-sm-12.col-md-7.mt-sm-40
-                        .timetable-row.row
-                            .col-4.col-md-12.col-lg-6.timetable-col.basic
-                                .timetable-block
-                                    .timetable-img(style="background-image: url('./img/test-01.jpg');")
-                                    .timetable-category.timetable-category_type-1 Базовые курсы
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 1") Записаться
-                            .col-4.col-md-12.col-lg-6.timetable-col.wedding
-                                .timetable-block
-                                    .timetable-img(style="background-image: url('./img/test-02.jpg');")
-                                    .timetable-category.timetable-category_type-2 Свадебные курсы
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 2") Записаться
-                            .col-4.col-md-12.col-lg-6.timetable-col.seminar
-                                .timetable-block
-                                    .timetable-img(style="background-image: url('./img/test-03.jpg');")
-                                    .timetable-category.timetable-category_type-3 Семинары
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 3") Записаться
-                            .col-4.col-md-12.col-lg-6.timetable-col.masterclass
-                                .timetable-block.mb-0.mb-md-40
-                                    .timetable-img(style="background-image: url('./img/test-04.jpg');")
-                                    .timetable-category.timetable-category_type-4 Мастер-классы
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 4") Записаться
-                            .col-4.col-md-12.col-lg-6.timetable-col.archive
-                                .timetable-block.mb-0
-                                    .timetable-img(style="background-image: url('./img/test-05.jpg');")
-                                    .timetable-category.timetable-category_type-5 Архив курсов
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 5") Записаться
-        section.cta-block.cta-block_pt#ctaForm
-            .container.p-relative
-                p.h1.cta-block__title.mt-0 Оставьте заявку на обучение
-                p.cta-block__offer Запишитесь на курс online и&nbsp;
-                    span.text-bold.text-pink получите скидку 15%!
-                form.form.cta-block__form(action="")
-                    input.form__input.form__input_title.d-none(placeholder="")
-                    input.form__input.form__input_name(placeholder="Ваше имя")
-                    input.form__input.form__input_phone(placeholder="Телефон")
-                    button.btn.btn_action(type="submit") Хочу записаться
-                    .form__agree.checkbox
-                        input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
-                        label.checkbox__label(for="agree") согласен с 
-                            a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+                h2.text-bold.text-center Для кого 
+                    span.text-pink идеален 
+                    | мастер-класс?
+                .row.text-center.mt-40.justify-content-center
+                    .col-4.col-md-8.col-sm-12.mt-20.mt-md-0
+                        .info
+                            p.info__title Коллег по работе
+                            p.info__intro.text-grey Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                            img.img-fluid.mt-40.mt-sm-20(src="../img/pic-1.png")
+                    .col-4.col-md-8.col-sm-12.mt-20
+                        .info
+                            p.info__title Коллег по работе
+                            p.info__intro.text-grey Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                            img.img-fluid.mt-40.mt-sm-20(src="../img/pic-2.png")
+                    .col-4.col-md-8.col-sm-12.mt-20
+                        .info
+                            p.info__title Коллег по работе
+                            p.info__intro.text-grey Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                            img.img-fluid.mt-40.mt-sm-20(src="../img/pic-3.png")
+                .row.no-gutters.portfolio
+                    .col-12
+                        h4.text-center.text-bold.mb-40 Фотоотчеты с мероприятий
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/02.png")
+                        img.img-fluid(src="/img/02.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item
+                        img.img-fluid(src="/img/02.png")
+        section.content.content_offset-small.bg-light-pink
+            .container.text-center
+                p.h2.text-bold Темы мастер-классов от «Мадженты»
+                p.text-grey.mb-60(style="width:900px;max-width:100%;margin:0 auto;") Eveniet, ut et harum quidem rerum. Ipsam voluptatem, quia non recusandae eligendi. Voluptate velit esse, quam nihil molestiae consequatur, vel illum. Aut reiciendis voluptatibus maiores alias consequatur. Architecto beatae vitae dicta sunt explicabo.
+                .slider.slider_link
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-4.png")
+                            .preview-link__content
+                                p.preview-link__title Букет из&nbsp;сухоцветов
+                                a.preview-link__link(href="#" data-title="1") Заказать >
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-5.png")
+                            .preview-link__content
+                                p.preview-link__title Флорариум
+                                a.preview-link__link(href="#" data-title="2") Заказать >
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-6.png")
+                            .preview-link__content
+                                p.preview-link__title Букет в&nbsp;шляпной коробке
+                                a.preview-link__link(href="#" data-title="3") Заказать >
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-4.png")
+                            .preview-link__content
+                                p.preview-link__title Букет из&nbsp;сухоцветов 2
+                                a.preview-link__link(href="#") Заказать >
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-5.png")
+                            .preview-link__content
+                                p.preview-link__title Флорариум 2
+                                a.preview-link__link(href="#") Заказать >
+                p.preview-info Подарите незабываемые эмоции сейчас!
+        section.content.content_offset-small(style="background-color: #fdf8fb;")
+            .container
+                p.h4.text-center.text-bold.mb-60.mb-md-40 Где провести мастер-класс?
+                .row.justify-content-center
+                    .col-3.col-sm-12.mb-20.col-md-4
+                        .icon-col.text-center
+                            .icon
+                            p.icon-col__title.text-bold.text-uppercase В нашей студии
+                            p.icon-col__content.text-grey.mb-0 продолжительность 2 часа от 1 до 20 человек
+                    .col-3.col-sm-12.mb-20.col-md-4
+                        .icon-col.text-center
+                            .icon
+                            p.icon-col__title.text-bold.text-uppercase В нашей студии
+                            p.icon-col__content.text-grey.mb-0 продолжительность 2 часа от 1 до 20 человек
+                    .col-3.col-sm-12.col-md-4
+                        .icon-col.text-center
+                            .icon
+                            p.icon-col__title.text-bold.text-uppercase В нашей студии
+                            p.icon-col__content.text-grey.mb-0 продолжительность 2 часа от 1 до 20 человек
+        section.content
+            .container
+                .row.justify-content-center
+                    .col-7.col-md-12.text-center
+                        p.text-bold.h1 Организовали мастер-класс таким компаниям как:
+                    .col-12.mt-40.mb-40
+                        .item-logo
+                            .item-logo__image(style="background-image:url('../img/demo-logo-1.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-2.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-3.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-1.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-2.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-3.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-1.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-2.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-3.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-1.jpg');")
+                            .item-logo__image(style="background-image:url('../img/demo-logo-3.jpg');")
+                    .col-12.text-center
+                        a.btn.btn_action(href="#") Заказать мастер-класс
+        section.content.content_offset-small.bg-light-pink
+            .container
+                .row.justify-content-between.align-items-center.flex-md-column-reverse
+                    .col-5.col-sm-12.col-md-8
+                        img.img-fluid(src="../img/sertificate-gift-2.jpg")
+                    .col-6.col-md-10.col-sm-12.mb-md-40.text-md-center.text-sm-left
+                        p.h1.text-bold Мастер-класс для&nbsp;1&nbsp;человека?
+                        p.mt-40.mt-sm-20 Приобретите 
+                            span.text-bold.text-pink подарочный сертификат 
+                            | на любой курс, мастер-класс или&nbsp;индивидуальный урок.
+                        a.btn.btn_default(href="") Узнать больше
         include chunks/footer.pug
         script(src="./js/jquery.fancybox.min.js")
         script(src="./js/jquery.inputmask.js")
-        script(src="./js/app.min.js") 
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+        
+        script(src="./js/app.min.js")

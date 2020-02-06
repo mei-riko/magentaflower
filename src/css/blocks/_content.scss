@@ -1,15 +1,23 @@
-.bg-light-grey{
-    background: $light-grey;
+.bg-light-grey{background: $light-grey;}
+.bg-light-pink{
+    background: $pink-light;
+    .btn_default{
+        background-color: darken($pink-light, 4%);;
+        &:hover{
+            background: darken($pink-light, 7%);
+        }
+    }
 }
-.bg-pink{
-    background: $pink;
-    color: $white;
-}
-.bg-flowers_01{
-    background: url("../img/bg-demo.jpg") no-repeat center bottom / cover;
-}
-.bg-flowers_02{
-    background: url("../img/bg-result-01.jpg") no-repeat center bottom / cover;
+.bg-pink{background: $pink;color: $white;}
+.bg-flowers_01{background: url("../img/bg-demo.jpg") no-repeat center bottom / cover;}
+.bg-flowers_02{background: url("../img/bg-result-01.jpg") no-repeat center bottom / cover;}
+.bg-corporate{
+    background: $pink url("../img/bg-corporate.jpg") no-repeat center / cover;
+    color:$white;
+    .h1{
+        width: 580px;
+        max-width: 100%;
+    }
 }
 
 .content{

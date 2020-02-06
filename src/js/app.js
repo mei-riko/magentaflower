@@ -54,7 +54,7 @@ $(document).ready(() =>{
         info.find(".info__content__inside[data-info='intro']").removeClass("info__content__inside--hidden-left");
         info.find(".info__content__inside[data-info='details']").addClass("info__content__inside--hidden-right");
     });
-    $(".info .btn").on("click", function(e){
+    $(".info .info__content .btn").on("click", function(e){
         e.preventDefault();
         let title = $(this).data("title");
         let amount = $(".info .info__form .form-input").val() ;
@@ -71,9 +71,44 @@ $(document).ready(() =>{
             $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title );
         }
         // прокрутка к форме
-        $("html, body").animate({scrollTop: $("#getSertificate").offset().top + "px"}, {duration: 500,easing: "swing"});
+        $("html, body").animate({scrollTop: $("#corporateForm").offset().top - 90 + "px"}, {duration: 500,easing: "swing"});
     });
-
+    // Corporate Page
+    $(".preview-link .preview-link__link").on("click", function(e){
+        e.preventDefault();
+        let title = $(this).data("title");
+        // заполнение скрытого поля формы
+        $(".form#corporateForm .form__input_title").val( title );
+        // прокрутка к форме
+        $("html, body").animate({scrollTop: $("#corporateForm").offset().top + "px"}, {duration: 500,easing: "swing"});
+    });
+    // Slider
+    if( $(".slider").length ){
+        // Slider Link
+        $('.slider.slider_link').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        dots: true, 
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+        ]
+        });
+    };
     // Mobile Navbar
     $(".nav-btn#nav").on("click", function(){
         if( !$(this).hasClass("nav-btn--active")){

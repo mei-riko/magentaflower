@@ -12,15 +12,17 @@
 @import "other/button.scss";
 @import "other/footer.scss";
 
-@import "item/list.scss";
+@import "item/icon.scss";
 @import "item/info.scss";
 @import "item/item.scss";
-@import "item/icon.scss";
+@import "item/list.scss";
+@import "item/preview-link.scss";
 
 @import "blocks/content.scss";
-@import "blocks/header-block.scss";
-@import "blocks/programm.scss";
-@import "blocks/portfolio.scss";
-@import "blocks/sertificate.scss";
 @import "blocks/cta-block.scss";
+@import "blocks/header-block.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/programm.scss";
+@import "blocks/sertificate.scss";
+@import "blocks/slider.scss";
 @import "blocks/timetable.scss";

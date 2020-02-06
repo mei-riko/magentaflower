@@ -1,0 +1,35 @@
+.slider{
+    .slick-slide{
+        height: auto;
+        outline: none;
+    }
+    .slick-dots{
+        li{
+            width: 10px;
+            height: 10px;
+            button{
+                width: 100%;
+                height: 100%;
+                background-color: #eed9e5;
+                border-radius: 50%;
+                &:before{
+                    display: none;
+                }
+            }
+            &.slick-active{
+                button{
+                    background-color: $pink;
+                }
+            }
+        }
+    }
+
+    &_link{
+        &.slick-dotted.slick-slider{
+            margin-bottom: 80px;
+        }
+        .slick-dots{
+            bottom: -42px;
+        }
+    }
+}

@@ -25,7 +25,6 @@
             transform: rotate(-180deg);
         }
     }
-
     // Component
     .item-slide__title{
         font-size: 1.2rem;
@@ -58,13 +57,38 @@
         }
     }
 }
+.item-logo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
+    .item-logo__image{
+        width: 180px;
+        height: 100px;
+
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .item-logo{
+        .item-logo__image {
+            width: 30%;
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .item-slide{
         padding-right: 60px!important;
         &_faq {
             padding-top: 20px;
             padding-bottom: 20px;
+        }
+    }
+    .item-logo{
+        .item-logo__image {
+            width: 30%;
         }
     }
 }

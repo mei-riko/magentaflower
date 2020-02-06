@@ -131,7 +131,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         info.find(".info__content__inside[data-info='intro']").removeClass("info__content__inside--hidden-left");
         info.find(".info__content__inside[data-info='details']").addClass("info__content__inside--hidden-right");
     });
-    (0, _jquery2.default)(".info .btn").on("click", function (e) {
+    (0, _jquery2.default)(".info .info__content .btn").on("click", function (e) {
         e.preventDefault();
         var title = (0, _jquery2.default)(this).data("title");
         var amount = (0, _jquery2.default)(".info .info__form .form-input").val();
@@ -148,9 +148,41 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             (0, _jquery2.default)(".cta-block#getSertificate .cta-block__form .form__input_title").val(title);
         }
         // прокрутка к форме
-        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#getSertificate").offset().top + "px" }, { duration: 500, easing: "swing" });
+        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#corporateForm").offset().top - 90 + "px" }, { duration: 500, easing: "swing" });
     });
-
+    // Corporate Page
+    (0, _jquery2.default)(".preview-link .preview-link__link").on("click", function (e) {
+        e.preventDefault();
+        var title = (0, _jquery2.default)(this).data("title");
+        // заполнение скрытого поля формы
+        (0, _jquery2.default)(".form#corporateForm .form__input_title").val(title);
+        // прокрутка к форме
+        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#corporateForm").offset().top + "px" }, { duration: 500, easing: "swing" });
+    });
+    // Slider
+    if ((0, _jquery2.default)(".slider").length) {
+        // Slider Link
+        (0, _jquery2.default)('.slider.slider_link').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false,
+            dots: true,
+            infinite: false,
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    };
     // Mobile Navbar
     (0, _jquery2.default)(".nav-btn#nav").on("click", function () {
         if (!(0, _jquery2.default)(this).hasClass("nav-btn--active")) {

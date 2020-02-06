@@ -15,7 +15,7 @@
       <div class="header">
         <div class="container">
           <div class="row no-gutters">
-            <div class="col-4 col-lg-5">
+            <div class="col-5 col-lg-5">
               <div class="header__line">
                 <ul class="contacts contacts_inline">
                   <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
@@ -23,14 +23,14 @@
                 </ul>
               </div>
               <div class="header__line">
-                <nav class="navbar"><a class="navbar__link" href="#">Курсы</a><a class="navbar__link" href="#">О нас</a><a class="navbar__link" href="#">Портфолио</a></nav>
+                <nav class="navbar"><a class="navbar__link" href="#">Курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Отзывы</a></nav>
               </div>
             </div>
-            <div class="col-4 col-lg-2"><a class="header__logo" href="/"></a></div>
-            <div class="col-4 col-lg-5">
+            <div class="col-2 col-lg-2"><a class="header__logo" href="/"></a></div>
+            <div class="col-5 col-lg-5">
               <div class="header__line text-right"><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов</a></div>
               <div class="header__line">
-                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Блог</a></nav>
+                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Сертификаты</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="#">Блог</a><a class="navbar__link" href="#">Контакты</a></nav>
               </div>
             </div>
           </div>
@@ -63,106 +63,190 @@
         <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
       </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
     </div>
-    <section class="content">
+    <section class="content bg-corporate">
       <div class="container">
-        <h1 class="text-bold mb-40 mb-md-20">Актуальное расписание курсов</h1>
         <div class="row">
-          <div class="col-3 col-sm-12 col-md-5">
-            <div class="timetable-nav">
-              <div class="timetable-nav__item"><a class="timetable-nav__link timetable-nav__link--active" href="#" data-filter="all">Все курсы</a></div>
-              <div class="timetable-nav__item"><a class="timetable-nav__link" href="#" data-filter="basic">Базовые курсы</a></div>
-              <div class="timetable-nav__item"><a class="timetable-nav__link" href="#" data-filter="wedding">Свадебные курсы</a></div>
-              <div class="timetable-nav__item"><a class="timetable-nav__link" href="#" data-filter="seminar">Семинары</a></div>
-              <div class="timetable-nav__item"><a class="timetable-nav__link" href="#" data-filter="masterclass">Мастер-классы</a></div>
-              <div class="timetable-nav__item"><a class="timetable-nav__link timetable-nav__link--disable" href="#" data-filter="archive">Архив курсов</a></div>
-            </div>
+          <div class="col-7 col-md-12 mb-40 mb-sm-20 col-lg-6">
+            <h1 class="h1 text-bold mb-40 mb-md-20">Корпоративные и&nbsp;выездные мастер-классы</h1>
+            <ul class="list list_advantage">
+              <li class="list__item">Расходные материалы включены</li>
+              <li class="list__item">Расходные материалы включены</li>
+              <li class="list__item">Расходные материалы включены</li>
+              <li class="list__item">Расходные материалы включены</li>
+            </ul>
           </div>
-          <div class="col-9 col-sm-12 col-md-7 mt-sm-40">
-            <div class="timetable-row row">
-              <div class="col-4 col-md-12 col-lg-6 timetable-col basic">
-                <div class="timetable-block">
-                  <div class="timetable-img" style="background-image: url('./img/test-01.jpg');"></div>
-                  <div class="timetable-category timetable-category_type-1">Базовые курсы</div>
-                  <div class="timetable-title">Название курса</div>
-                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
-                  <div class="timetable-teacher">Анна Литвинова</div>
-                  <div class="timetable-info">
-                    <div class="timetable-info__item">5 часов теории</div>
-                    <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 1">Записаться</a>
+          <div class="col-5 col-md-12 col-lg-6">
+            <div class="info">
+              <p class="text-bold text-pink text-uppercase">Расчет стоимости мастер-класса </p>
+              <form class="form" id="corporateForm" action="">
+                <input class="form__input form__input_title d-none" placeholder=""/>
+                <div class="form__group">
+                  <div class="form__col col-6 col-sm-12 mb-sm-20">
+                    <div class="form__label">количество человек</div>
+                    <input class="form__input" placeholder="" type="number" value="2"/>
+                  </div>
+                  <div class="form__col col-6 col-sm-12 mb-sm-20">
+                    <div class="form__label">дата мероприятия</div>
+                    <input class="form__input" placeholder="" type="date"/>
+                  </div>
                 </div>
-              </div>
-              <div class="col-4 col-md-12 col-lg-6 timetable-col wedding">
-                <div class="timetable-block">
-                  <div class="timetable-img" style="background-image: url('./img/test-02.jpg');"></div>
-                  <div class="timetable-category timetable-category_type-2">Свадебные курсы</div>
-                  <div class="timetable-title">Название курса</div>
-                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
-                  <div class="timetable-teacher">Анна Литвинова</div>
-                  <div class="timetable-info">
-                    <div class="timetable-info__item">5 часов теории</div>
-                    <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 2">Записаться</a>
+                <input class="form__input form__input_full form__input_name" placeholder="Имя"/>
+                <input class="form__input form__input_full form__input_phone" placeholder="Телефон"/>
+                <button class="btn btn_action mt-20" type="submit">Хочу записаться</button>
+                <div class="form__agree checkbox">
+                  <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+                  <label class="checkbox__label" for="agree">согласен с <a class="checkbox__link" href="/policy.pdf" target="_blank">обработкой персональных данных</a></label>
                 </div>
-              </div>
-              <div class="col-4 col-md-12 col-lg-6 timetable-col seminar">
-                <div class="timetable-block">
-                  <div class="timetable-img" style="background-image: url('./img/test-03.jpg');"></div>
-                  <div class="timetable-category timetable-category_type-3">Семинары</div>
-                  <div class="timetable-title">Название курса</div>
-                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
-                  <div class="timetable-teacher">Анна Литвинова</div>
-                  <div class="timetable-info">
-                    <div class="timetable-info__item">5 часов теории</div>
-                    <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 3">Записаться</a>
-                </div>
-              </div>
-              <div class="col-4 col-md-12 col-lg-6 timetable-col masterclass">
-                <div class="timetable-block mb-0 mb-md-40">
-                  <div class="timetable-img" style="background-image: url('./img/test-04.jpg');"></div>
-                  <div class="timetable-category timetable-category_type-4">Мастер-классы</div>
-                  <div class="timetable-title">Название курса</div>
-                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
-                  <div class="timetable-teacher">Анна Литвинова</div>
-                  <div class="timetable-info">
-                    <div class="timetable-info__item">5 часов теории</div>
-                    <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 4">Записаться</a>
-                </div>
-              </div>
-              <div class="col-4 col-md-12 col-lg-6 timetable-col archive">
-                <div class="timetable-block mb-0">
-                  <div class="timetable-img" style="background-image: url('./img/test-05.jpg');"></div>
-                  <div class="timetable-category timetable-category_type-5">Архив курсов</div>
-                  <div class="timetable-title">Название курса</div>
-                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
-                  <div class="timetable-teacher">Анна Литвинова</div>
-                  <div class="timetable-info">
-                    <div class="timetable-info__item">5 часов теории</div>
-                    <div class="timetable-info__item">12 часов практики</div>
-                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 5">Записаться</a>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="cta-block cta-block_pt" id="ctaForm">
-      <div class="container p-relative">
-        <p class="h1 cta-block__title mt-0">Оставьте заявку на обучение</p>
-        <p class="cta-block__offer">Запишитесь на курс online и&nbsp;<span class="text-bold text-pink">получите скидку 15%!</span></p>
-        <form class="form cta-block__form" action="">
-          <input class="form__input form__input_title d-none" placeholder=""/>
-          <input class="form__input form__input_name" placeholder="Ваше имя"/>
-          <input class="form__input form__input_phone" placeholder="Телефон"/>
-          <button class="btn btn_action" type="submit">Хочу записаться</button>
-          <div class="form__agree checkbox">
-            <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
-            <label class="checkbox__label" for="agree">согласен с <a class="checkbox__link" href="/policy.pdf" target="_blank">обработкой персональных данных</a></label>
+    <section class="content">
+      <div class="container">
+        <h2 class="text-bold text-center">Для кого <span class="text-pink">идеален </span>мастер-класс?</h2>
+        <div class="row text-center mt-40 justify-content-center">
+          <div class="col-4 col-md-8 col-sm-12 mt-20 mt-md-0">
+            <div class="info">
+              <p class="info__title">Коллег по работе</p>
+              <p class="info__intro text-grey">Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.</p><img class="img-fluid mt-40 mt-sm-20" src="../img/pic-1.png"/>
+            </div>
           </div>
-        </form>
+          <div class="col-4 col-md-8 col-sm-12 mt-20">
+            <div class="info">
+              <p class="info__title">Коллег по работе</p>
+              <p class="info__intro text-grey">Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.</p><img class="img-fluid mt-40 mt-sm-20" src="../img/pic-2.png"/>
+            </div>
+          </div>
+          <div class="col-4 col-md-8 col-sm-12 mt-20">
+            <div class="info">
+              <p class="info__title">Коллег по работе</p>
+              <p class="info__intro text-grey">Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.</p><img class="img-fluid mt-40 mt-sm-20" src="../img/pic-3.png"/>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters portfolio">
+          <div class="col-12">
+            <h4 class="text-center text-bold mb-40">Фотоотчеты с мероприятий</h4>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4 portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
+        </div>
+      </div>
+    </section>
+    <section class="content content_offset-small bg-light-pink">
+      <div class="container text-center">
+        <p class="h2 text-bold">Темы мастер-классов от «Мадженты»</p>
+        <p class="text-grey mb-60" style="width:900px;max-width:100%;margin:0 auto;">Eveniet, ut et harum quidem rerum. Ipsam voluptatem, quia non recusandae eligendi. Voluptate velit esse, quam nihil molestiae consequatur, vel illum. Aut reiciendis voluptatibus maiores alias consequatur. Architecto beatae vitae dicta sunt explicabo.</p>
+        <div class="slider slider_link">
+          <div class="slider__item">
+            <div class="preview-link"><img class="preview-link__image" src="../img/pic-4.png"/>
+              <div class="preview-link__content">
+                <p class="preview-link__title">Букет из&nbsp;сухоцветов</p><a class="preview-link__link" href="#" data-title="1">Заказать ></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="preview-link"><img class="preview-link__image" src="../img/pic-5.png"/>
+              <div class="preview-link__content">
+                <p class="preview-link__title">Флорариум</p><a class="preview-link__link" href="#" data-title="2">Заказать ></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="preview-link"><img class="preview-link__image" src="../img/pic-6.png"/>
+              <div class="preview-link__content">
+                <p class="preview-link__title">Букет в&nbsp;шляпной коробке</p><a class="preview-link__link" href="#" data-title="3">Заказать ></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="preview-link"><img class="preview-link__image" src="../img/pic-4.png"/>
+              <div class="preview-link__content">
+                <p class="preview-link__title">Букет из&nbsp;сухоцветов 2</p><a class="preview-link__link" href="#">Заказать ></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="preview-link"><img class="preview-link__image" src="../img/pic-5.png"/>
+              <div class="preview-link__content">
+                <p class="preview-link__title">Флорариум 2</p><a class="preview-link__link" href="#">Заказать ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="preview-info">Подарите незабываемые эмоции сейчас!</p>
+      </div>
+    </section>
+    <section class="content content_offset-small" style="background-color: #fdf8fb;">
+      <div class="container">
+        <p class="h4 text-center text-bold mb-60 mb-md-40">Где провести мастер-класс?</p>
+        <div class="row justify-content-center">
+          <div class="col-3 col-sm-12 mb-20 col-md-4">
+            <div class="icon-col text-center">
+              <div class="icon"></div>
+              <p class="icon-col__title text-bold text-uppercase">В нашей студии</p>
+              <p class="icon-col__content text-grey mb-0">продолжительность 2 часа от 1 до 20 человек</p>
+            </div>
+          </div>
+          <div class="col-3 col-sm-12 mb-20 col-md-4">
+            <div class="icon-col text-center">
+              <div class="icon"></div>
+              <p class="icon-col__title text-bold text-uppercase">В нашей студии</p>
+              <p class="icon-col__content text-grey mb-0">продолжительность 2 часа от 1 до 20 человек</p>
+            </div>
+          </div>
+          <div class="col-3 col-sm-12 col-md-4">
+            <div class="icon-col text-center">
+              <div class="icon"></div>
+              <p class="icon-col__title text-bold text-uppercase">В нашей студии</p>
+              <p class="icon-col__content text-grey mb-0">продолжительность 2 часа от 1 до 20 человек</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-7 col-md-12 text-center">
+            <p class="text-bold h1">Организовали мастер-класс таким компаниям как:</p>
+          </div>
+          <div class="col-12 mt-40 mb-40">
+            <div class="item-logo">
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
+              <div class="item-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
+            </div>
+          </div>
+          <div class="col-12 text-center"><a class="btn btn_action" href="#">Заказать мастер-класс</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="content content_offset-small bg-light-pink">
+      <div class="container">
+        <div class="row justify-content-between align-items-center flex-md-column-reverse">
+          <div class="col-5 col-sm-12 col-md-8"><img class="img-fluid" src="../img/sertificate-gift-2.jpg"/></div>
+          <div class="col-6 col-md-10 col-sm-12 mb-md-40 text-md-center text-sm-left">
+            <p class="h1 text-bold">Мастер-класс для&nbsp;1&nbsp;человека?</p>
+            <p class="mt-40 mt-sm-20">Приобретите <span class="text-bold text-pink">подарочный сертификат </span>на любой курс, мастер-класс или&nbsp;индивидуальный урок.</p><a class="btn btn_default" href="">Узнать больше</a>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -216,6 +300,9 @@
     </footer>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/jquery.inputmask.js"></script>
-    <script src="./js/app.min.js"> </script>
+    <link href="./css/slick.css" rel="stylesheet"/>
+    <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.min.js"></script>
   </body>
 </html>

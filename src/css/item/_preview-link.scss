@@ -1,0 +1,79 @@
+.preview-link{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .preview-link__image{
+        flex: 0 0 100px;
+        max-width: 100px;
+    }
+    .preview-link__content{
+        flex: 0 0 calc(100% - 100px);
+        max-width: calc(100% - 100px);
+        padding: 0 20px;
+        text-align: left;
+    }
+    .preview-link__title{
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    .preview-link__link{
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1;
+        text-transform: uppercase;
+        background-color: $pink;
+        color: $white;
+        padding: 8px 14px;
+        border-radius: 14px;
+        &:hover{
+            background-color: darken($color: $pink, $amount: 10);
+            text-decoration: none;
+        }
+    }
+}
+.preview-info{
+    position: relative;
+
+    background-color: $white;
+    color: $pink;
+    letter-spacing: 1px;
+    display: inline-block;
+
+    padding: 14px 24px;
+    border-radius: 6px;
+
+    &:before{
+        content: '';
+        display: block;
+        width: 60px;
+        height: 70px;
+        position: absolute;
+        top: -40px;
+        left: -70px;
+
+        background: url("../img/arrow-left.png") no-repeat center / contain;
+    }
+    &:after{
+        content: '';
+        display: block;
+        width: 60px;
+        height: 70px;
+        position: absolute;
+        top: -40px;
+        right: -70px;
+
+        background: url("../img/arrow-right.png") no-repeat center / contain;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .preview-info{
+        &:after, &:before{
+            display: none;
+        }
+    }
+}
