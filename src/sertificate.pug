@@ -1,0 +1,156 @@
+html(lang="ru")
+    include chunks/head.pug
+    body.header-top
+        script(src="/js/jquery.min.js")
+        include chunks/header.pug
+        section.content.content_offset-small.bg-pink
+            .container
+                .row.justify-content-between
+                    .col-6.col-sm-12.col-md-10.col-lg-12
+                        h1.content__title.text-bold.mb-40.mb-md-20 Подарочные сертификаты
+                        ul.list.list_advantage.list_advantage_full
+                            li.list__item
+                                span.list__item__title.h6 Преподают профессионалы высокого уровня
+                                span.list__item__content Елена Дмитриева и Татьяна Воронина:<br/>
+                                    | — члены Национальной Гильдии Флористов,<br/>
+                                    | — флористы-дизайнеры с 15-ти летним стажем<br/>
+                                    | — судьи профессиональных конкурсов по системе сертификации&nbsp;FLORINT
+                    .col-6.d-md-none.col-lg-12
+                        .img-sertificate
+                            img.img-fluid(src="../img/sertificate-gift.png")
+                .row.pt-20
+                    .col-6.col-sm-12.col-md-10
+                        ul.list.list_advantage.list_advantage_full
+                            li.list__item
+                                span.list__item__title.h6 Раскрывают творческий потенциал
+                                span.list__item__content Преподаватели имеют 10-летний опыт обучения, проверенные временем уникальные методики. Вы сможете создать шедевры и воссоздавать понравившиеся букеты/композиции.
+                            li.list__item
+                                span.list__item__title.h6 Помогают открыть свой бизнес
+                                span.list__item__content Помогаем нашим выпускникам успешно открыть свой цветочный бизнес как в Санкт-Петербурге, так и в других городах России.
+                    .col-6.col-sm-12.col-md-10
+                        ul.list.list_advantage.list_advantage_full
+                            li.list__item
+                                span.list__item__title.h6 Обучают европейским тенденциям
+                                span.list__item__content Преподаватели участвуют в международных выставках в Европе, отслеживая модные тенденции. А школа приглашает звезд мировой флористики для проведения мастер-классов.
+                            li.list__item
+                                span.list__item__title.h6 Используют свежие цветы и&nbsp;зелень
+                                span.list__item__content Считаем, что научиться составлять букеты и композиции можно только с использованием свежесрезанных цветов и зелени.
+        section.content
+            .container
+                .row.justify-content-around.align-items-center.flex-md-column-reverse
+                    .col-5.col-sm-12.col-md-8.col-lg-5.mt-sm-20.mt-md-40
+                        img.img-fluid(src="../img/sertificate-decor.jpg")
+                    .col-5.col-sm-12.col-md-10.col-lg-7.col-xl-7.mt-sm-20
+                        p.h1.text-bold Кому понравится подарок?
+                        ul.list.list_circle.mt-40.mt-sm-20.mb-40.mb-sm-20
+                            li.list__item Творческим личностям
+                            li.list__item Людям, которые хотят попробовать что-то новое
+                            li.list__item Тем, кто составляет букеты в садик/школу/на дни рождения
+                            li.list__item Работающим флористам, желающим повысить свой профессиональный уровень
+                        a.btn.btn_link(href="#") Научим творить, а не копировать!
+                .row.justify-content-center.text-center
+                    .col-10.col-lg-12
+                        p.content__heading.text-bold.mb-0 Вы можете подарить сертификат на&nbsp;любой&nbsp;мастер-класс в&nbsp;школе «Маджента»
+                .row.justify-content-center
+                    .col-4.col-lg-6.col-md-10.col-sm-12
+                        .info.text-center
+                            p.info__title Полный курс в&nbsp;школе «Маджента»
+                            .info__content
+                                .info__content__inside(data-info="intro")
+                                    .info__content__block
+                                        p.info__intro водопадный и&nbsp;каскадный букеты, аксессуары невесты
+                                        .mt-40
+                                            a.btn.btn_default(href="#" data-title="Полный курс в школе «Маджента»") Заказать
+                                    .info__row.mt-20.justify-content-center
+                                        a.info__link.info__link_show(href="#") Узнать подробнее
+                                .info__content__inside.info__content__inside--hidden-right(data-info="details")
+                                    .info__content__block
+                                        p.info__item
+                                            span.text-grey Количество часов
+                                            span.text-bold 18
+                                        p.info__item
+                                            span.text-grey График занятий
+                                            span.text-bold пн - пт с 10.00 до 18.00
+                                        p.info__item
+                                            span.text-grey Стоимость
+                                            span.text-bold 30 000 р.
+                                    .info__row.mt-20.justify-content-between
+                                        a.info__link.info__link_course(href="#") На страницу курса
+                                        a.info__link.info__link_hide(href="#") Вернуться назад
+                    .col-4.col-lg-6.col-md-10.col-sm-12.mt-md-40.mt-sm-20
+                        .info.text-center
+                            p.info__title Полный курс в&nbsp;школе «Маджента»
+                            .info__content
+                                .info__content__inside(data-info="intro")
+                                    .info__content__block
+                                        p.info__intro водопадный и&nbsp;каскадный букеты, аксессуары невесты
+                                        .mt-40
+                                            a.btn.btn_default(href="#" data-title="Полный курс в школе «Маджента»") Заказать
+                                    .info__row.mt-20.justify-content-center
+                                        a.info__link.info__link_show(href="#") Узнать подробнее
+                                .info__content__inside.info__content__inside--hidden-right(data-info="details")
+                                    .info__content__block
+                                        p.info__item
+                                            span.text-grey Количество часов
+                                            span.text-bold 18
+                                        p.info__item
+                                            span.text-grey График занятий
+                                            span.text-bold пн - пт с 10.00 до 18.00
+                                        p.info__item
+                                            span.text-grey Стоимость
+                                            span.text-bold 30 000 р.
+                                    .info__row.mt-20.justify-content-between
+                                        a.info__link.info__link_course(href="#") На страницу курса
+                                        a.info__link.info__link_hide(href="#") Вернуться назад
+                    .col-4.col-lg-6.col-md-10.col-sm-12.mt-lg-40.mt-md-40.mt-sm-20
+                        .info.text-center
+                            p.info__title Полный курс в&nbsp;школе «Маджента»
+                            .info__content
+                                .info__content__inside(data-info="intro")
+                                    .info__content__block
+                                        p.info__intro водопадный и&nbsp;каскадный букеты, аксессуары невесты
+                                        .mt-40
+                                            a.btn.btn_default(href="#" data-title="Полный курс в школе «Маджента»") Заказать
+                                    .info__row.mt-20.justify-content-center
+                                        a.info__link.info__link_show(href="#") Узнать подробнее
+                                .info__content__inside.info__content__inside--hidden-right(data-info="details")
+                                    .info__content__block
+                                        p.info__item
+                                            span.text-grey Количество часов
+                                            span.text-bold 18
+                                        p.info__item
+                                            span.text-grey График занятий
+                                            span.text-bold пн - пт с 10.00 до 18.00
+                                        p.info__item
+                                            span.text-grey Стоимость
+                                            span.text-bold 30 000 р.
+                                    .info__row.mt-20.justify-content-between
+                                        a.info__link.info__link_course(href="#") На страницу курса
+                                        a.info__link.info__link_hide(href="#") Вернуться назад
+                    .col-12.col-md-10.col-sm-12.mt-40.mt-sm-20
+                        .info
+                            .row.align-items-center
+                                .col-5.col-lg-12
+                                    p.info__title Денежный сертификат
+                                    p.info__intro.mb-0 укажите любую сумму и подарите возможность выбрать курс, мастер-класс или индивидуальный урок
+                                .col-7.col-lg-12
+                                    .info__form
+                                        input.form-input(type="number" placeholder="Впишите сумму подарка")
+                                        a.btn.btn_default.amount(href="#" data-title="Денежный сертификат") Заказать
+        section.cta-block.cta-block_pt#getSertificate
+            .container.p-relative
+                p.h1.cta-block__title.mt-0 Индивидуальный подбор сертификата
+                p.cta-block__offer(style="width: 380px;") Оставьте номер телефона и менеждер поможет завершить оформление сертификата 
+                    span.text-bold.text-pink#sertificateInfo 
+                form.form.cta-block__form(action="")
+                    input.form__input.form__input_title.d-none(placeholder="")
+                    input.form__input.form__input_phone(placeholder="Телефон")
+                    button.btn.btn_action(type="submit") Заказать сертификат
+                    .form__agree.checkbox
+                        input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                        label.checkbox__label(for="agree") согласен с 
+                            a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+        include chunks/footer.pug
+        script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js") 

@@ -1,0 +1,221 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Cources Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
+    <link href="./css/jquery.fancybox.min.css" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+  </head>
+  <body class="header-top">
+    <script src="/js/jquery.min.js"></script>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-4 col-lg-5">
+              <div class="header__line">
+                <ul class="contacts contacts_inline">
+                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+                </ul>
+              </div>
+              <div class="header__line">
+                <nav class="navbar"><a class="navbar__link" href="#">Курсы</a><a class="navbar__link" href="#">О нас</a><a class="navbar__link" href="#">Портфолио</a></nav>
+              </div>
+            </div>
+            <div class="col-4 col-lg-2"><a class="header__logo" href="/"></a></div>
+            <div class="col-4 col-lg-5">
+              <div class="header__line text-right"><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов</a></div>
+              <div class="header__line">
+                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Блог</a></nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile-only">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6"><a class="header__logo" href="/"></a></div>
+            <div class="col-6 text-right">
+              <svg class="nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
+                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar-mobile">
+      <nav class="navbar">
+        <div class="navbar__item"><a class="navbar__link" href="#">Курсы</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">О школе</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Преподаватели</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Портфолио</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Блог</a></div>
+      </nav>
+      <ul class="contacts">
+        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+      </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
+    </div>
+    <section class="content">
+      <div class="container">
+        <h1 class="text-bold mb-40 mb-md-20">Актуальное расписание курсов</h1>
+        <div class="row">
+          <div class="col-3 col-sm-12 col-md-5">
+            <div class="timetable-nav">
+              <div class="timetable-nav__item"><a class="timetable-nav__link timetable-nav__link--active" href="#" data-filter="all">Все курсы</a></div>
+              <div class="timetable-nav__item"><a class="timetable-nav__link" href="#" data-filter="basic">Базовые курсы</a></div>
+              <div class="timetable-nav__item"><a class="timetable-nav__link" href="#" data-filter="wedding">Свадебные курсы</a></div>
+              <div class="timetable-nav__item"><a class="timetable-nav__link" href="#" data-filter="seminar">Семинары</a></div>
+              <div class="timetable-nav__item"><a class="timetable-nav__link" href="#" data-filter="masterclass">Мастер-классы</a></div>
+              <div class="timetable-nav__item"><a class="timetable-nav__link timetable-nav__link--disable" href="#" data-filter="archive">Архив курсов</a></div>
+            </div>
+          </div>
+          <div class="col-9 col-sm-12 col-md-7 mt-sm-40">
+            <div class="timetable-row row">
+              <div class="col-4 col-md-12 col-lg-6 timetable-col basic">
+                <div class="timetable-block">
+                  <div class="timetable-img" style="background-image: url('./img/test-01.jpg');"></div>
+                  <div class="timetable-category timetable-category_type-1">Базовые курсы</div>
+                  <div class="timetable-title">Название курса</div>
+                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
+                  <div class="timetable-teacher">Анна Литвинова</div>
+                  <div class="timetable-info">
+                    <div class="timetable-info__item">5 часов теории</div>
+                    <div class="timetable-info__item">12 часов практики</div>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 1">Записаться</a>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 col-lg-6 timetable-col wedding">
+                <div class="timetable-block">
+                  <div class="timetable-img" style="background-image: url('./img/test-02.jpg');"></div>
+                  <div class="timetable-category timetable-category_type-2">Свадебные курсы</div>
+                  <div class="timetable-title">Название курса</div>
+                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
+                  <div class="timetable-teacher">Анна Литвинова</div>
+                  <div class="timetable-info">
+                    <div class="timetable-info__item">5 часов теории</div>
+                    <div class="timetable-info__item">12 часов практики</div>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 2">Записаться</a>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 col-lg-6 timetable-col seminar">
+                <div class="timetable-block">
+                  <div class="timetable-img" style="background-image: url('./img/test-03.jpg');"></div>
+                  <div class="timetable-category timetable-category_type-3">Семинары</div>
+                  <div class="timetable-title">Название курса</div>
+                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
+                  <div class="timetable-teacher">Анна Литвинова</div>
+                  <div class="timetable-info">
+                    <div class="timetable-info__item">5 часов теории</div>
+                    <div class="timetable-info__item">12 часов практики</div>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 3">Записаться</a>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 col-lg-6 timetable-col masterclass">
+                <div class="timetable-block mb-0 mb-md-40">
+                  <div class="timetable-img" style="background-image: url('./img/test-04.jpg');"></div>
+                  <div class="timetable-category timetable-category_type-4">Мастер-классы</div>
+                  <div class="timetable-title">Название курса</div>
+                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
+                  <div class="timetable-teacher">Анна Литвинова</div>
+                  <div class="timetable-info">
+                    <div class="timetable-info__item">5 часов теории</div>
+                    <div class="timetable-info__item">12 часов практики</div>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 4">Записаться</a>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 col-lg-6 timetable-col archive">
+                <div class="timetable-block mb-0">
+                  <div class="timetable-img" style="background-image: url('./img/test-05.jpg');"></div>
+                  <div class="timetable-category timetable-category_type-5">Архив курсов</div>
+                  <div class="timetable-title">Название курса</div>
+                  <div class="timetable-period">21.11.2019 - 21.01.2020</div>
+                  <div class="timetable-teacher">Анна Литвинова</div>
+                  <div class="timetable-info">
+                    <div class="timetable-info__item">5 часов теории</div>
+                    <div class="timetable-info__item">12 часов практики</div>
+                  </div><a class="timetable-btn scroll" href="#ctaForm" data-title="Курс 5">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-block cta-block_pt" id="ctaForm">
+      <div class="container p-relative">
+        <p class="h1 cta-block__title mt-0">Оставьте заявку на обучение</p>
+        <p class="cta-block__offer">Запишитесь на курс online и&nbsp;<span class="text-bold text-pink">получите скидку 15%!</span></p>
+        <form class="form cta-block__form" action="">
+          <input class="form__input form__input_title d-none" placeholder=""/>
+          <input class="form__input form__input_name" placeholder="Ваше имя"/>
+          <input class="form__input form__input_phone" placeholder="Телефон"/>
+          <button class="btn btn_action" type="submit">Хочу записаться</button>
+          <div class="form__agree checkbox">
+            <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+            <label class="checkbox__label" for="agree">согласен с <a class="checkbox__link" href="/policy.pdf" target="_blank">обработкой персональных данных</a></label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer__logo"></div>
+            <p class="footer__content text-small mb-0">Санкт-Петербург, Пр. Юрия Гагарина, 7, пом. 25 ЖК "Космос", справа от центрального входа.</p>
+          </div>
+          <div class="col-3 col-sm-12 col-md-6 col-lg-4 mt-sm-20">
+            <p class="text-bold">Контакты</p>
+            <ul class="contacts">
+              <li class="contacts__item contacts__item_phone"> <a class="footer__link" href="tel:88001112233">8 (812) 317-76-18</a></li>
+              <li class="contacts__item contacts__item_phone"> <a class="footer__link" href="tel:88001112233">8 (921) 938-09-01</a></li>
+              <li class="contacts__item contacts__item_email"> <a class="footer__link" href="mailto:88001112233">info@magentaflower.ru</a></li>
+            </ul>
+            <ul class="contacts contacts_inline">
+              <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
+              <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
+              <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
+            </ul>
+          </div>
+          <div class="col-3 col-sm-12 col-md-6 col-lg-2 mt-md-20">
+            <p class="text-bold">Курсы</p>
+            <ul class="list list_circle">
+              <li class="list__item"><a href="#">Базовый</a></li>
+              <li class="list__item"><a href="#">Базовый</a></li>
+              <li class="list__item"><a href="#">Базовый</a></li>
+              <li class="list__item"><a href="#">Базовый</a></li>
+            </ul>
+          </div>
+          <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-md-20">
+            <p class="text-bold">Блог</p>
+            <ul class="list list_circle">
+              <li class="list__item"><a href="#">Хочу быть флористом</a></li>
+              <li class="list__item"><a href="#">Выбираем школу флористики</a></li>
+              <li class="list__item"><a href="#">Мастер-класс по флористике</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-20">
+          <div class="col-7 col-sm-12 col-md-6">
+            <p class="footer__content text-small"><a href="#">Часто задаваемые вопросы</a><br><a href="#">Сведения об образовательной организации</a></p>
+            <p class="footer__content text-small mb-0">Сайт ЧОУ ДПО «АФД «Маджента» составлен согласно требованиям официального сайта Министерства образования и науки Российской Федерации в сети «Интернет» и минобрнауки.рф</p>
+          </div>
+          <div class="col-5 col-sm-12 col-md-6">
+            <p class="footer__content text-right text-md-left text-small mb-0">© 2019. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/jquery.inputmask.js"></script>
+    <script src="./js/app.min.js"> </script>
+  </body>
+</html>

@@ -12,9 +12,11 @@
 @import "other/button.scss";
 @import "other/footer.scss";
 
-@import "blocks/list.scss";
-@import "blocks/item.scss";
-@import "blocks/icon.scss";
+@import "item/list.scss";
+@import "item/info.scss";
+@import "item/item.scss";
+@import "item/icon.scss";
+
 @import "blocks/content.scss";
 @import "blocks/header-block.scss";
 @import "blocks/programm.scss";

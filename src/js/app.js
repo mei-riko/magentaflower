@@ -34,8 +34,44 @@ $(document).ready(() =>{
         }
     });
 
+    // Timetable Page
     $(".timetable-btn").on("click", function(){
         $('.cta-block .cta-block__form .form__input_title').val( $(this).data("title") );
+    });
+
+    // Sertificate Page
+    $(".info__link.info__link_show").on("click", function(e){
+        e.preventDefault();
+        let info = $(this).closest(".info");
+        info.addClass("info--active");
+        info.find(".info__content__inside[data-info='intro']").addClass("info__content__inside--hidden-left");
+        info.find(".info__content__inside[data-info='details']").removeClass("info__content__inside--hidden-right");
+    });
+    $(".info__link.info__link_hide").on("click", function(e){
+        e.preventDefault();
+        let info = $(this).closest(".info");
+        info.removeClass("info--active");
+        info.find(".info__content__inside[data-info='intro']").removeClass("info__content__inside--hidden-left");
+        info.find(".info__content__inside[data-info='details']").addClass("info__content__inside--hidden-right");
+    });
+    $(".info .btn").on("click", function(e){
+        e.preventDefault();
+        let title = $(this).data("title");
+        let amount = $(".info .info__form .form-input").val() ;
+
+        if( $(this).hasClass("amount") && amount != ''){
+            // заполнение скрытого поля формы
+            $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title + " на сумму " + amount);
+            // дополнение описания CTA блока
+            $("#sertificateInfo").html( title + " на сумму " + amount);
+        }else{
+            // дополнение описания CTA блока
+            $("#sertificateInfo").html( title );
+            // заполнение скрытого поля формы
+            $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title );
+        }
+        // прокрутка к форме
+        $("html, body").animate({scrollTop: $("#getSertificate").offset().top + "px"}, {duration: 500,easing: "swing"});
     });
 
     // Mobile Navbar

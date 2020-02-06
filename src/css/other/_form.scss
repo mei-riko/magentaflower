@@ -6,7 +6,7 @@
 
         padding: 14px 0;
 
-        & + .form__input{
+        &:not(.d-none) + .form__input{
             margin-top: 20px;
         }
         & + .btn{
@@ -25,6 +25,13 @@
             background: url("../img/telephone.svg") no-repeat left center / 20px;
         }
     }
+}
+.form-input{
+    border: 1px solid #b8b8b8;
+    padding: 18px 30px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
 }
 .checkbox{
     display: flex;

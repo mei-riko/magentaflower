@@ -8,7 +8,7 @@
     .navbar__link{
         text-transform: uppercase;
         & + .navbar__link{
-            margin-left: 40px;
+            margin-left: 34px;
         }
         &:hover{
             text-decoration: none;
@@ -64,10 +64,23 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .navbar{
+        flex-wrap: wrap;
         .navbar__link{
             text-transform: none;
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
             & + .navbar__link{
-                margin-left: 20px;
+                margin-left: 0;
+            }
+        }
+        &_right{
+            .navbar__link{
+                margin-right: 0;
+                & + .navbar__link{
+                    margin-left: 20px;
+                }
             }
         }
     }

@@ -1,6 +1,10 @@
 .bg-light-grey{
     background: $light-grey;
 }
+.bg-pink{
+    background: $pink;
+    color: $white;
+}
 .bg-flowers_01{
     background: url("../img/bg-demo.jpg") no-repeat center bottom / cover;
 }
@@ -9,15 +13,26 @@
 }
 
 .content{
-    padding: 90px 0;
-    &_inside{
-        padding: 60px;
+    padding: 90px 0;   
+    .content__title{
+        font-size: 3.5rem;
+    }
+    .content__heading{
+        font-size: 2.75rem;
+        line-height: 1.2;
+        font-family: 'Noto Serif', serif;
+    }
+    .text-top{
+        padding-top: 10px;
     }
     .row + .row{
         padding-top: 90px;
     }
-    .text-top{
-        padding-top: 10px;
+    &_inside{
+        padding: 60px;
+    }
+    &_offset-small{
+        padding: 60px 0;
     }
 }
 .subtitle{
@@ -25,6 +40,12 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+}
+.img-sertificate{
+    .img-fluid{
+        max-width: calc(100% - 60px);
+        margin-right: 0;
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
@@ -34,21 +55,44 @@
         background-color: $light-grey;
     }
     .content{
-        &.pt-lg-0{padding-top: 0;}
         &.bg-flowers_01{padding-bottom: 160px;}
+        .content__title{
+            font-size: 2.5rem;
+        }
+        .content__heading{
+            font-size: 1.75rem;
+        }
+    }
+    .img-sertificate{
+        .img-fluid{
+            margin-left: 60px;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .content{
         padding: 40px 0;
-        &.pt-md-0{padding-top: 0;}
+        .content__title{
+            font-size: 1.75rem;
+        }
+        .content__heading{
+            font-size: 1.5rem;
+        }
+
+        .row + .row{
+            padding-top: 60px;
+        }
+    }
+    .img-sertificate{
+        .img-fluid{
+            margin: 0 auto;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .content{
         .row + .row{
-            padding-top: 60px;
+            padding-top: 40px;
         }
-        &.pt-sm-0{padding-top: 0;}
     }
 }

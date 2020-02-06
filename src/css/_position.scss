@@ -22,6 +22,11 @@
     -ms-flex-pack: justify!important;
     justify-content: space-between!important
 }
+.justify-content-around {
+    -webkit-justify-content: space-around!important;
+    -ms-flex-pack: distribute!important;
+    justify-content: space-around!important;
+}
 
 .align-items-start {
     -webkit-box-align: start!important;

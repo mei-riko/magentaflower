@@ -111,8 +111,44 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         }
     });
 
+    // Timetable Page
     (0, _jquery2.default)(".timetable-btn").on("click", function () {
         (0, _jquery2.default)('.cta-block .cta-block__form .form__input_title').val((0, _jquery2.default)(this).data("title"));
+    });
+
+    // Sertificate Page
+    (0, _jquery2.default)(".info__link.info__link_show").on("click", function (e) {
+        e.preventDefault();
+        var info = (0, _jquery2.default)(this).closest(".info");
+        info.addClass("info--active");
+        info.find(".info__content__inside[data-info='intro']").addClass("info__content__inside--hidden-left");
+        info.find(".info__content__inside[data-info='details']").removeClass("info__content__inside--hidden-right");
+    });
+    (0, _jquery2.default)(".info__link.info__link_hide").on("click", function (e) {
+        e.preventDefault();
+        var info = (0, _jquery2.default)(this).closest(".info");
+        info.removeClass("info--active");
+        info.find(".info__content__inside[data-info='intro']").removeClass("info__content__inside--hidden-left");
+        info.find(".info__content__inside[data-info='details']").addClass("info__content__inside--hidden-right");
+    });
+    (0, _jquery2.default)(".info .btn").on("click", function (e) {
+        e.preventDefault();
+        var title = (0, _jquery2.default)(this).data("title");
+        var amount = (0, _jquery2.default)(".info .info__form .form-input").val();
+
+        if ((0, _jquery2.default)(this).hasClass("amount") && amount != '') {
+            // заполнение скрытого поля формы
+            (0, _jquery2.default)(".cta-block#getSertificate .cta-block__form .form__input_title").val(title + " на сумму " + amount);
+            // дополнение описания CTA блока
+            (0, _jquery2.default)("#sertificateInfo").html(title + " на сумму " + amount);
+        } else {
+            // дополнение описания CTA блока
+            (0, _jquery2.default)("#sertificateInfo").html(title);
+            // заполнение скрытого поля формы
+            (0, _jquery2.default)(".cta-block#getSertificate .cta-block__form .form__input_title").val(title);
+        }
+        // прокрутка к форме
+        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#getSertificate").offset().top + "px" }, { duration: 500, easing: "swing" });
     });
 
     // Mobile Navbar

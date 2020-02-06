@@ -6,8 +6,8 @@
     &_circle{
         .list__item{
             position: relative;
-            padding-left: 16px;
-            line-height: 1.2;
+            padding-left: 20px;
+            line-height: 1.4;
             &:before{
                 content:'';
                 display: block;
@@ -16,7 +16,7 @@
                 border-radius: 3px;
                 position: absolute;
                 left: 0;
-                top: 9px;
+                top: 6px;
                 background: $pink;
             }
 
@@ -36,6 +36,7 @@
 
             width: 300px;
             max-width: 100%;
+
             &:before{
                 content:'';
                 display: block;
@@ -56,6 +57,26 @@
                 left: 12px;
                 top: calc(50% - 4px);
                 background: $pink;
+            }
+
+            .list__item__title{
+                display: block;
+                font-weight: bold;
+                margin-bottom: 12px;
+            }
+            .list__item__content{
+                color: #ffdceb;
+            }
+        }
+        &_full{
+            .list__item{
+                width: 100%;
+                &:before{
+                    top: 10px;
+                }
+                &:after{
+                    top: 22px;
+                }
             }
         }
     }
