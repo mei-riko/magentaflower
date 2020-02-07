@@ -1361,7 +1361,7 @@ a.link-inverse:hover {
 }
 
 .navbar .navbar__link + .navbar__link {
-  margin-left: 34px;
+  margin-left: 30px;
 }
 
 .navbar .navbar__link:hover {
@@ -1419,7 +1419,7 @@ a.link-inverse:hover {
 
 @media all and (max-width: 1400px) {
   .navbar .navbar__link + .navbar__link {
-    margin-left: 25px;
+    margin-left: 24px;
   }
 }
 
@@ -1815,6 +1815,10 @@ a.link-inverse:hover {
   color: #dd5287;
 }
 
+.info_full {
+  height: 100%;
+}
+
 .info .info__title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -1963,6 +1967,9 @@ a.link-inverse:hover {
   .info .info__form {
     margin-top: 20px;
   }
+  .info .info__content {
+    height: 180px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -1983,6 +1990,9 @@ a.link-inverse:hover {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .info .info__content {
+    height: auto;
   }
 }
 
