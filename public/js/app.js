@@ -134,21 +134,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     (0, _jquery2.default)(".info .info__content .btn").on("click", function (e) {
         e.preventDefault();
         var title = (0, _jquery2.default)(this).data("title");
+
+        // дополнение описания CTA блока
+        (0, _jquery2.default)("#sertificateInfo").html(title);
+        // заполнение скрытого поля формы
+        (0, _jquery2.default)(".cta-block#getSertificate .cta-block__form .form__input_title").val(title);
+        // прокрутка к форме
+        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#getSertificate").offset().top + "px" }, { duration: 500, easing: "swing" });
+    });
+    (0, _jquery2.default)(".info .btn.amount").on("click", function (e) {
+        e.preventDefault();
+        var title = (0, _jquery2.default)(this).data("title");
         var amount = (0, _jquery2.default)(".info .info__form .form-input").val();
 
-        if ((0, _jquery2.default)(this).hasClass("amount") && amount != '') {
+        if (amount != '') {
             // заполнение скрытого поля формы
             (0, _jquery2.default)(".cta-block#getSertificate .cta-block__form .form__input_title").val(title + " на сумму " + amount);
             // дополнение описания CTA блока
             (0, _jquery2.default)("#sertificateInfo").html(title + " на сумму " + amount);
         } else {
-            // дополнение описания CTA блока
-            (0, _jquery2.default)("#sertificateInfo").html(title);
             // заполнение скрытого поля формы
             (0, _jquery2.default)(".cta-block#getSertificate .cta-block__form .form__input_title").val(title);
+            // дополнение описания CTA блока
+            (0, _jquery2.default)("#sertificateInfo").html(title);
         }
         // прокрутка к форме
-        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#corporateForm").offset().top - 90 + "px" }, { duration: 500, easing: "swing" });
+        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#getSertificate").offset().top + "px" }, { duration: 500, easing: "swing" });
     });
     // Corporate Page
     (0, _jquery2.default)(".preview-link .preview-link__link").on("click", function (e) {
@@ -157,7 +168,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         // заполнение скрытого поля формы
         (0, _jquery2.default)(".form#corporateForm .form__input_title").val(title);
         // прокрутка к форме
-        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#corporateForm").offset().top + "px" }, { duration: 500, easing: "swing" });
+        (0, _jquery2.default)("html, body").animate({ scrollTop: (0, _jquery2.default)("#corporateForm").offset().top - 100 + "px" }, { duration: 500, easing: "swing" });
     });
     // Slider
     if ((0, _jquery2.default)(".slider").length) {

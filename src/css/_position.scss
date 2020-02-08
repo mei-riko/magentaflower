@@ -46,12 +46,25 @@
     align-items: center!important
 }
 
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .flex-md-column-reverse {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: reverse !important;
+        -webkit-flex-direction: column-reverse !important;
+            -ms-flex-direction: column-reverse !important;
+                flex-direction: column-reverse !important;
+    }
+    .flex-md-column-reverse > * {
+        flex: 1;
+    }
+}
 @media (max-width: map-get($grid-breakpoints, 'sm')) {
     .flex-sm-column-reverse {
         -webkit-box-orient: vertical!important;
         -webkit-box-direction: reverse!important;
-        -ms-flex-direction: column-reverse!important;
-        flex-direction: column-reverse!important
+        -webkit-flex-direction: column-reverse !important;
+            -ms-flex-direction: column-reverse!important;
+                flex-direction: column-reverse!important
     }
     .flex-sm-column-reverse > * {
         flex: 1;

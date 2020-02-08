@@ -57,21 +57,32 @@ $(document).ready(() =>{
     $(".info .info__content .btn").on("click", function(e){
         e.preventDefault();
         let title = $(this).data("title");
+
+        // дополнение описания CTA блока
+        $("#sertificateInfo").html( title );
+        // заполнение скрытого поля формы
+        $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title );
+        // прокрутка к форме
+        $("html, body").animate({scrollTop: $("#getSertificate").offset().top + "px"}, {duration: 500,easing: "swing"});
+    });
+    $(".info .btn.amount").on("click", function(e){
+        e.preventDefault();
+        let title = $(this).data("title");
         let amount = $(".info .info__form .form-input").val() ;
 
-        if( $(this).hasClass("amount") && amount != ''){
+        if( amount != ''){
             // заполнение скрытого поля формы
             $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title + " на сумму " + amount);
             // дополнение описания CTA блока
             $("#sertificateInfo").html( title + " на сумму " + amount);
         }else{
-            // дополнение описания CTA блока
-            $("#sertificateInfo").html( title );
             // заполнение скрытого поля формы
             $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title );
+            // дополнение описания CTA блока
+            $("#sertificateInfo").html( title );
         }
         // прокрутка к форме
-        $("html, body").animate({scrollTop: $("#corporateForm").offset().top - 90 + "px"}, {duration: 500,easing: "swing"});
+        $("html, body").animate({scrollTop: $("#getSertificate").offset().top + "px"}, {duration: 500,easing: "swing"});
     });
     // Corporate Page
     $(".preview-link .preview-link__link").on("click", function(e){
@@ -80,7 +91,7 @@ $(document).ready(() =>{
         // заполнение скрытого поля формы
         $(".form#corporateForm .form__input_title").val( title );
         // прокрутка к форме
-        $("html, body").animate({scrollTop: $("#corporateForm").offset().top + "px"}, {duration: 500,easing: "swing"});
+        $("html, body").animate({scrollTop: $("#corporateForm").offset().top - 100 + "px"}, {duration: 500,easing: "swing"});
     });
     // Slider
     if( $(".slider").length ){
