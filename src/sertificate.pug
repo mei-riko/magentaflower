@@ -137,19 +137,28 @@ html(lang="ru")
                                     .info__form
                                         input.form-input(type="number" placeholder="Впишите сумму подарка")
                                         a.btn.btn_default.amount(href="#" data-title="Денежный сертификат") Заказать
-        section.cta-block.cta-block_pt#getSertificate
-            .container.p-relative
-                p.h1.cta-block__title.mt-0 Индивидуальный подбор сертификата
-                p.cta-block__offer(style="width: 380px;") Оставьте номер телефона и менеждер поможет завершить оформление сертификата 
-                    span.text-bold.text-pink#sertificateInfo 
-                form.form.cta-block__form(action="")
-                    input.form__input.form__input_title.d-none(placeholder="")
-                    input.form__input.form__input_phone(placeholder="Телефон")
-                    button.btn.btn_action(type="submit") Заказать сертификат
-                    .form__agree.checkbox
-                        input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
-                        label.checkbox__label(for="agree") согласен с 
-                            a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+        //- section.cta-block.cta-block_pt#getSertificate
+        //-     .container.p-relative
+        //-         p.h1.cta-block__title.mt-0 Индивидуальный подбор сертификата
+        //-         p.cta-block__offer(style="width: 380px;") Оставьте номер телефона и менеждер поможет завершить оформление сертификата 
+        //-             span.text-bold.text-pink#sertificateInfo 
+        //-         form.form.cta-block__form(action="")
+        //-             input.form__input.form__input_title.d-none(placeholder="")
+        //-             input.form__input.form__input_phone(placeholder="Телефон")
+        //-             button.btn.btn_action(type="submit") Заказать сертификат
+        //-             .form__agree.checkbox
+        //-                 input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+        //-                 label.checkbox__label(for="agree") согласен с 
+        //-                     a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+        section.info-block
+            .container.text-center
+                .row.justify-content-center
+                    .col-9.col-md-12
+                        p.h2.text-bold.mb-40.mb-md-20 Затрудняетесь с выбором нужного курса?
+                    .col-7.col-md-12
+                        p Не можете выбрать курс для своего уровня? Побеседуйте с нашими преподавателями, чтобы определить свои сильные и слабые стороны.
+                        p.mb-0
+                            a.btn.btn_action(href="#") Нужна консультация
         include chunks/footer.pug
         script(src="./js/jquery.fancybox.min.js")
         script(src="./js/jquery.inputmask.js")

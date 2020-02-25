@@ -1311,16 +1311,17 @@ a.link-inverse:hover {
 }
 
 .header-btn {
-  background: #3d3e40;
-  color: #ffffff;
+  color: #dd5287;
+  background-color: #f9eaf1;
   padding: 4px 15px !important;
   font-size: 12px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .header-btn:hover {
-  background: #726d72;
-  color: #ffffff;
+  color: #d3296a;
+  background: #f3d6e4;
 }
 
 @media all and (max-width: 992px) {
@@ -2614,6 +2615,19 @@ a.link-inverse:hover {
   }
   .cta-block .cta-block__title {
     margin: 0 0 2rem;
+  }
+}
+
+.info-block {
+  padding: 60px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#feeef4), to(#ffd9d2));
+  background: -o-linear-gradient(#feeef4, #ffd9d2);
+  background: linear-gradient(#feeef4, #ffd9d2);
+}
+
+@media all and (max-width: 768px) {
+  .info-block {
+    padding: 40px 0;
   }
 }
 

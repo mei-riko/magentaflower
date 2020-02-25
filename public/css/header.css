@@ -1,5 +1,6 @@
 header .container,
-footer .container {
+footer .container,
+.info-block .container {
   width: 100%;
   max-width: 1200px;
   padding-right: 40px;
@@ -9,7 +10,8 @@ footer .container {
 }
 
 header .row,
-footer .row {
+footer .row,
+.info-block .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,7 +358,8 @@ footer .row {
 
 @media all and (max-width: 576px) {
   header .container,
-  footer .container {
+  footer .container,
+  .info-block .container {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -495,16 +498,17 @@ footer .row {
 }
 
 .header-btn {
-  background: #3d3e40;
-  color: #ffffff;
+  color: #dd5287;
+  background-color: #f9eaf1;
   padding: 4px 15px !important;
   font-size: 12px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .header-btn:hover {
-  background: #726d72;
-  color: #ffffff;
+  color: #d3296a;
+  background: #f3d6e4;
 }
 
 @media all and (max-width: 992px) {
@@ -1034,12 +1038,72 @@ footer.footer {
   position: unset;
 }
 
+.info-block {
+  padding: 60px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#feeef4), to(#ffd9d2));
+  background: -o-linear-gradient(#feeef4, #ffd9d2);
+  background: linear-gradient(#feeef4, #ffd9d2);
+  color: #000;
+  text-align: center;
+}
+
+.info-block .h2, .info-block h2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 35px;
+  color: #000;
+}
+
+.info-block p {
+  font-family: "Noto Sans";
+  line-height: 1.6;
+  color: #000;
+  margin-bottom: 1.25rem;
+}
+
+.info-block .btn {
+  border: none;
+  padding: 18px 40px;
+  border-radius: 30px;
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.info-block .btn_action {
+  background: #dd5287;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .text-right {
   text-align: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-bold {
   font-weight: 700;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 992px) {
@@ -1057,6 +1121,15 @@ footer.footer {
 @media (max-width: 768px) {
   .mt-md-20 {
     margin-top: 20px;
+  }
+  .mb-md-20 {
+    margin-bottom: 20px;
+  }
+  .info-block {
+    padding: 40px 0;
+  }
+  .info-block .h2, .info-block h2 {
+    font-size: 26px;
   }
 }
 

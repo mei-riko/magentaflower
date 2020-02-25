@@ -133,12 +133,59 @@ footer.footer{
     position: unset;
 }
 
+.info-block{
+    padding: 60px 0;
+    background: linear-gradient(#feeef4, #ffd9d2);
+    color: #000;
+    text-align: center;
+    .h2, h2 {
+        font-family: 'Noto Serif', serif;
+        font-size: 35px;
+        color: #000;
+    }
+    p{
+        font-family: "Noto Sans";
+        line-height: 1.6;
+        color: #000;
+        margin-bottom: 1.25rem;
+    }
+    .btn {
+        border: none;
+        padding: 18px 40px;
+        border-radius: 30px;
+        outline: none;
+        text-align: center;
+        display: inline-block;
+        max-width: 100%;
+
+        cursor: pointer;
+        transition: .4s;
+        &_action{
+            background: #dd5287;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+
+}
+
 .text-right{
     text-align: right;
+}
+.text-center{
+    text-align: center;
 }
 .text-bold{
     font-weight: 700;
 }
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.mb-0{margin-bottom: 0px;}
+.mb-40{margin-bottom: 40px;}
+
 @media (max-width: 992px){
     .header .header__logo {
         background: url('/manager/templates/magenta2019/img/logo.svg') no-repeat center/contain!important;
@@ -151,8 +198,13 @@ footer.footer{
     }
 }
 @media (max-width: 768px){
-    .mt-md-20 {
-        margin-top: 20px;
+    .mt-md-20 {margin-top: 20px;}
+    .mb-md-20 {margin-bottom: 20px;}
+    .info-block{
+        padding: 40px 0;
+        .h2, h2{
+            font-size: 26px;
+        }
     }
 }
 @media (max-width: 576px){
