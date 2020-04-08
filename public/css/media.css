@@ -50,10 +50,13 @@
     border-radius: 4px;
     top: 10px;
   }
+  .cta-block .cta-block__title {
+    width: 640px;
+  }
   .cta-block .cta-block__offer,
   .cta-block p.cta-block__offer {
     font-size: 1.25em;
-    width: 320px;
+    width: 420px !important;
   }
   .info .info__content {
     height: 220px;
