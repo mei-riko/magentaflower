@@ -7,7 +7,7 @@ header .btn{
     cursor: pointer;
     transition: .4s;
     
-    &:hover{
+    &:hover,&:focus{
         text-decoration: none;
         outline: none;
     }

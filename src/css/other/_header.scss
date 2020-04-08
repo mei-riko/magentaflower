@@ -1,5 +1,13 @@
 .header{
-    padding: 20px 0;    
+    padding: 20px 0 0;    
+
+    .header__row{
+        flex-wrap: nowrap;
+    }
+    .header__col{
+        flex: 0 0 calc( 50% - 115px);
+        max-width: calc( 50% - 115px);
+    }
     .header__line{
         & + .header__line{
             margin-top: 20px;
@@ -7,9 +15,11 @@
     }
     .header__logo{
         background: url("../img/logo.svg") no-repeat center 0px/ contain;
-        max-width: 100%;
-        width: calc(100% - 20px);
-        height: 100px;
+        
+        flex: 0 0 230px;
+        max-width: 230px;
+
+        height: 140px;
         margin: 0 auto;
         display: block;
     }
@@ -26,15 +36,16 @@
 .header-top{
     .header{
         position: relative;
+        z-index: 1;
         &:after{
             display: block;
             content: '';
             width: 100%;
-            height: 32px;
+            height: 52px;
 
             position: absolute;
             left: 0;
-            bottom: 0;
+            bottom: -10px;
 
             background: linear-gradient(#feeef4, #ffd9d2);
             z-index: -1;
@@ -52,7 +63,7 @@
     .header__logo{
         background: url("../img/logo.svg") no-repeat left center / contain;
         width: 100%;
-        height: 60px;
+        height: 120px;
     }
 }
 .header-btn{
@@ -67,24 +78,28 @@
         background: darken($pink-light, 5%);
     }
 }
-
-@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+@media all and (max-width: 1200px){
     .header{
         .header__logo{
-            width: 100%;
-            height: 80px;
+            flex: 0 0 180px;
+            max-width: 180px;
+            height: 110px;
         }
-    }
-    .header-top{
-        .header{
-            &:after{
-                height: 60px;
+        .header__col{
+            flex: 0 0 calc( 50% - 90px);
+            max-width: calc( 50% - 90px);
+            .navbar .navbar__link + .navbar__link {
+                margin-left: 14px;
+            }
+        }
+        &-top{
+            .header:after{
+                height: 12px;
             }
         }
     }
-
 }
-@media all and (max-width: map-get($grid-breakpoints, 'md')){
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .header{
         display: none;
     }

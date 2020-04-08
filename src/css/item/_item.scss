@@ -62,6 +62,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+
     .item-logo__image{
         width: 180px;
         height: 100px;

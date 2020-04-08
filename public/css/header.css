@@ -438,7 +438,19 @@ footer .row,
 }
 
 .header {
-  padding: 20px 0;
+  padding: 20px 0 0;
+}
+
+.header .header__row {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.header .header__col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc( 50% - 115px);
+  flex: 0 0 calc( 50% - 115px);
+  max-width: calc( 50% - 115px);
 }
 
 .header .header__line + .header__line {
@@ -447,9 +459,11 @@ footer .row,
 
 .header .header__logo {
   background: url("../img/logo.svg") no-repeat center 0px/contain;
-  max-width: 100%;
-  width: calc(100% - 20px);
-  height: 100px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 230px;
+  flex: 0 0 230px;
+  max-width: 230px;
+  height: 140px;
   margin: 0 auto;
   display: block;
 }
@@ -464,16 +478,17 @@ footer .row,
 
 .header-top .header {
   position: relative;
+  z-index: 1;
 }
 
 .header-top .header:after {
   display: block;
   content: '';
   width: 100%;
-  height: 32px;
+  height: 52px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#feeef4), to(#ffd9d2));
   background: -o-linear-gradient(#feeef4, #ffd9d2);
   background: linear-gradient(#feeef4, #ffd9d2);
@@ -494,7 +509,7 @@ footer .row,
 .header-mobile-only .header__logo {
   background: url("../img/logo.svg") no-repeat left center/contain;
   width: 100%;
-  height: 60px;
+  height: 120px;
 }
 
 .header-btn {
@@ -511,17 +526,29 @@ footer .row,
   background: #f3d6e4;
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 1200px) {
   .header .header__logo {
-    width: 100%;
-    height: 80px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 180px;
+    flex: 0 0 180px;
+    max-width: 180px;
+    height: 110px;
+  }
+  .header .header__col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc( 50% - 90px);
+    flex: 0 0 calc( 50% - 90px);
+    max-width: calc( 50% - 90px);
+  }
+  .header .header__col .navbar .navbar__link + .navbar__link {
+    margin-left: 14px;
   }
   .header-top .header:after {
-    height: 60px;
+    height: 12px;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 992px) {
   .header {
     display: none;
   }
@@ -604,6 +631,7 @@ footer .row,
 }
 
 .navbar .navbar__link {
+  white-space: nowrap;
   text-transform: uppercase;
 }
 
@@ -705,7 +733,7 @@ header .btn {
   transition: .4s;
 }
 
-header .btn:hover {
+header .btn:hover, header .btn:focus {
   text-decoration: none;
   outline: none;
 }
@@ -886,6 +914,84 @@ header .btn_action:hover {
     padding-top: 8px;
     padding-bottom: 8px;
   }
+}
+
+.jGrowl#jGrowl {
+  font-family: "Noto Sans";
+  top: 50%;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 99;
+}
+
+.jGrowl#jGrowl .jGrowl-notification {
+  position: relative;
+  width: 275px;
+  max-width: 100%;
+  padding: 30px;
+  border: 1px solid #d3d3d3;
+  -webkit-box-shadow: 0px 0px 15px 0px #f0d5dd;
+  box-shadow: 0px 0px 15px 0px #f0d5dd;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #3d3e40;
+}
+
+.jGrowl#jGrowl .jGrowl-notification .jGrowl-close {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateX(50%) translateY(-50%);
+  -ms-transform: translateX(50%) translateY(-50%);
+  transform: translateX(50%) translateY(-50%);
+  font-size: 0px;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  background: #dd5287 url("../img/close.svg") no-repeat center/12px;
+  color: #fff;
+  outline: 0;
+}
+
+.jGrowl#jGrowl .jGrowl-notification .jGrowl-message {
+  font-weight: 700;
+}
+
+.jGrowl#jGrowl .jGrowl-notification.af-message-success {
+  background-color: #ffffff !important;
+  color: #dd5287;
+  border-color: #d3d3d3;
+}
+
+.jGrowl#jGrowl .jGrowl-notification.af-message-success .jGrowl-close {
+  background-color: #dd5287;
+}
+
+.jGrowl#jGrowl .jGrowl-notification.af-message-error {
+  background-color: #ffffff !important;
+  color: #ef081e;
+  border-color: #ef081e;
+}
+
+.jGrowl#jGrowl .jGrowl-notification.af-message-error .jGrowl-close {
+  background-color: #ef081e;
+}
+
+.jGrowl#jGrowl .jGrowl-notification.af-message-info {
+  background-color: #ffffff !important;
+  color: #3d3e40;
+  border-color: #d3d3d3;
+}
+
+.jGrowl#jGrowl .jGrowl-notification.af-message-info .jGrowl-close {
+  background-color: #726d72;
+}
+
+.ajax_form .error {
+  color: #ef081e;
 }
 
 body {

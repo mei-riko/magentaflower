@@ -6,6 +6,7 @@
     }
 
     .navbar__link{
+        white-space: nowrap;
         text-transform: uppercase;
         & + .navbar__link{
             margin-left: 30px;

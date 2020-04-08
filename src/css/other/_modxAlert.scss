@@ -1,0 +1,73 @@
+.jGrowl#jGrowl {
+    font-family: "Noto Sans";
+
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 99;
+
+    .jGrowl-notification {
+        position: relative;
+
+        width: 275px;
+        max-width: 100%;
+        padding: 30px;
+
+        border: 1px solid #d3d3d3;
+        box-shadow: 0px 0px 15px 0px rgba(240, 213, 221, 1);
+
+        border-radius: 20px;
+
+        font-size: 14px;
+        color: $dark-grey;
+
+        .jGrowl-close {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+
+            font-size: 0px;
+
+            width: 34px;
+            height: 34px;
+            border-radius: 17px;
+
+            background: $pink url("../img/close.svg") no-repeat center / 12px;
+            color: #fff;
+            outline: 0
+        }
+        .jGrowl-message{
+            font-weight: 700;
+        }
+
+        &.af-message-success {
+            background-color: $white!important;
+            color: $pink;
+            border-color: #d3d3d3;
+            .jGrowl-close {
+                background-color: $pink;
+            }
+        }
+
+        &.af-message-error {
+            background-color: $white!important;
+            color: $red;
+            border-color: $red;
+            .jGrowl-close {
+                background-color: $red;
+            }
+        }
+        &.af-message-info {
+            background-color: $white!important;
+            color: $dark-grey;
+            border-color: #d3d3d3;
+            .jGrowl-close {
+                background-color: $grey;
+            }
+        }
+    }
+}
+
+.ajax_form .error {color: $red;}

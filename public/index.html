@@ -8,14 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
     <link href="./css/jquery.fancybox.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
+    <link href="./css/media.css" rel="stylesheet"/>
   </head>
   <body class="header-fixed">
     <script src="/js/jquery.min.js"></script>
     <header>
       <div class="header">
         <div class="container">
-          <div class="row no-gutters">
-            <div class="col-4 col-lg-5">
+          <div class="row header__row">
+            <div class="col header__col">
               <div class="header__line">
                 <ul class="contacts contacts_inline">
                   <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
@@ -23,14 +24,13 @@
                 </ul>
               </div>
               <div class="header__line">
-                <nav class="navbar"><a class="navbar__link" href="#">Курсы</a><a class="navbar__link" href="#">О нас</a><a class="navbar__link" href="#">Портфолио</a></nav>
+                <nav class="navbar"><a class="navbar__link" href="#">Курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Отзывы</a></nav>
               </div>
-            </div>
-            <div class="col-4 col-lg-2"><a class="header__logo" href="/"></a></div>
-            <div class="col-4 col-lg-5">
+            </div><a class="header__logo" href="/"></a>
+            <div class="col header__col">
               <div class="header__line text-right"><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов</a></div>
               <div class="header__line">
-                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Блог</a></nav>
+                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Сертификаты</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="#">Блог</a><a class="navbar__link" href="#">Контакты</a></nav>
               </div>
             </div>
           </div>
@@ -39,8 +39,8 @@
       <div class="header-mobile-only">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-6"><a class="header__logo" href="/"></a></div>
-            <div class="col-6 text-right">
+            <div class="col-8"><a class="header__logo" href="/"></a></div>
+            <div class="col-4 text-right">
               <svg class="nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
                 <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
               </svg>

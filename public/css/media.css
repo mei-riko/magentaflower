@@ -1,0 +1,89 @@
+@media all and (min-width: 1920px) {
+  body, html {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1480px;
+  }
+  .contacts .contacts__item {
+    font-size: 18px;
+  }
+  .navbar .navbar__link {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  p.lead {
+    font-size: 1.25rem;
+  }
+  .text-small, .header-block .header-block__offer, .timetable-info, small, .small {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .header-block .header-block__offer {
+    width: 220px;
+  }
+  .programm .programm__title {
+    font-size: 1.5rem;
+  }
+  .sertificate__content {
+    width: 400px;
+  }
+  .list_advantage .list__item {
+    width: 360px;
+    font-size: 20px;
+  }
+  .list_advantage_full .list__item {
+    width: 100%;
+  }
+  .list_advantage_full .list__item .list__item__title {
+    font-size: 1.5rem;
+    margin-top: -6px;
+  }
+  .list_circle .list__item {
+    font-size: 20px;
+  }
+  .list_circle .list__item:before {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    top: 10px;
+  }
+  .cta-block .cta-block__offer,
+  .cta-block p.cta-block__offer {
+    font-size: 1.25em;
+    width: 320px;
+  }
+  .info .info__content {
+    height: 220px;
+  }
+  .info .info__item,
+  .info .info__intro {
+    font-size: 16px;
+  }
+  .info .info__link {
+    font-size: 14px;
+  }
+  .icon-col .icon-col__title {
+    font-size: 20px;
+  }
+  .icon-col .icon-col__content {
+    width: 240px;
+  }
+  .preview-link .preview-link__link {
+    font-size: 16px;
+  }
+  .form .form__label {
+    font-size: 16px;
+  }
+  .checkbox__label {
+    line-height: 22px;
+  }
+  .checkbox__label:before {
+    top: 6px;
+  }
+  .checkbox__input:checked + .checkbox__label:after {
+    top: 10px;
+  }
+}
