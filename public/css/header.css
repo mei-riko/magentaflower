@@ -17,8 +17,8 @@ footer .row,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-right: -40px;
+  margin-left: -40px;
 }
 
 .no-gutters {
@@ -362,6 +362,12 @@ footer .row,
   .info-block .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  header .row,
+  footer .row,
+  .info-block .container {
+    margin-left: -20px;
+    margin-right: -20px;
   }
   .col-sm-1 {
     -webkit-box-flex: 0;
@@ -1012,7 +1018,8 @@ header *, footer.footer *
 }
 
 header *, header *::before, header *::after,
-footer.footer *, footer.footer *::before, footer.footer *::after {
+footer.footer *, footer.footer *::before, footer.footer *::after,
+.info-block *, .info-block *::before, .info-block *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }

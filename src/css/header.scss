@@ -25,7 +25,8 @@ header *, footer.footer *
     color: #3d3e40;
 }
 header *, header *::before, header *::after,
-footer.footer *, footer.footer *::before, footer.footer *::after{
+footer.footer *, footer.footer *::before, footer.footer *::after,
+.info-block *, .info-block *::before, .info-block *::after{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -167,7 +168,6 @@ footer.footer{
             font-weight: bold;
         }
     }
-
 }
 
 .text-right{
