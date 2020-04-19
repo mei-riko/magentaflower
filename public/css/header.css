@@ -532,6 +532,19 @@ footer .row,
   background: #f3d6e4;
 }
 
+.header-link {
+  text-decoration: underline;
+  color: #726d72;
+}
+
+.header-link:hover {
+  color: #dd5287;
+}
+
+.header-link + .header-btn {
+  margin-left: 20px;
+}
+
 @media all and (max-width: 1200px) {
   .header .header__logo {
     -webkit-box-flex: 0;
@@ -570,7 +583,7 @@ footer .row,
 
 .footer {
   padding: 60px 0;
-  background: #faf4f6;
+  background: #f9eaf1;
 }
 
 .footer .footer__logo {
@@ -628,6 +641,8 @@ footer .row,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .navbar_right {
@@ -638,11 +653,12 @@ footer .row,
 
 .navbar .navbar__link {
   white-space: nowrap;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
 .navbar .navbar__link + .navbar__link {
-  margin-left: 30px;
+  margin-left: 2em;
 }
 
 .navbar .navbar__link:hover {
@@ -764,7 +780,6 @@ header .btn_action:hover {
 .list_circle .list__item {
   position: relative;
   padding-left: 20px;
-  line-height: 1.4;
 }
 
 .list_circle .list__item:before {
@@ -772,7 +787,6 @@ header .btn_action:hover {
   display: block;
   width: 6px;
   height: 6px;
-  border-radius: 3px;
   position: absolute;
   left: 0;
   top: 6px;
@@ -781,12 +795,6 @@ header .btn_action:hover {
 
 .list_circle .list__item + .list__item {
   margin-top: 10px;
-}
-
-.list_advantage {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .list_advantage .list__item {
@@ -824,11 +832,11 @@ header .btn_action:hover {
 .list_advantage .list__item .list__item__title {
   display: block;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: .5em;
 }
 
 .list_advantage .list__item .list__item__content {
-  color: #ffdceb;
+  color: #f9eaf1;
 }
 
 .list_advantage_full .list__item {
@@ -855,7 +863,7 @@ header .btn_action:hover {
 
 .contacts .contacts__item {
   font-weight: bold;
-  padding-left: 26px;
+  padding-left: 30px;
 }
 
 .contacts .contacts__item_networks {
@@ -899,6 +907,8 @@ header .btn_action:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .contacts_inline .contacts__item + .contacts__item {
@@ -1012,8 +1022,7 @@ body a:hover {
   color: #dd5287;
 }
 
-header *, footer.footer *
-.navbar-mobile * {
+header *, footer.footer * .navbar-mobile * {
   color: #3d3e40;
 }
 
@@ -1106,7 +1115,7 @@ section.main .banner-im {
   line-height: 1.6;
 }
 
-.footer .text-small, .footer small, .footer .small {
+.footer .text-small, .footer small, .footer .small, .footer .header-link {
   font-size: 12px;
   line-height: 16px;
 }

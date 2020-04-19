@@ -1,19 +1,20 @@
-$white:                     #ffffff;
-$black:                     #000000;
-$light-grey:                #f6f6f6;
-$grey:                      #726d72;
-$dark-grey:                 #3d3e40;
-$red:                       #ef081e;
-$pink:                      #dd5287;
-$pink-light:                #f9eaf1;
+$white                : #ffffff;
+$black                : #000000;
+$light-grey           : #f6f6f6;
+$grey                 : #726d72;
+$dark-grey            : #3d3e40;
+$red                  : #ef081e;
+$pink                 : #dd5287;
+$pink-secondary       : #f9eaf1;
+$pink-light           : #f9eaf1;
+$border-color         : #e6e6e6 !default;
+$link-color           : #232323 !default;
+$link-hover-color     : #dd5287 !default;
+$link-decoration      : none !default;
+$link-hover-decoration: underline !default;
 
-$link-color:                #232323 !default;
-$link-hover-color:          #dd5287 !default;
-$link-decoration:           none !default;
-$link-hover-decoration:     underline !default;
-
-$grid-columns:                12 !default;
-$grid-gutter-width:           40px !default;
+$grid-columns     : 12 !default;
+$grid-gutter-width: 40px !default;
 
 $grid-breakpoints: (
   xs: 0,
@@ -30,61 +31,62 @@ $container-max-widths: (
   xl: 1200px
 ) !default;
 
-$body-color:                #000000;
-$body-bg:                   #ffffff;
+$body-color: #000000;
+$body-bg   : #ffffff;
 
-$font-family-base:            "Noto Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            $font-family-sans-serif !default;
+$font-family-base     : "Noto Sans",    "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo,            Monaco, Consolas,   "Liberation Mono",   "Courier New",    monospace !default;
+$font-family-base     : $font-family-sans-serif !default;
 
-$font-size-base:            1rem;
-$font-weight-base:          400;
-$font-weight-bolder:        600;
-$font-weight-bold:          700;
-$line-height-base:          1.3;
+$font-size-base    : 16px;
+$font-weight-base  : 400;
+$font-weight-bolder: 600;
+$font-weight-bold  : 700;
+$line-height-base  : 1.5;
 
-$dt-font-weight:            $font-weight-bold !default;
+$dt-font-weight: $font-weight-bold !default;
 
-$spacer: 1rem !default;
+$spacer : 40px !default;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * .5),//20
+    2: ($spacer * .75),//30
+    3: $spacer,//40
+    4: ($spacer * 1.5), //60
+    5: ($spacer * 2), //80
+    6: ($spacer * 2.5) //100
   ),
   $spacers
 );
 
-$headings-margin-bottom:        $spacer / 2 !default;
-$headings-font-family:          null !default;
-$headings-font-weight:          500 !default;
-$headings-line-height:          1.2 !default;
-$headings-color:                null !default;
+$headings-margin-bottom: $spacer / 2 !default;
+$headings-font-family  : null !default;
+$headings-font-weight  : 400 !default;
+$headings-line-height  : 1.2 !default;
+$headings-color        : null !default;
 
-$paragraph-margin-bottom:       40px !default;
+$paragraph-margin-bottom: 30px !default;
 
-$table-cell-padding:            10px !default;
-$table-cell-padding-sm:         6px !default;
-$table-caption-color:           #242424 !default;
+$table-cell-padding   : 10px !default;
+$table-cell-padding-sm: 6px !default;
+$table-caption-color  : #242424 !default;
 
-$label-margin-bottom:           10px;
+$label-margin-bottom: 10px;
 
-$enable-grid-classes:               true !default;
+$enable-grid-classes              : true !default;
 $enable-pointer-cursor-for-buttons: true !default;
 
 // Utilities
 
-$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
-$overflows: auto, hidden !default;
-$positions: static, relative, absolute, fixed, sticky !default;
+$displays : none,   inline,   inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$overflows: auto,   hidden !default;
+$positions: static, relative, absolute,     fixed, sticky !default;
 
 
 // Printing
 
-$print-page-size:                   a3 !default;
-$print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+$print-page-size     : a3 !default;
+$print-body-min-width: map-get($grid-breakpoints, "lg") !default;

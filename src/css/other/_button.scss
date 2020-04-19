@@ -1,7 +1,10 @@
 .btn{
     border: none;
+
     padding: 18px 40px;
     border-radius: 30px;
+    max-width: 100%;
+    
     outline: none;
     text-align: center;
     cursor: pointer;
@@ -48,6 +51,7 @@
             border-radius: 0;
             background: none;
             color: $pink;
+            
             &:hover{
                 background: none;
                 color: darken($pink, 10%);

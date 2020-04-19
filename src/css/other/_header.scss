@@ -78,6 +78,17 @@
         background: darken($pink-light, 5%);
     }
 }
+.header-link{
+    text-decoration: underline;
+    @extend .small;
+    color: $grey;
+    &:hover{
+        color: $pink;
+    }
+    & + .header-btn{
+        margin-left: map-get($spacers, 1);
+    }
+}
 @media all and (max-width: 1200px){
     .header{
         .header__logo{

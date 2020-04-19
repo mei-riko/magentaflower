@@ -1,14 +1,16 @@
 .footer{
-    padding: 60px 0;  
-    background: #faf4f6;  
-    // background: $light-grey url("../img/footer_white.png") no-repeat center bottom / cover;  
+    padding: map-get($spacers, 4) 0;  
+    background: $pink-light;  
+
     .footer__logo{
         background: url("../img/logo.svg") no-repeat left center / contain;
+        
         max-width: 100%;
         width: 180px;
         height: 110px;
+
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: map-get($spacers, 2);
     }
     .footer__content{
         color: $grey;

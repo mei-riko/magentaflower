@@ -2,12 +2,14 @@
     position: relative;
     padding-bottom: 80px;
     &__content{
-        font-size: 1.2em;
+        font-size: 1.15rem;
+
         padding: 200px 40px 40px;
         background: $light-grey;
-        
+        color: $dark-grey;
+
         position: absolute;
-        bottom: -90px;
+        bottom: -80px;
         right: -110px;
 
         margin-bottom: 0;
@@ -17,6 +19,12 @@
     &__image{
         position: relative;
         z-index: 11;
+    }
+}
+.img-sertificate{
+    .img-fluid{
+        max-width: calc(100% - 120px);
+        margin-left: 60px;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
@@ -31,6 +39,11 @@
             bottom: 60px;
         }
     }
+    .img-sertificate{
+        .img-fluid{
+            margin-left: 60px;
+        }
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .sertificate{
@@ -43,6 +56,11 @@
             position: unset;
             padding: 30px;
             margin-top: 20px;
+        }
+    }
+    .img-sertificate{
+        .img-fluid{
+            margin: 0 auto;
         }
     }
 }

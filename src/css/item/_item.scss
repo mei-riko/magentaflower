@@ -27,7 +27,7 @@
     }
     // Component
     .item-slide__title{
-        font-size: 1.2rem;
+        color: $dark-grey;
         transition: .4s;
     }
     .item-slide__content{
@@ -47,9 +47,14 @@
     }
     // Customize FAQ Item
     &_faq{
-        padding-top: 40px;
-        padding-bottom: 40px;
-        border-bottom: 1px solid #d3d3d3;
+        padding-top: map-get($spacers, 2);
+        padding-bottom:map-get($spacers, 2);
+        border-bottom: 1px solid $border-color;
+
+        .item-slide__content{
+            color: $grey;
+        }
+        &.item-slide--active,
         &:hover{
             .item-slide__title{
                 color: $pink;
@@ -91,6 +96,7 @@
         }
     }
     .item-logo{
+        justify-content: center;
         .item-logo__image {
             width: 30%;
         }
