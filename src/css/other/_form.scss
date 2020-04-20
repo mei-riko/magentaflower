@@ -45,6 +45,14 @@
             width: 100%;
         }
     }
+    .form__agree{
+        &.checkbox{
+            .checkbox__label{
+                color: $grey;
+                @extend .small;
+            }
+        }
+    }
 }
 .form-input{
     border: 1px solid #b8b8b8;
@@ -79,6 +87,7 @@
         position: relative;
         margin: 0;
         padding-left: 28px;
+
         line-height: 12px;
 
         cursor: pointer;

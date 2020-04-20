@@ -1,6 +1,7 @@
 .footer{
-    padding: map-get($spacers, 4) 0;  
-    background: $pink-light;  
+    padding: map-get($spacers, 4) 0;
+    background: $pink-light;
+    border-top: 1px solid $border-color;
 
     .footer__logo{
         background: url("../img/logo.svg") no-repeat left center / contain;
@@ -11,6 +12,10 @@
 
         display: block;
         margin-bottom: map-get($spacers, 2);
+    }
+    // Заголовки колонок
+    .footer__title{
+        font-size: 1.25rem;
     }
     .footer__content{
         color: $grey;
@@ -37,6 +42,8 @@
 
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .footer{
+        padding: map-get($spacers, 2) 0;
+
         .footer__logo{
             margin-left: auto;
             margin-right: auto;
@@ -46,6 +53,13 @@
         }
         .contacts{
             text-align: left;
+        }
+
+        // Column content center
+        .col-sm-12{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

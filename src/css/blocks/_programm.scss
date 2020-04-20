@@ -1,7 +1,7 @@
 .programm{
-    padding: 60px 0;
+    padding: map-get($spacers, 4) 0;
     .programm__item{
-        padding: 30px 40px;
+        padding: map-get($spacers, 2) map-get($spacers, 3);
         background: $white;
         border: 1px solid #d3d3d3;
         border-radius: 20px;
@@ -30,6 +30,7 @@
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .programm{
+        padding: map-get($spacers, 3) 0;
         .programm__title{
             font-size: 1.25rem;
         }
@@ -38,10 +39,10 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .programm{
         .programm__item {
-            padding: 20px 30px;
+            padding: map-get($spacers, 1) map-get($spacers, 2);
         }
         .programm__title{
-            margin-bottom: 20px;
+            margin-bottom: map-get($spacers, 1);
         }
         .programm__time{
             justify-content: flex-start;

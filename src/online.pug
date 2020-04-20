@@ -1,0 +1,181 @@
+html(lang="ru")
+    include chunks/head.pug
+    body.header-fixed
+        script(src="/js/jquery.min.js")
+        include chunks/header.pug
+        section.header-block
+            .container.header-block__container
+                .row
+                    .col-7.col-md-12.col-lg-10
+                        h1.header-block__title.mb-40 Свадебный online-курс флористики
+                        p.text-pink.text-bold Освойте профессию флориста за 20 дней
+                        ul.list.list_circle.mb-40
+                            li.list__item 27 полноценных уроков
+                            li.list__item Разбор практики с преподавателем
+                            li.list__item Обучение с нуля всех желающих
+                            li.list__item Бесплатный вебинар
+                        p
+                            a.btn.btn_action(href="#") Хочу записаться
+                    .col-12.mt-60.mt-md-40
+                        .d-flex.header-block__info-row
+                            .header-block__info-row__col.mb-sm-20
+                                .subtitle-light Когда
+                                .header-block__info доступен 24/7
+                            .header-block__info-row__col.mb-sm-20
+                                .subtitle-light Уровень
+                                .header-block__info обучение с нуля
+                            .header-block__info-row__col.mb-sm-20
+                                .subtitle-light Формат
+                                .header-block__info online-курс
+                            .header-block__info-row__col.last
+                                .subtitle-light Документ
+                                .header-block__info сертификат
+        section.content.content_offset-small.p-relative
+            .container
+                p.h2.text-center.text-bold Для кого этот курс?
+                .row.mt-60.mb-60
+                    .col-6.col-sm-12.mb-40
+                        .info.info_row
+                            .col-5
+                                img.img-fluid.img-border(src="../img/test-06.png")
+                            .col-7
+                                p.info__title Начинающих флористов
+                                p.info__intro.text-grey Поздравьте сотрудников с&nbsp;помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                    .col-6.col-sm-12.mb-40
+                        .info.info_row
+                            .col-5
+                                img.img-fluid.img-border(src="../img/test-07.png")
+                            .col-7
+                                p.info__title Сотрудников цветочного магазина
+                                p.info__intro.text-grey Поздравьте сотрудников с&nbsp;помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                    .col-6.col-sm-12
+                        .info.info_row
+                            .col-5
+                                img.img-fluid.img-border(src="../img/test-08.png")
+                            .col-7
+                                p.info__title Собственников цветочного магазина
+                                p.info__intro.text-grey Поздравьте сотрудников с&nbsp;помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                    .col-6.col-sm-12
+                        .info.info_row
+                            .col-5
+                                img.img-fluid.img-border(src="../img/test-09.png")
+                            .col-7
+                                p.info__title Желающих получить новые знания
+                                p.info__intro.text-grey Поздравьте сотрудников с&nbsp;помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                p.h4.text-center.text-bold Что вы получите на online-курсе?
+                .row.mt-60.mb-40.justify-content-center
+                    .col-4.col-md-6.col-sm-12
+                        .list.list_numeric
+                            .list__item Опыт закупки и правильного хранения цветов 
+                                span.list__number 1
+                            .list__item Поддержку и комментарии от&nbsp;известных преподавателей  
+                                span.list__number 2
+                            .list__item Собственное портфолио 
+                                span.list__number 3
+                    .col-4.col-md-6.col-sm-12
+                        .list.list_numeric
+                            .list__item Навыки создания букетов в&nbsp;профессиональной технике 
+                                span.list__number 4
+                            .list__item Сертификат школы, который ценится в&nbsp;Европе и&nbsp;РФ  
+                                span.list__number 5
+                            .list__item Бесплатный вебинар с чемпионом Европы по флористике 
+                                span.list__number 6
+                a.btn.btn_action.btn_absolute-position(href="#") Записаться на курс
+        section.content.bg-light-pink.bg-border
+            .container
+                p.h2.text-center.text-bold После обучения вы сможете
+                .row.mt-60.mb-sm-20
+                    .col-4.col-md-6
+                        .item-icon.mb-60.mb-sm-20
+                            img.item-icon__img(src="../icon/flowerpot-pink.svg")
+                            .item-icon__content Составлять букеты и композиции в кашпо, коробках и корзинах в различных стилях и техниках
+                    .col-4.col-md-6
+                        .item-icon.mb-60.mb-sm-20
+                            img.item-icon__img(src="../icon/bag-pink.svg")
+                            .item-icon__content Правильно ухаживать за свежими цветами, продлевая им жизнь и сохраняя внешний вид
+                    .col-4.col-md-6
+                        .item-icon.mb-60.mb-sm-20
+                            img.item-icon__img(src="../icon/diamond-pink.svg")
+                            .item-icon__content Делать букет невесты в самых популярных техниках (на своих ногах и в портбукетнице)
+                    .col-4.col-md-6
+                        .item-icon.mb-60.mb-sm-20
+                            img.item-icon__img(src="../icon/flower-pink.svg")
+                            .item-icon__content Подбирать цветы к каждой работе, учитывая фактуру, цвет и законы композиции
+                    .col-4.col-md-6
+                        .item-icon.mb-60.mb-sm-20
+                            img.item-icon__img(src="../icon/bouquet-pink.svg")
+                            .item-icon__content Составить резюме и устроиться на работу на должность "Флорист" (помощник флориста)
+                    .col-4.col-md-6
+                        .item-icon.mb-60.mb-sm-20
+                            img.item-icon__img(src="../icon/shears-pink.svg")
+                            .item-icon__content Владеть профессиональной терминологией, разбираться в инструментах и материалах
+                p.h4.text-center.text-bold Работы выпускников online-курса
+                .row.mt-60.mb-40.no-gutters.portfolio
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/02.png")
+                        img.img-fluid(src="/img/02.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                    .col-3.col-sm-6.col-md-4.portfolio__item
+                        img.img-fluid(src="/img/02.png")
+                .pagination.justify-content-center
+                    a.pagination__item.pagination__item--active(href="#") 1
+                    a.pagination__item(href="#") 2
+                    a.pagination__item(href="#") 3
+                .mt-40.text-center
+                    a.btn.btn_action(href="#") Хочу уметь также!
+        section.content.bg-corporate.p-relative.pb-0
+            .container
+                p.h2.text-center.text-bold Обучение у нас популярно! Почему?
+                .line.mt-40.mb-40
+                .row
+                    .col-4.item
+                        p.item__title.text-bold
+                            span.text-pink-secondary 01.
+                            |  Поддержка от экспертов
+                        p.text-pink-light После каждого практического занятия вы фотографируете свою работу и получаете обратную связь 
+                            | от преподавателя в&nbsp;течение&nbsp;48&nbsp;часов
+                    .col-4.item
+                        p.item__title.text-bold
+                            span.text-pink-secondary 02.
+                            |  Сертификат школы
+                        p.text-pink-light Курс завершается экзаменом, после чего Вы получаете Сертификат Школы «Маджента», который ценится в сфере флористики не только в России, но и за рубежом
+                    .col-4.item
+                        p.item__title.text-bold
+                            span.text-pink-secondary 03.
+                            |  Полные базовые навыки
+                        p.text-pink-light Lorem ipsum dolor sit amet. Amet, consectetur, adipisci velit, sed ut perspiciatis, unde omnis dolor. Sint, obcaecati cupiditate non numquam eius.
+                .row.info-position.justify-content-center.pt-0
+                    .col-5
+                        .info.info_person.bg-pink
+                            .info_person__img
+                            p.subtitle-light.text-pink-light.mb-0 преподаватель курса
+                            p.info__title Елена Дмитриева
+                            p.info__intro.text-pink-light Флорист-дизайнер международного уровня,  с опытом работы более 10 лет.
+                    .col-5
+                        .info.info_person.bg-pink
+                            .info_person__img
+                            p.subtitle-light.text-pink-light.mb-0 преподаватель курса
+                            p.info__title Татьяна Воронина
+                            p.info__intro.text-pink-light Флорист-дизайнер международного уровня,  с опытом работы более 10 лет.
+        section.programm.bg-light-grey
+            .container  
+                p.h4.text-bold.text-center Программа online-курса
+        include chunks/footer.pug
+        script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/jquery.inputmask.js")
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+        
+        script(src="./js/app.min.js")

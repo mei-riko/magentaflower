@@ -200,13 +200,28 @@
         </div>
       </div>
     </section>
+    <section class="cta-block cta-block_offset-top" id="getSertificate">
+      <div class="container p-relative">
+        <p class="h1 cta-block__title mt-0">Индивидуальный подбор сертификата</p>
+        <p class="cta-block__offer" style="width: 380px;">Оставьте номер телефона и менеждер поможет завершить оформление сертификата <span class="text-bold text-pink" id="sertificateInfo"> </span></p>
+        <form class="form cta-block__form" action="">
+          <input class="form__input form__input_title d-none" placeholder=""/>
+          <input class="form__input form__input_phone" placeholder="Телефон"/>
+          <button class="btn btn_action" type="submit">Заказать сертификат</button>
+          <div class="form__agree checkbox">
+            <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+            <label class="checkbox__label" for="agree">согласен с <a class="checkbox__link" href="/policy.pdf" target="_blank">обработкой персональных данных</a></label>
+          </div>
+        </form>
+      </div>
+    </section>
     <section class="info-block">
       <div class="container text-center">
         <div class="row justify-content-center">
           <div class="col-7 col-md-12">
             <p class="h1 text-bold">Затрудняетесь с выбором нужного курса?</p>
             <p>Не можете выбрать курс для своего уровня? Побеседуйте с нашими преподавателями, чтобы определить свои сильные и слабые стороны.</p>
-            <p class="mt-40 mt-sm-20 mb-0"><a class="btn btn_action" href="#">Нужна консультация</a></p>
+            <p class="mt-40 mt-sm-20"><a class="btn btn_action" href="#">Нужна консультация</a></p>
           </div>
         </div>
       </div>
@@ -219,7 +234,7 @@
             <p class="footer__content text-small mb-0">Санкт-Петербург, Пр. Юрия Гагарина, 7, пом. 25 ЖК "Космос", справа от центрального входа.</p>
           </div>
           <div class="col-3 col-sm-12 col-md-6 col-lg-4 mt-sm-20">
-            <p class="text-bold">Контакты</p>
+            <p class="text-bold footer__title">Контакты</p>
             <ul class="contacts">
               <li class="contacts__item contacts__item_phone"> <a class="footer__link" href="tel:88001112233">8 (812) 317-76-18</a></li>
               <li class="contacts__item contacts__item_phone"> <a class="footer__link" href="tel:88001112233">8 (921) 938-09-01</a></li>
@@ -232,7 +247,7 @@
             </ul>
           </div>
           <div class="col-3 col-sm-12 col-md-6 col-lg-2 mt-md-20">
-            <p class="text-bold">Курсы</p>
+            <p class="text-bold footer__title">Курсы</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Базовый</a></li>
               <li class="list__item"><a href="#">Базовый</a></li>
@@ -241,7 +256,7 @@
             </ul>
           </div>
           <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-md-20">
-            <p class="text-bold">Блог</p>
+            <p class="text-bold footer__title">Блог</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Хочу быть флористом</a></li>
               <li class="list__item"><a href="#">Выбираем школу флористики</a></li>

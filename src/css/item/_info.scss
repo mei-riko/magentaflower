@@ -1,25 +1,12 @@
 .info{
-    border: 1px solid #b8b8b8;
+    border: 1px solid $border-color;
     border-radius: 24px;
     color: $black;
     background-color: $white;
     box-shadow: 0px 0px 15px 0px rgba(240, 213, 221, 1);
 
-    padding: 30px 40px;
+    padding: map-get($spacers, 2) map-get($spacers, 3);
     transition: .3s;
-
-    &--active{
-        border-color: $pink;
-        .info__title{
-            color: $pink;
-        }
-    }
-    &_full{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
 
     .info__title{
         font-size: 1.5rem;
@@ -30,6 +17,7 @@
     .info__intro{
         font-size: 1rem;
     }
+    // Элемент блока
     .info__item{
         font-size: 1rem;
         margin-bottom: 0;
@@ -40,6 +28,7 @@
             margin-top: 8px;
         }
     }
+    // Ссылки
     .info__link{
         font-size: 12px;
         line-height: 1.2;
@@ -59,6 +48,8 @@
             &:hover{color: darken($pink,10);}
         }
     }
+
+    // Для размещения в 2 колонки
     .info__row{
         display: flex;
         flex-wrap: wrap;
@@ -70,6 +61,7 @@
             padding: 4px 8px;
         }
     }
+    // Ввод суммы в блоке с денежным сертификатом
     .info__form{
         display: flex;
         flex-wrap: wrap;
@@ -82,6 +74,8 @@
             width: 265px;
         }
     }
+
+    // Основной и скрытый контент
     .info__content{
         position: relative;
         overflow: hidden;
@@ -123,6 +117,56 @@
     .btn{
         width: 100%;
     }
+
+    // Активный элемент
+    &--active{
+        border-color: $pink;
+        .info__title{
+            color: $pink;
+        }
+    }
+
+    &_full{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    // Горизонтальный инфо-блок
+    &_row{
+        padding: map-get($spacers, 3) map-get($spacers, 1);
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+    // Информация о человеке
+    &_person{
+        position: relative;
+        padding-left: 130px;
+        
+        .info_person__img{
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            background-color: $white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &.bg-pink{
+            box-shadow: none;
+        }
+    }
+}
+
+.info-position{
+    transform: translateY(50%);
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .info{

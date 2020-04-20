@@ -23,49 +23,54 @@
         margin: 0 auto;
         display: block;
     }
-}
-.header-fixed{
-    .header, .header-mobile-only{
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 11;
-    }
-}
-.header-top{
-    .header{
-        position: relative;
-        z-index: 1;
-        &:after{
-            display: block;
-            content: '';
-            width: 100%;
-            height: 52px;
 
+    // Шапка поверх 1го экрана
+    &-fixed{
+        .header, .header-mobile-only{
             position: absolute;
+            width: 100%;
+            top: 0;
             left: 0;
-            bottom: -10px;
-
-            background: linear-gradient(#feeef4, #ffd9d2);
-            z-index: -1;
+            z-index: 11;
+        }
+    }
+    // Разграничительная линия после меню
+    &-top{
+        .header{
+            position: relative;
+            z-index: 1;
+            &:after{
+                display: block;
+                content: '';
+                width: 100%;
+                height: 52px;
+    
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+    
+                background: linear-gradient(#feeef4, #ffd9d2);
+                z-index: -1;
+            }
+        }
+    }
+    // Шапка на мобильном
+    &-mobile-only{
+        display: none;
+        padding: 10px 0;
+        .nav-btn{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .header__logo{
+            background: url("../img/logo.svg") no-repeat left center / contain;
+            width: 100%;
+            height: 120px;
         }
     }
 }
-.header-mobile-only{
-    display: none;
-    padding: 10px 0;
-    .nav-btn{
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-    }
-    .header__logo{
-        background: url("../img/logo.svg") no-repeat left center / contain;
-        width: 100%;
-        height: 120px;
-    }
-}
+// Кнопка в header
 .header-btn{
     color: $pink;
     background-color: $pink-light;
@@ -78,6 +83,7 @@
         background: darken($pink-light, 5%);
     }
 }
+// Ссылка в header
 .header-link{
     text-decoration: underline;
     @extend .small;

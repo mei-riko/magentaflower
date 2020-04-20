@@ -2,6 +2,7 @@
     .portfolio__item{
         position: relative;
         transition: .4s;
+        
         &:before{
             content: '';
             display: block;

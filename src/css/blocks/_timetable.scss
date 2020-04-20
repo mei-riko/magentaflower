@@ -22,13 +22,16 @@
     // Main Area
     &-col{
         display: flex;
+        flex-wrap: wrap;
     }
+
+    // Одиночный элемент расписания
     &-block{
         position: relative;
 
         width: 100%;
 
-        border: 1px solid #b8b8b8;
+        border: 1px solid $border-color;
         border-radius: 24px;
         background-color: $white;
         box-shadow: 0px 0px 15px 0px rgba(240, 213, 221, 1);
@@ -47,6 +50,7 @@
             }
         }
     }
+    // Изображение-иллюстрация
     &-img{
         position: absolute;
         top: 0;
@@ -57,6 +61,7 @@
         background-position: center;
         background-size: cover;
     }
+    // Тип элемента расписания
     &-category{
         padding: 6px 20px;
         text-transform: uppercase;
@@ -67,26 +72,31 @@
         &_type-4{background: lighten($color: $pink, $amount: 38%);}
         &_type-5{color: $grey; background: $light-grey;}
     }
+    // Заголовок
     &-title{
         @extend .text-bold;
         font-size: 1.25rem;
         line-height: 1.2;
         padding: 20px 20px 10px;
     }
+    // Сроки занятий
     &-period{
         @extend .text-bold;
         color: $pink;
         padding: 0 20px;
     }
+    // Информация о преподавателе
     &-teacher{
         padding: 0 20px 20px;
     }
+    // Информация о количестве занятий
     &-info{
         padding-left: 60px;
         background: url("../img/time-left-light.svg") no-repeat 20px center / 26px;
         @extend .text-small;
         color: $dark-grey;
     }
+    // Скрытая до наведения кнопка
     &-btn{
         position: absolute;
         left: 0;
@@ -113,7 +123,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .timetable{
         &-block{
-            padding-bottom: 70px;
+            padding-bottom: 80px;
             &.mb-md-0{margin-bottom: 0px;}
             &.mb-md-40{margin-bottom: 40px;}
         }

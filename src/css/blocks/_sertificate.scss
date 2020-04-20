@@ -1,3 +1,4 @@
+// Блок с информацией о сертификате
 .sertificate{
     position: relative;
     padding-bottom: 80px;
@@ -21,6 +22,7 @@
         z-index: 11;
     }
 }
+// Изображение на 1 экране страницы сертификаты
 .img-sertificate{
     .img-fluid{
         max-width: calc(100% - 120px);

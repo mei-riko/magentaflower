@@ -1,48 +1,41 @@
 .cta-block{
     position: relative;
-    padding: 0 0 90px;
+    padding: 0 0 map-get($spacers, 5);
     background: $light-grey url("../img/bg-demo-contact.jpg") right center / cover;
 
-    &_summer{
-        background: $light-grey url("../img/bg-contact-warm.jpg") right center / cover;
-    }
-    &_winter{
-        background: $light-grey url("../img/bg-contact-cold.jpg") right center / cover;
-    }
-    &_pt{
-        padding-top: 90px;
-    }
+    // Блоки с доп. информацией
     .cta-block__info{
         display: inline-block;
         max-width: 100%;
-
+        padding: 40px 50px;
         margin-right: 20px;
 
         transform: translateY(-50px);
 
-        padding: 40px 50px;
-        border: 1px solid #b8b8b8;
+        border: 1px solid $border-color;
         border-radius: 24px;
         background-color: $white;
         box-shadow: 0px 0px 15px 0px rgba(240, 213, 221, 1);
 
-        & + .cta-block__info.last{
-            margin-right: 0px;
-        }
         .subtitle{
-            margin-bottom: .5rem;
+            margin-bottom: .5em;
         }
         .price-old{
             font-family: 'Noto Serif';
             text-decoration: line-through;
             & + .price{
-                margin-left: .75rem;
+                margin-left: .75em;
             }
         }
-        .cta-block__info-title{
-            margin: 0 0 .75rem;
+
+        &.last{
+            margin-right: 0px;
         }
     }
+    .cta-block__info-title{
+        margin: 0 0 .75em;
+    }
+    // Основной контент
     .cta-block__title{
         font-weight: bold;
         width: 440px;
@@ -61,6 +54,16 @@
         .form__input{
             width: 100%;
         }
+    }
+
+    &_summer{
+        background: $light-grey url("../img/bg-contact-warm.jpg") right center / cover;
+    }
+    &_winter{
+        background: $light-grey url("../img/bg-contact-cold.jpg") right center / cover;
+    }
+    &_offset-top{
+        padding-top: map-get($spacers, 5);
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
@@ -84,19 +87,22 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .cta-block{
-        padding: 60px 0;
+        padding: 0 0 map-get($spacers, 4);
         .cta-block__info{
             max-width: 100%;
 
-            transform: translateY(0);
+            transform: translateY(-40px);
             padding: 20px 30px;
 
             & + .cta-block__title{
-                margin-top: 2rem;
+                margin-top: -20px;
             }
         }
         .cta-block__title{
             margin: 0 0 2rem;
+        }
+        .cta-block__offer{
+            width: 100%;
         }
     }
 }

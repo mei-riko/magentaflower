@@ -39,6 +39,9 @@ p {
     &.lead{
         font-size: 1.15em;
     }
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 ol, ul{
     padding: 0;
@@ -69,6 +72,8 @@ a{
 .text-black{color: $black;}
 .text-grey{color: $grey;}
 .text-pink{color: $pink;}
+.text-pink-secondary{color: $pink-secondary;}
+.text-pink-light{color: $pink-light;}
 
 .text-uppercase{text-transform: uppercase;}
 .text-bold,strong,b{font-weight: 700;}
@@ -86,7 +91,7 @@ a{
 }
 
 .img-border{
-    border: 4px solid #655d6a;
+    border: 1px solid $border-color;
 }
 
 .blockquote, blockquote{

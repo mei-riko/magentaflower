@@ -584,6 +584,7 @@ footer .row,
 .footer {
   padding: 60px 0;
   background: #f9eaf1;
+  border-top: 1px solid #ddc4c3;
 }
 
 .footer .footer__logo {
@@ -593,6 +594,10 @@ footer .row,
   height: 110px;
   display: block;
   margin-bottom: 30px;
+}
+
+.footer .footer__title {
+  font-size: 1.25rem;
 }
 
 .footer .footer__content {
@@ -625,6 +630,9 @@ footer .row,
 }
 
 @media all and (max-width: 576px) {
+  .footer {
+    padding: 30px 0;
+  }
   .footer .footer__logo {
     margin-left: auto;
     margin-right: auto;
@@ -634,6 +642,18 @@ footer .row,
   }
   .footer .contacts {
     text-align: left;
+  }
+  .footer .col-sm-12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -652,8 +672,8 @@ footer .row,
 }
 
 .navbar .navbar__link {
-  white-space: nowrap;
   font-size: 12px;
+  white-space: nowrap;
   text-transform: uppercase;
 }
 
@@ -702,7 +722,10 @@ footer .row,
 }
 
 .navbar-mobile .contacts {
-  margin: 10px 0 20px;
+  margin: 30px 0;
+  padding: 30px 0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .navbar-mobile .contacts .contacts__item {
@@ -712,6 +735,7 @@ footer .row,
 
 .navbar-mobile .header-btn {
   text-align: center;
+  background-color: #ffffff;
 }
 
 @media all and (max-width: 1400px) {
@@ -726,6 +750,7 @@ footer .row,
     flex-wrap: wrap;
   }
   .navbar .navbar__link {
+    font-size: 16px;
     text-transform: none;
     margin-right: 20px;
   }
@@ -734,12 +759,6 @@ footer .row,
   }
   .navbar .navbar__link + .navbar__link {
     margin-left: 0;
-  }
-  .navbar_right .navbar__link {
-    margin-right: 0;
-  }
-  .navbar_right .navbar__link + .navbar__link {
-    margin-left: 20px;
   }
 }
 
@@ -775,6 +794,10 @@ header .btn_action:hover {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.list .list__item + .list__item {
+  margin-top: .5em;
 }
 
 .list_circle .list__item {
@@ -849,6 +872,47 @@ header .btn_action:hover {
 
 .list_advantage_full .list__item:after {
   top: 22px;
+}
+
+.list_numeric .list__item {
+  position: relative;
+  padding-left: 100px;
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.list_numeric .list__item .list__number {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #ddc4c3;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  color: #ddc4c3;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px 0px #f0d5dd;
+  box-shadow: 0px 0px 15px 0px #f0d5dd;
+  text-align: center;
+  line-height: 66px;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.list_numeric .list__item + .list__item {
+  margin-top: 30px;
 }
 
 .contacts {

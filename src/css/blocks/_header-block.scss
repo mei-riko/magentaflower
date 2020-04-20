@@ -1,6 +1,6 @@
 .header-block{
     position: relative;
-    padding: 230px 0 150px;
+    padding: 230px 0 map-get($spacers, 6);
     background: $light-grey url("../img/bg-demo-header.jpg") no-repeat right bottom / contain ;
     .header-block__subtitle{
         font-family: "Noto Sans";
@@ -17,22 +17,9 @@
         font-size: 3.375rem;
         font-weight: bold;
         margin: 0 0 map-get($spacers, 4);
-        
-        &_margin{
-            margin: 0 0 4rem;
-        }
-    }
-    .header-block__margin{
-        display: block;
-        margin-bottom: 4rem;
-    }
-
-    .header-block__info{
-        font-family: 'Noto Serif', serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 1.2;
-        margin: .5rem 0;
+        // &_margin{
+        //     margin: 0 0 4rem;
+        // }
     }
     .header-block__offer{
         color: #797979;
@@ -40,6 +27,15 @@
         width: 150px;
         max-width: 100%;
     }
+    // Значение в инфо-блоке
+    .header-block__info{
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin: .5rem 0;
+    }
+    // Позиционирование картинки
     .header-block__container{
         position: relative;
         z-index: 2;
@@ -51,6 +47,13 @@
         left: 0;
         bottom: -100px;
         z-index: 1;
+    }
+    // Размещение блоков с информацией
+    .header-block__info-row{
+        flex-wrap: wrap;
+        .header-block__info-row__col:not(.last){
+            padding-right: map-get($spacers, 4);
+        }
     }
 }
 
@@ -90,16 +93,21 @@
         background-position-x: -260px;
 
         .header-block__title{
-            font-size: 2rem;
-            &_margin{
-                margin-bottom: 2rem;
-            }
+            font-size: 2.5rem;
+            margin: 0 0 map-get($spacers, 3);
+            // &_margin{
+            //     margin-bottom: 2rem;
+            // }
         }
         .header-block__margin{
             margin-bottom: 2rem;
         }
         .header-block__info{
             line-height: 1.2;
+        }
+        .header-block__offer{
+            font-size: 1rem;
+            line-height: 1.5;
         }
     }
 }
