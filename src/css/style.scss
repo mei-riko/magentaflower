@@ -8,7 +8,6 @@
 
 
 
-@import "other/bg.scss";
 @import "other/button.scss";
 @import "other/footer.scss";
 @import "other/form.scss";
@@ -21,6 +20,7 @@
 @import "items/icon-block.scss";
 @import "items/icon-list.scss";
 @import "items/info.scss";
+@import "items/networks.scss";
 @import "items/preview-link.scss";
 @import "items/subtitle.scss";
 
@@ -39,7 +39,11 @@
 @import "blocks/info-block.scss";
 @import "blocks/header-block.scss";
 @import "blocks/portfolio.scss";
+@import "blocks/price.scss";
 @import "blocks/programm.scss";
 @import "blocks/sertificate.scss";
 @import "blocks/slider.scss";
 @import "blocks/timetable.scss";
+
+@import "other/bg.scss";
+@import "other/offset.scss";

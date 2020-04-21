@@ -37,3 +37,24 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .list_numeric{
+        .list__item{
+            padding-left: 60px;
+            min-height: 40px;
+
+            .list__number{
+                width: 40px;
+                height: 40px;
+                
+                line-height: 36px;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            & + .list__item{
+                margin-top: map-get($spacers, 1);
+            }
+        }
+    }
+}

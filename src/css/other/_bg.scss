@@ -1,7 +1,7 @@
 // Варианты фона
-.bg-light-grey{background: $light-grey;}
+.bg-light-grey{background-color: $light-grey;}
 .bg-light-pink{
-    background: $pink-light;
+    background-color: $pink-light;
     .btn_default{
         background-color: darken($pink-light, 4%);;
         &:hover{
@@ -9,7 +9,7 @@
         }
     }
 }
-.bg-pink{background: $pink;color: $white;}
+.bg-pink{background-color: $pink;color: $white;}
 .bg-border{border-top:1px solid $border-color;border-bottom:1px solid $border-color;}
 .bg-flowers_01{background: url("../img/bg-demo.jpg") no-repeat center bottom / cover;}
 .bg-flowers_02{background: url("../img/bg-result-01.jpg") no-repeat center bottom / cover;}
@@ -20,7 +20,7 @@
         width: 580px;
         max-width: 100%;
     }
-    .line{
+    .content-line{
         background: $pink-secondary;
     }
 }

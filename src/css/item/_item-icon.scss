@@ -10,4 +10,8 @@
         width: 36px;
         height: 36px;
     }
+
+    &_large{
+        padding-left: map-get($spacers, 5);
+    }
 }

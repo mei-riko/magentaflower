@@ -23,13 +23,70 @@
             }
         }
     }
-
+    .slick-prev{
+        width: 30px;
+        height: 30px;
+        left: -40px;
+        background: url("../icon/arrow-left.svg") no-repeat center / contain;
+        &:before{
+            display: none;
+        }
+        &:focus,
+        &:hover{
+            background: url("../icon/arrow-left.svg") no-repeat center / contain;
+        }
+    }
+    .slick-next{
+        width: 30px;
+        height: 30px;
+        right: -40px;
+        background: url("../icon/arrow-right.svg") no-repeat center / contain;
+        &:before{
+            display: none;
+        }
+        &:focus,
+        &:hover{
+            background: url("../icon/arrow-right.svg") no-repeat center / contain;
+        }
+    }
+    // Модификаторы
     &_link{
         &.slick-dotted.slick-slider{
             margin-bottom: 80px;
         }
         .slick-dots{
             bottom: -42px;
+        }
+    }
+    &_reviews{
+        .slick-slide{
+            margin: 0 10px;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider{
+        .slick-prev{
+            left: -30px;
+        }
+        .slick-next{
+            right: -30px;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider{
+        .slick-prev{
+            left: 0px;
+        }
+        .slick-next{
+            right: 0px;
+        }
+
+        &_reviews{
+            padding: 0 40px;
         }
     }
 }

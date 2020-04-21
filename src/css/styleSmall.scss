@@ -6,11 +6,14 @@
 @import "other/footer.scss";
 @import "other/nav.scss";
 
-@import "other/buttonHeader.scss";
 
 @import "list/list.scss";
 @import "list/list_circle.scss";
+
+@import "other/buttonHeader.scss";
 @import "other/modxAlert.scss";
+@import "other/offset.scss";
+
 
 body{
     max-width: 100%; 
@@ -187,8 +190,6 @@ footer.footer{
     justify-content: center;
 }
 
-.mb-0{margin-bottom: 0px;}
-.mb-40{margin-bottom: 40px;}
 
 @media (max-width: 992px){
     .header .header__logo {
@@ -202,8 +203,6 @@ footer.footer{
     }
 }
 @media (max-width: 768px){
-    .mt-md-20 {margin-top: 20px;}
-    .mb-md-20 {margin-bottom: 20px;}
     .info-block{
         padding: 40px 0;
         .h2, h2{
@@ -211,11 +210,7 @@ footer.footer{
         }
     }
 }
-@media (max-width: 576px){
-    .mt-sm-20 {
-        margin-top: 20px;
-    }
-}
+@media (max-width: 576px){}
 @media (max-width: 420px){
     section.main .banner-im{
         background-position-x: calc(50% + 140px);

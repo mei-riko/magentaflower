@@ -10,18 +10,36 @@
     @extend .bg-corporate;
     padding: map-get($spacers, 5) 0 0;
 
+    .info-content__position{
+        padding-top: 0;
+        transform: translateY(50%);
+    }
+
     & + .content,
     & + .programm{
         padding-top: 140px;
     }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .info-content{
+        .info-content__position{
+            transform: translateY(0);
+            padding: map-get($spacers, 4) 0;
+        }
 
-    .info-content__position{
-        transform: translateY(50%);
+        & + .content,
+        & + .programm{
+            padding-top: 40px;
+        }
     }
 }
-
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .info-block{
         padding: map-get($spacers, 3) 0;
+    }   
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .info-content{
+        padding: map-get($spacers, 4) 0 0;
     }   
 }

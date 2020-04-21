@@ -1,6 +1,7 @@
 .item{
     .item__title{
         font-size: 1.5rem;
+        line-height: 1.2;
     }
     .item__number{
         font-size: 4rem;
@@ -8,5 +9,34 @@
         line-height: 1;
 
         position: relative;
+    }
+
+    &:not(.item_last){
+        .item__number{
+            &:after{
+                display: block;
+                content: '';
+
+                width: 130px;
+                height: 6px;
+                background-color: $light-grey;
+
+                position: absolute;
+                right: 0;
+                top: calc(50% - 3px);
+            }
+        }
+    }
+
+    // Модификатор
+    &_person{
+        border: 1px solid $border-color;
+        border-radius: 24px;
+        background-color: $light-grey;
+        padding: map-get($spacers, 3);
+
+        .item__title{
+            font-size: 1.75rem;
+        }
     }
 }

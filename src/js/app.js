@@ -97,27 +97,58 @@ $(document).ready(() =>{
     if( $(".slider").length ){
         // Slider Link
         $('.slider.slider_link').slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: false,
-        dots: true, 
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false,
+            dots: true, 
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
                 }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+            ]
+        });
+        // Slider Reviews
+        $('.slider.slider_reviews').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            arrows: true,
+            dots: false, 
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 860,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
                 }
-            }
-        ]
+            ]
         });
     };
     // Mobile Navbar

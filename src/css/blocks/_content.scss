@@ -59,5 +59,12 @@
         .row + .row{
             padding-top: map-get($spacers, 3);
         }
+        .btn_absolute-position{
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            transform: translateX(0) translateY(50%);
+            width: calc(100% - 40px);
+        }
     }
 }

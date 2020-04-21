@@ -72,9 +72,7 @@
     .cta-block{
         padding: 0 0 60px;
         background-position-x: left;
-        &_pt{
-            padding-top: 60px;
-        }
+        
         &__info{
             max-width: calc(50% - 15px);
 
@@ -84,6 +82,10 @@
                 font-size: 12px;
                 letter-spacing: 0;
             }
+        }
+        
+        &_offset-top{
+            padding-top: map-get($spacers, 4);
         }
     }
 }
@@ -106,5 +108,10 @@
         &__offer{
             width: 100%;
         }
+
+        &_offset-top{
+            padding-top: map-get($spacers, 4);
+        }
+        
     }
 }

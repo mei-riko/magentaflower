@@ -45,6 +45,7 @@
     .programm{
         .programm__item {
             padding: map-get($spacers, 1) map-get($spacers, 2);
+            padding-right: map-get($spacers, 4);
         }
         .programm__title{
             margin-bottom: map-get($spacers, 1);
