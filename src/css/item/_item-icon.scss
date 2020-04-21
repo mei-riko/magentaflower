@@ -1,0 +1,13 @@
+.item-icon{
+    position: relative;
+    padding-left: map-get($spacers, 4);
+    .item-icon__img{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 36px;
+        height: 36px;
+    }
+}

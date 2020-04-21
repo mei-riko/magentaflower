@@ -5,9 +5,11 @@
 @import "other/header.scss";
 @import "other/footer.scss";
 @import "other/nav.scss";
+
 @import "other/buttonHeader.scss";
 
-@import "item/list.scss";
+@import "list/list.scss";
+@import "list/list_circle.scss";
 @import "other/modxAlert.scss";
 
 body{
@@ -109,6 +111,7 @@ section.main .banner-im{
         margin-top: 20px;
     }
 }
+
 body.card section.choice.choice_update,
 section.choice.choice_update{
     min-height: unset;

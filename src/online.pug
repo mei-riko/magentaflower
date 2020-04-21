@@ -19,16 +19,16 @@ html(lang="ru")
                     .col-12.mt-60.mt-md-40
                         .d-flex.header-block__info-row
                             .header-block__info-row__col.mb-sm-20
-                                .subtitle-light Когда
+                                .subtitle-light.text-grey Когда
                                 .header-block__info доступен 24/7
                             .header-block__info-row__col.mb-sm-20
-                                .subtitle-light Уровень
+                                .subtitle-light.text-grey Уровень
                                 .header-block__info обучение с нуля
                             .header-block__info-row__col.mb-sm-20
-                                .subtitle-light Формат
+                                .subtitle-light.text-grey Формат
                                 .header-block__info online-курс
                             .header-block__info-row__col.last
-                                .subtitle-light Документ
+                                .subtitle-light.text-grey Документ
                                 .header-block__info сертификат
         section.content.content_offset-small.p-relative
             .container
@@ -133,10 +133,10 @@ html(lang="ru")
                     a.pagination__item(href="#") 3
                 .mt-40.text-center
                     a.btn.btn_action(href="#") Хочу уметь также!
-        section.content.bg-corporate.p-relative.pb-0
+        section.info-content
             .container
                 p.h2.text-center.text-bold Обучение у нас популярно! Почему?
-                .line.mt-40.mb-40
+                .content-line.mt-40.mb-40
                 .row
                     .col-4.item
                         p.item__title.text-bold
@@ -154,22 +154,78 @@ html(lang="ru")
                             span.text-pink-secondary 03.
                             |  Полные базовые навыки
                         p.text-pink-light Lorem ipsum dolor sit amet. Amet, consectetur, adipisci velit, sed ut perspiciatis, unde omnis dolor. Sint, obcaecati cupiditate non numquam eius.
-                .row.info-position.justify-content-center.pt-0
+                .row.info-content__position.justify-content-center.pt-0
                     .col-5
                         .info.info_person.bg-pink
                             .info_person__img
-                            p.subtitle-light.text-pink-light.mb-0 преподаватель курса
+                            p.subtitle-light.text-pink-light.text-small.mb-0 преподаватель курса
                             p.info__title Елена Дмитриева
                             p.info__intro.text-pink-light Флорист-дизайнер международного уровня,  с опытом работы более 10 лет.
                     .col-5
                         .info.info_person.bg-pink
                             .info_person__img
-                            p.subtitle-light.text-pink-light.mb-0 преподаватель курса
+                            p.subtitle-light.text-pink-light.text-small.mb-0 преподаватель курса
                             p.info__title Татьяна Воронина
                             p.info__intro.text-pink-light Флорист-дизайнер международного уровня,  с опытом работы более 10 лет.
         section.programm.bg-light-grey
             .container  
-                p.h4.text-bold.text-center Программа online-курса
+                p.h4.text-bold.text-center.mb-60 Программа online-курса
+                .programm__item.programm__item_small.item-slide.item-slide_programm.mb-20
+                    .row.align-items-center
+                        p.programm__title.col-7.col-sm-12.col-md-6 1 день: «Инструменты и материалы»
+                        p.programm__time.col-5.mb-0.col-sm-12.col-md-6 2 часа теории   +   4 часа практики
+                    .programm__content.item-slide__content
+                        .row
+                            .col-8.col-sm-12
+                                p.subtitle Теория
+                                p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                                p.subtitle Практика
+                                p.mb-0 спиральная техника
+                            .col-4.col-sm-12.mt-sm-40
+                                img.img-fluid.ml-auto.ml-sm-(src="../img/01.png")
+                .programm__item.programm__item_small.item-slide.item-slide_programm.mb-20
+                    .row.align-items-center
+                        p.programm__title.col-7.col-sm-12.col-md-6 2 день: «Свежесрезанные цветы»
+                        p.programm__time.col-5.mb-0.col-sm-12.col-md-6 2 часа теории   +   4 часа практики
+                    .programm__content.item-slide__content
+                        p.subtitle Теория
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                        p.subtitle Практика
+                        p.mb-0 спиральная техника
+                .programm__item.programm__item_small.item-slide.item-slide_programm
+                    .row.align-items-center
+                        p.programm__title.col-7.col-sm-12.col-md-6 3 день: «Цвет и настроение»
+                        p.programm__time.col-5.mb-0.col-sm-12.col-md-6 2 часа теории   +   4 часа практики
+                    .programm__content.item-slide__content
+                        p.subtitle Теория
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                        p.subtitle Практика
+                        p.mb-0 спиральная техника
+                .text-center.mt-40
+                    a.text-grey-dark.text-bold.text-small(href="#") Показать ещё темы
+        section.content
+            .container
+                p.h2.text-bold.mb-60 Как проходит обучение?
+                .row
+                    .col-3.item
+                        p.item__number.text-pink 01
+                        p.item__title.text-bold Занятия
+                        p.text-grey Lorem ipsum dolor sit amet. Amet, consectetur, adipisci velit, sed ut perspiciatis, unde omnis dolor. Sint, obcaecati cupiditate non numquam eius. Eos, qui ratione voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                    .col-3.item
+                        p.item__number.text-pink 02
+                        p.item__title.text-bold Практика
+                        p.text-grey Amet, consectetur, adipisci velit, sed quia dolor. Autem quibusdam et aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus. Perferendis doloribus asperiores repellat. numquam eius modi tempora incidunt.
+                    .col-3.item
+                        p.item__number.text-pink 03
+                        p.item__title.text-bold Обратная связь
+                        p.text-grey Temporibus autem vel eum fugiat, quo minus. Esse, quam nihil molestiae consequatur, vel illum.
+                        .info.info_small.d-inline-block
+                            p.subtitle.mb-0 Бонус
+                            p.text-grey Бесплатный вебинар с&nbsp;флористами
+                    .col-3.item
+                        p.item__number.text-pink 04
+                        p.item__title.text-bold Работа мечты
+                        p.text-grey Vitae dicta sunt, explicabo iste natus error. Itaque earum rerum necessitatibus saepe eveniet, ut labore et quas molestias excepturi. Reprehenderit, qui in culpa, qui dolorem eum fugiat, quo minus.
         include chunks/footer.pug
         script(src="./js/jquery.fancybox.min.js")
         script(src="./js/jquery.inputmask.js")

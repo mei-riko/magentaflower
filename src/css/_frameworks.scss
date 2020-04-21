@@ -66,11 +66,13 @@ a{
 .p-sticky{position: sticky; top: 0; left: 0; z-index: 101; background: $white;}
 
 .d-flex{display: flex;}
+.d-inline-block{display: inline-block;}
 .d-none{display: none;}
 
 .text-white{color: $white;}
 .text-black{color: $black;}
 .text-grey{color: $grey;}
+.text-grey-dark{color: $dark-grey;}
 .text-pink{color: $pink;}
 .text-pink-secondary{color: $pink-secondary;}
 .text-pink-light{color: $pink-light;}

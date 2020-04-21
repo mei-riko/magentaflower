@@ -6,19 +6,33 @@
 @import "grid.scss";
 @import "position.scss";
 
-@import "other/header.scss";
-@import "other/nav.scss";
-@import "other/form.scss";
+
+
+@import "other/bg.scss";
 @import "other/button.scss";
 @import "other/footer.scss";
+@import "other/form.scss";
+@import "other/header.scss";
 @import "other/modxAlert.scss";
+@import "other/nav.scss";
 @import "other/pagination.scss";
 
-@import "item/icon.scss";
-@import "item/info.scss";
+@import "items/contacts.scss";
+@import "items/icon-block.scss";
+@import "items/icon-list.scss";
+@import "items/info.scss";
+@import "items/preview-link.scss";
+@import "items/subtitle.scss";
+
+@import "item/item-icon.scss";
+@import "item/item-logo.scss";
+@import "item/item-slide.scss";
 @import "item/item.scss";
-@import "item/list.scss";
-@import "item/preview-link.scss";
+
+@import "list/list.scss";
+@import "list/list_advantage.scss";
+@import "list/list_circle.scss";
+@import "list/list_numeric.scss";
 
 @import "blocks/content.scss";
 @import "blocks/cta-block.scss";

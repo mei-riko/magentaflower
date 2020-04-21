@@ -1,11 +1,22 @@
+// Блок с вызовом модальной формы заявки
 .info-block{
     padding: map-get($spacers, 4) 0;
     background: linear-gradient(#feeef4, #ffd9d2);
-
     color: $grey;
+}
+// Блок с преимуществами
+.info-content{
+    position: relative;
+    @extend .bg-corporate;
+    padding: map-get($spacers, 5) 0 0;
 
-    .h1{
-        color: $black;
+    & + .content,
+    & + .programm{
+        padding-top: 140px;
+    }
+
+    .info-content__position{
+        transform: translateY(50%);
     }
 }
 

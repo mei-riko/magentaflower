@@ -1,0 +1,12 @@
+// Подзаголовок
+.subtitle{
+    color: $pink;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    &-light{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}

@@ -4,7 +4,7 @@
     background: $light-grey url("../img/bg-demo-contact.jpg") right center / cover;
 
     // Блоки с доп. информацией
-    .cta-block__info{
+    &__info{
         display: inline-block;
         max-width: 100%;
         padding: 40px 50px;
@@ -32,23 +32,23 @@
             margin-right: 0px;
         }
     }
-    .cta-block__info-title{
+    &__info-title{
         margin: 0 0 .75em;
     }
     // Основной контент
-    .cta-block__title{
+    &__title{
         font-weight: bold;
-        width: 440px;
+        width: 500px;
         max-width: 100%;
         margin: 0 0 2rem;
     }
-    .cta-block__offer{
+    &__offer{
         width: 260px;
         max-width: 100%;
         margin: 0 0 2rem;
         @extend .lead;
     }
-    .cta-block__form{
+    &__form{
         width: 400px;
         max-width: 100%;
         .form__input{
@@ -56,12 +56,14 @@
         }
     }
 
+    // Модификаторы фонового фото
     &_summer{
         background: $light-grey url("../img/bg-contact-warm.jpg") right center / cover;
     }
     &_winter{
         background: $light-grey url("../img/bg-contact-cold.jpg") right center / cover;
     }
+    // Модификатор отступов
     &_offset-top{
         padding-top: map-get($spacers, 5);
     }
@@ -73,7 +75,7 @@
         &_pt{
             padding-top: 60px;
         }
-        .cta-block__info{
+        &__info{
             max-width: calc(50% - 15px);
 
             margin-bottom: 20px;
@@ -88,7 +90,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .cta-block{
         padding: 0 0 map-get($spacers, 4);
-        .cta-block__info{
+        &__info{
             max-width: 100%;
 
             transform: translateY(-40px);
@@ -98,10 +100,10 @@
                 margin-top: -20px;
             }
         }
-        .cta-block__title{
+        &__title{
             margin: 0 0 2rem;
         }
-        .cta-block__offer{
+        &__offer{
             width: 100%;
         }
     }

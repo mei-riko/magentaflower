@@ -1,0 +1,20 @@
+// Блоки с "//" перед текстом
+.icon-block{
+    padding: 20px 0;
+    padding-left: 90px;
+    background: url("../img/icon-line.svg") no-repeat left center / 60px; 
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .icon-block{
+        padding-left: 60px;
+        background: url("../img/icon-line.svg") no-repeat left center / 40px; 
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .icon-block{
+        // padding: 10px 0;
+        padding: 0;
+        padding-left: 40px;
+        background: url("../img/icon-line.svg") no-repeat left center / 30px; 
+    }
+}

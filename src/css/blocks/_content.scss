@@ -25,59 +25,17 @@
         padding: map-get($spacers, 4) 0;
     }
 }
-// Подзаголовок
-.subtitle{
-    color: $pink;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-
-    &-light{
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-}
 // Разделительная черта
-.line{
+.content-line{
     display: block;
     margin: 0 auto;
     width: 500px;
     max-width: 75%;
     height: 1px;
 }
-// Варианты фона
-.bg-light-grey{background: $light-grey;}
-.bg-light-pink{
-    background: $pink-light;
-    .btn_default{
-        background-color: darken($pink-light, 4%);;
-        &:hover{
-            background: darken($pink-light, 7%);
-        }
-    }
-}
-.bg-pink{background: $pink;color: $white;}
-.bg-border{border-top:1px solid $border-color;border-bottom:1px solid $border-color;}
-.bg-flowers_01{background: url("../img/bg-demo.jpg") no-repeat center bottom / cover;}
-.bg-flowers_02{background: url("../img/bg-result-01.jpg") no-repeat center bottom / cover;}
-.bg-corporate{
-    background: $pink url("../img/bg-corporate.jpg") no-repeat center / cover;
-    color:$white;
-    .h1{
-        width: 580px;
-        max-width: 100%;
-    }
-    .line{
-        background: $pink-secondary;
-    }
-}
+
 
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
-    .bg-flowers_01{
-        padding-bottom: 160px;
-        background-size: 1100px;
-        background-color: $light-grey;
-    }
     .content{
         padding: map-get($spacers, 3) 0;
         .content__title{

@@ -5,6 +5,11 @@
         background: $white;
         border: 1px solid #d3d3d3;
         border-radius: 20px;
+
+        // Модификатор
+        &_small{
+            padding: map-get($spacers, 1) map-get($spacers, 2);
+        }
     }
     .programm__title{
         font-weight: bold;
