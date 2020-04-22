@@ -20,6 +20,7 @@
         }
 
         &_disabled{
+            opacity: .5;
             color: $grey;
             &:before{
                 background: $border-color;

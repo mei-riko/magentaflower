@@ -793,6 +793,7 @@ footer .row,
 }
 
 .list_circle .list__item_disabled {
+  opacity: .5;
   color: #726d72;
 }
 

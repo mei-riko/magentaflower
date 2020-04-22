@@ -2191,6 +2191,9 @@ a.link-inverse:hover {
   .info .info__content {
     height: 200px;
   }
+  .info_row {
+    height: auto;
+  }
   .info_row .info__img {
     padding-right: 20px;
   }
@@ -2643,6 +2646,7 @@ a.link-inverse:hover {
 }
 
 .list_circle .list__item_disabled {
+  opacity: .5;
   color: #726d72;
 }
 
@@ -3184,7 +3188,7 @@ a.link-inverse:hover {
 }
 
 .price-col__value {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
@@ -3497,6 +3501,11 @@ a.link-inverse:hover {
 
 .slider_reviews .slick-slide {
   margin: 0 10px;
+}
+
+.slider_reviews .info {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 @media all and (max-width: 768px) {
