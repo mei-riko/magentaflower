@@ -7,6 +7,7 @@
 @import "other/nav.scss";
 
 
+@import "items/contacts.scss";
 @import "list/list.scss";
 @import "list/list_circle.scss";
 
@@ -76,7 +77,7 @@ header .contacts .contacts__item{
 }
 
 section.main{
-    margin-top: -48px;
+    margin-top: -56px;
 }
 
 section.main, section.main .bg_handler img.bg_sl_mp{

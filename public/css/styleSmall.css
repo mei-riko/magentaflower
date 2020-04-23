@@ -762,6 +762,80 @@ footer .row,
   }
 }
 
+.contacts {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+.contacts .contacts__item {
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.contacts .contacts__item_networks {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.contacts .contacts__item_networks .footer__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.contacts .contacts__item_vk {
+  background: url("../img/vk.svg") no-repeat left center/contain;
+}
+
+.contacts .contacts__item_inst {
+  background: url("../img/inst.svg") no-repeat left center/contain;
+}
+
+.contacts .contacts__item_fb {
+  background: url("../img/fb.svg") no-repeat left center/contain;
+}
+
+.contacts .contacts__item_phone {
+  background: url("../img/telephone-pink.svg") no-repeat left center/16px;
+}
+
+.contacts .contacts__item_email {
+  background: url("../img/mail-pink.svg") no-repeat left center/16px;
+}
+
+.contacts .contacts__item + .contacts__item {
+  margin-top: 10px;
+}
+
+.contacts_inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.contacts_inline .contacts__item + .contacts__item {
+  margin-top: 0;
+  margin-left: 30px;
+}
+
+.contacts + .contacts {
+  padding: 30px 0 0;
+}
+
+@media all and (max-width: 992px) {
+  .contacts_inline .contacts__item_phone {
+    font-size: 12px;
+  }
+  .contacts_inline .contacts__item + .contacts__item {
+    margin-left: 10px;
+  }
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -1226,7 +1300,7 @@ header .contacts .contacts__item {
 }
 
 section.main {
-  margin-top: -48px;
+  margin-top: -56px;
 }
 
 section.main, section.main .bg_handler img.bg_sl_mp {

@@ -54,6 +54,10 @@
     }
 }
 
+// .header .contacts{
+//     padding-top: 5px;
+// }
+
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .contacts{
         &_inline{
