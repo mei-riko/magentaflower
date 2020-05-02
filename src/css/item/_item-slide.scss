@@ -20,7 +20,7 @@
         transition: .4s;
     }
     // Open Item
-    &.item-slide--active{
+    &--active{
         &:after{
             transform: rotate(-180deg);
         }
@@ -41,6 +41,7 @@
     &_programm{
         background: $white;
         background-position-x: calc(100% - 26px);
+        
         &.item-slide--active{
             border-color: $pink!important;
         }

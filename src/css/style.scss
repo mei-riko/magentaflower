@@ -6,14 +6,12 @@
 @import "grid.scss";
 @import "position.scss";
 
-
-
 @import "other/button.scss";
 @import "other/footer.scss";
 @import "other/form.scss";
 @import "other/header.scss";
 @import "other/modxAlert.scss";
-@import "other/nav.scss";
+@import "other/navbar.scss";
 @import "other/pagination.scss";
 
 @import "items/contacts.scss";
@@ -34,7 +32,10 @@
 @import "list/list_circle.scss";
 @import "list/list_numeric.scss";
 
-@import "blocks/content.scss";
+@import "content/content.scss";
+
+@import "map/map.scss";
+
 @import "blocks/cta-block.scss";
 @import "blocks/info-block.scss";
 @import "blocks/header-block.scss";

@@ -1163,6 +1163,15 @@ a.link-inverse:hover {
   background: #d3296a;
 }
 
+.btn_absolute-position {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(50%);
+  -ms-transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(50%);
+}
+
 @media all and (max-width: 768px) {
   .btn_link {
     padding: 0;
@@ -1173,6 +1182,18 @@ a.link-inverse:hover {
   .btn_link:hover {
     background: none;
     color: #d3296a;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .btn_absolute-position {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    -webkit-transform: translateX(0) translateY(50%);
+    -ms-transform: translateX(0) translateY(50%);
+    transform: translateX(0) translateY(50%);
+    width: calc(100% - 40px);
   }
 }
 
@@ -2465,7 +2486,7 @@ a.link-inverse:hover {
   transition: .4s;
 }
 
-.item-slide.item-slide--active:after {
+.item-slide--active:after {
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
@@ -2720,17 +2741,8 @@ a.link-inverse:hover {
   font-size: 3.375rem;
 }
 
-.content .text-top {
+.content .content__text-top {
   padding-top: 10px;
-}
-
-.content .btn_absolute-position {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(50%);
-  -ms-transform: translateX(-50%) translateY(50%);
-  transform: translateX(-50%) translateY(50%);
 }
 
 .content .row + .row {
@@ -2743,14 +2755,6 @@ a.link-inverse:hover {
 
 .content_offset-small {
   padding: 60px 0;
-}
-
-.content-line {
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-  max-width: 75%;
-  height: 1px;
 }
 
 @media all and (max-width: 992px) {
@@ -2778,15 +2782,11 @@ a.link-inverse:hover {
   .content .row + .row {
     padding-top: 40px;
   }
-  .content .btn_absolute-position {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    -webkit-transform: translateX(0) translateY(50%);
-    -ms-transform: translateX(0) translateY(50%);
-    transform: translateX(0) translateY(50%);
-    width: calc(100% - 40px);
-  }
+}
+
+.map {
+  width: 100%;
+  height: 600px;
 }
 
 .cta-block {
@@ -3307,6 +3307,10 @@ a.link-inverse:hover {
 
 .programm .programm__item_small {
   padding: 20px 30px;
+}
+
+.programm .programm__item_slide {
+  padding-right: 80px;
 }
 
 .programm .programm__title {

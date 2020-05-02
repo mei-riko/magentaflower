@@ -94,7 +94,7 @@ $(document).ready(() =>{
         $("html, body").animate({scrollTop: $("#corporateForm").offset().top - 100 + "px"}, {duration: 500,easing: "swing"});
     });
     // Slider
-    if( $(".slider").length ){
+    if( $(".slider").length > 0){
         // Slider Link
         $('.slider.slider_link').slick({
             slidesToShow: 3,
@@ -151,6 +151,68 @@ $(document).ready(() =>{
             ]
         });
     };
+    // Yandex Map
+    if( $(".map.map_yandex").length  > 0){
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                center: [59.873338, 30.334284],
+                zoom: 16,
+                controls: ['fullscreenControl']
+            });
+
+            // Добавим панель маршрутизации.
+            myMap.controls.add('routePanelControl');
+            myMap.controls.add('zoomControl', {position: { top: 108, left: 'auto', right: 10},});
+            
+
+            var control = myMap.controls.get('routePanelControl');
+            control.options.set({
+                maxWidth: '240',
+                autofocus: false,
+                showHeader: true,
+                title: 'Маршрут до «Мадженты»',
+
+            });
+            // Зададим состояние панели для построения машрутов.
+            control.routePanel.state.set({
+                // Тип маршрутизации.
+                type: 'auto',
+                fromEnabled: true,
+                from: 'Московский проспект, 141А',
+                toEnabled: false,
+                to: 'Санкт-Петербург, пр. Юрия Гагарина, 7'
+            });
+            // Зададим опции панели для построения машрутов.
+            control.routePanel.options.set({
+                reverseGeocoding: true,
+                allowSwitch: false,
+                // Зададим виды маршрутизации, которые будут доступны пользователям для выбора.
+                types: { auto: true, masstransit: true, pedestrian: true, bicycle: false, taxi: false }
+            });
+
+            // Получение объекта, описывающего построенные маршруты.
+            var multiRoutePromise = control.routePanel.getRouteAsync();
+            multiRoutePromise.then(function(multiRoute) {
+                multiRoute.options.set({
+                    // Цвет метки начальной точки.
+                    wayPointStartIconFillColor: "#dd5287",
+                    // Внешний вид линий (для всех маршрутов).
+                    routeStrokeColor: "726d72",
+                    routeStrokeStyle: "shortdot",
+                    routeActiveStrokeColor: "dd5287",
+                    routeActiveStrokeStyle: "solid",
+
+                    wayPointFinishIconLayout: "default#image",
+                    wayPointFinishIconImageHref: "icon/icon-map-marker.png",
+                    wayPointFinishIconImageSize: [30, 43],
+                    wayPointFinishIconImageOffset: [-15, -15],
+                    wayPointFinishBalloon: true
+                });  
+            }, function (err) {
+                console.log(err); 
+            });
+        });
+    }
     // Mobile Navbar
     $(".nav-btn#nav").on("click", function(){
         if( !$(this).hasClass("nav-btn--active")){
