@@ -9,7 +9,7 @@
     }
     
     // Отступы между row
-    .row + .row{
+    .content__row + .content__row{
         padding-top: map-get($spacers, 6);
     }
     // Отступы вокруг контента
@@ -36,14 +36,14 @@
         .content__title{
             font-size: 1.75rem;
         }
-        .row + .row{
+        .content__row + .content__row{
             padding-top: map-get($spacers, 4);
         }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .content{
-        .row + .row{
+        .content__row + .content__row{
             padding-top: map-get($spacers, 3);
         }
     }

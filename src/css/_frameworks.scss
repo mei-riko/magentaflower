@@ -55,6 +55,9 @@ a{
     &:hover, &:focus{
         outline: none;
     }
+    &.link{
+        text-decoration: underline;
+    }
     &.link-inverse{
         color: $link-hover-color;
         &:hover{

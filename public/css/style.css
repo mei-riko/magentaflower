@@ -415,6 +415,10 @@ a:hover, a:focus {
   outline: none;
 }
 
+a.link {
+  text-decoration: underline;
+}
+
 a.link-inverse {
   color: #dd5287;
 }
@@ -1755,7 +1759,6 @@ a.link-inverse:hover {
 }
 
 .contacts .contacts__item {
-  font-weight: bold;
   padding-left: 30px;
 }
 
@@ -2745,7 +2748,7 @@ a.link-inverse:hover {
   padding-top: 10px;
 }
 
-.content .row + .row {
+.content .content__row + .content__row {
   padding-top: 100px;
 }
 
@@ -2773,20 +2776,27 @@ a.link-inverse:hover {
   .content .content__title {
     font-size: 1.75rem;
   }
-  .content .row + .row {
+  .content .content__row + .content__row {
     padding-top: 60px;
   }
 }
 
 @media all and (max-width: 576px) {
-  .content .row + .row {
+  .content .content__row + .content__row {
     padding-top: 40px;
   }
 }
 
 .map {
   width: 100%;
-  height: 600px;
+  height: 460px;
+  border: 1px solid #dd5287;
+}
+
+@media (max-width: 576px) {
+  .map {
+    height: 540px;
+  }
 }
 
 .cta-block {
