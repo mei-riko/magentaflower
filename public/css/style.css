@@ -2808,7 +2808,7 @@ a.link-inverse:hover {
 .cta-block__info {
   display: inline-block;
   max-width: 100%;
-  padding: 40px 50px;
+  padding: 30px 40px;
   margin-right: 20px;
   -webkit-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
