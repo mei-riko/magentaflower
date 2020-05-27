@@ -150,10 +150,18 @@ html(lang="ru")
         section.info-block
             .container.text-center
                 .row.justify-content-center
+                    .col-10.col-md-12
+                        p.h2.text-bold.text-black.mb-20 Затрудняетесь с выбором нужного курса?
                     .col-7.col-md-12
-                        p.h1.text-bold.text-black Затрудняетесь с выбором нужного курса?
                         p Не можете выбрать курс для своего уровня? Побеседуйте с нашими преподавателями, чтобы определить свои сильные и слабые стороны.
-                        p.mt-40.mt-sm-20
+                        .networks.mt-40.mt-sm-20.justify-content-center
+                            a.networks__item(href="#")
+                                img.img-fluid(src="../icon/vk.svg")
+                            a.networks__item(href="#")
+                                img.img-fluid(src="../icon/whatsapp.svg")
+                            a.networks__item(href="#")
+                                img.img-fluid(src="../icon/telegram.svg")
+                        p.mt-20
                             a.btn.btn_action(href="#") Нужна консультация
         include chunks/footer.pug
         script(src="./js/jquery.fancybox.min.js")

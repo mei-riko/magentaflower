@@ -57,6 +57,11 @@
     .flex-md-column-reverse > * {
         flex: 1;
     }
+    .justify-content-md-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important
+    }
 }
 @media (max-width: map-get($grid-breakpoints, 'sm')) {
     .flex-sm-column-reverse {
@@ -68,5 +73,10 @@
     }
     .flex-sm-column-reverse > * {
         flex: 1;
+    }
+    .justify-content-sm-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important
     }
 }

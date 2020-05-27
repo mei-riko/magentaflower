@@ -7,7 +7,7 @@
 @import "other/navbar.scss";
 
 
-@import "items/contacts.scss";
+@import "block/contacts.scss";
 @import "list/list.scss";
 @import "list/list_circle.scss";
 
@@ -143,9 +143,9 @@ footer.footer{
 }
 
 .info-block{
-    padding: 60px 0;
-    background: linear-gradient(#feeef4, #ffd9d2);
-    color: #000;
+    padding: map-get($spacers, 4) 0;
+    background: linear-gradient(#f9eaf1, #f0c9d8);
+    color: $grey;
     text-align: center;
     .h2, h2 {
         font-family: 'Noto Serif', serif;
@@ -155,7 +155,7 @@ footer.footer{
     p{
         font-family: "Noto Sans";
         line-height: 1.6;
-        color: #000;
+        color: $grey;
         margin-bottom: 1.25rem;
     }
     .btn {
@@ -170,7 +170,7 @@ footer.footer{
         cursor: pointer;
         transition: .4s;
         &_action{
-            background: #dd5287;
+            background: $pink;
             color: #ffffff;
             font-weight: bold;
         }

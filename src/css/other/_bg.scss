@@ -24,6 +24,9 @@
         background: $pink-secondary;
     }
 }
+.bg-wave{
+    background: #faf4f6 url("../img/pattern-wave-light.png") repeat left top/260px;
+}
 
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .bg-flowers_01{

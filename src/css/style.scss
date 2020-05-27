@@ -14,13 +14,20 @@
 @import "other/navbar.scss";
 @import "other/pagination.scss";
 
-@import "items/contacts.scss";
-@import "items/icon-block.scss";
-@import "items/icon-list.scss";
-@import "items/info.scss";
-@import "items/networks.scss";
-@import "items/preview-link.scss";
-@import "items/subtitle.scss";
+@import "block/contacts.scss";
+@import "block/icon-block.scss";
+@import "block/icon-list.scss";
+@import "block/networks.scss";
+@import "block/preview-link.scss";
+@import "block/subtitle.scss";
+
+@import "info/info.scss";
+@import "info/info_row.scss";
+@import "info/info_columns.scss";
+@import "info/info_person.scss";
+@import "info/info_review.scss";
+@import "info/info_alert.scss";
+
 
 @import "item/item-icon.scss";
 @import "item/item-logo.scss";
@@ -36,15 +43,15 @@
 
 @import "map/map.scss";
 
-@import "blocks/cta-block.scss";
-@import "blocks/info-block.scss";
-@import "blocks/header-block.scss";
-@import "blocks/portfolio.scss";
-@import "blocks/price.scss";
-@import "blocks/programm.scss";
-@import "blocks/sertificate.scss";
-@import "blocks/slider.scss";
-@import "blocks/timetable.scss";
+@import "section/cta-block.scss";
+@import "section/info-block.scss";
+@import "section/header-block.scss";
+@import "section/portfolio.scss";
+@import "section/price.scss";
+@import "section/programm.scss";
+@import "section/sertificate.scss";
+@import "section/slider.scss";
+@import "section/timetable.scss";
 
 @import "other/bg.scss";
 @import "other/offset.scss";

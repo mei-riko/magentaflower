@@ -1,0 +1,32 @@
+// Отзыв
+.info_review{
+    padding: map-get($spacers, 2);
+    .info__img{
+        width: 120px;
+        height: 120px;
+        margin: 0 auto map-get($spacers, 1);
+        border-radius: 60px;
+        background-color: $white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .info__intro{
+        height: 120px;
+        overflow: hidden;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .info_review{
+        .info__intro{
+            height: 140px;
+        }   
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .info_review{
+        .info__intro{
+            height: auto;
+        }   
+    }
+}

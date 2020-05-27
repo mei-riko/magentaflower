@@ -72,7 +72,6 @@
             width: 265px;
         }
     }
-
     // Основной и скрытый контент
     .info__content{
         position: relative;
@@ -120,76 +119,16 @@
             color: $pink;
         }
     }
-
-    // Блок со 100% высотой
-    &_column{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    // Горизонтальный инфо-блок c картинкой
-    &_row{
-        padding: map-get($spacers, 3) map-get($spacers, 1);
-
-        display: flex;
-        flex-wrap: wrap;
-        height: 100%;
-    }
-    // Уменьшенные отступы
+    // Отступы
+    &_offset-small,
     &_small{
         padding: map-get($spacers, 1) map-get($spacers, 2);
-    }
-    // Информация о человеке
-    &_person{
-        position: relative;
-        padding-left: 130px;
-        box-shadow: none;
-        
-        .info__img{
-            position: absolute;
-            left: -20px;
-            top: 50%;
-            transform: translateY(-50%);
-
-            width: 120px;
-            height: 120px;
-            border-radius: 60px;
-            background-color: $white;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
-    // Отзыв
-    &_review{
-        padding: map-get($spacers, 2);
-        .info__img{
-            width: 120px;
-            height: 120px;
-            margin: 0 auto map-get($spacers, 1);
-            border-radius: 60px;
-            background-color: $white;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .info__intro{
-            height: 120px;
-            overflow: hidden;
-        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .info{
         .info__title{
             font-size: 1.25rem;
-        }
-
-        &_row{
-            .info__img{
-                padding-right: 0;
-            }
         }
     }
 }
@@ -200,18 +139,6 @@
         }
         .info__content{
             height: 200px;
-        }
-
-        &_row{
-            height: auto;
-            .info__img{
-                padding-right: 20px;
-            }
-        }
-        &_review{
-            .info__intro{
-                height: 140px;
-            }   
         }
     }
 }
@@ -234,40 +161,10 @@
         .info__content{
             height: 180px;
         }
-
-        &_row{
-            padding: map-get($spacers, 1 ) 0;
-        }
-        &_person{
-            padding-left: 140px;
-            
-            .info__img{
-                left: 20px;
-    
-                width: 100px;
-                height: 100px;
-                border-radius: 50px;
-            }
-        }
-        
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .info{
-        padding: 20px 30px;
-        &_person{
-            padding-left: 120px;
-            
-            .info__img{
-                width: 80px;
-                height: 80px;
-                border-radius: 40px;
-            }
-        }
-        &_review{
-            .info__intro{
-                height: auto;
-            }   
-        }
+        padding: map-get($spacers, 1) map-get($spacers, 2);
     }
 }

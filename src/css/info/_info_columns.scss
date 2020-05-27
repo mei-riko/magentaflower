@@ -1,0 +1,8 @@
+// Блок со 100% высотой
+.info_column{
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
