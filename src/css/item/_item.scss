@@ -39,4 +39,12 @@
             font-size: 1.75rem;
         }
     }
+    &_step{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .item__content{
+            margin-bottom: map-get($spacers, 1);
+        }
+    }
 }

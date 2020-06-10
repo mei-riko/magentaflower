@@ -3,7 +3,7 @@
     margin: 0;
     padding: 10px 0 0;
 
-    .contacts__item{
+    &__item{
         // font-weight: bold;
         padding-left: map-get($spacers, 2);
 
@@ -46,6 +46,12 @@
         .contacts__item + .contacts__item{
             margin-top: 0;
             margin-left: map-get($spacers, 2);
+        }
+    }
+    &_header{
+        padding: 0;
+        .contacts__item + .contacts__item{
+            margin-left: map-get($spacers, 1)/2;
         }
     }
 

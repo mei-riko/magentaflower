@@ -4,10 +4,9 @@
     background: linear-gradient(#f9eaf1, #f0c9d8);
     color: $grey;
 }
-// Блок с преимуществами
+// Блок с преимуществами онлайн курса
 .info-content{
     position: relative;
-    @extend .bg-corporate;
     padding: map-get($spacers, 5) 0 0;
 
     .info-content__position{

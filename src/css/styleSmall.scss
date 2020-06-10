@@ -8,6 +8,7 @@
 
 
 @import "block/contacts.scss";
+@import "block/networks.scss";
 @import "list/list.scss";
 @import "list/list_circle.scss";
 
@@ -190,7 +191,9 @@ footer.footer{
 .justify-content-center{
     justify-content: center;
 }
-
+.img-fluid{
+    max-width: 100%;
+}
 
 @media (max-width: 992px){
     .header .header__logo {

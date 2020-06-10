@@ -35,6 +35,10 @@
         & + .list__item{
             margin-top: map-get($spacers, 2);
         }
+
+        &_col + .list__item_col{
+            margin-top: 0;
+        }
     }
 }
 

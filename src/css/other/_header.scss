@@ -12,6 +12,19 @@
         & + .header__line{
             margin-top: 20px;
         }
+
+        &_right-col{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 5px;
+        }
+    }
+    .header__item{
+        & + .header__item{
+            margin-left: map-get($spacers, 1);
+        }
     }
     .header__logo{
         background: url("../img/logo.svg") no-repeat center 0px/ contain;
@@ -91,9 +104,6 @@
     &:hover{
         color: $pink;
     }
-    & + .header-btn{
-        margin-left: map-get($spacers, 1);
-    }
 }
 @media all and (max-width: 1200px){
     .header{
@@ -105,9 +115,6 @@
         .header__col{
             flex: 0 0 calc( 50% - 90px);
             max-width: calc( 50% - 90px);
-            .navbar .navbar__link + .navbar__link {
-                margin-left: 14px;
-            }
         }
         &-top{
             .header:after{

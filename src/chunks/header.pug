@@ -10,16 +10,23 @@ header
                             li.contacts__item.contacts__item_phone
                                 a.header__link(href="tel:88001112233") 8 800 111-22-33
                     .header__line
-                        nav.navbar
+                        nav.navbar.navbar_left
                             a.navbar__link(href="/online.html") Online-курсы
                             a.navbar__link(href="/index.html") Очные курсы
                             a.navbar__link(href="#") О школе
                             a.navbar__link(href="/sertificate.html") Сертификаты
                 a.header__logo(href="/")
                 .col.header__col
-                    .header__line.text-right
-                        a.header-link(href="#") Блог школы
-                        a.header-btn.btn.btn_default(href="/timetable.html") Актуальное расписание курсов
+                    .header__line.header__line_right-col
+                        a.header-link.header__item(href="#") Блог
+                        a.header-btn.btn.btn_default.header__item(href="/timetable.html") Актуальное расписание
+                        ul.contacts.contacts_inline.contacts_header.header__item
+                            li.contacts__item.contacts__item_networks.contacts__item_vk
+                                a.footer__link(href="https://vk.com/magentaflower")
+                            li.contacts__item.contacts__item_networks.contacts__item_fb
+                                a.footer__link(href="https://vk.com/magentaflower")
+                            li.contacts__item.contacts__item_networks.contacts__item_inst
+                                a.footer__link(href="https://vk.com/magentaflower")
                     .header__line
                         nav.navbar.navbar_right
                             a.navbar__link(href="#") Отзывы

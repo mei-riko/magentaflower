@@ -63,6 +63,10 @@
             }
         }
     }
+    &_faq-small{
+        padding-top: map-get($spacers, 1);
+        padding-bottom:map-get($spacers, 1);
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){

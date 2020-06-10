@@ -11,22 +11,23 @@
 
         border-radius: 15px;
 
-        background: $grey;
-        color: $white;
+        background: darken($color: $pink-light, $amount: 5);
+        color: $grey;
         font-weight: bold;
         margin: 4px;
 
         &:hover{
             text-decoration: none;
-            background: $dark-grey;
+            background: darken($color: $pink-light, $amount: 10);
         }
 
         &--active{
-            background: darken($color: $pink-light, $amount: 5);
+            background: darken($color: $pink-light, $amount: 10);
             color: $grey;
             &:hover{
-                background: darken($color: $pink-light, $amount: 5);
+                background: darken($color: $pink-light, $amount: 10);
                 color: $grey;
+                cursor: default;
             }
         }
     }

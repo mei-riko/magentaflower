@@ -38,7 +38,45 @@ $(document).ready(() =>{
     $(".timetable-btn").on("click", function(){
         $('.cta-block .cta-block__form .form__input_title').val( $(this).data("title") );
     });
+    // Timer
+    if( $(".timer").length > 0 ){
 
+        var end = new Date( $(".timer").data("time"));
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        // var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'Время вышло :-(';
+
+                return;
+            }
+            // var days = Math.floor(distance / _day);
+            var hours = Math.floor(distance / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            hours = (hours < 10) ? '0' + hours : hours;
+            minutes = (minutes < 10) ? '0' + minutes : minutes;
+            seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+            // document.getElementById('countdown').innerHTML = days + ' ';
+            document.getElementById('countdown').innerHTML = hours + ':';
+            document.getElementById('countdown').innerHTML += minutes + ':';
+            document.getElementById('countdown').innerHTML += seconds;
+        }
+
+        timer = setInterval(showRemaining, 1000);
+
+    }
     // Sertificate Page
     $(".info__link.info__link_show").on("click", function(e){
         e.preventDefault();
