@@ -7,21 +7,30 @@
 @import "position.scss";
 
 @import "other/button.scss";
+@import "other/navbar.scss";
+@import "other/header.scss";
 @import "other/footer.scss";
 @import "other/form.scss";
-@import "other/header.scss";
 @import "other/modxAlert.scss";
-@import "other/navbar.scss";
 @import "other/pagination.scss";
 
 @import "block/contacts.scss";
-@import "block/icon-block.scss";
-@import "block/icon-list.scss";
 @import "block/networks.scss";
 @import "block/preview-link.scss";
 @import "block/subtitle.scss";
 @import "block/cources.scss";
 @import "block/timer.scss";
+@import "block/cta-block.scss";
+@import "block/header-block.scss";
+@import "block/portfolio.scss";
+@import "block/price.scss";
+@import "block/programm.scss";
+@import "block/sertificate.scss";
+@import "block/slider.scss";
+@import "block/timetable.scss";
+
+@import "icon/icon-block.scss";
+@import "icon/icon-list.scss";
 
 @import "info/info.scss";
 @import "info/info_columns.scss";
@@ -29,6 +38,9 @@
 @import "info/info_review.scss";
 @import "info/info_alert.scss";
 @import "info/info_promo.scss";
+
+@import "info/info-block.scss";
+@import "info/info-advantage.scss";
 
 @import "item/item-icon.scss";
 @import "item/item-logo.scss";
@@ -41,18 +53,8 @@
 @import "list/list_numeric.scss";
 
 @import "content/content.scss";
-
+@import "content/content-line.scss";
 @import "map/map.scss";
-
-@import "section/cta-block.scss";
-@import "section/info-block.scss";
-@import "section/header-block.scss";
-@import "section/portfolio.scss";
-@import "section/price.scss";
-@import "section/programm.scss";
-@import "section/sertificate.scss";
-@import "section/slider.scss";
-@import "section/timetable.scss";
 
 @import "other/bg.scss";
 @import "other/offset.scss";

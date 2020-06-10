@@ -2,7 +2,7 @@
     position: relative;
     padding: 230px 0 map-get($spacers, 6);
     background: $light-grey url("../img/bg-demo-header.jpg") no-repeat right bottom / contain ;
-    .header-block__subtitle{
+    &__subtitle{
         font-family: "Noto Sans";
         font-size: 1rem;
         display: inline-block;
@@ -12,21 +12,21 @@
         border-radius: 28px;
         margin: 0 0 2rem;
     }
-    .header-block__title{
+    &__title{
         display: block;
         font-size: 3.5rem;
         // font-size: 3.375rem;
         font-weight: bold;
         margin: 0 0 map-get($spacers, 4);
     }
-    .header-block__offer{
+    &__offer{
         color: #797979;
         @extend .text-small;
         width: 150px;
         max-width: 100%;
     }
     // Значение в инфо-блоке
-    .header-block__info{
+    &__info{
         font-family: 'Noto Serif', serif;
         font-weight: bold;
         font-size: 1.5rem;
@@ -34,11 +34,11 @@
         margin: .5rem 0;
     }
     // Позиционирование картинки
-    .header-block__container{
+    &__container{
         position: relative;
         z-index: 2;
     }
-    .header-block__image{
+    &__image{
         max-width: 100%;
 
         position: absolute;
@@ -47,7 +47,7 @@
         z-index: 1;
     }
     // Размещение блоков с информацией
-    .header-block__info-row{
+    &__info-row{
         flex-wrap: wrap;
         .header-block__info-row__col:not(.last){
             padding-right: map-get($spacers, 4);
@@ -57,7 +57,7 @@
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .header-block{
-        .header-block__title{
+        &__title{
             font-size: 2.75rem;
         }
     }
@@ -65,7 +65,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .header-block{
         padding-top: 150px;
-        .header-block__image{
+        &__image{
             top: 0;
             bottom: auto;
         }
@@ -75,12 +75,12 @@
     .header-block{
         padding: 160px 0 80px;
         background-position-x: 100px;
-        .header-block__title{
+        &__title{
             font-size: 2.5rem;
             width: 480px;
             max-width: 100%;
         }
-        .header-block__info{
+        &__info{
             font-size: 1.25rem;
         }
     }
@@ -92,17 +92,21 @@
         background-size: 860px;
         background-position-x: -260px;
 
-        .header-block__title{
+        &__title{
             font-size: 2.5rem;
             margin: 0 0 map-get($spacers, 3);
         }
-        .header-block__margin{
+        &__margin{
             margin-bottom: 2rem;
         }
-        .header-block__info{
+        &__info{
             line-height: 1.2;
         }
-        .header-block__offer{
+        // Размещение блоков с информацией
+        &__info-row{
+            flex-direction: column;
+        }
+        &__offer{
             font-size: 1rem;
             line-height: 1.5;
         }

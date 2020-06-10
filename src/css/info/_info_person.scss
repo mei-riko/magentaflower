@@ -1,18 +1,18 @@
 // Информация о человеке
 .info_person{
     position: relative;
-    padding-left: 130px;
+    padding-left: 140px;
     box-shadow: none;
     
     .info__img{
         position: absolute;
-        left: -20px;
+        left: -30px;
         top: 50%;
         transform: translateY(-50%);
 
-        width: 120px;
-        height: 120px;
-        border-radius: 60px;
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
         background-color: $white;
         background-position: center;
         background-repeat: no-repeat;

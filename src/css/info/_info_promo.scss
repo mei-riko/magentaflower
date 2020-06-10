@@ -26,3 +26,11 @@
     padding: map-get($spacers, 1)/2 map-get($spacers, 1);
     border-radius: 12px;
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .info_promo{
+        &__title{
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -9,12 +9,27 @@ $(document).ready(() =>{
         });
         return false;
     });
-
+    // Slide Info
     $(".item-slide").on("click", function(){
         $(this).toggleClass("item-slide--active");
         $(this).find(".item-slide__content").slideToggle();
     });
-
+    // Show more theme
+    $(".show-theme").on("click", function(e){
+        e.preventDefault();
+        if( $(this).hasClass("show-theme--active") ){
+            $(this).text("Скрыть темы");
+            $(this).removeClass("show-theme--active");
+            $(this).addClass("show-theme--hidden");
+            $(".hidden-theme").slideDown().removeClass("hidden-theme--hidden").addClass("hidden-theme--active");
+        }else if( $(this).hasClass("show-theme--hidden") ){
+            $(this).text("Показать все темы");
+            $(this).removeClass("show-theme--hidden");
+            $(this).addClass("show-theme--active");
+            $(".hidden-theme").slideUp().removeClass("hidden-theme--active").addClass("hidden-theme--hidden");
+        }
+    });
+    // Timetable
     let $mediaElementsAll = $(".timetable-col");
     let $mediaElements = $(".timetable-col:not(.archive)");
     $('.timetable-nav .timetable-nav__link').click(function(e){
@@ -33,7 +48,6 @@ $(document).ready(() =>{
             }
         }
     });
-
     // Timetable Page
     $(".timetable-btn").on("click", function(){
         $('.cta-block .cta-block__form .form__input_title').val( $(this).data("title") );
