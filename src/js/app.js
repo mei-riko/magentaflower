@@ -96,17 +96,17 @@ $(document).ready(() =>{
         e.preventDefault();
         let info = $(this).closest(".info");
         info.addClass("info--active");
-        info.find(".info__content__inside[data-info='intro']").addClass("info__content__inside--hidden-left");
-        info.find(".info__content__inside[data-info='details']").removeClass("info__content__inside--hidden-right");
+        info.find(".info__inside[data-info='intro']").addClass("info__inside--hidden-left");
+        info.find(".info__inside[data-info='details']").removeClass("info__inside--hidden-right");
     });
     $(".info__link.info__link_hide").on("click", function(e){
         e.preventDefault();
         let info = $(this).closest(".info");
         info.removeClass("info--active");
-        info.find(".info__content__inside[data-info='intro']").removeClass("info__content__inside--hidden-left");
-        info.find(".info__content__inside[data-info='details']").addClass("info__content__inside--hidden-right");
+        info.find(".info__inside[data-info='intro']").removeClass("info__inside--hidden-left");
+        info.find(".info__inside[data-info='details']").addClass("info__inside--hidden-right");
     });
-    $(".info .info__content .btn").on("click", function(e){
+    $(".info .info__content .btn.btn").on("click", function(e){
         e.preventDefault();
         let title = $(this).data("title");
 
