@@ -1,0 +1,37 @@
+html(lang="ru")
+    include chunks/head.pug
+    body.header-top
+        script(src="/js/jquery.min.js")
+        include chunks/header.pug
+        section.content.content_offset-small
+            .container
+                h1.text-bold.mb-40 Часто задаваемые вопросы
+                .row
+                    .col-6.col-lg-12
+                        p.h4.text-pink Общие вопросы
+                        .item-slide.item-slide_faq.item-slide_faq-small
+                            .item-slide__title Какие инструменты нужны для прохождения курса?
+                            .item-slide__content
+                                p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                        .item-slide.item-slide_faq.item-slide_faq-small
+                            .item-slide__title Какие материалы понадобятся для обучения?
+                            .item-slide__content
+                                p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    .col-6.col-lg-12
+                        p.h4.text-pink Вопросы по процессу обучения
+                        .item-slide.item-slide_faq.item-slide_faq-small
+                            .item-slide__title Какие инструменты нужны для прохождения курса?
+                            .item-slide__content
+                                p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                        .item-slide.item-slide_faq.item-slide_faq-small
+                            .item-slide__title Какие материалы понадобятся для обучения?
+                            .item-slide__content
+                                p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+        aside.mb-60
+            .container
+                include chunks/networks.pug
+        include chunks/footer.pug
+        script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=79c72616-7091-4150-914c-4d2e2a2ad526" type="text/javascript")
+        script(src="./js/app.min.js")

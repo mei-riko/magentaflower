@@ -41,6 +41,10 @@
             padding-left: 34px;
             background: url("../img/telephone.svg") no-repeat left center / 20px;
         }
+        &_email{
+            padding-left: 34px;
+            background: url("../img/email.svg") no-repeat left center / 20px;
+        }
         &_full{
             width: 100%;
         }
@@ -52,6 +56,10 @@
                 @extend .small;
             }
         }
+    }
+
+    .form-validation + .form__input{
+        margin-top: 20px;
     }
 }
 .form-input{

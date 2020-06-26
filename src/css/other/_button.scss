@@ -33,6 +33,16 @@
             background: darken($pink, 10%);
         }
     }
+    &_secondary{
+        background: inherit;
+        border: 3px solid $pink;
+        color: $pink;
+        font-weight: bold;
+        &:hover{
+            color: darken($pink, 10%);
+            border-color: darken($pink, 10%);
+        }
+    }
     &_link{
         background: $pink;
         color: $white;

@@ -458,6 +458,11 @@ a.link-inverse:hover {
   display: none;
 }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .text-white {
   color: #ffffff;
 }
@@ -1176,6 +1181,18 @@ a.link-inverse:hover {
   background: #d3296a;
 }
 
+.btn_secondary {
+  background: inherit;
+  border: 3px solid #dd5287;
+  color: #dd5287;
+  font-weight: bold;
+}
+
+.btn_secondary:hover {
+  color: #d3296a;
+  border-color: #d3296a;
+}
+
 .btn_link {
   background: #dd5287;
   color: #ffffff;
@@ -1600,12 +1617,21 @@ a.link-inverse:hover {
   background: url("../img/telephone.svg") no-repeat left center/20px;
 }
 
+.form .form__input_email {
+  padding-left: 34px;
+  background: url("../img/email.svg") no-repeat left center/20px;
+}
+
 .form .form__input_full {
   width: 100%;
 }
 
 .form .form__agree.checkbox .checkbox__label {
   color: #726d72;
+}
+
+.form .form-validation + .form__input {
+  margin-top: 20px;
 }
 
 .form-input {
@@ -2068,7 +2094,7 @@ a.link-inverse:hover {
 }
 
 .cta-block__form {
-  width: 400px;
+  width: 480px;
   max-width: 100%;
 }
 
@@ -2336,6 +2362,8 @@ a.link-inverse:hover {
   width: 240px;
   max-width: 100%;
   margin: 0 auto;
+  line-height: 1.4;
+  font-size: 13px;
 }
 
 .price-col__info {

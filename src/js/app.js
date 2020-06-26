@@ -106,10 +106,9 @@ $(document).ready(() =>{
         info.find(".info__inside[data-info='intro']").removeClass("info__inside--hidden-left");
         info.find(".info__inside[data-info='details']").addClass("info__inside--hidden-right");
     });
-    $(".info .info__content .btn.btn").on("click", function(e){
+    $(".info .info__content .btn.btn_order").on("click", function(e){
         e.preventDefault();
         let title = $(this).data("title");
-
         // дополнение описания CTA блока
         $("#sertificateInfo").html( title );
         // заполнение скрытого поля формы

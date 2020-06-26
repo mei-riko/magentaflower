@@ -82,7 +82,7 @@ var gulp = require("gulp"),
   
   gulp.task('watch', function () {
     gulp.watch(['./src/*.pug'], gulp.parallel('html'));
-    gulp.watch(['./src/*.pug'], gulp.parallel('html'));
+    gulp.watch(['./src/*/*.pug'], gulp.parallel('html'));
     gulp.watch(['./src/js/*.js'], gulp.parallel('scripts'));
     gulp.watch(['./src/css/*.scss'], gulp.parallel('css'));
     gulp.watch(['./src/css/*/*.scss'], gulp.parallel('css'));
