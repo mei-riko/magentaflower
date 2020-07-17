@@ -2218,6 +2218,49 @@ a.link-inverse:hover {
   padding-right: 60px;
 }
 
+.header-block_col {
+  margin-top: 110px;
+  padding: 120px 0 80px;
+  background: -webkit-gradient(linear, left top, right top, from(#f6f6f6), color-stop(60%, #f6f6f6), color-stop(60%, #f9eaf1), to(#f9eaf1));
+  background: -o-linear-gradient(left, #f6f6f6 0%, #f6f6f6 60%, #f9eaf1 60%, #f9eaf1 100%);
+  background: linear-gradient(90deg, #f6f6f6 0%, #f6f6f6 60%, #f9eaf1 60%, #f9eaf1 100%);
+}
+
+.header-block_col__image {
+  position: relative;
+  background: #f6f6f6 no-repeat center/cover;
+}
+
+.header-block_col__image:before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  border: 1px solid #dd5287;
+  -webkit-transform: translate(15px, -15px);
+  -ms-transform: translate(15px, -15px);
+  transform: translate(15px, -15px);
+}
+
+.header-block_col__image:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 100%;
+  border: 1px solid #dd5287;
+  -webkit-transform: translate(25px, -25px);
+  -ms-transform: translate(25px, -25px);
+  transform: translate(25px, -25px);
+}
+
+.header-block_col .btn {
+  z-index: 12;
+  position: relative;
+}
+
 @media all and (max-width: 1400px) {
   .header-block__title {
     font-size: 2.75rem;
@@ -2231,6 +2274,10 @@ a.link-inverse:hover {
   .header-block__image {
     top: 0;
     bottom: auto;
+  }
+  .header-block_col {
+    margin-top: 0px;
+    padding: 180px 0 40px;
   }
 }
 
@@ -2246,6 +2293,11 @@ a.link-inverse:hover {
   }
   .header-block__info {
     font-size: 1.25rem;
+  }
+  .header-block_col {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), color-stop(60%, #f6f6f6), color-stop(60%, #f9eaf1), to(#f9eaf1));
+    background: -o-linear-gradient(top, #f6f6f6 0%, #f6f6f6 60%, #f9eaf1 60%, #f9eaf1 100%);
+    background: linear-gradient(180deg, #f6f6f6 0%, #f6f6f6 60%, #f9eaf1 60%, #f9eaf1 100%);
   }
 }
 
@@ -2274,6 +2326,11 @@ a.link-inverse:hover {
   .header-block__offer {
     font-size: 1rem;
     line-height: 1.5;
+  }
+  .header-block_col__image:after {
+    -webkit-transform: translate(5px, -25px);
+    -ms-transform: translate(5px, -25px);
+    transform: translate(5px, -25px);
   }
 }
 

@@ -3,33 +3,34 @@ html(lang="ru")
     body.header-fixed
         script(src="/js/jquery.min.js")
         include chunks/header.pug
-        section.header-block
+        section.header-block.header-block_col
             .container.header-block__container
-                .row
-                    .col-7.col-md-12.col-lg-10.col-xl-9
+                .row.align-items-center
+                    .col-7.col-md-12.col-lg-6
                         h1.header-block__title.mb-40 Online-курс флористики
                         p.text-pink.text-bold.lead Освойте профессию флориста за 20 дней
-                        ul.list.list_circle.mb-40
+                        ul.list.list_circle.mb-20
                             li.list__item 27 полноценных уроков
                             li.list__item Разбор практики с преподавателем
                             li.list__item Обучение с нуля всех желающих
                             li.list__item Бесплатный вебинар
-                        p
-                            a.btn.btn_action(href="#") Хочу записаться
-                    .col-12.mt-60.mt-md-40
-                        .d-flex.header-block__info-row
-                            .header-block__info-row__col.mb-sm-20
+                        .row.mb-40.mb-sm-20
+                            .col-6.mb-20.mb-lg-0.mb-md-10.col-lg-12.col-md-6
                                 .subtitle-light.text-grey Когда
                                 .header-block__info доступен 24/7
-                            .header-block__info-row__col.mb-sm-20
+                            .col-6.mb-20.mb-lg-0.mb-md-10.col-lg-12.col-md-6
                                 .subtitle-light.text-grey Уровень
                                 .header-block__info обучение с нуля
-                            .header-block__info-row__col.mb-sm-20
+                            .col-6.mb-lg-0.mb-md-10.col-lg-12.col-md-6
                                 .subtitle-light.text-grey Формат
                                 .header-block__info online-курс
-                            .header-block__info-row__col.last
+                            .col-6.last.col-lg-12.col-md-6
                                 .subtitle-light.text-grey Документ
                                 .header-block__info сертификат
+                        p
+                            a.btn.btn_action(href="#") Хочу записаться
+                    .col-5.col-md-12.col-lg-6.mt-sm-40
+                        .header-block_col__image(style="background-image:url('../img/01.png');")
         section.content.content_offset-small.p-relative
             .container
                 .row.mb-40.mb-sm-20
