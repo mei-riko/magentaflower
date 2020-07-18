@@ -2214,7 +2214,11 @@ a.link-inverse:hover {
   flex-wrap: wrap;
 }
 
-.header-block__info-row .header-block__info-row__col:not(.last) {
+.header-block__info-col {
+  min-width: 220px;
+}
+
+.header-block__info-col:not(.last) {
   padding-right: 60px;
 }
 

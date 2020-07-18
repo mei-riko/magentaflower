@@ -49,11 +49,13 @@
     // Размещение блоков с информацией
     &__info-row{
         flex-wrap: wrap;
-        .header-block__info-row__col:not(.last){
+    }
+    &__info-col{
+        min-width: 220px;
+        &:not(.last){
             padding-right: map-get($spacers, 4);
         }
     }
-
     // Styling
     &_col{
         margin-top: 110px;
