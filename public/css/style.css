@@ -2215,7 +2215,7 @@ a.link-inverse:hover {
 }
 
 .header-block__info-col {
-  min-width: 220px;
+  min-width: 240px;
 }
 
 .header-block__info-col:not(.last) {
@@ -3129,8 +3129,6 @@ a.link-inverse:hover {
   border-radius: 24px;
   color: #000000;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 15px 0px #f0d5dd;
-  box-shadow: 0px 0px 15px 0px #f0d5dd;
   padding: 30px 40px;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -3347,8 +3345,6 @@ a.link-inverse:hover {
 .info_person {
   position: relative;
   padding-left: 140px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 
 .info_person .info__img {
@@ -3425,6 +3421,8 @@ a.link-inverse:hover {
 .info_alert {
   background: #f6f6f6 url("../img/bg-alert.png") no-repeat right center/60%;
   padding: 40px 60px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .info_alert__content {
@@ -3706,12 +3704,12 @@ a.link-inverse:hover {
   }
 }
 
-.item .item__title {
+.item__title {
   font-size: 1.5rem;
   line-height: 1.2;
 }
 
-.item .item__number {
+.item__number {
   font-size: 4rem;
   font-family: 'Noto Serif', serif;
   line-height: 1;

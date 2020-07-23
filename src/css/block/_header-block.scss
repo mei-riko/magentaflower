@@ -51,7 +51,7 @@
         flex-wrap: wrap;
     }
     &__info-col{
-        min-width: 220px;
+        min-width: 240px;
         &:not(.last){
             padding-right: map-get($spacers, 4);
         }

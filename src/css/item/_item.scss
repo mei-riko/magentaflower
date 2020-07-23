@@ -1,9 +1,9 @@
 .item{
-    .item__title{
+    &__title{
         font-size: 1.5rem;
         line-height: 1.2;
     }
-    .item__number{
+    &__number{
         font-size: 4rem;
         font-family: 'Noto Serif', serif;
         line-height: 1;
