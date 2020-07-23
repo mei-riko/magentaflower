@@ -2017,12 +2017,24 @@ a.link-inverse:hover {
 }
 
 .cources__img {
+  position: relative;
   width: 100%;
-  height: 150px;
-  background-position: center;
+  height: 180px;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 30px;
+}
+
+.cources__img:before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 180px;
+  border: 1px solid #dd5287;
+  -webkit-transform: translate(10px, -10px);
+  -ms-transform: translate(10px, -10px);
+  transform: translate(10px, -10px);
 }
 
 .cources__title {

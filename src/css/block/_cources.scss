@@ -1,13 +1,25 @@
 // Кому подходит онлайн курс BEM
 .cources{
     &__img{
+        position: relative;
+
         width: 100%;
-        height: 150px;
-        background-position: center;
+        height: 180px;
+        background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
         // border-radius: 50px;
         margin-bottom: map-get($spacers, 2);
+
+        &:before{
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 180px;
+
+            border: 1px solid $pink;
+            transform: translate(10px, -10px);
+        }
     }
     &__title{
         font-size: 1.5rem;
