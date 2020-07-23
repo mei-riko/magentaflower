@@ -2017,12 +2017,11 @@ a.link-inverse:hover {
 }
 
 .cources__img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 150px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50px;
   margin-bottom: 30px;
 }
 
