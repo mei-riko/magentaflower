@@ -6,9 +6,15 @@
 @import "grid.scss";
 @import "position.scss";
 
+@import "header/header.scss";
+@import "header/header-btn.scss";
+@import "header/header-link.scss";
+@import "header/header-top.scss";
+@import "header/header-fixed.scss";
+@import "header/header-mobile-only.scss";
+
 @import "other/button.scss";
 @import "other/navbar.scss";
-@import "other/header.scss";
 @import "other/footer.scss";
 @import "other/form.scss";
 @import "other/modxAlert.scss";

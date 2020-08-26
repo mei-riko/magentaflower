@@ -1,0 +1,13 @@
+// Кнопка в header
+.header-btn{
+    color: $pink;
+    background-color: $pink-light;
+    padding: 4px 15px!important;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover{
+        color: darken($pink, 10%);
+        background: darken($pink-light, 5%);
+    }
+}

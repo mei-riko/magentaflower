@@ -69,6 +69,20 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
 }
+@media all and (max-width: 1200px){
+    .navbar{
+        &_left{
+            .navbar__link:not(:last-child){
+                margin-right:1.5em;
+            }
+        }
+        &_right{
+            .navbar__link + .navbar__link{
+                margin-left: 1.5em;
+            }
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .navbar{
         flex-wrap: wrap;

@@ -1,0 +1,9 @@
+// Ссылка в header
+.header-link{
+    text-decoration: underline;
+    @extend .small;
+    color: $grey;
+    &:hover{
+        color: $pink;
+    }
+}
