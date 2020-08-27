@@ -65,6 +65,15 @@
     &_winter{
         background: $light-grey url("../img/bg-contact-cold.jpg") right center / cover;
     }
+    &_autumn{
+        background: $light-grey url("../img/bg-contact-autumn.jpg") right center / cover;
+        .form .form__input{
+            border-bottom-color: $white;
+        }
+    }
+    &_spring{
+        background: $light-grey url("../img/bg-contact-spring.jpg") right center / cover;
+    }
     // Модификатор отступов
     &_offset-top{
         padding-top: map-get($spacers, 5);
