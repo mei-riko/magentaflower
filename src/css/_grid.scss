@@ -83,7 +83,7 @@
     max-width: 100%
 }
 
-@media all and (max-width: map-get($grid-breakpoints, 'xl')){z
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .col-xl-1{
         flex: 0 0 8.33333%;
         max-width: 8.33333%
