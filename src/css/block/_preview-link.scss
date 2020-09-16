@@ -3,24 +3,24 @@
     flex-wrap: nowrap;
     align-items: center;
 
-    .preview-link__image{
+    &__image{
         flex: 0 0 100px;
         max-width: 100px;
     }
-    .preview-link__content{
+    &__content{
         flex: 0 0 calc(100% - 100px);
         max-width: calc(100% - 100px);
         padding: 0 20px;
         text-align: left;
     }
-    .preview-link__title{
+    &__title{
         font-size: 1.25rem;
         font-weight: bold;
         letter-spacing: 1px;
         line-height: 1.2;
         text-transform: uppercase;
     }
-    .preview-link__link{
+    &__link{
         font-size: 13px;
         font-weight: bold;
         line-height: 1;

@@ -1,0 +1,23 @@
+.btn{
+    border: none;
+    outline: none;
+
+    padding: 15px 30px;
+    border-radius: 30px;
+    max-width: 100%;
+    
+    text-align: center;
+    max-width: 100%;
+
+    cursor: pointer;
+    transition: .4s;
+    
+    &:hover, &:focus{
+        text-decoration: none;
+        outline: none;
+    }
+
+    &--full, &_full{
+        width: 100%;
+    }
+}

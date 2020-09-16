@@ -1,0 +1,13 @@
+.btn{  
+    &_secondary{
+        background: inherit;
+        border: 3px solid $pink;
+        color: $pink;
+        font-weight: bold;
+
+        &:hover, &:focus{
+            color: darken($pink, 10%);
+            border-color: darken($pink, 10%);
+        }
+    }
+}

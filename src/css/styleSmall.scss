@@ -1,6 +1,6 @@
 @import "variable.scss";
 
-@import "gridHeader.scss";
+@import "framework/gridHeader.scss";
 
 @import "header/header.scss";
 @import "header/header-btn.scss";
@@ -13,8 +13,9 @@
 @import "other/navbar.scss";
 
 
-@import "block/contacts.scss";
+@import "contact/contacts.scss";
 @import "block/networks.scss";
+
 @import "list/list.scss";
 @import "list/list_circle.scss";
 

@@ -176,7 +176,7 @@ $(document).ready(() =>{
             slidesToScroll: 4,
             arrows: true,
             dots: false, 
-            infinite: true,
+            infinite: false,
             responsive: [
                 {
                     breakpoint: 1200,

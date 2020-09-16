@@ -1,0 +1,11 @@
+.btn{
+    &_action{
+        background: $pink;
+        color: $white;
+        font-weight: bold;
+        &:hover{
+            color: $white;
+            background: darken($pink, 10%);
+        }
+    }
+}

@@ -1,11 +1,18 @@
 .list_advantage{
+    &__item,
     .list__item{
         position: relative;
-        padding: 15px 0;
+        padding: 5px 0;
         padding-left: 60px;
 
         width: 300px;
         max-width: 100%;
+
+        margin-bottom: .5em;
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
 
         &:before{
             content:'';
@@ -38,8 +45,13 @@
             color: $pink-light;
         }
     }
+    .list__item{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
     // На всю ширину
-    &_full{
+    &--full{
+        &__item,
         .list__item{
             width: 100%;
             &:before{

@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6,
 }
 .h1-lead{font-size: 3.5rem;}
 .h1,h1{font-size: 3rem;}
-.h2,h2{font-size: 2.75rem;}
+.h2,h2{font-size: 2.5rem;}
 .h3,h3{font-size: 2rem;}
 .h4,h4{font-size: 1.75rem;}
 .h5,h5{font-size: 1.5rem;}
@@ -69,9 +69,12 @@ a{
 .p-relative{position: relative;}
 .p-sticky{position: sticky; top: 0; left: 0; z-index: 101; background: $white;}
 
-.d-flex{display: flex;}
-.d-inline-block{display: inline-block;}
-.d-none{display: none;}
+.d{
+    &-flex{display: flex;}
+    &-inline-block{display: inline-block;}
+    &-none{display: none;}
+    &-block{display: block;}
+}
 .flex-wrap{flex-wrap: wrap;}
 
 .text-white{color: $white;}
@@ -83,6 +86,8 @@ a{
 .text-pink-light{color: $pink-light;}
 
 .text-uppercase{text-transform: uppercase;}
+.text-italic{font-style: italic;}
+
 .text-bold,strong,b{font-weight: 700;}
 .text-small,small,.small{font-size: 12px; line-height: 16px;}
 
@@ -111,9 +116,21 @@ a{
     border-bottom: 1px solid $border-color;
 }
 
-@media all and (max-width: map-get($grid-breakpoints, 'xl')){}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .d-xl{
+        &-flex{display: flex;}
+        &-inline-block{display: inline-block;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
-    .d-lg-none{display: none;}
+    .d-lg{
+        &-flex{display: flex;}
+        &-inline-block{display: inline-block;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
 
     .h1-lead{font-size: 3rem;}
 
@@ -122,7 +139,20 @@ a{
     .text-lg-right{text-align: right;}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
-    .d-md-none{display: none;}
+    .d-md{
+        &-flex{display: flex;}
+        &-inline-block{display: inline-block;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+    
+    .h1-lead{font-size: 3rem;}
+    .h1,h1{font-size: 2.5rem;}
+    .h2,h2{font-size: 2rem;}
+    .h3,h3{font-size: 1.75rem;}
+    .h4,h4{font-size: 1.5rem;}
+    .h5,h5{font-size: 1.25rem;}
+    .h6,h6{font-size: 1rem;}
 
     .breadcrumbs{
         margin-bottom: 0;
@@ -132,7 +162,12 @@ a{
     .text-md-right{text-align: right;}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .d-sm-none{display: none;}
+    .d-sm{
+        &-flex{display: flex;}
+        &-inline-block{display: inline-block;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
     
     .h1-lead{font-size: 2rem;}
     .h1,h1{font-size: 1.75rem;}

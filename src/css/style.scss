@@ -1,10 +1,10 @@
 @import "variable.scss";
 
-@import "reboot.scss";
+@import "framework/reboot.scss";
 
-@import "frameworks.scss";
-@import "grid.scss";
-@import "position.scss";
+@import "framework/frameworks.scss";
+@import "framework/grid.scss";
+@import "framework/position.scss";
 
 @import "header/header.scss";
 @import "header/header-btn.scss";
@@ -13,19 +13,28 @@
 @import "header/header-fixed.scss";
 @import "header/header-mobile-only.scss";
 
-@import "other/button.scss";
+@import "btn/btn.scss";
+@import "btn/btn_default.scss";
+@import "btn/btn_action.scss";
+@import "btn/btn_secondary.scss";
+@import "btn/btn_absolute.scss";
+@import "btn/btn_link.scss";
+
 @import "other/navbar.scss";
 @import "other/footer.scss";
 @import "other/form.scss";
 @import "other/modxAlert.scss";
 @import "other/pagination.scss";
 
-@import "block/header-block.scss";
+@import "contact/contacts.scss";
+
+@import "header/header-block.scss";
+
 @import "block/cta-block.scss";
-@import "block/contacts.scss";
 @import "block/networks.scss";
 
 @import "block/slider.scss";
+@import "block/video-block.scss";
 
 @import "block/cources.scss";
 @import "block/price.scss";
@@ -51,10 +60,11 @@
 @import "info/info-block.scss";
 @import "info/info-advantage.scss";
 
+@import "item/item.scss";
 @import "item/item-icon.scss";
+@import "item/item-timetable.scss";
 @import "item/item-logo.scss";
 @import "item/item-slide.scss";
-@import "item/item.scss";
 
 @import "list/list.scss";
 @import "list/list_advantage.scss";
@@ -65,6 +75,8 @@
 @import "content/content-line.scss";
 
 @import "teacher/teacher.scss";
+
+@import "master-class/master-class.scss";
 
 @import "map/map.scss";
 

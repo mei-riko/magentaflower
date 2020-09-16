@@ -13,7 +13,7 @@
             left: 0;
             bottom: -10px;
 
-            background: linear-gradient(#f9eaf1, #f0c9d8);
+            background: linear-gradient(#f9eaf1, darken(#f9eaf1, 4) );
             z-index: -1;
         }
     }

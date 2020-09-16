@@ -51,7 +51,7 @@
         @extend .lead;
     }
     &__form{
-        width: 480px;
+        width: 380px;
         max-width: 100%;
         .form__input{
             width: 100%;
@@ -85,6 +85,9 @@
             &.last{
                 height: auto;
             }
+        }
+        &_autumn{
+            background-position-x: 60%;
         }
     }
 }

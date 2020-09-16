@@ -2,6 +2,7 @@
     position: relative;
     padding: 230px 0 map-get($spacers, 6);
     background: $light-grey url("../img/bg-demo-header.jpg") no-repeat right bottom / contain ;
+    
     &__subtitle{
         font-family: "Noto Sans";
         font-size: 1rem;
@@ -104,11 +105,11 @@
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .header-block{
         padding-top: 140px;
+
         &__image{
             top: 0;
             bottom: auto;
         }
-
         &_col{
             margin-top: 0px;
             padding: 140px 0 map-get($spacers, 3);
@@ -119,6 +120,7 @@
     .header-block{
         padding: 140px 0 80px;
         background-position-x: 100px;
+        
         &__title{
             font-size: 2.5rem;
             width: 480px;

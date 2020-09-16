@@ -49,6 +49,11 @@
             background: url("../icon/arrow-right.svg") no-repeat center / contain;
         }
     }
+    .slick-arrow{
+        &.slick-disabled{
+            opacity: 0;
+        }
+    }
     // Модификаторы
     &_link{
         &.slick-dotted.slick-slider{
@@ -89,7 +94,7 @@
         }
 
         &_reviews{
-            padding: 0 40px;
+            padding: 0 30px;
         }
     }
 }

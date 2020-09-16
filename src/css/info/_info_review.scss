@@ -10,6 +10,32 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        &_video{
+            position: relative;
+            border-radius: 0;
+            width: 100%;
+            cursor: pointer;
+            transition: .4s;
+
+            &:after{
+                content: '';
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $white url("../icon/play-button.svg") no-repeat center / contain;
+
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            &:hover{
+                filter: grayscale(.25);
+            }
+        }
     }
     .info__intro{
         height: 120px;

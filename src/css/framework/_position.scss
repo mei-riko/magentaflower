@@ -45,7 +45,13 @@
     -ms-flex-align: center!important;
     align-items: center!important
 }
-
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .justify-content-lg-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .flex-md-column-reverse {
         -webkit-box-orient: vertical !important;
@@ -78,5 +84,10 @@
         -webkit-box-pack: center!important;
         -ms-flex-pack: center!important;
         justify-content: center!important
+    }
+    .justify-content-sm-start {
+        -webkit-box-pack: start!important;
+        -ms-flex-pack: start!important;
+        justify-content: flex-start!important
     }
 }

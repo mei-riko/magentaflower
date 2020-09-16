@@ -5,16 +5,16 @@
     margin-right: -20px;
 
     &__item{
-        flex: 0 0 80px;
-        max-width: 33%;
+        flex: 0 0 65px;
+        max-width: 25%;
 
-        padding: 0 20px;
+        padding: 0 15px;
         transition: .3s;
 
-        height: 50px;
+        height: 40px;
 
         &:hover{
-            padding: 0 16px;
+            padding: 0 12px;
         }
     }
 }

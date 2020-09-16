@@ -2,7 +2,7 @@ header .container,
 footer .container,
 .info-block .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
   padding-right: 40px;
   padding-left: 40px;
   margin-right: auto;
@@ -556,9 +556,9 @@ footer .row,
   position: absolute;
   left: 0;
   bottom: -10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9eaf1), to(#f0c9d8));
-  background: -o-linear-gradient(#f9eaf1, #f0c9d8);
-  background: linear-gradient(#f9eaf1, #f0c9d8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9eaf1), to(#f4dae6));
+  background: -o-linear-gradient(#f9eaf1, #f4dae6);
+  background: linear-gradient(#f9eaf1, #f4dae6);
   z-index: -1;
 }
 
@@ -881,18 +881,18 @@ footer .row,
 
 .networks__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 80px;
-  flex: 0 0 80px;
-  max-width: 33%;
-  padding: 0 20px;
+  -ms-flex: 0 0 65px;
+  flex: 0 0 65px;
+  max-width: 25%;
+  padding: 0 15px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  height: 50px;
+  height: 40px;
 }
 
 .networks__item:hover {
-  padding: 0 16px;
+  padding: 0 12px;
 }
 
 .list {
@@ -901,8 +901,12 @@ footer .row,
   margin: 0;
 }
 
-.list .list__item + .list__item {
-  margin-top: .5em;
+.list .list__item {
+  margin-bottom: .5em;
+}
+
+.list .list__item:last-child {
+  margin-bottom: 0;
 }
 
 .list_circle .list__item {

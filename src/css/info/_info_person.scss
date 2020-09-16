@@ -34,11 +34,19 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .info_person{
-        padding-left: 120px;
+        padding-left: 80px;
+        
         .info__img{
             width: 80px;
             height: 80px;
             border-radius: 40px;
+            left: -15px;
+        }
+        .info__title{
+            margin-bottom: .75rem;
+        }
+        .info__intro{
+            font-size: 12px;
         }
     }
 }
