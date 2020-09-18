@@ -8,7 +8,7 @@
         margin-bottom: $spacer/8;
     }
     &__content{
-        font-size: 12px;
+        font-size: 16px;
         color: $grey;
     }
     // Style
@@ -28,13 +28,29 @@
             background: no-repeat left center / contain;
         }
         &__content{
-            width: 240px;
+            width: 280px;
             max-width: 100%;
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'hd')){
+    .icon-block{
+        &__content{
+            font-size: 14px;
+        }
+        &_advantage{
+            &__content{
+                width: 240px;
+            }
+        }
+    }
+
+}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .icon-block{
+        &__content{
+            font-size: 12px;
+        }
         &_advantage{
             padding-top: 60px;
             padding-left: 0;

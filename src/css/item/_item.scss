@@ -52,7 +52,7 @@
         border-radius: 20px;
         border: 5px dotted $pink-light;
         padding: 30px 40px 50px;
-        width: 480px;
+        width: 540px;
         max-width: 100%;
 
         &__title{
@@ -86,6 +86,7 @@
             background-color: $pink;
             color: $white;
 
+            font-size: 16px;
             font-weight: bold;
             letter-spacing: 1px;
             line-height: 40px;
@@ -102,6 +103,16 @@
             border-radius: 8px;
             padding: 0 map-get($spacers, 1);
             overflow: hidden;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'hd')){
+    .item{
+        &_alert{
+            width: 480px;
+            &__footer{
+                font-size: 14px;
+            }
         }
     }
 }

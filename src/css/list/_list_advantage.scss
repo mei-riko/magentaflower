@@ -5,7 +5,7 @@
         padding: 5px 0;
         padding-left: 60px;
 
-        width: 300px;
+        width: 380px;
         max-width: 100%;
 
         margin-bottom: .5em;
@@ -63,7 +63,12 @@
         }
     }
 }
-
+@media all and (max-width: map-get($grid-breakpoints, 'hd')){
+    &__item,
+    .list__item{
+        width: 300px;
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .list_advantage{
         .list__item{

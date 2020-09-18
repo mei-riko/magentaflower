@@ -1604,6 +1604,7 @@ a.link-inverse:hover {
   padding: 60px 0;
   background: #f9eaf1;
   border-top: 1px solid #ddc4c3;
+  overflow: hidden;
 }
 
 .footer .footer__logo {
@@ -2188,7 +2189,6 @@ a.link-inverse:hover {
 .cta-block__info {
   display: inline-block;
   width: 100%;
-  height: 100%;
   padding: 30px 40px;
   -webkit-transform: translateY(-25px);
   -ms-transform: translateY(-25px);
@@ -3153,7 +3153,7 @@ a.link-inverse:hover {
 }
 
 .icon-block__content {
-  font-size: 12px;
+  font-size: 16px;
   color: #726d72;
 }
 
@@ -3177,11 +3177,23 @@ a.link-inverse:hover {
 }
 
 .icon-block_advantage__content {
-  width: 240px;
+  width: 280px;
   max-width: 100%;
 }
 
+@media all and (max-width: 1680px) {
+  .icon-block__content {
+    font-size: 14px;
+  }
+  .icon-block_advantage__content {
+    width: 240px;
+  }
+}
+
 @media all and (max-width: 992px) {
+  .icon-block__content {
+    font-size: 12px;
+  }
   .icon-block_advantage {
     padding-top: 60px;
     padding-left: 0;
@@ -3352,6 +3364,7 @@ a.link-inverse:hover {
 .info__title {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 1rem;
   line-height: 1.2;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -3561,7 +3574,7 @@ a.link-inverse:hover {
   padding-left: 140px;
 }
 
-.info_person .info__img {
+.info_person__img {
   position: absolute;
   left: -30px;
   top: 50%;
@@ -3577,20 +3590,53 @@ a.link-inverse:hover {
   background-size: cover;
 }
 
+.info_person--lg {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 200px;
+}
+
+.info_person--lg .info_person__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+@media all and (max-width: 1680px) {
+  .info_person--lg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .info_person--lg {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 160px;
+  }
+  .info_person--lg .info_person__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+  }
+}
+
 @media all and (max-width: 768px) {
   .info_person {
-    padding-left: 140px;
+    padding-left: 200px;
   }
   .info_person .info__img {
     left: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media all and (max-width: 576px) {
   .info_person {
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 80px;
   }
   .info_person .info__img {
@@ -3851,7 +3897,7 @@ a.link-inverse:hover {
   border-radius: 20px;
   border: 5px dotted #f9eaf1;
   padding: 30px 40px 50px;
-  width: 480px;
+  width: 540px;
   max-width: 100%;
 }
 
@@ -3887,6 +3933,7 @@ a.link-inverse:hover {
 .item_alert__footer {
   background-color: #dd5287;
   color: #ffffff;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 40px;
@@ -3901,6 +3948,15 @@ a.link-inverse:hover {
   border-radius: 8px;
   padding: 0 20px;
   overflow: hidden;
+}
+
+@media all and (max-width: 1680px) {
+  .item_alert {
+    width: 480px;
+  }
+  .item_alert__footer {
+    font-size: 14px;
+  }
 }
 
 @media all and (max-width: 1400px) {
@@ -4176,7 +4232,7 @@ a.link-inverse:hover {
   position: relative;
   padding: 5px 0;
   padding-left: 60px;
-  width: 300px;
+  width: 380px;
   max-width: 100%;
   margin-bottom: .5em;
 }
@@ -4242,6 +4298,13 @@ a.link-inverse:hover {
 .list_advantage--full__item:after,
 .list_advantage--full .list__item:after {
   top: 22px;
+}
+
+@media all and (max-width: 1680px) {
+  __item,
+  .list__item {
+    width: 300px;
+  }
 }
 
 @media all and (max-width: 576px) {

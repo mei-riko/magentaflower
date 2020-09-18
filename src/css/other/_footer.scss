@@ -2,6 +2,7 @@
     padding: map-get($spacers, 4) 0;
     background: $pink-light;
     border-top: 1px solid $border-color;
+    overflow: hidden;
 
     .footer__logo{
         background: url("../img/logo.svg") no-repeat left center / contain;

@@ -1,4 +1,4 @@
-@media all and (min-width: 1920px){
+@media all and (min-width: 1680px){
     body, html{
         font-size: 18px;
     }
@@ -9,7 +9,7 @@
         font-size: 18px;
     }
     .navbar .navbar__link{
-        font-size: 14px;
+        font-size: 15px;
     }
     .btn {
         font-size: 18px;
@@ -73,7 +73,7 @@
     }
     .info .info__item,
     .info .info__intro {
-        font-size: 16px;
+        // font-size: 16px;
     }
     .info .info__link {
         font-size: 14px;
@@ -104,5 +104,82 @@
     }
     .checkbox__input:checked + .checkbox__label:after{
         top: 10px;
+    }
+    .footer{
+        p {
+            font-size: 20px;
+        }
+    }
+
+    /* ADS css */
+    section.courses .courses .course .desc,
+    section.courses .courses .course .desc.desc-js {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    section.courses .courses .course .desc{
+    max-height: 100px;
+    }
+    section.courses .courses .course .preview,
+    section.courses .courses .course .text{
+    height: 330px;
+    }
+    section.about .desc .right .text {
+    font-size: 22px;
+    line-height: 26px;
+    }
+    .main section.teachers .container,
+    section.courses.blog .container,
+    section.advantages .container{
+    width: 1480px;
+    }
+    section.advantages .advantages_item .left {
+    width: 40%;
+    }
+    section.advantages .advantages_item .text {
+    font-size: 20px;
+    }
+    section.teachers .teacher .text {
+    padding: 20px 40px;
+    }
+    section.teachers .teacher .desc {
+    font-size: 20px;
+    line-height: 24px;
+    }
+    .reviews-slider .text .name,
+    .reviews-noslider .text .name,
+    section.teachers .teacher .text .name {
+    font-size: 30px;
+    }
+    .reviews-noslider .text .course,
+    .reviews-noslider .text .desc,
+    .reviews-slider .text .desc,
+    section.teachers .teacher .text .info{
+    font-size: 20px;
+    }
+    .reviews-slider .text .course{
+    margin: 10px 0;
+    }
+    .reviews-noslider .text .course{
+    margin: 20px 0;
+    font-weight: 700;
+    }
+
+    section.teachers .btnall{
+    max-width: 190px;
+    font-size: 20px;
+    }
+    section.teachers .teacher {
+    width: 320px;
+    margin-left: calc((100% - 1280px) / 3);
+    }
+    section.teachers .teacher:nth-child(4n+1) {
+    margin-left: 0;
+    }
+    section.about_advant h2{
+    font-size: 42px;
+    }
+    section.about_advant .text{
+    font-size: 22px;
     }
 }
