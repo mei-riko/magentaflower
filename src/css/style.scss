@@ -33,7 +33,13 @@
 @import "block/cta-block.scss";
 @import "block/networks.scss";
 
-@import "block/slider.scss";
+@import "slider/slider-container.scss";
+@import "slider/slider.scss";
+@import "slider/slider_link.scss";
+@import "slider/slider_review.scss";
+@import "slider/slider_index.scss";
+@import "slider/slider-nav.scss";
+
 @import "block/video-block.scss";
 
 @import "block/cources.scss";

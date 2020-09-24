@@ -11,7 +11,8 @@
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .info_alert{
         padding: map-get($spacers, 3);
-        background-position-x: 360px;
+        // background-position-x: 360px;
+        background-position-x: 100%;
         background-size: contain;
     }
 }

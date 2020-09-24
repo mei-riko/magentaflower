@@ -146,6 +146,22 @@ $(document).ready(() =>{
     });
     // Slider
     if( $(".slider").length > 0){
+        // Index Page
+        $('.slider.slider_index').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            asNavFor: '.slider_nav'
+        });
+        $('.slider_nav').slick({
+            slidesToShow: 8,
+            slidesToScroll: 1,
+            asNavFor: '.slider.slider_index',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true
+        });
         // Slider Link
         $('.slider.slider_link').slick({
             slidesToShow: 3,

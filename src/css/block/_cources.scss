@@ -20,6 +20,13 @@
             border: 1px solid $pink;
             transform: translate(10px, -10px);
         }
+
+        &--lg{
+            height: 240px;
+            &:before{
+                padding-top: 240px;
+            }
+        }
     }
     &__title{
         font-size: 1.5rem;
@@ -34,6 +41,14 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .cources{
+        &__img{
+            &--lg{
+                height: 180px;
+                &:before{
+                    padding-top: 180px;
+                }
+            }
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){

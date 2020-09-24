@@ -10,7 +10,7 @@
     <link href="./css/style.css" rel="stylesheet"/>
     <link href="./css/media.css" rel="stylesheet"/>
   </head>
-  <body class="header-top">
+  <body class="header-fixed">
     <script src="/js/jquery.min.js"></script>
     <header>
       <div class="header">
@@ -69,17 +69,50 @@
       <ul class="contacts">
         <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
         <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-      </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
+      </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    
+        <div class="container slider-container">
+          <div class="slider slider_index">
+            <div class="slider__item">
+              <div class="slider_index__image" style="background-image:url('../img/test-01.jpg');"></div>
+              <div class="slider_index__content">
+                <p class="slider_index__title">Полный курс современной флористики</p>
+                <p class="slider_index__content">
+                  - Диплом Школы флористического дизайна "Маджента".<br/>- ведущие преподаватели
+                  <br/>- длительность курса - 315 часов
+                </p>
+                <div class="slider_index__intro" style="background-image:url('../icon/calendar-white.svg');">октябрь-май СПб</div><a class="btn btn_action" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider_index__image" style="background-image:url('../img/test-02.jpg');"></div>
+              <div class="slider_index__content">
+                <p class="slider_index__title">Мастер-класс для детей "Осенняя композиция в корзинке"</p>
+                <p class="slider_index__content">
+                  - Диплом Школы флористического дизайна "Маджента".<br/>- ведущие преподаватели
+                  <br/>- длительность курса - 315 часов
+                </p>
+                <div class="slider_index__intro" style="background-image:url('../icon/calendar-white.svg');">октябрь-май СПб</div><a class="btn btn_action" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider_index__image" style="background-image:url('../img/test-03.jpg');"></div>
+              <div class="slider_index__content">
+                <p class="slider_index__title">Базовый курс флористики</p>
+                <p class="slider_index__content">
+                  - Диплом Школы флористического дизайна "Маджента".<br/>- ведущие преподаватели
+                  <br/>- длительность курса - 315 часов
+                </p><a class="btn btn_action" href="#">Узнать больше</a>
+                <div class="slider_index__intro" style="background-image:url('../icon/calendar-white.svg');">октябрь-май СПб</div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <div class="slider-nav__item"></div>
+            <div class="slider-nav__item"></div>
+            <div class="slider-nav__item"></div>
+          </div>
+        </div></a>
     </div>
-    <aside class="mb-60">
-      <div class="container">
-        <div class="info info_alert">
-          <p class="h4 text-bold mb-20">Остались вопросы?</p>
-          <p class="lead info_alert__content mb-40">Задай их любым удобным способом — <span class="text-pink text-bold">ответим в течении 5 минут!</span></p>
-          <div class="networks justify-content-sm-center"><a class="networks__item" href="#"><img class="img-fluid" src="../icon/vk.svg"/></a><a class="networks__item" href="#"><img class="img-fluid" src="../icon/whatsapp.svg"/></a><a class="networks__item" href="#"><img class="img-fluid" src="../icon/telegram.svg"/></a><a class="networks__item" href="#"><img class="img-fluid" src="../icon/send.svg"/></a></div>
-        </div>
-      </div>
-    </aside>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -131,7 +164,9 @@
     </footer>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/jquery.inputmask.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=79c72616-7091-4150-914c-4d2e2a2ad526" type="text/javascript"></script>
-    <script src="./js/app.min.js"></script>
+    <link href="./css/slick.css" rel="stylesheet"/>
+    <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.min.js"> </script>
   </body>
 </html>

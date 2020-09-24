@@ -1,0 +1,85 @@
+.slider_index{
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__image{
+        // max-height: 100vh;
+        height: 540px;
+
+        flex: 0 0 calc(100% - 430px);
+        max-width: calc(100% - 430px);
+        border-radius: $spacer/4;
+
+        background: no-repeat left center / cover;
+    }
+    &__content{
+        // max-height: 100vh;
+        height: 540px;
+        overflow: hidden;
+
+        flex: 0 0 420px;
+        max-width: 420px;
+
+        color: $white;
+        background-color: $dark-grey;
+        padding: $spacer;
+        border-radius: $spacer/4;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title{
+        @extend .h3;
+        font-weight: 700;
+    }
+    &__intro{
+        color: $light-grey;
+        margin: $spacer/2 0 $spacer/2;
+    }
+    &__info{
+        font-weight: 700;
+        background: no-repeat left center / 30px;
+        padding: 4px 4px 4px 40px;
+
+        margin: 0 0 $spacer;
+    }
+
+    // Slick
+    .slick-arrow{
+        opacity: .5;
+        transition: .4s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .slick-prev{
+        left: 20px;
+        z-index: 11;
+    }
+    .slick-next{
+        left: calc(100% - 480px);
+        z-index: 11;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'hd')){
+    .slider_index{
+        &__image,
+        &__content{
+            height: 480px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .slider_index{
+        &__image,
+        &__content{
+            flex: 0 0 calc(50% - 5px);
+            max-width: calc(50% - 5px);
+        }
+    }
+}

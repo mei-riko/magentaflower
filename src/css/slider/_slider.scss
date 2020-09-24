@@ -54,23 +54,6 @@
             opacity: 0;
         }
     }
-    // Модификаторы
-    &_link{
-        &.slick-dotted.slick-slider{
-            margin-bottom: 80px;
-        }
-        .slick-dots{
-            bottom: -42px;
-        }
-    }
-    &_reviews{
-        .slick-slide{
-            margin: 0 10px;
-        }
-        .info{
-            box-shadow: none;
-        }
-    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
@@ -91,10 +74,6 @@
         }
         .slick-next{
             right: 0px;
-        }
-
-        &_reviews{
-            padding: 0 30px;
         }
     }
 }

@@ -36,7 +36,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'hd')){
     .icon-block{
         &__content{
-            font-size: 14px;
+            font-size: 13px;
         }
         &_advantage{
             &__content{
@@ -46,11 +46,8 @@
     }
 
 }
-@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .icon-block{
-        &__content{
-            font-size: 12px;
-        }
         &_advantage{
             padding-top: 60px;
             padding-left: 0;
@@ -84,6 +81,9 @@
         &_line{
             background: url("../img/icon-line.svg") no-repeat left center / 30px; 
             padding-left: 40px;
+        }
+        &_advantage{
+            padding-left: 70px;
         }
     }
 }

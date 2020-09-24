@@ -487,7 +487,7 @@ footer .row,
 }
 
 .header .header__logo {
-  background: url("../img/logo.svg") no-repeat center 0px/contain;
+  background: url("../img/logo_white.svg") no-repeat center 0px/contain;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 230px;
   flex: 0 0 230px;
@@ -495,6 +495,10 @@ footer .row,
   height: 140px;
   margin: 0 auto;
   display: block;
+}
+
+.header .header__logo_white {
+  background-image: url("../img/logo_white.svg");
 }
 
 @media all and (max-width: 1200px) {
@@ -903,6 +907,7 @@ footer .row,
 }
 
 .list .list__item {
+  max-width: 100%;
   margin-bottom: .5em;
 }
 
