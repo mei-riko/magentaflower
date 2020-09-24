@@ -50,3 +50,8 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider-nav{
+        margin-top: 10px;
+    }
+}
