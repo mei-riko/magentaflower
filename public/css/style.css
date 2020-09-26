@@ -1273,7 +1273,7 @@ a.link-inverse:hover {
 }
 
 .header .header__logo {
-  background: url("../img/logo_white.svg") no-repeat center 0px/contain;
+  background: url("../img/logo.svg") no-repeat center 0px/contain;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 230px;
   flex: 0 0 230px;
@@ -2636,10 +2636,6 @@ a.link-inverse:hover {
 }
 
 .slider_nav .slick-track {
-  -webkit-transform: none !important;
-  -ms-transform: none !important;
-  transform: none !important;
-  margin-left: 0 !important;
   min-width: 100%;
 }
 

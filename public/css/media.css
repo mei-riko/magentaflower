@@ -2,6 +2,10 @@
   body, html {
     font-size: 18px;
   }
+  header .container,
+  footer .container,
+  .info-block .container,
+  .slider-container.container,
   .container {
     max-width: 1540px;
   }
@@ -13,6 +17,16 @@
   }
   .btn {
     font-size: 18px;
+  }
+  .header .btn {
+    font-size: 14px;
+  }
+  .header .header__line_right-col .header-link.header__item {
+    font-size: 14px !important;
+  }
+  .navbar_left .navbar__link.navbar__link_online {
+    line-height: 20px !important;
+    font-size: 14px !important;
   }
   p.lead {
     font-size: 1.25rem;
