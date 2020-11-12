@@ -9,15 +9,16 @@ html(lang="ru")
                     .col-7.col-md-12.col-lg-10
                         p.header-block__subtitle #экспресс-курс
                         h1.header-block__title Освойте флористику  всего за&nbsp;5&nbsp;дней
-                        .row
-                            .col-6.col-sm-12.mb-sm-20.col-md-4.col-lg-4
+                        .d-flex.header-block__info-row.mb-40.mb-sm-20
+                            .header-block__info-col.mb-md-10
                                 .subtitle.text-uppercase Сроки
                                 .header-block__info 40 ак. часов
                                 .header-block__offer 80% практики и&nbsp;20%&nbsp;теории
-                            .col-6.col-sm-12.col-md-4.col-lg-5
+                            .header-block__info-col.last
                                 .subtitle.text-uppercase Уровень
                                 .header-block__info обучение с нуля
                                 .header-block__offer лучший способ начать освоение профессии
+                        a.btn.btn_action(href="#") Забронировать место
             img.header-block__image(src="/img/flowers.png")
         section.content
             .container
@@ -35,10 +36,10 @@ html(lang="ru")
                             span.text-bold работать 
                             | помощником&nbsp;флориста
                 .row.content__row
-                    .col-6.col-md-12.col-lg-8
-                        p.h2.text-bold Как устроено обучение в&nbsp;школе «Маджента»? 
-                    .col-6.col-md-12.col-lg-10
-                        p.content__text-top Обучение организовано так, чтобы студент смог максимально погрузиться в свою специальность, не отвлекаясь на лишнее. В начале занятий вы получаете теоретические знания. Многократно применяя новые знания, решая задачи, вы тренируете умения и навык. Именно их все работодатели высоко ценят. После сдачи экзамена выпускники школы могут сразу найти работу по профессии.               
+                    .col-4.col-md-12.col-lg-8
+                        p.h4.text-bold Как устроено обучение в&nbsp;школе «Маджента»? 
+                    .col-8.col-md-12.col-lg-10
+                        p.content__text-top Весь процесс обучения на флориста на Базовом курсе построен так, чтобы студент даже за короткое время приобрел профессиональные навыки и знания, которые потребуются при работе флористом. На нашем курсе флориста теоретические знания дополняются интенсивной практикой, в ходе которой ученики вырабатывают ценный навык работы с живыми цветами, а также осваивают техники составления букетов и цветочных композиций, которые так высоко ценятся работодателями.
         section.content.content_offset-small.bg-wave
             .container
                 p.h3.text-bold.mb-60.mb-md-40 После окончания курса вы сможете:
@@ -65,7 +66,7 @@ html(lang="ru")
                             p.mb-0 Устроиться на работу на должности «Флорист» (помощник флориста)
         section.content
             .container
-                p.h2.text-center.text-bold.mb-60.mb-md-40 Работы выпускников экспресс-курса
+                p.h2.text-center.text-bold.mb-40 Работы выпускников экспресс-курса
                 .row.no-gutters.portfolio.mb-40
                     .col-3.col-sm-6.col-md-4.portfolio__item(data-fancybox="gallery" href="/img/01.png")
                         img.img-fluid(src="/img/01.png")
@@ -122,10 +123,9 @@ html(lang="ru")
         section.content
             .container
                 .row.justify-content-between.flex-sm-column-reverse
-                    .col-4.col-sm-12.col-md-5.sertificate
-                        img.img-fluid.sertificate__image(src="/img/sertificate.jpg", alt="")
-                        p.sertificate__content 100% работодателей отдадут предпочтение сотруднику прошедшему обучение у нас
-                    .col-6.col-sm-12.mb-sm-40.col-md-7
+                    .col-4.col-sm-12.col-md-5
+                        img.img-fluid(src="/img/sertificate.jpg", alt="")
+                    .col-7.col-sm-12.mb-sm-40.col-md-7
                         p.h4.text-bold.mb-40 Вот чем мы лучше многих:
                         ul.list.list_advantage
                             li.list__item.mb-20 Преподаватели с 10-летним&nbsp;опытом
@@ -134,34 +134,32 @@ html(lang="ru")
                             li.list__item.mb-20 Выдаем сертификат
                             li.list__item.mb-20 Работаем со свежими живыми&nbsp;цветами
                             li.list__item 80% времени — практика, 20%&nbsp;—&nbsp;теория
-        section.content.pt-lg-0
-            .container
-                .row
-                    .col-10.col-md-12
-                        p.h1.text-bold.mb-md-40
-                            span.text-pink Более 3500 
+                        p.mt-60.mt-lg-40.sertificate-content 100% работодателей отдадут предпочтение сотруднику прошедшему обучение у нас
+                .row.mt-60
+                    .col-5.col-md-12
+                        p.h3.text-bold
+                            span.text-pink Более&nbsp;3500 
                             | человек из&nbsp;разных городов остались довольны
-                .row.justify-content-between(style="padding-top:0;")
-                    .col-5.col-md-7.col-sm-12.mt-60.mt-md-0.mb-sm-40
-                        p.mb-20 Наш учебный центр расположен в Санкт-Петербурге и не смотря на это, около 10% всех наших студентов приезжают к нам из других городов.
-                        p.mb-0
+                    .col-7.col-md-12.mt-md-40
+                        p.content__text-top Наш учебный центр расположен в Санкт-Петербурге и не смотря на это, около 10% всех наших студентов приезжают к нам из других городов.
+                        p
                             a.link-inverse.text-uppercase.text-bold(href="#") + отзывы наших выпускников 
-                    .col-6.col-md-5.col-sm-12
-                        img.img-fluid(src="/img/maps-point.jpg")
+                        //- img.img-fluid(src="/img/maps-point.jpg")
+                .content__map.mt-60
         section.cta-block.cta-block_autumn
             .container.p-relative
                 .row
                     .col-4.col-lg-6
                         .cta-block__info
                             p.subtitle Ближайшая группа
-                            p.h5.cta-block__info-title.text-bold с 15 июля по 19 июля
+                            p.h6.cta-block__info-title.text-bold с 15 июля по 19 июля
                             a.link-grey.text-small(href="#") + подробное расписание
                     .col-4.col-lg-6
                         .cta-block__info
                             p.subtitle Обычная цена
                             p.cta-block__info-title
                                 span.price-old 19 000 р.
-                                span.price.h5.text-bold 15 800 р.
+                                span.price.h6.text-bold 15 800 р.
                             p.text-grey.text-small.mb-0 цена действительно до 12 июля
                 p.h1.cta-block__title Оставьте заявку на&nbsp;обучение
                 p.cta-block__offer Запишитесь на курс online и&nbsp;

@@ -75,7 +75,7 @@
       <div class="container header-block__container">
         <div class="row align-items-center">
           <div class="col-7 col-md-12 col-lg-6">
-            <h1 class="header-block__title mb-40">Online-курс флористики</h1>
+            <h1 class="header-block__title">Online-курс флористики</h1>
             <p class="text-pink text-bold lead">Освойте профессию флориста за 20 дней</p>
             <ul class="list list_circle mb-20">
               <li class="list__item">27 полноценных уроков</li>
@@ -252,10 +252,10 @@
             <p>Lorem ipsum dolor sit amet. Amet, consectetur, adipisci velit, sed ut perspiciatis, unde omnis dolor. Sint, obcaecati cupiditate non numquam eius.</p>
           </div>
         </div>
-        <div class="row info-advantage__position _justify-content-center">
+        <div class="row info-advantage__position justify-content-center">
           <div class="col-6 col-xl-6 col-lg-6 col-md-10 col-sm-12 mb-lg-40">
             <div class="info info_person bg-pink">
-              <div class="info__img" style="background-image: url('../img/Elena.jpg')"></div>
+              <div class="info_person__img" style="background-image: url('../img/Elena.jpg')"></div>
               <p class="subtitle-light text-pink-light text-small mb-0">преподаватель курса</p>
               <p class="info__title">Елена Дмитриева</p>
               <p class="info__intro text-pink-light">Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.</p>
@@ -263,7 +263,7 @@
           </div>
           <div class="col-6 col-xl-6 col-lg-6 col-md-10 col-sm-12">
             <div class="info info_person bg-pink">
-              <div class="info__img" style="background-image: url('../img/Tatiana.jpg')"></div>
+              <div class="info_person__img" style="background-image: url('../img/Tatiana.jpg')"></div>
               <p class="subtitle-light text-pink-light text-small mb-0">преподаватель курса</p>
               <p class="info__title">Татьяна Воронина</p>
               <p class="info__intro text-pink-light">Флорист-дизайнер международного уровня, с&nbsp;опытом работы более 10&nbsp;лет.</p>
@@ -417,11 +417,20 @@
         </div>
         <div class="item mt-40 item-icon item-icon_information"><img class="item-icon__img" src="../icon/plus.svg"/>
           <div class="row align-items-center">
-            <div class="col-8 col-lg-12 mb-lg-20">
-              <p class="item__title text-bold mb-10">Рекомендации по набору инструментов </p>
-              <p class="text-grey">Подготовили для вас чек-лист по необходимым инструментам для обучения и начала работы</p>
+            <div class="col-6 col-xl-5 col-lg-12">
+              <p class="item__title text-bold mb-10">Рекомендации по&nbsp;набору инструментов </p>
+              <p class="text-grey">Подготовили для&nbsp;вас чек-лист по&nbsp;необходимым инструментам для&nbsp;обучения и&nbsp;начала работы</p>
             </div>
-            <div class="col-4 col-lg-12 text-right text-lg-left"><a class="btn btn_default" href="#">Скачать чек-лист</a></div>
+            <div class="col-6 col-xl-7 col-lg-12 mt-lg-20">
+              <form class="form mb-0" action="">
+                <div class="form__group">
+                  <div class="form__col form__col-input">
+                    <input class="form-input form-input--full" type="text" placeholder="Укажите ваш e-mail"/>
+                  </div>
+                  <div class="form__col col-sm-12"><a class="btn btn--full btn_default" href="#">Скачать чек-лист</a></div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -575,11 +584,11 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+          <div class="col-3 col-lg-6 col-sm-12">
             <div class="footer__logo"></div>
             <p class="footer__content text-small mb-0">Санкт-Петербург, Пр. Юрия Гагарина, 7, пом. 25 ЖК "Космос", справа от центрального входа.</p>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-4 mt-sm-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-sm-20">
             <p class="text-bold footer__title">Контакты</p>
             <ul class="contacts">
               <li class="contacts__item contacts__item_phone"> <a class="footer__link" href="tel:88001112233">8 (812) 317-76-18</a></li>
@@ -592,7 +601,7 @@
               <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
             </ul>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-2 mt-md-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-lg-20">
             <p class="text-bold footer__title">Курсы</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Базовый</a></li>
@@ -601,22 +610,25 @@
               <li class="list__item"><a href="#">Базовый</a></li>
             </ul>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-md-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-lg-20">
             <p class="text-bold footer__title">Блог</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Хочу быть флористом</a></li>
               <li class="list__item"><a href="#">Выбираем школу флористики</a></li>
               <li class="list__item"><a href="#">Мастер-класс по флористике</a></li>
             </ul>
+            <p class="text-bold footer__title mt-20">Часто задаваемые вопросы</p>
           </div>
         </div>
         <div class="row mt-20">
-          <div class="col-7 col-sm-12 col-md-6">
-            <p class="footer__content text-small"><a href="#">Часто задаваемые вопросы</a><br><a href="#">Сведения об образовательной организации</a></p>
-            <p class="footer__content text-small mb-0">Сайт ЧОУ ДПО «АФД «Маджента» составлен согласно требованиям официального сайта Министерства образования и науки Российской Федерации в сети «Интернет» и минобрнауки.рф</p>
+          <div class="col-3 col-sm-12 col-lg-6">
+            <p class="footer__content text-small"><a class="footer__link" href="#">Договор публичной оферты</a></p>
           </div>
-          <div class="col-5 col-sm-12 col-md-6">
-            <p class="footer__content text-right text-md-left text-small mb-0">© 2019. Все права защищены.</p>
+          <div class="col-3 col-sm-12 col-lg-6">
+            <p class="footer__content text-small"><a class="footer__link" href="#">Политика конфиденциальности</a></p>
+          </div>
+          <div class="col-3 col-sm-12 col-lg-6 mt-lg-20">
+            <p class="footer__content text-small mb-0">© 2019. Все права защищены.</p>
           </div>
         </div>
       </div>

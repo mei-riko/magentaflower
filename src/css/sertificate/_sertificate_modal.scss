@@ -1,0 +1,13 @@
+.sertificate_modal{
+    width: 650px;
+    max-width: 100%;
+
+    max-height: 90vh;
+
+    &__title{
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+}

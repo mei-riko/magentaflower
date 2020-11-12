@@ -4,13 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Cources Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
+    <title>Magenta Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
     <link href="./css/jquery.fancybox.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
     <link href="./css/media.css" rel="stylesheet"/>
   </head>
-  <body class="header-top">
+  <body class="header-fixed">
     <script src="/js/jquery.min.js"></script>
     <header>
       <div class="header">
@@ -28,7 +28,7 @@
               </div>
             </div><a class="header__logo" href="/"></a>
             <div class="col header__col">
-              <div class="header__line header__line_right-col"><a class="header-link header__item" href="#">Блог</a><a class="header-btn btn btn_default header__item" href="/timetable.html">Актуальное расписание</a>
+              <div class="header__line header__line_right-col"><a class="header-link header__item" href="#">Оплата и доставка</a><a class="header-btn btn btn_default header__item" href="/timetable.html">Расписание</a>
                 <ul class="contacts contacts_inline contacts_header header__item">
                   <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
                   <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
@@ -71,133 +71,162 @@
         <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
       </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
     </div>
-    <section class="content content_offset-small bg-pink">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-6 col-sm-12 col-md-10 col-lg-12">
-            <h1 class="content__title text-bold mb-40 mb-md-20">Подарочные сертификаты</h1>
-            <ul class="list list_advantage list_advantage_full">
-              <li class="list__item"><span class="list__item__title h6">Преподают профессионалы высокого уровня</span><span class="list__item__content">
-                  Елена Дмитриева и Татьяна Воронина:<br/>— члены Национальной Гильдии Флористов,<br/>
-                  — флористы-дизайнеры с 15-ти летним стажем<br/>
-                  — судьи профессиональных конкурсов по системе сертификации&nbsp;FLORINT</span></li>
-            </ul>
-          </div>
-          <div class="col-6 d-md-none col-lg-12">
-            <div class="img-sertificate"><img class="img-fluid" src="../img/sertificate-gift.png"/></div>
-          </div>
+    <section class="page">
+      <div class="page__header-block" style="background-image: url('../img/bg-default.jpg');">
+        <div class="container">
+          <h1 class="page__title">Подарочные сертификаты</h1>
+          <p class="page__introtext mb-40 mb-sm-20">
+            Для творческих личностей, людей желающих попробовать новое, тем, кто составляет букеты для себя и работающим флористам, для повышения уровня.</p><a class="btn btn_action scroll" href="#test">Подобраться сертификат</a>
         </div>
-        <div class="row pt-20">
-          <div class="col-6 col-sm-12 col-md-10">
-            <ul class="list list_advantage list_advantage_full">
-              <li class="list__item"><span class="list__item__title h6">Раскрывают творческий потенциал</span><span class="list__item__content">Преподаватели имеют 10-летний опыт обучения, проверенные временем уникальные методики. Вы сможете создать шедевры и воссоздавать понравившиеся букеты/композиции.</span></li>
-              <li class="list__item"><span class="list__item__title h6">Помогают открыть свой бизнес</span><span class="list__item__content">Помогаем нашим выпускникам успешно открыть свой цветочный бизнес как в Санкт-Петербурге, так и в других городах России.</span></li>
-            </ul>
+      </div>
+      <div class="page__slider-container">
+        <div class="row slider page__slider">
+          <div class="col-4">
+            <div class="info info_offset-small">
+              <p class="info__title info__title_small">Профессионалы высокого уровня</p>
+              <p class="text-small text-grey">
+                Преподают Елена Дмитриева и Татьяна Воронина: члены Национальной Гильдии Флористов, флористы с 15-тилетним стажем, судьи проф. конкурсов по системе 
+                сертификации FLORINT
+              </p>
+            </div>
           </div>
-          <div class="col-6 col-sm-12 col-md-10">
-            <ul class="list list_advantage list_advantage_full">
-              <li class="list__item"><span class="list__item__title h6">Обучают европейским тенденциям</span><span class="list__item__content">Преподаватели участвуют в международных выставках в Европе, отслеживая модные тенденции. А школа приглашает звезд мировой флористики для проведения мастер-классов.</span></li>
-              <li class="list__item"><span class="list__item__title h6">Используют свежие цветы и&nbsp;зелень</span><span class="list__item__content">Считаем, что научиться составлять букеты и композиции можно только с использованием свежесрезанных цветов и зелени.</span></li>
-            </ul>
+          <div class="col-4">
+            <div class="info info_offset-small">
+              <p class="info__title info__title_small">Раскрывают творческий потенциал</p>
+              <p class="text-small text-grey">Преподаватели имеют 10-летний опыт обучения, проверенные временем уникальные методики. Вы сможете создать шедевры и воссоздавать понравившиеся букеты/композиции.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="info info_offset-small">
+              <p class="info__title info__title_small">Обучают европейским тенденциям</p>
+              <p class="text-small text-grey">Преподаватели участвуют в международных выставках в Европе, отслеживая модные тенденции. А школа приглашает звезд мировой флористики для проведения мастер-классов.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="info info_offset-small">
+              <p class="info__title info__title_small">Используют свежие цветы и зелень</p>
+              <p class="text-small text-grey">Считаем, что научиться составлять букеты и композиции можно только с использованием свежесрезанных цветов и зелени.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="info info_offset-small">
+              <p class="info__title info__title_small">Помогают открыть свой бизнес</p>
+              <p class="text-small text-grey">Помогаем нашим выпускникам успешно открыть свой цветочный бизнес как в Санкт-Петербурге, так и в других городах России.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="content">
-      <div class="container">
-        <div class="row justify-content-around align-items-center flex-md-column-reverse content__row">
-          <div class="col-5 col-sm-12 col-md-8 col-lg-5 mt-sm-20 mt-md-40"><img class="img-fluid" src="../img/sertificate-decor.jpg"/></div>
-          <div class="col-5 col-sm-12 col-md-10 col-lg-7 col-xl-7 mt-sm-20">
-            <p class="h1 text-bold">Кому понравится подарок?</p>
-            <ul class="list list_circle mt-40 mt-sm-20 mb-40 mb-sm-20">
-              <li class="list__item">Творческим личностям</li>
-              <li class="list__item">Людям, которые хотят попробовать что-то новое</li>
-              <li class="list__item">Тем, кто составляет букеты в садик/школу/на дни рождения</li>
-              <li class="list__item">Работающим флористам, желающим повысить свой профессиональный уровень</li>
-            </ul><a class="btn btn_link" href="#">Научим творить, а не копировать!</a>
+      <div class="container pb-60">
+        <div class="info bg-wave mb-40">
+          <div class="row align-items-center">
+            <div class="col-5 col-xl-5 col-lg-12">
+              <p class="info__title">Денежный сертификат</p>
+              <p class="text-grey mb-0">
+                Укажите любую сумму и подарите возможность выбрать курс, мастер-класс или индивидуальный урок самостоятельно.</p>
+            </div>
+            <div class="col-7 col-xl-7 col-lg-12 mt-lg-20">
+              <div class="form mb-0">
+                <div class="form__group">
+                  <div class="form__col form__col-input">
+                    <input class="form-input form-input--full" id="getSertificateValue" type="number" placeholder="Укажите сумму"/>
+                  </div>
+                  <div class="form__col col-sm-12"><a class="btn btn--full btn_action" id="getMoneySertificate" href="#">Сделать заказ</a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center text-center content__row">
-          <div class="col-7 col-lg-12">
-            <p class="h4 text-bold mb-0">Вы можете подарить сертификат на&nbsp;любой&nbsp;мастер-класс в&nbsp;школе «Маджента»</p>
-          </div>
-        </div>
-        <div class="row justify-content-center content__row">
-          <div class="col-4 col-lg-6 col-md-10 col-sm-12">
-            <div class="info info_column text-center">
-              <p class="info__title">Полный курс в&nbsp;школе «Маджента»</p>
-              <div class="info__content">
-                <div class="info__inside" data-info="intro">
-                  <div class="info__block">
-                    <p class="text-grey">Изучение только нужных</p>
-                  </div>
-                  <div class="info__row mt-20 justify-content-center"><a class="btn btn_default btn_order" href="#" data-title="Полный курс в школе «Маджента»">Заказать</a><a class="info__link info__link_show mt-20" href="#">Узнать подробнее</a></div>
-                </div>
-                <div class="info__inside info__inside--hidden-right" data-info="details">
-                  <div class="info__block">
-                    <p class="info__item"><span class="text-grey">Количество часов</span><span class="text-bold">18</span></p>
-                    <p class="info__item"><span class="text-grey">График занятий</span><span class="text-bold">пн - пт с 10.00 до 18.00</span></p>
-                    <p class="info__item"><span class="text-grey">Стоимость</span><span class="text-bold">30 000 р.</span></p>
-                  </div>
-                  <div class="info__row mt-20 justify-content-between"><a class="info__link info__link_course" href="#">На страницу курса</a><a class="info__link info__link_hide" href="#">Вернуться назад</a></div>
-                </div>
+        <div class="row align-items-center align-items-xl-start flex-md-column-reverse">
+          <div class="col-5 col-xl-4 col-lg-5 col-md-12 mt-sm-20 mt-md-40"><img class="img-fluid img-radius" src="../img/sertificate-mockup.jpg"/></div>
+          <div class="col-7 col-xl-8 col-lg-7 col-md-12 col-lg-7 mt-sm-20" id="test">
+            <p class="h2 text-bold">Нужен идеальный <br/>подарок?</p>
+            <p>
+              Индивидуальный подбор сертификата. Пройдите наш опрос и мы поможем выбрать подоходящий курс или мастер-класс.</p>
+            <div class="sertificate sertificate_poll mt-40">
+              <div class="sertificate__fill">
+                <div class="sertificate__fill-active" style="width: 25%;"></div>
               </div>
-            </div>
-          </div>
-          <div class="col-4 col-lg-6 col-md-10 col-sm-12 mt-md-40 mt-sm-20">
-            <div class="info info_column text-center">
-              <p class="info__title">Полный курс</p>
-              <div class="info__content">
-                <div class="info__inside" data-info="intro">
-                  <div class="info__block">
-                    <p class="text-grey">водопадный и&nbsp;каскадный букеты, аксессуары невесты</p>
+              <div class="sertificate__step sertificate__step--active" data-width="25%" data-count="question-1">
+                <div class="sertificate__title">Шаг 1: заголовок</div>
+                <div class="row mt-20 mb-20 sertificate__row">
+                  <div class="col-6 col-lg-12 mb-20">  
+                    <div class="sertificate__item sertificate__item_image sertificate__item--active" data-action="question-2">
+                      <div class="sertificate__item-image" style="background-image: url('../img/pic-4.png');"></div>
+                      <div class="sertificate__item-title">Вариант 1</div>
+                    </div>
                   </div>
-                  <div class="info__row mt-20 justify-content-center"><a class="btn btn_default btn_order" href="#" data-title="Полный курс в школе «Маджента»">Заказать</a><a class="info__link info__link_show mt-20" href="#">Узнать подробнее</a></div>
-                </div>
-                <div class="info__inside info__inside--hidden-right" data-info="details">
-                  <div class="info__block">
-                    <p class="info__item"><span class="text-grey">Количество часов</span><span class="text-bold">18</span></p>
-                    <p class="info__item"><span class="text-grey">График занятий</span><span class="text-bold">пн - пт с 10.00 до 18.00</span></p>
-                    <p class="info__item"><span class="text-grey">Стоимость</span><span class="text-bold">30 000 р.</span></p>
+                  <div class="col-6 col-lg-12 mb-20">
+                    <div class="sertificate__item sertificate__item_image" data-action="question-3">
+                      <div class="sertificate__item-image" style="background-image: url('../img/pic-5.png');"></div>
+                      <div class="sertificate__item-title">Вариант 2</div>
+                    </div>
                   </div>
-                  <div class="info__row mt-20 justify-content-between"><a class="info__link info__link_course" href="#">На страницу курса</a><a class="info__link info__link_hide" href="#">Вернуться назад</a></div>
+                  <div class="col-6 col-lg-12">
+                    <div class="sertificate__item sertificate__item_image" data-action="result-1">
+                      <div class="sertificate__item-image" style="background-image: url('../img/pic-6.png');"></div>
+                      <div class="sertificate__item-title">Вариант 3</div>
+                    </div>
+                  </div>
                 </div>
+                <div class="btn-group"><a class="btn btn_default btn--disable" data-href="prev" href="#">Назад</a><a class="btn btn_default" data-href="next" href="#">Вперед</a></div>
               </div>
-            </div>
-          </div>
-          <div class="col-4 col-lg-6 col-md-10 col-sm-12 mt-lg-40 mt-md-40 mt-sm-20">
-            <div class="info info_column text-center">
-              <p class="info__title">Полный курс в&nbsp;школе «Маджента»</p>
-              <div class="info__content">
-                <div class="info__inside" data-info="intro">
-                  <div class="info__block">
-                    <p class="text-grey">водопадный и&nbsp;каскадный букеты, аксессуары невесты</p>
+              <div class="sertificate__step" data-count="question-2" data-width="50%">
+                <div class="sertificate__title">Шаг 2: вариант 1</div>
+                <div class="row mt-20 mb-20 sertificate__row">
+                  <div class="col-6 col-lg-12 mb-lg-20">  
+                    <div class="sertificate__item sertificate__item_icon" data-action="question-3">
+                      <div class="sertificate__item-icon" style="background-image: url('../icon/star1.svg');"></div>
+                      <div class="sertificate__item-title">Вариант 1</div>
+                    </div>
                   </div>
-                  <div class="info__row mt-20 justify-content-center"><a class="btn btn_default btn_order" href="#" data-title="Полный курс в школе «Маджента»">Заказать</a><a class="info__link info__link_show mt-20" href="#">Узнать подробнее</a></div>
-                </div>
-                <div class="info__inside info__inside--hidden-right" data-info="details">
-                  <div class="info__block">
-                    <p class="info__item"><span class="text-grey">Количество часов</span><span class="text-bold">18</span></p>
-                    <p class="info__item"><span class="text-grey">График занятий</span><span class="text-bold">пн - пт с 10.00 до 18.00</span></p>
-                    <p class="info__item"><span class="text-grey">Стоимость</span><span class="text-bold">30 000 р.</span></p>
+                  <div class="col-6 col-lg-12">
+                    <div class="sertificate__item sertificate__item_icon" data-action="result-1">
+                      <div class="sertificate__item-icon" style="background-image: url('../icon/star2.svg');"></div>
+                      <div class="sertificate__item-title">Вариант 2</div>
+                    </div>
                   </div>
-                  <div class="info__row mt-20 justify-content-between"><a class="info__link info__link_course" href="#">На страницу курса</a><a class="info__link info__link_hide" href="#">Вернуться назад</a></div>
                 </div>
+                <div class="btn-group"><a class="btn btn_default" data-href="prev" data-action="question-1" href="#">Назад</a><a class="btn btn_default" data-href="next" href="#">Вперед</a></div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-10 col-sm-12 mt-40 mt-sm-20">
-            <div class="info">
-              <div class="row align-items-center">
-                <div class="col-5 col-lg-12">
-                  <p class="info__title">Денежный сертификат</p>
-                  <p class="text-grey mb-0">укажите любую сумму и подарите возможность выбрать курс, мастер-класс или индивидуальный урок</p>
-                </div>
-                <div class="col-7 col-lg-12">
-                  <div class="info__form">
-                    <input class="form-input" type="number" placeholder="Впишите сумму подарка"/><a class="btn btn_default amount" href="#" data-title="Денежный сертификат">Заказать</a>
+              <div class="sertificate__step" data-count="question-3" data-width="75%">
+                <div class="sertificate__title">Шаг 2: вариант 2</div>
+                <div class="row mt-20 mb-20 sertificate__row">
+                  <div class="col-6 col-lg-12 mb-lg-20">  
+                    <div class="sertificate__item sertificate__item_image" data-action="question-2">
+                      <div class="sertificate__item-image" style="background-image: url('../img/pic-4.png');"></div>
+                      <div class="sertificate__item-title">Вариант 1</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-12">
+                    <div class="sertificate__item sertificate__item_image" data-action="result-1">
+                      <div class="sertificate__item-image" style="background-image: url('../img/pic-5.png');"></div>
+                      <div class="sertificate__item-title">Вариант 2</div>
+                    </div>
                   </div>
                 </div>
+                <div class="btn-group"><a class="btn btn_default" data-href="prev" data-action="question-1" href="#">Назад</a><a class="btn btn_default" data-href="next" href="#">Вперед</a></div>
+              </div>
+              <div class="sertificate__step" data-count="result-1" data-width="100%">
+                <div class="sertificate__title">Результат 1</div>
+                <div class="sertificate__result mt-20 mb-20">
+                  <div class="sertificate__item sertificate__item_result mb-20">
+                    <div class="sertificate__item-image sertificate__item-image_result" style="background-image: url('../img/pic-5.png');"></div>
+                    <div class="sertificate__item-content"><a class="sertificate__item-link" href="courses.html">Базовый курс флористики</a>
+                      <p class="text-small mb-0">количество часов: 70</p>
+                      <p class="text-small mb-0">график: с 12 по 23 октября</p>
+                      <p class="text-small">стоимость: 30 000</p>
+                    </div><a class="sertificate__item-buy" href="#" title="Купить сертификат"></a>
+                  </div>
+                  <div class="sertificate__item sertificate__item_result">
+                    <div class="sertificate__item-image sertificate__item-image_result" style="background-image: url('../img/pic-4.png');"></div>
+                    <div class="sertificate__item-content"><a class="sertificate__item-link" href="courses.html">Рождественские композиции со свечами в школе флористики</a>
+                      <p class="text-small mb-0">количество часов: 70</p>
+                      <p class="text-small mb-0">график: с 12 по 23 октября</p>
+                      <p class="text-small">стоимость: 30 000</p>
+                    </div><a class="sertificate__item-buy" href="#" title="Купить сертификат"></a>
+                  </div>
+                </div>
+                <div class="btn-group"><a class="btn btn_default" data-href="prev" data-action="question-1" href="#">Вернуться в начало</a></div>
               </div>
             </div>
           </div>
@@ -206,11 +235,11 @@
     </section>
     <section class="cta-block cta-block_offset-top" id="getSertificate">
       <div class="container p-relative">
-        <p class="h1 cta-block__title mt-0">Индивидуальный подбор сертификата</p>
-        <p class="cta-block__offer" style="width: 380px;">Оставьте номер телефона и менеждер поможет завершить оформление сертификата <span class="text-bold text-pink" id="sertificateInfo"> </span></p>
+        <p class="h1 cta-block__title mt-0">Знаете какой нужен сертификат?</p>
+        <p class="cta-block__offer">Оставьте номер телефона и менеждер поможет завершить оформление заказа <span class="text-bold text-pink" id="sertificateInfo"> </span></p>
         <form class="form cta-block__form" action="">
-          <input class="form__input form__input_title d-none" placeholder=""/>
-          <input class="form__input form__input_phone" placeholder="Телефон"/>
+          <input class="form-input form-input--full mb-20 sertificate-action-input" placeholder="Выбрать сертификат" value=""/>
+          <input class="form-input form-input--full mb-20 phone" placeholder="Телефон"/>
           <button class="btn btn_action" type="submit">Заказать сертификат</button>
           <div class="form__agree checkbox">
             <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
@@ -219,28 +248,14 @@
         </form>
       </div>
     </section>
-    <section class="info-block">
-      <div class="container text-center">
-        <div class="row justify-content-center">
-          <div class="col-10 col-md-12">
-            <p class="h2 text-bold text-black mb-20">Затрудняетесь с выбором нужного курса?</p>
-          </div>
-          <div class="col-7 col-md-12">
-            <p>Не можете выбрать курс для своего уровня? Побеседуйте с нашими преподавателями, чтобы определить свои сильные и слабые стороны.</p>
-            <div class="networks mt-40 mt-sm-20 justify-content-center"><a class="networks__item" href="#"><img class="img-fluid" src="../icon/vk.svg"/></a><a class="networks__item" href="#"><img class="img-fluid" src="../icon/whatsapp.svg"/></a><a class="networks__item" href="#"><img class="img-fluid" src="../icon/telegram.svg"/></a></div>
-            <p class="mt-20"><a class="btn btn_action" href="#">Нужна консультация</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+          <div class="col-3 col-lg-6 col-sm-12">
             <div class="footer__logo"></div>
             <p class="footer__content text-small mb-0">Санкт-Петербург, Пр. Юрия Гагарина, 7, пом. 25 ЖК "Космос", справа от центрального входа.</p>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-4 mt-sm-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-sm-20">
             <p class="text-bold footer__title">Контакты</p>
             <ul class="contacts">
               <li class="contacts__item contacts__item_phone"> <a class="footer__link" href="tel:88001112233">8 (812) 317-76-18</a></li>
@@ -253,7 +268,7 @@
               <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
             </ul>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-2 mt-md-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-lg-20">
             <p class="text-bold footer__title">Курсы</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Базовый</a></li>
@@ -262,28 +277,84 @@
               <li class="list__item"><a href="#">Базовый</a></li>
             </ul>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-md-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-lg-20">
             <p class="text-bold footer__title">Блог</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Хочу быть флористом</a></li>
               <li class="list__item"><a href="#">Выбираем школу флористики</a></li>
               <li class="list__item"><a href="#">Мастер-класс по флористике</a></li>
             </ul>
+            <p class="text-bold footer__title mt-20">Часто задаваемые вопросы</p>
           </div>
         </div>
         <div class="row mt-20">
-          <div class="col-7 col-sm-12 col-md-6">
-            <p class="footer__content text-small"><a href="#">Часто задаваемые вопросы</a><br><a href="#">Сведения об образовательной организации</a></p>
-            <p class="footer__content text-small mb-0">Сайт ЧОУ ДПО «АФД «Маджента» составлен согласно требованиям официального сайта Министерства образования и науки Российской Федерации в сети «Интернет» и минобрнауки.рф</p>
+          <div class="col-3 col-sm-12 col-lg-6">
+            <p class="footer__content text-small"><a class="footer__link" href="#">Договор публичной оферты</a></p>
           </div>
-          <div class="col-5 col-sm-12 col-md-6">
-            <p class="footer__content text-right text-md-left text-small mb-0">© 2019. Все права защищены.</p>
+          <div class="col-3 col-sm-12 col-lg-6">
+            <p class="footer__content text-small"><a class="footer__link" href="#">Политика конфиденциальности</a></p>
+          </div>
+          <div class="col-3 col-sm-12 col-lg-6 mt-lg-20">
+            <p class="footer__content text-small mb-0">© 2019. Все права защищены.</p>
           </div>
         </div>
       </div>
     </footer>
+    <div class="modal sertificate sertificate_modal" id="sertificateModal">
+      <div class="sertificate__item sertificate__item_modal mb-20">
+        <div class="sertificate__item-image" style="background-image: url('../img/pic-3.png');"></div>
+        <div class="sertificate__item-content sertificate__item-content_modal">
+          <p class="sertificate_modal__title">Мастер-класс «Рождественские композиции со свечами»</p>
+          <p class="text-small mb-0">количество часов: 5</p>
+          <p class="text-small mb-0">график: с 12 по 12 октября</p>
+          <p class="text-small">стоимость: 2500</p>
+        </div>
+      </div>
+      <div class="sertificate__item sertificate__item_modal mb-20">
+        <div class="sertificate__item-image" style="background-image: url('../img/pic-5.png');"></div>
+        <div class="sertificate__item-content sertificate__item-content_modal">
+          <p class="sertificate_modal__title">Базовый курс флористики</p>
+          <p class="text-small mb-0">количество часов: 70</p>
+          <p class="text-small mb-0">график: с 12 по 23 октября</p>
+          <p class="text-small">стоимость: 30 000</p>
+        </div>
+      </div>
+      <div class="sertificate__item sertificate__item_modal mb-20">
+        <div class="sertificate__item-image" style="background-image: url('../img/pic-5.png');"></div>
+        <div class="sertificate__item-content sertificate__item-content_modal">
+          <p class="sertificate_modal__title">Полный курс флористики</p>
+          <p class="text-small mb-0">количество часов: 70</p>
+          <p class="text-small mb-0">график: с 12 по 23 октября</p>
+          <p class="text-small">стоимость: 30 000</p>
+        </div>
+      </div>
+      <div class="sertificate__item sertificate__item_modal">
+        <div class="sertificate__item-image" style="background-image: url('../img/pic-4.png');"></div>
+        <div class="sertificate__item-content sertificate__item-content_modal">
+          <p class="sertificate_modal__title">Рождественские композиции со свечами в школе флористики</p>
+          <p class="text-small mb-0">количество часов: 70</p>
+          <p class="text-small mb-0">график: с 12 по 23 октября</p>
+          <p class="text-small">стоимость: 30 000</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_form" id="sertificateMoney">
+      <form class="form" action="">
+        <input class="form-input form-input--full mb-20 phone" placeholder="Телефон"/>
+        <label class="text-bold text-small">Сумма сертификата:</label>
+        <input class="form-input form-input--full mb-20" id="sertificateValue" placeholder="Укажите сумму" value=""/>
+        <button class="btn btn_action" type="submit">Заказать сертификат</button>
+        <div class="form__agree checkbox">
+          <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+          <label class="checkbox__label" for="agree">согласен с <a class="checkbox__link" href="/policy.pdf" target="_blank">обработкой персональных данных</a></label>
+        </div>
+      </form>
+    </div>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/jquery.inputmask.js"></script>
+    <link href="./css/slick.css" rel="stylesheet"/>
+    <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/app.min.js"> </script>
   </body>
 </html>

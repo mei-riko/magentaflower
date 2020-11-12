@@ -2,13 +2,18 @@
     body, html{
         font-size: 18px;
     }
+    // .container{
+    //     width: 1380px;
+    // }
+
     header .container,
     footer .container,
     .info-block .container,
-    .slider-container.container,
-    .container{
+    .slider-container.container{
         max-width: 1540px;
+        width: 100%;
     }
+
     .contacts .contacts__item{
         font-size: 18px;
     }
@@ -142,7 +147,7 @@
     font-size: 22px;
     line-height: 26px;
     }
-    .main section.teachers .container,
+    section.teachers .container,
     section.courses.blog .container,
     section.advantages .container{
     width: 1480px;

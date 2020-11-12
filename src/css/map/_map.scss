@@ -1,11 +1,12 @@
 .map{
     width: 100%;
-    height: 460px;
-    border: 1px solid $pink;
+    min-height: 380px; 
+    border: 1px solid $border-color;
+    padding-top: 0!important;
 }
 
 @media (max-width: map-get($grid-breakpoints, 'sm')) {
     .map{
-        height: 540px;
+        min-height: 440px;
     }
 }

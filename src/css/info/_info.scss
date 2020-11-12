@@ -1,11 +1,10 @@
 .info{
     border: 1px solid $border-color;
-    border-radius: 24px;
+    border-radius: 12px;
+    padding: map-get($spacers, 2) map-get($spacers, 3);
+
     color: $black;
     background-color: $white;
-    // box-shadow: 0px 0px 15px 0px rgba(240, 213, 221, 1);
-
-    padding: map-get($spacers, 2) map-get($spacers, 3);
     transition: .3s;
 
     // Заголовок блока
@@ -15,95 +14,12 @@
         margin-bottom: 1rem;
         line-height: 1.2;
         transition: .3s;
-    }
-    // Элемент блока
-    &__item{
-        font-size: 1rem;
-        margin-bottom: 0;
-        span{
-            display: block;
-        }
-        & + .info__item{
-            margin-top: 8px;
-        }
-    }
-    // Виды ссылок
-    &__link{
-        font-size: 12px;
-        line-height: 1.2;
-        font-weight: bold;
-        text-decoration: underline;
 
-        &_show{
-            color: $grey;
-            &:hover{color: darken($pink,10);}
-        }
-        &_hide{
-            color: $grey;
-            &:hover{color: darken($pink,10);}
-        }
-        &_course{
-            color: $pink;
-            &:hover{color: darken($pink,10);}
+        &_small{
+            font-size: 1rem;
         }
     }
-    // Информация в 2 колонки
-    &__row{
-        display: flex;
-        flex-wrap: wrap;
-        .info__col{
-            flex: 0 0 50%;
-            max-width: 50%;
-        }
-        .info__link{
-            padding: 4px 8px;
-        }
-    }
-    // Ввод суммы в блоке с денежным сертификатом
-    &__form{
-        display: flex;
-        flex-wrap: wrap;
-        .form-input{
-            flex: 0 0 calc(100% - 275px);
-            max-width: calc(100% - 275px);
-            margin-right: 10px;
-        }
-        .btn{
-            width: 265px;
-        }
-    }
-    // Основной и скрытый контент
-    &__content{
-        position: relative;
-        overflow: hidden;
-        height: 190px;
-    }
-    &__inside{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-
-        transition: .5s;
-
-        &--hidden-left{
-            transform: translateX(-100%);
-        }
-        &--hidden-right{
-            transform: translateX(100%);
-        }
-
-        .info__block,
-        .info__row{
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-    } 
+    
     // Активный элемент
     &--active{
         border-color: $pink;
@@ -119,44 +35,14 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .info{
-        .info__title{
+        &__title{
             font-size: 1.25rem;
-        }
-    }
-}
-@media all and (max-width: map-get($grid-breakpoints, 'lg')){
-    .info{
-        .info__form{
-            margin-top: 20px;
-        }
-        .info__content{
-            height: 200px;
-        }
-    }
-}
-@media all and (max-width: map-get($grid-breakpoints, 'md')){
-    .info{
-        .info__form{
-            margin-top: 20px;
-            .form-input{
-                flex: 0 0 100%;
-                max-width: 100%;
-                & + .btn{
-                    margin-top: 10px;
-                }
-            }
-            .btn{
-                flex: 0 0 100%;
-                max-width: 100%;
+            &_small{
+                font-size: 1rem;
             }
         }
-        .info__content{
-            height: 180px;
-        }
     }
 }
-@media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .info{
-        padding: map-get($spacers, 1) map-get($spacers, 2);
-    }
-}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){}

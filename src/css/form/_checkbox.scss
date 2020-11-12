@@ -1,0 +1,49 @@
+.checkbox{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 20px;
+
+    &__input{
+        display: none;
+
+        &:checked + .checkbox__label:after {
+            content: '';
+            display: block;
+            background-color: $pink;
+
+            width: 6px;
+            height: 6px;
+
+            position: absolute;
+            left: 4px;
+            top: 4px;
+        }
+    }
+    &__label{
+        position: relative;
+        margin: 0;
+        padding-left: 28px;
+
+        line-height: 12px;
+
+        cursor: pointer;
+
+        &:before{
+            content:'';
+            display: block;
+
+            border: 1px solid $grey;
+
+            width: 14px;
+            height: 14px;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__link{
+        text-decoration: underline;
+    }
+}

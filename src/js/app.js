@@ -9,6 +9,37 @@ $(document).ready(() =>{
         });
         return false;
     });
+    // Fancybox
+    $('[data-fancybox]').fancybox({
+        touch: false,
+        autoFocus: false
+      });
+    // Input mask
+    if( $('.phone').length > 0 ) {
+        $(".phone").inputmask({
+            mask: "+7 999 999 99 99",
+            placeholder: " ",
+            showMaskOnHover: true,
+
+            onincomplete: function(){ 
+                $(this).closest("form").addClass('error-phone'); 
+                $(this).addClass('error'); 
+                $(this).siblings(".error_phone").addClass('error').html('Укажите корректный номер'); 
+            }, 
+            oncomplete: function(){ 
+                $(this).closest("form").removeClass('error-phone'); 
+                $(this).removeClass('error'); 
+                $(this).siblings(".error_phone").removeClass('error').html(''); 
+            },
+        })
+    }
+    $('input.phone').on('keydown', function(event) {
+        if (event.keyCode === 13 && !$(this).inputmask("isComplete") ) {
+            event.preventDefault();
+            $(this).blur();
+            return false;
+        }
+    });
     // Slide Info
     $(".item-slide").on("click", function(){
         $(this).toggleClass("item-slide--active");
@@ -91,50 +122,68 @@ $(document).ready(() =>{
         timer = setInterval(showRemaining, 1000);
 
     }
-    // Sertificate Page
-    $(".info__link.info__link_show").on("click", function(e){
-        e.preventDefault();
-        let info = $(this).closest(".info");
-        info.addClass("info--active");
-        info.find(".info__inside[data-info='intro']").addClass("info__inside--hidden-left");
-        info.find(".info__inside[data-info='details']").removeClass("info__inside--hidden-right");
-    });
-    $(".info__link.info__link_hide").on("click", function(e){
-        e.preventDefault();
-        let info = $(this).closest(".info");
-        info.removeClass("info--active");
-        info.find(".info__inside[data-info='intro']").removeClass("info__inside--hidden-left");
-        info.find(".info__inside[data-info='details']").addClass("info__inside--hidden-right");
-    });
-    $(".info .info__content .btn.btn_order").on("click", function(e){
-        e.preventDefault();
-        let title = $(this).data("title");
-        // дополнение описания CTA блока
-        $("#sertificateInfo").html( title );
-        // заполнение скрытого поля формы
-        $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title );
-        // прокрутка к форме
-        $("html, body").animate({scrollTop: $("#getSertificate").offset().top + "px"}, {duration: 500,easing: "swing"});
-    });
-    $(".info .btn.amount").on("click", function(e){
-        e.preventDefault();
-        let title = $(this).data("title");
-        let amount = $(".info .info__form .form-input").val() ;
-
-        if( amount != ''){
-            // заполнение скрытого поля формы
-            $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title + " на сумму " + amount);
-            // дополнение описания CTA блока
-            $("#sertificateInfo").html( title + " на сумму " + amount);
-        }else{
-            // заполнение скрытого поля формы
-            $(".cta-block#getSertificate .cta-block__form .form__input_title").val( title );
-            // дополнение описания CTA блока
-            $("#sertificateInfo").html( title );
+    // Sertificate Poll
+    $(".sertificate.sertificate_poll .sertificate__item").on("click", function(){
+        let row = $(this).closest(".sertificate__row");
+        if( !$(this).hasClass(".sertificate__item--active")){
+            row.find(".sertificate__item--active").removeClass("sertificate__item--active");
+            $(this).addClass("sertificate__item--active");
         }
-        // прокрутка к форме
-        $("html, body").animate({scrollTop: $("#getSertificate").offset().top + "px"}, {duration: 500,easing: "swing"});
     });
+    $(".sertificate.sertificate_poll .sertificate__step .btn[data-href='next']").on("click", function(e){
+        e.preventDefault();
+        let step = $(this).closest(".sertificate__step");
+        let active = step.find(".sertificate__item--active").attr("data-action");
+
+        if( active != undefined){
+            step.removeClass("sertificate__step--active");
+
+            let nextStep = $(".sertificate .sertificate__step[data-count="+ active + "]");
+            nextStep.addClass("sertificate__step--active");
+            // Смена индикатора
+            $(".sertificate .sertificate__fill-active").attr( "style", "width: " + nextStep.attr("data-width") + ";");
+        }
+    });
+    $(".sertificate.sertificate_poll .sertificate__step .btn[data-href='prev']").on("click", function(e){
+        e.preventDefault();
+        let step = $(this).closest(".sertificate__step");
+        let active = $(this).attr("data-action");
+
+        if( active != undefined){
+            step.removeClass("sertificate__step--active");
+
+            let prevStep = $(".sertificate .sertificate__step[data-count="+ active + "]");
+            prevStep.addClass("sertificate__step--active");
+            // Смена индикатора
+            $(".sertificate .sertificate__fill-active").attr( "style", "width: " + prevStep.attr("data-width") + ";");
+        }
+    });
+    // Sertificate Modal
+    $(".sertificate-action-input").on("click", function(){
+        $.fancybox.open({ 
+            src: "#sertificateModal",
+            touch: false,
+            autoFocus: false
+         });
+    });
+    $(".sertificate.sertificate_modal .sertificate__item.sertificate__item_modal").on("click", function(){
+        $.fancybox.close();
+        let title = $(this).find(".sertificate_modal__title").text();
+        $(".sertificate-action-input").val( title );
+    });
+    // Sertificate Money
+    $("#getMoneySertificate").on("click", function(e){
+        e.preventDefault();
+        $.fancybox.open({ 
+            src: "#sertificateMoney",
+            touch: false,
+            autoFocus: false
+        });
+
+        let value = $(this).closest(".form").find("#getSertificateValue").val();
+        $("#sertificateValue").val( value );
+    });
+    
     // Corporate Page
     $(".preview-link .preview-link__link").on("click", function(e){
         e.preventDefault();
@@ -213,6 +262,30 @@ $(document).ready(() =>{
                     settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        // Slider Page After First Screen
+        $('.slider.page__slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true,
+            dots: false, 
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
                 }
             ]

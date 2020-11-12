@@ -1,0 +1,6 @@
+.sertificate-action-input{
+    transition: .4s;
+    &:hover, &:focus{
+        background-color: lighten($color: $pink-light, $amount: 3);
+    }
+}

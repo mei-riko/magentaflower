@@ -20,4 +20,19 @@
     &--full, &_full{
         width: 100%;
     }
+    &--disable{
+        filter: grayscale(.75);
+        cursor: not-allowed;
+    }
+}
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -10px;
+
+    .btn{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
 }

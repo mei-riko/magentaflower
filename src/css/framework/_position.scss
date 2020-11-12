@@ -45,6 +45,13 @@
     -ms-flex-align: center!important;
     align-items: center!important
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .align-items-xl-start {
+        -webkit-box-align: start!important;
+        -ms-flex-align: start!important;
+        align-items: flex-start!important
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .justify-content-lg-center {
         -webkit-box-pack: center!important;

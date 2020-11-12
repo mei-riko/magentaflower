@@ -12,12 +12,17 @@
 @import "other/footer.scss";
 @import "other/navbar.scss";
 
+@import "form/form.scss";
+@import "form/form-input.scss";
+@import "form/checkbox.scss";
 
 @import "contact/contacts.scss";
 @import "block/networks.scss";
 
 @import "list/list.scss";
 @import "list/list_circle.scss";
+
+@import "item/item-icon.scss";
 
 @import "slider/slider-container.scss";
 @import "slider/slider.scss";
@@ -40,7 +45,8 @@ body a {
 }
 
 header *, footer.footer *
-.navbar-mobile *{
+.navbar-mobile *, .item-icon *,
+.jGrowl-notification *{
     color: #3d3e40;
 }
 .slider-container{
@@ -52,17 +58,21 @@ header *, footer.footer *
 header *, header *::before, header *::after,
 footer.footer *, footer.footer *::before, footer.footer *::after,
 .info-block *, .info-block *::before, .info-block *::after,
+.item-icon *, .item-icon *::before, .item-icon *::after,
 .slider-container, .slider-container::before, .slider-container::after,
+.jGrowl-notification, .jGrowl-notification *, .jGrowl-notification *::before, .jGrowl-notification *::after,
 .slider-container *, .slider-container *::before, .slider-container *::after{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-header, footer, .slider-container{
-    font-family: 'Roboto';
+header, footer, .slider-container, .item-icon{
     position: initial;
     height: auto;
     background: unset;
+
+    font-family: "Noto Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 14px;
+    line-height: 1.5;
 }
 header .contacts,
 footer .contacts{
@@ -166,7 +176,7 @@ section.main .banner-im{
         }
     }
     p {
-        font-size: 1rem;
+        font-size: 14px;
         margin-top: 0;
         margin-bottom: 1.25rem;
         line-height: 1.6;
@@ -215,7 +225,7 @@ footer.footer{
     color: $grey;
     text-align: center;
     .h2, h2 {
-        font-family: 'Noto Serif', serif;
+        font-family: "Noto Serif", serif;
         font-size: 35px;
         color: #000;
     }
@@ -254,11 +264,60 @@ footer.footer{
     font-weight: 700;
 }
 
+.align-items-center{
+    align-items: center;
+}
 .justify-content-center{
     justify-content: center;
 }
 .img-fluid{
     max-width: 100%;
+}
+
+// Download Recommend Block
+.item-icon{
+    position: relative;
+    background-color: $white;
+    
+    .btn{
+        border: none;
+        outline: none;
+    
+        padding: 15px 30px;
+        border-radius: 30px;
+        max-width: 100%;
+        
+        text-align: center;
+        max-width: 100%;
+    
+        cursor: pointer;
+        transition: .4s;
+        
+        &:hover, &:focus{
+            text-decoration: none;
+            outline: none;
+        }
+        &_default{
+            color: $pink;
+            background-color: $pink-light;
+            font-weight: bold;
+            &:hover{
+                color: darken($pink, 10%);
+                background: darken($pink-light, 5%);
+            }
+        }
+    }
+}
+.item__title{
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+.item__input-col{
+    flex: 0 0 calc(100% - 200px);
+    max-width: calc(100% - 200px);
+}
+.d-none{
+    display: none;
 }
 
 @media (max-width: 992px){

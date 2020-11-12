@@ -45,7 +45,7 @@
 
         .contacts__item + .contacts__item{
             margin-top: 0;
-            margin-left: map-get($spacers, 2);
+            margin-left: map-get($spacers, 1)/2;
         }
     }
     &_header{

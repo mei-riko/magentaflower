@@ -7,7 +7,7 @@ html(lang="ru")
             .container.header-block__container
                 .row.align-items-center
                     .col-7.col-md-12.col-lg-6
-                        h1.header-block__title.mb-40 Online-курс флористики
+                        h1.header-block__title Online-курс флористики
                         p.text-pink.text-bold.lead Освойте профессию флориста за 20 дней
                         ul.list.list_circle.mb-20
                             li.list__item 27 полноценных уроков
@@ -167,16 +167,16 @@ html(lang="ru")
                             span.text-pink 03.
                             |  Полные базовые навыки
                         p Lorem ipsum dolor sit amet. Amet, consectetur, adipisci velit, sed ut perspiciatis, unde omnis dolor. Sint, obcaecati cupiditate non numquam eius.
-                .row.info-advantage__position._justify-content-center
+                .row.info-advantage__position.justify-content-center
                     .col-6.col-xl-6.col-lg-6.col-md-10.col-sm-12.mb-lg-40
                         .info.info_person.bg-pink
-                            .info__img(style="background-image: url('../img/Elena.jpg')")
+                            .info_person__img(style="background-image: url('../img/Elena.jpg')")
                             p.subtitle-light.text-pink-light.text-small.mb-0 преподаватель курса
                             p.info__title Елена Дмитриева
                             p.info__intro.text-pink-light Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.
                     .col-6.col-xl-6.col-lg-6.col-md-10.col-sm-12
                         .info.info_person.bg-pink
-                            .info__img(style="background-image: url('../img/Tatiana.jpg')")
+                            .info_person__img(style="background-image: url('../img/Tatiana.jpg')")
                             p.subtitle-light.text-pink-light.text-small.mb-0 преподаватель курса
                             p.info__title Татьяна Воронина
                             p.info__intro.text-pink-light Флорист-дизайнер международного уровня, с&nbsp;опытом работы более 10&nbsp;лет.
@@ -288,11 +288,16 @@ html(lang="ru")
                 .item.mt-40.item-icon.item-icon_information
                     img.item-icon__img(src="../icon/plus.svg")
                     .row.align-items-center
-                        .col-8.col-lg-12.mb-lg-20
-                            p.item__title.text-bold.mb-10 Рекомендации по набору инструментов 
-                            p.text-grey Подготовили для вас чек-лист по необходимым инструментам для обучения и начала работы
-                        .col-4.col-lg-12.text-right.text-lg-left
-                            a.btn.btn_default(href="#") Скачать чек-лист
+                        .col-6.col-xl-5.col-lg-12
+                            p.item__title.text-bold.mb-10 Рекомендации по&nbsp;набору инструментов 
+                            p.text-grey Подготовили для&nbsp;вас чек-лист по&nbsp;необходимым инструментам для&nbsp;обучения и&nbsp;начала работы
+                        .col-6.col-xl-7.col-lg-12.mt-lg-20
+                            form.form.mb-0(action="")
+                                .form__group
+                                    .form__col.form__col-input
+                                        input.form-input.form-input--full(type="text" placeholder="Укажите ваш e-mail")
+                                    .form__col.col-sm-12
+                                        a.btn.btn--full.btn_default(href="#") Скачать чек-лист
         section.content.pt-0
             .container
                 p.h2.text-bold.mb-60.mb-sm-40 Ваше резюме после курса

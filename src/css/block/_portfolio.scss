@@ -1,6 +1,7 @@
 .portfolio{
     .portfolio__item{
         position: relative;
+        padding: 4px;
         transition: .4s;
         
         &:before{

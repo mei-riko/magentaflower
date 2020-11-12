@@ -22,15 +22,20 @@
 
 @import "other/navbar.scss";
 @import "other/footer.scss";
-@import "other/form.scss";
 @import "other/modxAlert.scss";
 @import "other/pagination.scss";
+@import "other/modal.scss";
+
+@import "form/form.scss";
+@import "form/form-input.scss";
+@import "form/checkbox.scss";
+
 
 @import "contact/contacts.scss";
 
 @import "header/header-block.scss";
 
-@import "block/cta-block.scss";
+@import "cta/cta-block.scss";
 @import "block/networks.scss";
 
 @import "slider/slider-container.scss";
@@ -48,7 +53,13 @@
 @import "block/programm.scss";
 @import "block/timetable.scss";
 
-@import "block/sertificate.scss";
+@import "page/page.scss";
+
+@import "sertificate/sertificate.scss";
+@import "sertificate/sertificate_modal.scss";
+@import "sertificate/sertificate-action-input.scss";
+@import "sertificate/sertificate-content.scss";
+
 @import "block/timer.scss";
 
 @import "block/preview-link.scss";

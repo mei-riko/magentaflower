@@ -1,7 +1,8 @@
 .header-block{
     position: relative;
-    padding: 230px 0 map-get($spacers, 6);
-    background: $light-grey url("../img/bg-demo-header.jpg") no-repeat right bottom / contain ;
+    padding: 200px 0 map-get($spacers, 4);
+    background: $light-grey no-repeat right bottom / contain;
+    // url("../img/bg-demo-header.jpg")
     
     &__subtitle{
         font-family: "Noto Sans";
@@ -15,10 +16,9 @@
     }
     &__title{
         display: block;
-        font-size: 3.5rem;
-        // font-size: 3.375rem;
+        font-size: 3.25rem;
         font-weight: bold;
-        margin: 0 0 map-get($spacers, 4);
+        margin: 0 0 map-get($spacers, 3);
     }
     &__offer{
         color: #797979;
@@ -32,7 +32,7 @@
         font-weight: bold;
         font-size: 1.5rem;
         line-height: 1.2;
-        margin: .5rem 0;
+        margin: .25rem 0 .5rem;
     }
     // Позиционирование картинки
     &__container{
@@ -61,7 +61,7 @@
     &_col{
         margin-top: 110px;
         padding: 120px 0 map-get($spacers, 5);
-        background: linear-gradient(90deg, $light-grey 0%, $light-grey 60%, $pink-light 60%, $pink-light 100%);
+        background: linear-gradient(90deg, $light-grey 0%, $light-grey 65%, $pink-light 65%, $pink-light 100%);
 
         &__image{
             position: relative;
@@ -70,7 +70,7 @@
                 content: '';
                 display: block;
                 width: 100%;
-                padding-top: 100%;
+                padding-top: 75%;
 
                 border: 1px solid $pink;
                 transform: translate(15px, -15px);
@@ -82,7 +82,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                padding-top: 100%;
+                padding-top: 75%;
 
                 border: 1px solid $pink;
                 transform: translate(25px, -25px);
@@ -98,7 +98,20 @@
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .header-block{
         &__title{
-            font-size: 2.75rem;
+            font-size: 2.5rem;
+        }
+        &__info{
+            font-size: 1.25rem;
+        }
+        &_col{
+            &__image{
+                &:before{
+                    transform: translate(-10px, -10px);
+                }
+                &:after{
+                    transform: translate(-20px, -20px);
+                }
+            }
         }
     }
 }
@@ -106,6 +119,9 @@
     .header-block{
         padding-top: 140px;
 
+        &__info{
+            margin-bottom: 1rem;
+        }
         &__image{
             top: 0;
             bottom: auto;
@@ -122,16 +138,12 @@
         background-position-x: 100px;
         
         &__title{
-            font-size: 2.5rem;
+            font-size: 2.25rem;
             width: 480px;
             max-width: 100%;
         }
-        &__info{
-            font-size: 1.25rem;
-        }
-
         &_col{
-            background: linear-gradient(180deg, $light-grey 0%, $light-grey 60%, $pink-light 60%, $pink-light 100%);
+            background: linear-gradient(180deg, $light-grey 0%, $light-grey 70%, $pink-light 70%, $pink-light 100%);
         }
     }
 }

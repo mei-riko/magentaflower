@@ -1,28 +1,23 @@
-.btn{
-    &_link{
-        background: $pink;
-        color: $white;
-        font-weight: bold;
+.btn_link{
+    background: $pink;
+    color: $white;
+    font-weight: bold;
 
-        &:hover, &:focus{
-            color: $white;
-            background: darken($pink, 10%);
-        }
+    &:hover, &:focus{
+        color: $white;
+        background: darken($pink, 10%);
     }
 }
-
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
-    .btn{
-        &_link{
-            padding: 0;
-            border-radius: 0;
+    .btn_link{
+        padding: 0;
+        border-radius: 0;
+        background: none;
+        color: $pink;
+        
+        &:hover, &:focus{
             background: none;
-            color: $pink;
-            
-            &:hover, &:focus{
-                background: none;
-                color: darken($pink, 10%);
-            }
+            color: darken($pink, 10%);
         }
     }
 }

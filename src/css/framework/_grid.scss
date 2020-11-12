@@ -1,16 +1,16 @@
 .container {
     width: 100%;
     max-width: map-get($container-max-widths, 'xl');
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: $grid-gutter-width/2;
+    padding-left: $grid-gutter-width/2;
     margin-right: auto;
     margin-left: auto
 }
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-right: -20px;
-    margin-left: -20px
+    margin-right: -$grid-gutter-width/2;
+    margin-left: -$grid-gutter-width/2
 }
 .no-gutters {
     margin-right: 0;
@@ -23,8 +23,8 @@
 .col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
     position: relative;
     width: 100%;
-    padding-right: 20px;
-    padding-left: 20px
+    padding-right: $grid-gutter-width/2;
+    padding-left: $grid-gutter-width/2;
 }
 .col{
     -ms-flex-preferred-size: 0;

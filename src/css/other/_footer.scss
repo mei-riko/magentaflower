@@ -14,9 +14,9 @@
         display: block;
         margin-bottom: map-get($spacers, 2);
     }
-    // Заголовки колонок
-    .footer__title{
-        font-size: 1.25rem;
+    // Элементы колонок
+    .footer__link{
+        text-decoration: underline;
     }
     .footer__content{
         color: $grey;

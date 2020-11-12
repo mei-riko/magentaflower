@@ -1,11 +1,9 @@
-.btn{
-    &_default{
-        color: $pink;
-        background-color: $pink-light;
-        font-weight: bold;
-        &:hover{
-            color: darken($pink, 10%);
-            background: darken($pink-light, 5%);
-        }
+.btn_default{
+    color: $pink;
+    background-color: $pink-light;
+    font-weight: bold;
+    &:hover{
+        color: darken($pink, 10%);
+        background: darken($pink-light, 5%);
     }
 }

@@ -1,0 +1,85 @@
+.form{
+    &__group{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    &__col{
+        padding: 0 5px;        
+        .form__input{
+            width: 100%;
+        }
+
+        &-input{
+            flex: 0 0 calc(100% - 200px);
+            max-width: calc(100% - 200px);
+        }
+    }
+
+    &__label{
+        font-size: 12px;
+        color: $grey;
+    }
+    &__input{
+        border: none;
+        border-bottom: 1px solid $border-color;
+        background: inherit;
+
+        padding: 14px 0;
+        max-height: 50px;
+
+        &:not(.d-none) + .form__input{
+            margin-top: 20px;
+        }
+        & + .btn{
+            margin-top: 40px;
+        }
+
+        &:hover, &:focus{
+            outline: none;
+        }
+
+        &_name{
+            padding-left: 34px;
+            background: url("../img/profile.svg") no-repeat left center / 20px;
+        }
+        
+        &_phone{
+            padding-left: 34px;
+            background: url("../img/telephone.svg") no-repeat left center / 20px;
+        }
+        
+        &_email{
+            padding-left: 34px;
+            background: url("../img/email.svg") no-repeat left center / 20px;
+        }
+        
+        &_full{
+            width: 100%;
+        }
+    }
+    &__agree{
+        &.checkbox{
+            .checkbox__label{
+                color: $grey;
+                @extend .small;
+            }
+        }
+    }
+
+    .form-validation + .form__input{
+        margin-top: $spacer/2;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .form{
+        &__col-input{
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            margin-bottom: $spacer/3;
+        }
+    }
+}

@@ -45,10 +45,6 @@
             color: $pink-light;
         }
     }
-    .list__item{
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
     // На всю ширину
     &--full{
         &__item,
@@ -60,14 +56,6 @@
             &:after{
                 top: 22px;
             }
-        }
-    }
-}
-@media all and (max-width: map-get($grid-breakpoints, 'hd')){
-    .list_advantage{
-        &__item,
-        .list__item{
-            // width: 300px;
         }
     }
 }
