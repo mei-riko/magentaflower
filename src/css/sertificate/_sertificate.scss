@@ -110,6 +110,8 @@
     &__item-title{
         flex: 0 0 calc(100% - 110px);
         max-width: calc(100% - 110px);
+
+        line-height: 1.2;
     }
     // Блок-результат
     &__item-content{
@@ -122,8 +124,8 @@
         padding-right: 100px;
 
         &_modal{
-            flex: 0 0 calc(100% - 140px);
-            max-width: calc(100% - 140px);
+            flex: 0 0 calc(100% - 90px);
+            max-width: calc(100% - 90px);
             padding-right: 20px;
         }
     }
@@ -163,6 +165,7 @@
             background: $pink;
         }       
     }
+
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .sertificate{
@@ -195,6 +198,13 @@
         // Блок-результат
         &__item-content{
             padding-right: 20px;
+            flex: 0 0 calc(100% - 100px);
+            max-width: calc(100% - 100px);
+
+            &_modal{
+                flex: 0 0 calc(100% - 90px);
+                max-width: calc(100% - 90px);
+            }
         }
     }
 }
@@ -222,6 +232,11 @@
         &__item-content{
             flex: 0 0 calc(100% - 140px);
             max-width: calc(100% - 140px);
+
+            &_modal{
+                flex: 0 0 calc(100% - 90px);
+                max-width: calc(100% - 90px);
+            }
         }
     }
 }
@@ -256,6 +271,8 @@
 
             &_modal{
                 padding-bottom: 0;
+                flex: 0 0 calc(100% - 80px);
+                max-width: calc(100% - 80px);
             }
         }
     }
