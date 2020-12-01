@@ -1,0 +1,6 @@
+.contacts_header{
+    padding: 0;
+    .contacts__item + .contacts__item{
+        margin-left: map-get($spacers, 1)/2;
+    }
+}

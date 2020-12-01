@@ -1,0 +1,4 @@
+// Отступы вокруг контента
+.content_inside{
+    padding: map-get($spacers, 4);
+}

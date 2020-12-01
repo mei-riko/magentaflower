@@ -86,6 +86,7 @@ var gulp = require("gulp"),
     gulp.watch(['./src/js/*.js'], gulp.parallel('scripts'));
     gulp.watch(['./src/css/*.scss'], gulp.parallel('css'));
     gulp.watch(['./src/css/*/*.scss'], gulp.parallel('css'));
+    gulp.watch(['./src/component/*/*.scss'], gulp.parallel('css'));
   });
   
   

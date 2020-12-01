@@ -1,0 +1,58 @@
+// Отзыв
+.info_review{
+    padding: map-get($spacers, 2);
+    &__img{
+        width: 120px;
+        height: 120px;
+        margin: 0 auto map-get($spacers, 1);
+        border-radius: 60px;
+        background-color: $white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &_video{
+            position: relative;
+            border-radius: 0;
+            width: 100%;
+            cursor: pointer;
+            transition: .4s;
+
+            &:after{
+                content: '';
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $white url("../icon/play-button.svg") no-repeat center / contain;
+
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            &:hover{
+                filter: grayscale(.25);
+            }
+        }
+    }
+    &__intro{
+        height: 120px;
+        overflow: hidden;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .info_review{
+        &__intro{
+            height: 140px;
+        }   
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .info_review{
+        &__intro{
+            height: auto;
+        }   
+    }
+}

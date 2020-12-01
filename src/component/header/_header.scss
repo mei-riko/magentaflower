@@ -1,0 +1,125 @@
+.header{
+    padding: 20px 0 0;    
+    &__row{
+        @extend .row;
+        flex-wrap: nowrap;
+    }
+    &__col{
+        @extend .col;
+        flex: 0 0 calc( 50% - 115px);
+        max-width: calc( 50% - 115px);
+    }
+    // Шапка на мобильном
+    &__mobile{
+        display: none;
+        // padding: 10px 0;
+
+        &-menu{
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+    }
+
+    &__line{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &_additional{
+            padding-top: 5px;
+        }
+    }
+    &__item{
+        margin-right: map-get($spacers, 1);
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    // Ссылка в header
+    &__link{
+        text-decoration: underline;
+        color: $grey;
+        
+        &:hover, &:focus{
+            color: $pink;
+        }
+    }
+    // Кнопка в header
+    &__btn{
+        color: $pink;
+        background-color: $pink-light;
+        padding: 4px 15px!important;
+        
+        font-size: 12px;
+        font-weight: bold;        
+        text-transform: uppercase;
+        
+        &:hover, &:focus{
+            color: darken($pink, 10%);
+            background: darken($pink-light, 5%);
+        }
+    }
+    
+    &__logo{
+        background: url("../img/logo.svg") no-repeat center 0px/ contain;
+        
+        flex: 0 0 230px;
+        max-width: 230px;
+
+        height: 140px;
+        margin: 0 auto;
+        display: block;
+
+        &_white{
+            background-image: url("../img/logo_white.svg");
+        }
+        &_mobile{
+            background: url("../img/logo.svg") no-repeat left center / contain;
+
+            width: 100%;
+            height: 80px;
+            margin-left: 0;
+        }
+    }
+}
+@media all and (max-width: 1200px){
+    .header{
+        &__logo{
+            flex: 0 0 140px;
+            max-width: 140px;
+            height: 90px;
+            background-position-y: bottom;
+
+            &_mobile{
+                flex: 0 0 calc(100% - 80px);
+                max-width: 100%;
+                height: 80px;
+                background-position-y: center;
+            }
+        }
+        &__col{
+            flex: 0 0 calc( 50% - 70px);
+            max-width: calc( 50% - 70px);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .header{
+        padding: 10px $grid-gutter-width/2;
+        &__desktop{
+            display: none;
+        }
+        &__mobile{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

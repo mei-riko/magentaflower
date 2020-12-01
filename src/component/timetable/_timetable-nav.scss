@@ -1,0 +1,26 @@
+.timetable-nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+    &__item{
+        margin: 4px;
+    }
+    &__link{
+        font-size: 13px;
+        padding: 4px 12px;
+        border-radius: 15px;
+        text-decoration: none;
+
+        &--active{
+            color: $pink;
+            background-color: $pink-light;
+
+            &:hover, &:focus{
+                text-decoration: none;
+            }
+        }
+    }
+}

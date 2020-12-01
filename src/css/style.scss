@@ -1,101 +1,137 @@
 @import "variable.scss";
 
-@import "framework/reboot.scss";
+// Main Style
+@import "../component/framework/reboot.scss";
 
-@import "framework/frameworks.scss";
-@import "framework/grid.scss";
-@import "framework/position.scss";
+@import "../component/framework/frameworks.scss";
+@import "../component/framework/grid.scss";
+@import "../component/framework/position.scss";
 
-@import "header/header.scss";
-@import "header/header-btn.scss";
-@import "header/header-link.scss";
-@import "header/header-top.scss";
-@import "header/header-fixed.scss";
-@import "header/header-mobile-only.scss";
+// MODX
+@import "../component/framework/jGrowl.scss";
 
-@import "btn/btn.scss";
-@import "btn/btn_default.scss";
-@import "btn/btn_action.scss";
-@import "btn/btn_secondary.scss";
-@import "btn/btn_absolute.scss";
-@import "btn/btn_link.scss";
+// Form & Input
+@import "../component/form/form.scss";
+@import "../component/form/form-input.scss";
+@import "../component/form/checkbox.scss";
 
-@import "other/navbar.scss";
-@import "other/footer.scss";
-@import "other/modxAlert.scss";
-@import "other/pagination.scss";
-@import "other/modal.scss";
+// @import "block/video-block.scss";
+// @import "block/preview-link.scss";
 
-@import "form/form.scss";
-@import "form/form-input.scss";
-@import "form/checkbox.scss";
+// @import "icon/icon-block.scss";
+// @import "icon/icon-list.scss";
+
+// All Button
+@import "../component/btn/btn";
+@import "../component/btn/btn_default";
+@import "../component/btn/btn_action";
+@import "../component/btn/btn_secondary";
+@import "../component/btn/btn_absolute";
+@import "../component/btn/btn_link";
+
+// Slider Style
+@import "../component/slider/slider-container.scss";
+
+@import "../component/slider/slider.scss";
+@import "../component/slider/slider_link.scss";
+@import "../component/slider/slider_review.scss";
+@import "../component/slider/slider_index.scss";
+@import "../component/slider/slider_nav.scss";
+
+@import "../component/slider/slider-nav.scss";
+
+// Header
+@import "../component/header/header";
+@import "../component/header/header-fixed";
+@import "../component/header/header-top";
+
+// Footer
+@import "../component/footer/footer";
+
+// Menu
+@import "../component/navbar/navbar";
+@import "../component/navbar/navbar-mobile";
+
+// Modal
+@import "../component/modal/modal";
+@import "../component/modal/modal_form";
+
+// List
+@import "../component/list/list.scss";
+@import "../component/list/list_numeric.scss";
+@import "../component/list/list_circle.scss";
+@import "../component/list/list_advantage.scss";
+
+// Page Block
+@import "../component/page/page";
+@import "../component/page/page-header";
+@import "../component/page/page-header_col";
+@import "../component/page/page-programm";
+
+// Contant
+@import "../component/content/content";
+@import "../component/content/content_title";
+@import "../component/content/content_offset-small";
+@import "../component/content/content_inside";
+// HR line
+@import "../component/content/content-line";
+// CTA
+@import "../component/cta/cta-block";
+// Portfolio
+@import "../component/portfolio/portfolio.scss";
+// Teachers
+@import "../component/teacher/teacher.scss";
+@import "../component/teacher/teacher_inside.scss";
+// Timetable
+@import "../component/timetable/timetable-nav";
+@import "../component/timetable/timetable";
+// Map
+@import "../component/map/map.scss";
 
 
-@import "contact/contacts.scss";
+// Component Item
+@import "../component/networks/networks";
+@import "../component/pagination/pagination";
+@import "../component/master-class/master-class.scss";
 
-@import "header/header-block.scss";
+@import "../component/item/item.scss";
+@import "../component/item/item_step.scss";
+@import "../component/item/item_resume.scss";
 
-@import "cta/cta-block.scss";
-@import "block/networks.scss";
+@import "../component/item/item-icon.scss";
+@import "../component/item/item-icon_information.scss";
+// @import "../component/item/item-timetable.scss";
+// @import "../component/item/item-logo.scss";
 
-@import "slider/slider-container.scss";
-@import "slider/slider.scss";
-@import "slider/slider_link.scss";
-@import "slider/slider_review.scss";
-@import "slider/slider_index.scss";
-@import "slider/slider-nav.scss";
+@import "../component/item/item-slide.scss";
+@import "../component/item/item-slide_faq.scss";
+@import "../component/item/item-slide_programm.scss";
 
-@import "block/video-block.scss";
+@import "../component/item/item-cources.scss";
 
-@import "block/cources.scss";
-@import "block/price.scss";
-@import "block/portfolio.scss";
-@import "block/programm.scss";
-@import "block/timetable.scss";
+@import "../component/contacts/contacts.scss";
+@import "../component/contacts/contacts_inline.scss";
+// @import "../component/contacts/contacts_header.scss";
 
-@import "page/page.scss";
+@import "../component/info/info.scss";
+@import "../component/info/info_promo.scss";
+@import "../component/info/info_person.scss";
+@import "../component/info/info_alert.scss";
+@import "../component/info/info_review.scss";
 
-@import "sertificate/sertificate.scss";
-@import "sertificate/sertificate_modal.scss";
-@import "sertificate/sertificate-action-input.scss";
-@import "sertificate/sertificate-content.scss";
+// @import "../component/info/info_columns.scss";
+// @import "../component/info/info_alert.scss";
+// @import "../component/info/info-block.scss";
 
-@import "block/timer.scss";
+@import "../component/price/price.scss";
 
-@import "block/preview-link.scss";
-@import "block/subtitle.scss";
+// Gift Sertificate
+@import "../component/sertificate/sertificate.scss";
+@import "../component/sertificate/sertificate_modal.scss";
 
-@import "icon/icon-block.scss";
-@import "icon/icon-list.scss";
+@import "../component/sertificate/sertificate-action-input.scss";
+@import "../component/sertificate/sertificate-content.scss";
 
-@import "info/info.scss";
-@import "info/info_columns.scss";
-@import "info/info_person.scss";
-@import "info/info_review.scss";
-@import "info/info_alert.scss";
-@import "info/info_promo.scss";
-@import "info/info-block.scss";
-@import "info/info-advantage.scss";
-
-@import "item/item.scss";
-@import "item/item-icon.scss";
-@import "item/item-timetable.scss";
-@import "item/item-logo.scss";
-@import "item/item-slide.scss";
-
-@import "list/list.scss";
-@import "list/list_advantage.scss";
-@import "list/list_circle.scss";
-@import "list/list_numeric.scss";
-
-@import "content/content.scss";
-@import "content/content-line.scss";
-
-@import "teacher/teacher.scss";
-
-@import "master-class/master-class.scss";
-
-@import "map/map.scss";
-
-@import "other/bg.scss";
-@import "other/offset.scss";
+// Main Style
+@import "../component/framework/bg.scss";
+@import "../component/framework/offset.scss";

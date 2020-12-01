@@ -1,0 +1,35 @@
+.navbar-mobile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+
+    padding: 40px 30px;
+    background: $white;
+    max-width: calc(100% - 80px);
+    height: 100%;
+
+    transform: translateX(-100%);
+    transition: .4s;
+
+    &--active{
+        filter: drop-shadow(2px 0px 8px #919191);
+        transform: translateX(0);
+    }
+
+    &__nav{
+        flex-direction: column;
+    }
+    &__contacts{
+        margin: map-get($spacers, 2) 0;
+        padding: map-get($spacers, 2) 0;
+        border-top: 1px solid $pink-light;
+        border-bottom: 1px solid $pink-light;
+    }
+    &__item{
+        margin-bottom: map-get($spacers, 1);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

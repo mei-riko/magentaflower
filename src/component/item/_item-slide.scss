@@ -1,0 +1,44 @@
+.item-slide{
+    position: relative;
+
+    padding-right: 80px;
+    background: $white;
+
+    transition: .4s;
+    cursor: pointer;
+    
+    // Component
+    &__title{
+        color: $dark-grey;
+        transition: .4s;
+    }
+    &__content{
+        display: none;
+        padding-top: 20px;
+    }
+    // Arrows
+    &:after{
+        display: block;
+        content:'';
+        background: url('../img/arrow-down.svg') no-repeat right center / 20px;
+        width: 24px;
+        height: 24px;
+
+        position: absolute;
+        right: 24px;
+        top: calc(50% - 12px);
+        transition: .4s;
+    }
+    // Open Item
+    &--active{
+        &:after{
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .item-slide{
+        padding-right: 60px;
+    }
+}

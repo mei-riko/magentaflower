@@ -1,0 +1,34 @@
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__item{
+        width: 30px;
+        height: 30px;
+
+        text-align: center;
+        line-height: 30px;
+
+        border-radius: 15px;
+
+        background: darken($color: $pink-light, $amount: 5);
+        color: $grey;
+        font-weight: bold;
+        margin: 4px;
+
+        &:hover, &:focus{
+            text-decoration: none;
+            background: darken($color: $pink-light, $amount: 10);
+        }
+
+        &--active{
+            background: darken($color: $pink-light, $amount: 10);
+            color: $grey;
+            &:hover, &:focus{
+                background: darken($color: $pink-light, $amount: 10);
+                color: $grey;
+                cursor: default;
+            }
+        }
+    }
+}

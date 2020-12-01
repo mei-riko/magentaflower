@@ -1,0 +1,128 @@
+.page-header{
+    position: relative;
+    padding: 200px 0 map-get($spacers, 4);
+    background: $light-grey no-repeat right bottom / contain;
+    
+    &__subtitle{
+        font-family: "Noto Sans";
+        font-size: 1rem;
+        display: inline-block;
+        background: #e2e2e2;
+        color: #797979;
+        padding: 8px 24px 10px;
+        border-radius: 28px;
+        margin: 0 0 2rem;
+    }
+    &__title{
+        display: block;
+        font-size: 2.75rem;
+        font-weight: bold;
+        margin: 0 0 map-get($spacers, 2);
+    }
+    &__offer{
+        color: $dark-grey;
+        @extend .text-small;
+        width: 150px;
+        max-width: 100%;
+    }
+    // Значение в инфо-блоке
+    &__info{
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        margin: .25rem 0 .5rem;
+    }
+    // Позиционирование картинки
+    &__container{
+        position: relative;
+        z-index: 2;
+    }
+    &__image{
+        max-width: 100%;
+
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+        z-index: 1;
+    }
+    // Размещение блоков с информацией
+    &__info-row{
+        flex-wrap: wrap;
+    }
+    &__info-col{
+        min-width: 240px;
+        &:not(.last){
+            padding-right: map-get($spacers, 4);
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .page-header{
+        &__title{
+            font-size: 2.5rem;
+        }
+        &__info{
+            font-size: 1rem;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .page-header{
+        padding-top: 140px;
+
+        &__info{
+            margin-bottom: 1rem;
+        }
+        &__image{
+            top: 0;
+            bottom: auto;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .page-header{
+        padding: 140px 0 80px;
+        background-position-x: 100px;
+        
+        &__title{
+            font-size: 2.25rem;
+            width: 480px;
+            max-width: 100%;
+        }
+        &__info-col{
+            min-width: 160px;
+            &:not(.last){
+                padding-right: map-get($spacers, 2);
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .page-header{
+        padding: 160px 0 40px;
+
+        background-size: 860px;
+        background-position-x: -260px;
+
+        &__title{
+            font-size: 2.5rem;
+            margin: 0 0 map-get($spacers, 3);
+        }
+        &__margin{
+            margin-bottom: 2rem;
+        }
+        &__info{
+            line-height: 1.2;
+        }
+        // Размещение блоков с информацией
+        &__info-col{
+            min-width: 50%;
+        }
+        &__offer{
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }
+}

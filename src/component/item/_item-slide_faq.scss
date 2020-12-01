@@ -1,0 +1,23 @@
+.item-slide_faq{
+    padding-top: map-get($spacers, 1);
+    padding-bottom:map-get($spacers, 1);
+    
+    border-bottom: 1px solid $border-color;
+
+    .item-slide__content{
+        color: $grey;
+    }
+    &.item-slide--active,
+    &:hover, &:focus{
+        .item-slide__title{
+            color: $pink;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .item-slide_faq{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

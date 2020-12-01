@@ -1,0 +1,11 @@
+.slider_reviews{
+    .slick-slide{
+        margin: 0 10px;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider_reviews{
+        padding: 0 30px;
+    }
+}

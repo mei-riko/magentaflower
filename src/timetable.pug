@@ -2,82 +2,79 @@ html(lang="ru")
     include chunks/head.pug
     body.header-top
         script(src="/js/jquery.min.js")
-        include chunks/header.pug
+        include component/header/header.pug
+        include component/navbar/navbar.pug
         section.content.content_offset-small
             .container
-                h1.text-bold.mb-40.mb-md-20 Актуальное расписание курсов
-                .row
-                    .col-3.col-sm-12.col-md-5
-                        .timetable-nav
-                            .timetable-nav__item
-                                a.timetable-nav__link.timetable-nav__link--active(href="#" data-filter="all") Все курсы
-                            .timetable-nav__item
-                                a.timetable-nav__link(href="#" data-filter="basic") Базовые курсы
-                            .timetable-nav__item
-                                a.timetable-nav__link(href="#" data-filter="wedding") Свадебные курсы
-                            .timetable-nav__item
-                                a.timetable-nav__link(href="#" data-filter="seminar") Семинары
-                            .timetable-nav__item
-                                a.timetable-nav__link(href="#" data-filter="masterclass") Мастер-классы
-                            .timetable-nav__item
-                                a.timetable-nav__link.timetable-nav__link--disable(href="#" data-filter="archive") Архив курсов
-                    .col-9.col-sm-12.col-md-7.mt-sm-40
-                        .timetable-row.row
-                            .col-4.col-md-12.col-lg-6.timetable-col.basic
-                                .timetable-block
-                                    .timetable-img(style="background-image: url('./img/test-01.jpg');")
-                                    .timetable-category.timetable-category_type-1 Базовые курсы
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 1") Записаться
-                            .col-4.col-md-12.col-lg-6.timetable-col.wedding
-                                .timetable-block
-                                    .timetable-img(style="background-image: url('./img/test-02.jpg');")
-                                    .timetable-category.timetable-category_type-2 Свадебные курсы
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 2") Записаться
-                            .col-4.col-md-12.col-lg-6.timetable-col.seminar
-                                .timetable-block
-                                    .timetable-img(style="background-image: url('./img/test-03.jpg');")
-                                    .timetable-category.timetable-category_type-3 Семинары
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 3") Записаться
-                            .col-4.col-md-12.col-lg-6.timetable-col.masterclass
-                                .timetable-block.mb-0.mb-md-40
-                                    .timetable-img(style="background-image: url('./img/test-04.jpg');")
-                                    .timetable-category.timetable-category_type-4 Мастер-классы
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 4") Записаться
-                            .col-4.col-md-12.col-lg-6.timetable-col.archive
-                                .timetable-block.mb-0
-                                    .timetable-img(style="background-image: url('./img/test-05.jpg');")
-                                    .timetable-category.timetable-category_type-5 Архив курсов
-                                    .timetable-title Название курса
-                                    .timetable-period 21.11.2019 - 21.01.2020
-                                    .timetable-teacher Анна Литвинова
-                                    .timetable-info
-                                        .timetable-info__item 5 часов теории
-                                        .timetable-info__item 12 часов практики
-                                    a.timetable-btn.scroll(href="#ctaForm" data-title="Курс 5") Записаться
+                h1.text-center.text-bold Актуальное расписание курсов
+                .timetable-nav.mb-40
+                    .timetable-nav__item
+                        a.timetable-nav__link.timetable-nav__link--active(href="#" data-filter="all") Все курсы
+                    .timetable-nav__item
+                        a.timetable-nav__link(href="#" data-filter="basic") Базовые курсы
+                    .timetable-nav__item
+                        a.timetable-nav__link(href="#" data-filter="wedding") Свадебные курсы
+                    .timetable-nav__item
+                        a.timetable-nav__link(href="#" data-filter="seminar") Семинары
+                    .timetable-nav__item
+                        a.timetable-nav__link(href="#" data-filter="masterclass") Мастер-классы
+                    .timetable-nav__item
+                        a.timetable-nav__link.timetable-nav__link--disable(href="#" data-filter="archive") Архив курсов
+                .row.timetable
+                    .col-4.col-sm-12.col-lg-6.timetable__col.basic
+                        .timetable__block
+                            .timetable__img(style="background-image: url('./img/test-01.jpg');")
+                            .timetable__category.timetable__category_type-1 Базовые курсы
+                            .timetable__title Название курса
+                            .timetable__period 21.11.2019 - 21.01.2020
+                            .timetable__teacher Анна Литвинова
+                            .timetable__info
+                                .timetable__info-item 5 часов теории
+                                .timetable__info-item 12 часов практики
+                            a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 1") Записаться
+                    .col-4.col-sm-12.col-lg-6.timetable__col.wedding
+                        .timetable__block
+                            .timetable__img(style="background-image: url('./img/test-02.jpg');")
+                            .timetable__category.timetable__category_type-2 Свадебные курсы
+                            .timetable__title Название курса
+                            .timetable__period 21.11.2019 - 21.01.2020
+                            .timetable__teacher Анна Литвинова
+                            .timetable__info
+                                .timetable__info-item 5 часов теории
+                                .timetable__info-item 12 часов практики
+                            a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 2") Записаться
+                    .col-4.col-sm-12.col-lg-6.timetable__col.seminar
+                        .timetable__block
+                            .timetable__img(style="background-image: url('./img/test-03.jpg');")
+                            .timetable__category.timetable__category_type-3 Семинары
+                            .timetable__title Название курса
+                            .timetable__period 21.11.2019 - 21.01.2020
+                            .timetable__teacher Анна Литвинова
+                            .timetable__info
+                                .timetable__info-item 5 часов теории
+                                .timetable__info-item 12 часов практики
+                            a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 3") Записаться
+                    .col-4.col-sm-12.col-lg-6.timetable__col.masterclass
+                        .timetable__block.mb-0.mb-md-40
+                            .timetable__img(style="background-image: url('./img/test-04.jpg');")
+                            .timetable__category.timetable__category_type-4 Мастер-классы
+                            .timetable__title Название курса
+                            .timetable__period 21.11.2019 - 21.01.2020
+                            .timetable__teacher Анна Литвинова
+                            .timetable__info
+                                .timetable__info-item 5 часов теории
+                                .timetable__info-item 12 часов практики
+                            a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 4") Записаться
+                    .col-4.col-sm-12.col-lg-6.timetable__col.archive
+                        .timetable__block.mb-0
+                            .timetable__img(style="background-image: url('./img/test-05.jpg');")
+                            .timetable__category.timetable__category_type-5 Архив курсов
+                            .timetable__title Название курса
+                            .timetable__period 21.11.2019 - 21.01.2020
+                            .timetable__teacher Анна Литвинова
+                            .timetable__info
+                                .timetable__info-item 5 часов теории
+                                .timetable__info-item 12 часов практики
         section.cta-block.cta-block_offset-top#ctaForm
             .container.p-relative
                 p.h1.cta-block__title.mt-0 Оставьте заявку на обучение
@@ -92,7 +89,7 @@ html(lang="ru")
                         input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
                         label.checkbox__label(for="agree") согласен с 
                             a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
-        include chunks/footer.pug
+        include component/footer/footer.pug
         script(src="./js/jquery.fancybox.min.js")
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js") 

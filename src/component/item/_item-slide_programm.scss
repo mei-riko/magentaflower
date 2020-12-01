@@ -1,0 +1,8 @@
+.item-slide_programm{
+    background: $white;
+    background-position-x: calc(100% - 26px);
+    
+    &.item-slide--active{
+        border-color: $pink!important;
+    }
+}

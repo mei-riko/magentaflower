@@ -2,7 +2,9 @@ html(lang="ru")
     include chunks/head.pug
     body.header-top
         script(src="/js/jquery.min.js")
-        include chunks/header.pug
+        include component/header/header.pug
+        include component/navbar/navbar.pug
+
         section.content.content_offset-small
             .container
                 .row
@@ -88,7 +90,9 @@ html(lang="ru")
                             li.list__item Дверь в школу находится справа от центральной двери жилого комплекса
                     .col-6.col-md-12.mt-md-40
                         img.img-fluid(src="../img/enter-to-school.jpg" alt="Как найти вход в школу Маджента" title="Как найти вход в школу Маджента")
-        include chunks/footer.pug
+
+        include component/footer/footer.pug
+
         script(src="./js/jquery.fancybox.min.js")
         script(src="./js/jquery.inputmask.js")
         script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=79c72616-7091-4150-914c-4d2e2a2ad526" type="text/javascript")

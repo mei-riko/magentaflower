@@ -1,0 +1,167 @@
+.price{
+    border: 1px solid $border-color;
+    border-radius: 24px;
+    background-color: $white;
+    box-shadow: 0px 0px 15px 0px rgba(240, 213, 221, 1);
+
+    padding: map-get($spacers, 2) map-get($spacers, 3);
+
+    &__label{
+        border-radius: 0 0 6px 6px;
+        background-color: $grey;
+        color: $white;
+
+        letter-spacing: 2px;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+
+        padding: 4px 8px;
+        display: inline-block;
+    }
+
+    &__title{
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: map-get($spacers, 1);
+    }
+
+    &__list{
+        width: 240px;
+        max-width: 100%;
+        margin: 0 auto;
+        line-height:1.4;
+        font-size:13px;
+    }
+    
+    &__info{
+        padding-top: map-get($spacers, 1);
+        border-top: 1px solid $border-color;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 240px;
+        max-width: 100%;
+        margin: map-get($spacers, 1) auto 0;
+
+        &__col{
+            flex: 0 0 50%;
+            max-width: 50%;
+
+            margin-bottom: map-get($spacers, 1);
+        }
+        .btn{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__value{
+        font-size: 1.75rem;
+        font-weight: 700;
+        &_old-price{
+            text-decoration: line-through;
+            color: $grey;
+        }
+        &_new-price{
+            color: $pink;
+        }
+    }
+
+    &_popular{
+        position: relative;
+        // padding-top: map-get($spacers, 4);
+
+        border-width: 4px;
+        border-color: $pink;
+
+        .price__title{
+            font-size: 1.5rem;
+        }
+        .price__label{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: $pink;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .price{
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .list__item{
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                margin-top: 0;
+                margin-bottom: 10px;
+
+                & + .list__item{
+                    margin-top: 0;
+                }
+            }
+        }
+        &__info{
+            align-items: center;
+            width: 100%;
+    
+            &__col{
+                flex: 0 0 25%;
+                max-width: 25%;
+    
+                margin-bottom: 0;
+            }
+            .btn{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+        &__title{
+            font-size: 1.5rem;
+            text-align: left;
+        }
+
+        &_popular{
+            .price__title{
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .price{
+        &__list{
+            .list__item{
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media all and (max-width: 520px){
+    .price{
+        &__info{
+            &__col{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .btn{
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                margin-top: map-get($spacers, 1);
+            }
+        }
+    }
+}

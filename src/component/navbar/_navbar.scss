@@ -1,0 +1,67 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link{
+        font-size: 12px;
+        white-space: nowrap;
+        text-transform: uppercase;
+
+        &:hover, &:focus{
+            text-decoration: none;
+        }
+
+        &_online{
+            display: inline-block;
+            padding: 0 6px;
+            border-radius: 10px;
+
+            background: $pink;
+            color: $white;
+            font-size: 11px;
+            line-height: 18px;
+        }
+    }   
+
+    &_left{
+        .navbar__link:not(:last-child){
+            margin-right: 2em;
+        }
+    }
+    &_right{
+        justify-content: flex-end;
+
+        .navbar__link + .navbar__link{
+            margin-left: 2em;
+        }
+    }
+}
+@media all and (max-width: 1200px){
+    .navbar{
+        &_left{
+            .navbar__link:not(:last-child){
+                margin-right:1.5em;
+            }
+        }
+        &_right{
+            .navbar__link + .navbar__link{
+                margin-left: 1.5em;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .navbar{
+        flex-wrap: wrap;
+        
+        .navbar__link{
+            font-size: 16px;
+            text-transform: none;
+
+            &_online{
+                padding: 4px 10px;
+                border-radius: 20px;
+            }
+        }
+    }
+}

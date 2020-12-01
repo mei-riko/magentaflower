@@ -1,0 +1,4 @@
+// Уменьшенные отступы сверху и снизу
+.content_offset-small{
+    padding: map-get($spacers, 4) 0;
+}

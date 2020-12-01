@@ -1,0 +1,69 @@
+.page-header_col{
+    // margin-top: 110px;
+    // padding: 120px 0 map-get($spacers, 5);
+    // background: linear-gradient(90deg, $light-grey 0%, $light-grey 50%, $pink-light 50%, $pink-light 100%);
+    background: #faf4f6 url("../img/pattern-wave-light.png") repeat left top/260px;
+
+    &__image{
+        position: relative;
+        background: $light-grey no-repeat center / cover;
+        &:before{
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 75%;
+
+            border: 1px solid $pink;
+            transform: translate(15px, -15px);
+        }
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 75%;
+
+            border: 1px solid $pink;
+            transform: translate(25px, -25px);
+        }
+    }
+    // .btn{
+    //     z-index: 12;
+    //     position: relative;
+    // }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .page-header_col{
+        &__image{
+            &:before{
+                transform: translate(-10px, -10px);
+            }
+            &:after{
+                transform: translate(-20px, -20px);
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .page-header_col{
+        // margin-top: 0px;
+        padding: 140px 0 map-get($spacers, 3);
+    }
+}
+// @media all and (max-width: map-get($grid-breakpoints, 'md')){
+//     .page-header_col{
+//         background: linear-gradient(180deg, $light-grey 0%, $light-grey 70%, $pink-light 70%, $pink-light 100%);
+//     }
+// }
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .page-header_col{
+        &__image{
+            &:after{
+                transform: translate(5px, -25px);
+            }
+        }
+    }
+}

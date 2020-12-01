@@ -1,0 +1,30 @@
+// Not BEM
+.list_circle{
+    .list__item{
+        position: relative;
+        padding-left: map-get($spacers, 1);
+
+        &:before{
+            content:'';
+            display: block;
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            background: $pink;
+        }
+
+        & + .list__item{
+            margin-top: 10px;
+        }
+
+        &_disabled{
+            opacity: .5;
+            color: $grey;
+            &:before{
+                background: $border-color;
+            }
+        }
+    }
+}

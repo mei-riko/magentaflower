@@ -1,0 +1,20 @@
+.networks{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    &__item{
+        flex: 0 0 65px;
+        max-width: 25%;
+
+        padding: 0 15px;
+        transition: .3s;
+
+        height: 40px;
+
+        &:hover, &:focus{
+            padding: 0 12px;
+        }
+    }
+}
