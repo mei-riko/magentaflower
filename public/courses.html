@@ -12,86 +12,77 @@
   </head>
   <body class="header-fixed">
     <script src="/js/jquery.min.js"></script>
-    <header>
-      <div class="header">
-        <div class="container">
-          <div class="row header__row">
-            <div class="col header__col">
-              <div class="header__line">
-                <ul class="contacts contacts_inline text-bold">
-                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-                </ul>
-              </div>
-              <div class="header__line">
-                <nav class="navbar navbar_left"><a class="navbar__link" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="/sertificate.html">Сертификаты</a></nav>
-              </div>
-            </div><a class="header__logo" href="/"></a>
-            <div class="col header__col">
-              <div class="header__line header__line_right-col"><a class="header-link header__item" href="#">Оплата и доставка</a><a class="header-btn btn btn_default header__item" href="/timetable.html">Расписание</a>
-                <ul class="contacts contacts_inline contacts_header header__item">
-                  <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
-                  <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
-                  <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
-                </ul>
-              </div>
-              <div class="header__line">
-                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="/contact.html">Контакты</a></nav>
-              </div>
+    <header class="header">
+      <div class="header__desktop container">
+        <div class="header__row">
+          <div class="header__col">
+            <div class="header__line">
+              <ul class="contacts contacts_inline text-bold">
+                <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 (812) 317-76-18</a></li>
+                <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 (921) 343-87-30</a></li>
+              </ul>
+            </div>
+            <div class="header__line">
+              <nav class="navbar navbar_left"><a class="navbar__link navbar__link_online" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="/sertificate.html">Сертификаты</a></nav>
+            </div>
+          </div><a class="header__logo" href="/"></a>
+          <div class="header__col">
+            <div class="header__line header__line_additional justify-content-end"><a class="header__item header__link text-small" href="#">Оплата и доставка</a><a class="header__item header__btn btn" href="/timetable.html">Расписание</a>
+              <ul class="header__item contacts contacts_inline contacts_header">
+                <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+                <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+                <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+              </ul>
+            </div>
+            <div class="header__line justify-content-end">
+              <nav class="navbar navbar_right"><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="/contact.html">Контакты</a></nav>
             </div>
           </div>
         </div>
       </div>
-      <div class="header-mobile-only">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-8"><a class="header__logo" href="/"></a></div>
-            <div class="col-4 text-right">
-              <svg class="nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
-                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
+      <div class="header__mobile"><a class="header__logo header__logo_mobile" href="/"></a>
+        <svg class="header__mobile-menu nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
+          <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
+        </svg>
       </div>
     </header>
     <div class="navbar-mobile">
-      <nav class="navbar">
-        <div class="navbar__item"><a class="navbar__link" href="#">Online-курсы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Очные курсы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">О школе</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Преподаватели</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Портфолио</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Блог</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="/contact.html">Контакты</a></div>
+      <nav class="navbar navbar-mobile__nav">
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link navbar__link_online" href="#">Online-курсы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Очные курсы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">О школе</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Преподаватели</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Портфолио</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Отзывы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Блог</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="/contact.html">Контакты</a></div>
       </nav>
-      <ul class="contacts">
-        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-      </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
+      <ul class="contacts navbar-mobile__contacts">
+        <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 800 111-22-33</a></li>
+        <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 800 111-22-33</a></li>
+      </ul><a class="btn btn_default" href="#">Актуальное расписание</a>
     </div>
-    <section class="header-block">
-      <div class="container header-block__container">
+    <section class="page-header">
+      <div class="container page-header__container">
         <div class="row">
           <div class="col-7 col-md-12 col-lg-10">
-            <p class="header-block__subtitle">#экспресс-курс</p>
-            <h1 class="header-block__title">Освойте флористику  всего за&nbsp;5&nbsp;дней</h1>
-            <div class="d-flex header-block__info-row mb-40 mb-sm-20">
-              <div class="header-block__info-col mb-md-10">
+            <p class="page-header__subtitle">#экспресс-курс</p>
+            <h1 class="page-header__title">Освойте флористику  всего за&nbsp;5&nbsp;дней</h1>
+            <div class="d-flex page-header__info-row mb-40 mb-sm-20">
+              <div class="page-header__info-col mb-md-10">
                 <div class="subtitle text-uppercase">Сроки</div>
-                <div class="header-block__info">40 ак. часов</div>
-                <div class="header-block__offer">80% практики и&nbsp;20%&nbsp;теории</div>
+                <div class="page-header__info">40 ак. часов</div>
+                <div class="page-header__offer">80% практики и&nbsp;20%&nbsp;теории</div>
               </div>
-              <div class="header-block__info-col last">
+              <div class="page-header__info-col last">
                 <div class="subtitle text-uppercase">Уровень</div>
-                <div class="header-block__info">обучение с нуля</div>
-                <div class="header-block__offer">лучший способ начать освоение профессии</div>
+                <div class="page-header__info">обучение с нуля</div>
+                <div class="page-header__offer">лучший способ начать освоение профессии</div>
               </div>
             </div><a class="btn btn_action" href="#">Забронировать место</a>
           </div>
         </div>
-      </div><img class="header-block__image" src="/img/flowers.png"/>
+      </div><img class="page-header__image" src="/img/flowers.png"/>
     </section>
     <section class="content">
       <div class="container">
@@ -122,32 +113,32 @@
         <p class="h3 text-bold mb-60 mb-md-40">После окончания курса вы сможете:</p>
         <div class="row">
           <div class="col-4 mb-40 mb-lg-20 col-sm-12 col-lg-6">
-            <div class="icon-list icon-list_default">
-              <div class="icon"></div>
+            <div class="icon-list">
+              <div class="icon-list__img icon-list__img_default"></div>
               <p class="mb-0">Правильно подбирать цветы к каждой работе, учитывая фактуру, цвет и законы композиции</p>
             </div>
           </div>
           <div class="col-4 mb-40 mb-lg-20 col-sm-12 col-lg-6">
-            <div class="icon-list icon-list_default">
-              <div class="icon"></div>
+            <div class="icon-list">
+              <div class="icon-list__img icon-list__img_default"></div>
               <p class="mb-0">Делать композиции в кашпо и коробках в различных стилях и техниках</p>
             </div>
           </div>
           <div class="col-4 mb-40 mb-lg-20 col-sm-12 col-lg-6">
-            <div class="icon-list icon-list_default">
-              <div class="icon"></div>
+            <div class="icon-list">
+              <div class="icon-list__img icon-list__img_default"></div>
               <p class="mb-0">Составлять букеты и модно их упаковывать. Профессионально работать с флористической губкой</p>
             </div>
           </div>
           <div class="col-4 col-sm-12 mb-sm-20 col-lg-6">
-            <div class="icon-list icon-list_default">
-              <div class="icon"></div>
+            <div class="icon-list">
+              <div class="icon-list__img icon-list__img_default"></div>
               <p class="mb-0">Креативно исполнять свадебные букеты (на своих ногах и в портбукетнице)</p>
             </div>
           </div>
           <div class="col-4 col-sm-12 col-lg-6">
-            <div class="icon-list icon-list_default">
-              <div class="icon"></div>
+            <div class="icon-list">
+              <div class="icon-list__img icon-list__img_default"></div>
               <p class="mb-0">Устроиться на работу на должности «Флорист» (помощник флориста)</p>
             </div>
           </div>
@@ -158,59 +149,75 @@
       <div class="container">
         <p class="h2 text-center text-bold mb-40">Работы выпускников экспресс-курса</p>
         <div class="row no-gutters portfolio mb-40">
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
+          </div>
         </div>
         <div class="text-center"><a class="btn btn_action" href="#">Хочу записаться</a></div>
       </div>
     </section>
-    <section class="programm bg-light-grey">
+    <section class="page-programm bg-light-pink">
       <div class="container">
         <p class="h2 text-center text-bold mb-40">Программа курса</p>
-        <div class="programm__item programm__item_slide item-slide item-slide_programm mb-20">
+        <div class="page-programm__item page-programm__item_slide item-slide item-slide_programm mb-20">
           <div class="row align-items-center">
-            <p class="programm__title col-7 col-sm-12 col-md-6">1 день: «Инструменты и материалы»</p>
-            <p class="programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
+            <p class="page-programm__title col-7 col-sm-12 col-md-6">1 день: «Инструменты и материалы»</p>
+            <p class="page-programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
           </div>
-          <div class="programm__content item-slide__content">
+          <div class="page-programm__content item-slide__content">
             <div class="row">
               <div class="col-8 col-sm-12">
-                <p class="subtitle">Теория</p>
+                <p class="mb-0 subtitle">Теория</p>
                 <p>инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. </p>
-                <p class="subtitle">Практика</p>
+                <p class="mb-0 subtitle">Практика</p>
                 <p class="mb-0">спиральная техника</p>
               </div>
               <div class="col-4 col-sm-12 mt-sm-40"><img class="img-fluid ml-auto ml-sm-" src="../img/01.png"/></div>
             </div>
           </div>
         </div>
-        <div class="programm__item programm__item_slide item-slide item-slide_programm mb-20">
+        <div class="page-programm__item page-programm__item_slide item-slide item-slide_programm mb-20">
           <div class="row align-items-center">
-            <p class="programm__title col-7 col-sm-12 col-md-6">2 день: «Свежесрезанные цветы»</p>
-            <p class="programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
+            <p class="page-programm__title col-7 col-sm-12 col-md-6">2 день: «Свежесрезанные цветы»</p>
+            <p class="page-programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
           </div>
-          <div class="programm__content item-slide__content">
-            <p class="subtitle">Теория</p>
+          <div class="page-programm__content item-slide__content">
+            <p class="mb-0 subtitle">Теория</p>
             <p>инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. </p>
-            <p class="subtitle">Практика</p>
+            <p class="mb-0 subtitle">Практика</p>
             <p class="mb-0">спиральная техника</p>
           </div>
         </div>
-        <div class="programm__item programm__item_slide item-slide item-slide_programm">
+        <div class="page-programm__item page-programm__item_slide item-slide item-slide_programm">
           <div class="row align-items-center">
-            <p class="programm__title col-7 col-sm-12 col-md-6">3 день: «Цвет и настроение»</p>
-            <p class="programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
+            <p class="page-programm__title col-7 col-sm-12 col-md-6">3 день: «Цвет и настроение»</p>
+            <p class="page-programm__time col-5 mb-0 col-sm-12 col-md-6">2 часа теории   +   4 часа практики</p>
           </div>
-          <div class="programm__content item-slide__content">
-            <p class="subtitle">Теория</p>
+          <div class="page-programm__content item-slide__content">
+            <p class="mb-0 subtitle">Теория</p>
             <p>инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. </p>
-            <p class="subtitle">Практика</p>
+            <p class="mb-0 subtitle">Практика</p>
             <p class="mb-0">спиральная техника</p>
           </div>
         </div>
@@ -223,12 +230,12 @@
           <div class="col-7 col-sm-12 mb-sm-40 col-md-7">
             <p class="h4 text-bold mb-40">Вот чем мы лучше многих:</p>
             <ul class="list list_advantage">
-              <li class="list__item mb-20">Преподаватели с 10-летним&nbsp;опытом</li>
-              <li class="list__item mb-20">После наших курсов открывают свой&nbsp;бизнес</li>
-              <li class="list__item mb-20">Помогаем с&nbsp;трудоустройством и&nbsp;конкурсами</li>
-              <li class="list__item mb-20">Выдаем сертификат</li>
-              <li class="list__item mb-20">Работаем со свежими живыми&nbsp;цветами</li>
-              <li class="list__item">80% времени — практика, 20%&nbsp;—&nbsp;теория</li>
+              <li class="list_advantage__item mb-20">Преподаватели с 10-летним&nbsp;опытом</li>
+              <li class="list_advantage__item mb-20">После наших курсов открывают свой&nbsp;бизнес</li>
+              <li class="list_advantage__item mb-20">Помогаем с&nbsp;трудоустройством и&nbsp;конкурсами</li>
+              <li class="list_advantage__item mb-20">Выдаем сертификат</li>
+              <li class="list_advantage__item mb-20">Работаем со свежими живыми&nbsp;цветами</li>
+              <li class="list_advantage__item">80% времени — практика, 20%&nbsp;—&nbsp;теория</li>
             </ul>
             <p class="mt-60 mt-lg-40 sertificate-content">100% работодателей отдадут предпочтение сотруднику прошедшему обучение у нас</p>
           </div>
@@ -257,7 +264,7 @@
           <div class="col-4 col-lg-6">
             <div class="cta-block__info">
               <p class="subtitle">Обычная цена</p>
-              <p class="cta-block__info-title"><span class="price-old">19 000 р.</span><span class="price h6 text-bold">15 800 р.</span></p>
+              <p class="cta-block__info-title"><span class="price-old">19 000 р.</span><span class="price-new h6 text-bold">15 800 р.</span></p>
               <p class="text-grey text-small mb-0">цена действительно до 12 июля</p>
             </div>
           </div>

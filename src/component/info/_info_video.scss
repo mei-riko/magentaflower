@@ -1,18 +1,19 @@
-.video-block{
+.info_video{
+    padding: $spacer/4;
     iframe{
         max-height:100vh;
-        border-radius:20px;
+        border-radius:12px;
     }
 }
 @media (max-width: 992px){
-    .video-block{
+    .info_video{
         iframe{
             height:360px;
         }
     }
 }
 @media (max-width: 576px){
-    .video-block{
+    .info_video{
         iframe{
             height:280px;
         }

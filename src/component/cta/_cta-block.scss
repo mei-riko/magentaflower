@@ -22,7 +22,7 @@
         .price-old{
             font-family: "Noto Serif";
             text-decoration: line-through;
-            & + .price{
+            & + .price-new{
                 margin-left: .75em;
             }
         }

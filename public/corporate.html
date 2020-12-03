@@ -4,65 +4,63 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Cources Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
+    <title>Magenta Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
     <link href="./css/jquery.fancybox.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
     <link href="./css/media.css" rel="stylesheet"/>
   </head>
   <body class="header-top">
     <script src="/js/jquery.min.js"></script>
-    <header>
-      <div class="header">
-        <div class="container">
-          <div class="row header__row">
-            <div class="col header__col">
-              <div class="header__line">
-                <ul class="contacts contacts_inline">
-                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-                </ul>
-              </div>
-              <div class="header__line">
-                <nav class="navbar"><a class="navbar__link" href="#">Online-курсы</a><a class="navbar__link" href="#">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="#">Сертификаты</a></nav>
-              </div>
-            </div><a class="header__logo" href="/"></a>
-            <div class="col header__col">
-              <div class="header__line text-right"><a class="header-link" href="#">Блог школы</a><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов</a></div>
-              <div class="header__line">
-                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="#">Контакты</a></nav>
-              </div>
+    <header class="header">
+      <div class="header__desktop container">
+        <div class="header__row">
+          <div class="header__col">
+            <div class="header__line">
+              <ul class="contacts contacts_inline text-bold">
+                <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 (812) 317-76-18</a></li>
+                <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 (921) 343-87-30</a></li>
+              </ul>
+            </div>
+            <div class="header__line">
+              <nav class="navbar navbar_left"><a class="navbar__link navbar__link_online" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="/sertificate.html">Сертификаты</a></nav>
+            </div>
+          </div><a class="header__logo" href="/"></a>
+          <div class="header__col">
+            <div class="header__line header__line_additional justify-content-end"><a class="header__item header__link text-small" href="#">Оплата и доставка</a><a class="header__item header__btn btn" href="/timetable.html">Расписание</a>
+              <ul class="header__item contacts contacts_inline contacts_header">
+                <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+                <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+                <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+              </ul>
+            </div>
+            <div class="header__line justify-content-end">
+              <nav class="navbar navbar_right"><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="/contact.html">Контакты</a></nav>
             </div>
           </div>
         </div>
       </div>
-      <div class="header-mobile-only">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-8"><a class="header__logo" href="/"></a></div>
-            <div class="col-4 text-right">
-              <svg class="nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
-                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
+      <div class="header__mobile"><a class="header__logo header__logo_mobile" href="/"></a>
+        <svg class="header__mobile-menu nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
+          <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
+        </svg>
       </div>
     </header>
     <div class="navbar-mobile">
-      <nav class="navbar">
-        <div class="navbar__item"><a class="navbar__link" href="#">Online-курсы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Очные курсы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">О школе</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Преподаватели</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Портфолио</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Блог</a></div>
+      <nav class="navbar navbar-mobile__nav">
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link navbar__link_online" href="#">Online-курсы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Очные курсы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">О школе</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Преподаватели</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Портфолио</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Отзывы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Блог</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="/contact.html">Контакты</a></div>
       </nav>
-      <ul class="contacts">
-        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-      </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
+      <ul class="contacts navbar-mobile__contacts">
+        <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 800 111-22-33</a></li>
+        <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 800 111-22-33</a></li>
+      </ul><a class="btn btn_default" href="#">Актуальное расписание</a>
     </div>
     <section class="content bg-corporate">
       <div class="container">
@@ -70,10 +68,10 @@
           <div class="col-7 col-md-12 mb-40 mb-sm-20 col-lg-6">
             <h1 class="h1 text-bold mb-40 mb-md-20">Корпоративные и&nbsp;выездные мастер-классы</h1>
             <ul class="list list_advantage">
-              <li class="list__item">Расходные материалы включены</li>
-              <li class="list__item">Расходные материалы включены</li>
-              <li class="list__item">Расходные материалы включены</li>
-              <li class="list__item">Расходные материалы включены</li>
+              <li class="list_advantage__item">Расходные материалы включены</li>
+              <li class="list_advantage__item">Расходные материалы включены</li>
+              <li class="list_advantage__item">Расходные материалы включены</li>
+              <li class="list_advantage__item">Расходные материалы включены</li>
             </ul>
           </div>
           <div class="col-5 col-md-12 col-lg-6">
@@ -107,7 +105,7 @@
     <section class="content">
       <div class="container">
         <h2 class="text-bold text-center">Для кого <span class="text-pink">идеален </span>мастер-класс?</h2>
-        <div class="row text-center mt-40 justify-content-center">
+        <div class="row text-center mt-20 mb-60 mb-sm-40 justify-content-center">
           <div class="col-4 col-md-8 col-sm-12 mt-20 mt-md-0">
             <div class="info">
               <p class="info__title">Коллег по работе</p>
@@ -131,14 +129,30 @@
           <div class="col-12">
             <h4 class="text-center text-bold mb-40">Фотоотчеты с мероприятий</h4>
           </div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
-          <div class="col-3 col-sm-6 col-md-4 portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
+          </div>
         </div>
       </div>
     </section>
@@ -186,29 +200,29 @@
         <p class="preview-info">Подарите незабываемые эмоции сейчас!</p>
       </div>
     </section>
-    <section class="content content_offset-small" style="background-color: #fdf8fb;">
+    <section class="content content_offset-small">
       <div class="container">
-        <p class="h4 text-center text-bold mb-60 mb-md-40">Где провести мастер-класс?</p>
+        <p class="h4 text-center text-sm-left text-bold mb-60 mb-md-40">Где провести мастер-класс?</p>
         <div class="row justify-content-center">
-          <div class="col-3 col-sm-12 mb-20 col-md-4">
-            <div class="icon-list icon-list_check text-center">
-              <div class="icon"></div>
+          <div class="col-3 col-md-4 col-sm-12 mb-20">
+            <div class="icon-list icon-list_top text-center">
+              <div class="icon-list__img icon-list__img_check icon-list__img_top"></div>
               <p class="icon-list__title text-bold text-uppercase">В нашей студии</p>
-              <p class="icon-list__content text-grey mb-0">продолжительность 2 часа от 1 до 20 человек</p>
+              <p class="icon-list__content icon-list_top__content">продолжительность 2 часа от 1 до 20 человек</p>
             </div>
           </div>
-          <div class="col-3 col-sm-12 mb-20 col-md-4">
-            <div class="icon-list icon-list_check text-center">
-              <div class="icon"></div>
+          <div class="col-3 col-md-4 col-sm-12 mb-20">
+            <div class="icon-list icon-list_top text-center">
+              <div class="icon-list__img icon-list__img_check icon-list__img_top"></div>
               <p class="icon-list__title text-bold text-uppercase">В нашей студии</p>
-              <p class="icon-list__content text-grey mb-0">продолжительность 2 часа от 1 до 20 человек</p>
+              <p class="icon-list__content icon-list_top__content">продолжительность 2 часа от 1 до 20 человек</p>
             </div>
           </div>
-          <div class="col-3 col-sm-12 col-md-4">
-            <div class="icon-list icon-list_check text-center">
-              <div class="icon"></div>
+          <div class="col-3 col-md-4 col-sm-12">
+            <div class="icon-list icon-list_top text-center">
+              <div class="icon-list__img icon-list__img_check icon-list__img_top"></div>
               <p class="icon-list__title text-bold text-uppercase">В нашей студии</p>
-              <p class="icon-list__content text-grey mb-0">продолжительность 2 часа от 1 до 20 человек</p>
+              <p class="icon-list__content icon-list_top__content">продолжительность 2 часа от 1 до 20 человек</p>
             </div>
           </div>
         </div>
@@ -221,18 +235,18 @@
             <p class="text-bold h1">Организовали мастер-класс таким компаниям как:</p>
           </div>
           <div class="col-12 mt-40 mb-40">
-            <div class="item-logo">
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
-              <div class="item-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
+            <div class="page-logo">
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-2.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-1.jpg');"></div>
+              <div class="page-logo__image" style="background-image:url('../img/demo-logo-3.jpg');"></div>
             </div>
           </div>
           <div class="col-12 text-center"><a class="btn btn_action" href="#">Заказать мастер-класс</a></div>
@@ -253,11 +267,11 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+          <div class="col-3 col-lg-6 col-sm-12">
             <div class="footer__logo"></div>
             <p class="footer__content text-small mb-0">Санкт-Петербург, Пр. Юрия Гагарина, 7, пом. 25 ЖК "Космос", справа от центрального входа.</p>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-4 mt-sm-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-sm-20">
             <p class="text-bold footer__title">Контакты</p>
             <ul class="contacts">
               <li class="contacts__item contacts__item_phone"> <a class="footer__link" href="tel:88001112233">8 (812) 317-76-18</a></li>
@@ -270,7 +284,7 @@
               <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
             </ul>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-2 mt-md-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-lg-20">
             <p class="text-bold footer__title">Курсы</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Базовый</a></li>
@@ -279,22 +293,25 @@
               <li class="list__item"><a href="#">Базовый</a></li>
             </ul>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-md-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-lg-20">
             <p class="text-bold footer__title">Блог</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Хочу быть флористом</a></li>
               <li class="list__item"><a href="#">Выбираем школу флористики</a></li>
               <li class="list__item"><a href="#">Мастер-класс по флористике</a></li>
             </ul>
+            <p class="text-bold footer__link mt-20">Часто задаваемые вопросы</p>
           </div>
         </div>
         <div class="row mt-20">
-          <div class="col-7 col-sm-12 col-md-6">
-            <p class="footer__content text-small"><a href="#">Часто задаваемые вопросы</a><br><a href="#">Сведения об образовательной организации</a></p>
-            <p class="footer__content text-small mb-0">Сайт ЧОУ ДПО «АФД «Маджента» составлен согласно требованиям официального сайта Министерства образования и науки Российской Федерации в сети «Интернет» и минобрнауки.рф</p>
+          <div class="col-3 col-sm-12 col-lg-6">
+            <p class="footer__content text-small"><a class="footer__link" href="#">Договор публичной оферты</a></p>
           </div>
-          <div class="col-5 col-sm-12 col-md-6">
-            <p class="footer__content text-right text-md-left text-small mb-0">© 2019. Все права защищены.</p>
+          <div class="col-3 col-sm-12 col-lg-6">
+            <p class="footer__content text-small"><a class="footer__link" href="#">Политика конфиденциальности</a></p>
+          </div>
+          <div class="col-3 col-sm-12 col-lg-6 mt-lg-20">
+            <p class="footer__content text-small mb-0">© 2019. Все права защищены.</p>
           </div>
         </div>
       </div>

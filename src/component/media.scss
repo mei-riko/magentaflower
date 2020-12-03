@@ -2,9 +2,6 @@
     body, html{
         font-size: 18px;
     }
-    // .container{
-    //     width: 1380px;
-    // }
 
     header .container,
     footer .container,
@@ -46,7 +43,7 @@
         width: 220px;
     }
     // Programm Block 
-    .programm .programm__title{
+    .page-programm .page-programm__title{
         font-size: 1.5rem;
     }
     // Sertificate
@@ -55,11 +52,11 @@
     }
 
     // List Item
-    .list_advantage .list__item {
+    .list_advantage .list_advantage__item {
         width: 360px;
         font-size: 20px;
     }
-    .list_advantage_full .list__item{
+    .list_advantage_full .list_advantage__item{
         width: 100%;
     }
     .list_advantage_full .list__item .list__item__title{
@@ -89,10 +86,6 @@
     // Info Item
     .info .info__content{
         height: 220px;
-    }
-    .info .info__item,
-    .info .info__intro {
-        // font-size: 16px;
     }
     .info .info__link {
         font-size: 14px;

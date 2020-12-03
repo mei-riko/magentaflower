@@ -37,6 +37,7 @@
 		"gulp-notify": "^3.2.0",
 		"gulp-plumber": "^1.2.0",
 		"gulp-sass": "^4.1.0",
+		"popper.js": "^1.16.1",
 		"sass": "^1.26.5",
 		"serve": "^11.3.1"
 	}

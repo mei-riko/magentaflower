@@ -18,6 +18,10 @@
         &_information{
             left: map-get($spacers, 3);
         }
+
+        &_advantage{
+            background-color: $pink-light;
+        }
     }
 }
 

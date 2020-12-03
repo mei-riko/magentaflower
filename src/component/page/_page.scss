@@ -3,7 +3,7 @@
     // Стиль первого экрана
     &__header-block{
         position: relative;
-        padding: 240px 0 map-get($spacers, 5);
+        padding: 200px 0 map-get($spacers, 5);
         background: no-repeat center / cover;
 
         text-align: center;
@@ -28,19 +28,53 @@
             z-index: 11;
         }
     }
+    &__subtitle{
+        display: inline-block;
+        @extend .text-small;
+
+        background:darken($color: $pink-light, $amount: 6);
+        color: $pink;
+
+        padding: 6px 18px 8px;
+        border-radius: 28px;
+    }
     // Основной заголовок
     &__title{
         font-weight: 700;
+        width: 680px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     // Аннотация страницы
     &__introtext{
-        font-size: 16px;
         line-height: 1.6;
 
         width: 480px;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+    // Краткая информация
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-col{
+            padding: 0 10px;
+        }
+        &-title{
+            font-family: 'Noto Serif', serif;
+            font-size: 1.15rem;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: .25rem 0 .5rem;
+        }
+        &-old-price{
+            text-decoration: line-through;
+            margin-right: 6px;
+        }
     }
     // Слайдер контента на всю ширину
     &__slider-container{
@@ -114,9 +148,14 @@
         // Стиль первого экрана
         &__header-block{
             padding-top: 140px;
+            padding-bottom: $spacer;
+        }
+        &__info-title{
+            font-size: 1.25rem;
         }
         // Слайдер контента на всю ширину
         &__slider-container{
+            padding-top: $spacer/2;
             padding-bottom: $spacer/2;
         }
         &__slider{

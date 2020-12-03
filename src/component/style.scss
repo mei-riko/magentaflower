@@ -1,0 +1,147 @@
+@import "variable";
+
+// Main Style
+@import "../component/framework/reboot";
+
+@import "../component/framework/frameworks";
+@import "../component/framework/grid";
+@import "../component/framework/position";
+
+// MODX
+@import "../component/framework/jGrowl";
+
+// Form & Input
+@import "../component/form/form";
+@import "../component/form/form-input";
+@import "../component/form/checkbox";
+
+// All Button
+@import "../component/btn/btn";
+@import "../component/btn/btn_default";
+@import "../component/btn/btn_action";
+@import "../component/btn/btn_secondary";
+@import "../component/btn/btn_absolute";
+@import "../component/btn/btn_link";
+@import "../component/btn/btn_video";
+@import "../component/btn/btn_more";
+
+// Component Item
+@import "../component/networks/networks";
+@import "../component/pagination/pagination";
+@import "../component/master-class/master-class";
+
+@import "../component/item/item";
+@import "../component/item/item_step";
+@import "../component/item/item_resume";
+@import "../component/item/item_alert";
+
+@import "../component/item/item-icon";
+@import "../component/item/item-icon_information";
+
+@import "../component/item/item-slide";
+@import "../component/item/item-slide_faq";
+@import "../component/item/item-slide_programm";
+
+@import "../component/item/item-cources";
+
+@import "../component/contacts/contacts";
+@import "../component/contacts/contacts_inline";
+@import "../component/contacts/contacts_header";
+
+@import "../component/info/info";
+@import "../component/info/info_promo";
+@import "../component/info/info_person";
+@import "../component/info/info_alert";
+@import "../component/info/info_review";
+@import "../component/info/info_video";
+
+// @import "../component/info/info_columns";
+// @import "../component/info/info_alert";
+// @import "../component/info/info-block";
+
+@import "../component/icon/icon-block";
+@import "../component/icon/icon-list";
+@import "../component/icon/icon-list_top";
+
+@import "../component/price/price";
+
+@import "../component/tooltip/tooltip";
+
+@import "../component/preview/preview-link";
+@import "../component/preview/preview-info";
+@import "../component/preview/preview-courses";
+
+// Slider Style
+@import "../component/slider/slider-container";
+
+@import "../component/slider/slider";
+@import "../component/slider/slider_link";
+@import "../component/slider/slider_review";
+@import "../component/slider/slider_index";
+@import "../component/slider/slider_nav";
+
+@import "../component/slider/slider-nav";
+
+// Header
+@import "../component/header/header";
+@import "../component/header/header-fixed";
+@import "../component/header/header-top";
+
+// Footer
+@import "../component/footer/footer";
+
+// Menu
+@import "../component/navbar/navbar";
+@import "../component/navbar/navbar-mobile";
+
+// Modal
+@import "../component/modal/modal";
+@import "../component/modal/modal_form";
+
+// List
+@import "../component/list/list";
+@import "../component/list/list_numeric";
+@import "../component/list/list_circle";
+@import "../component/list/list_advantage";
+
+// Page Block
+@import "../component/page/page";
+@import "../component/page/page-header";
+@import "../component/page/page-header_col";
+@import "../component/page/page-programm";
+@import "../component/page/page-logo";
+@import "../component/page/page-price";
+
+// Contant
+@import "../component/content/content";
+@import "../component/content/content_title";
+@import "../component/content/content_offset-small";
+@import "../component/content/content_inside";
+// HR line
+@import "../component/content/content-line";
+// CTA
+@import "../component/cta/cta";
+@import "../component/cta/cta-block";
+// Portfolio
+@import "../component/portfolio/portfolio";
+// Teachers
+@import "../component/teacher/teacher";
+@import "../component/teacher/teacher_inside";
+// Timetable
+@import "../component/timetable/timetable-nav";
+@import "../component/timetable/timetable";
+@import "../component/timetable/timetable-item";
+
+// Map
+@import "../component/map/map";
+
+// Gift Sertificate
+@import "../component/sertificate/sertificate";
+@import "../component/sertificate/sertificate_modal";
+
+@import "../component/sertificate/sertificate-action-input";
+@import "../component/sertificate/sertificate-content";
+
+// Main Style
+@import "../component/framework/bg";
+@import "../component/framework/offset";

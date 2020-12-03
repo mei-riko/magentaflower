@@ -165,7 +165,11 @@
             background: $pink;
         }       
     }
-
+    // Модификаторы
+    &_outside{
+        padding: 0;
+        border: none;
+    } 
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .sertificate{
@@ -206,6 +210,11 @@
                 max-width: calc(100% - 90px);
             }
         }
+
+        // Модификаторы
+        &_outside{
+            padding: 0;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
@@ -243,6 +252,11 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .sertificate{
         padding: $spacer/2;
+        &__item{
+            &_modal{
+                padding: 15px;
+            }
+        }
         // Картинка-превью
         &__item-image{
             width: 60px;
@@ -250,6 +264,14 @@
 
             flex: 0 0 60px;
             max-width: 60px;
+
+            &_result{
+                width: 100%;
+                height: 80px;
+
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
         &__item-icon{
             width: 60px;
@@ -270,10 +292,16 @@
             padding: 10px 0 20px;
 
             &_modal{
+                padding-top: 0;
                 padding-bottom: 0;
                 flex: 0 0 calc(100% - 80px);
                 max-width: calc(100% - 80px);
             }
+        }
+
+        // Модификаторы
+        &_outside{
+            padding: 0;
         }
     }
 }

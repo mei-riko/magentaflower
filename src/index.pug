@@ -2,7 +2,10 @@ html(lang="ru")
     include chunks/head.pug
     body.header-fixed
         script(src="/js/jquery.min.js")
-        include chunks/header.pug
+        
+        include component/header/header.pug
+        include component/navbar/navbar.pug
+
         .container.slider-container
             .slider.slider_index
                 .slider__item
@@ -49,7 +52,9 @@ html(lang="ru")
         //-     <div class="jGrowl-message">Номер телефона указан не корректно</div>
         //-     </div>
         //- </div>
-        include chunks/footer.pug
+        
+        include component/footer/footer.pug
+        
         script(src="./js/jquery.fancybox.min.js")
         script(src="./js/jquery.inputmask.js")
 

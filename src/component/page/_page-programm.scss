@@ -43,9 +43,6 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .page-programm{
         padding: map-get($spacers, 3) 0;
-        &__title{
-            font-size: 1.25rem;
-        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){

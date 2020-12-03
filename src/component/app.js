@@ -1,9 +1,13 @@
 import $ from 'jquery';
-import '../component/navbar/nav';
-import '../component/sertificate/sertificate';
-import '../component/slider/slider';
-import '../component/timetable/timetable';
-import '../component/map/map';
+import './navbar/nav';
+import './sertificate/sertificate';
+import './slider/slider';
+import './timetable/timetable';
+import './map/map';
+
+import '../../node_modules/popper.js/dist/umd/popper';
+import '../../node_modules/bootstrap/js/dist/util';
+import '../../node_modules/bootstrap/js/dist/tooltip';
 
 $(document).ready(() =>{
     $("a.scroll").click(function() {
@@ -15,6 +19,8 @@ $(document).ready(() =>{
         });
         return false;
     });
+    // Подсказка
+	$('[data-toggle="tooltip"]').tooltip();
     // Fancybox
     $('[data-fancybox]').fancybox({
         touch: false,

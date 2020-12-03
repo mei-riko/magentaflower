@@ -1,4 +1,11 @@
 // Уменьшенные отступы сверху и снизу
 .content_offset-small{
-    padding: map-get($spacers, 4) 0;
+    padding-top: map-get($spacers, 4);
+    padding-bottom: map-get($spacers, 4);
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .content_offset-small{
+        padding-top: map-get($spacers, 3);
+        padding-bottom: map-get($spacers, 3);
+    }
 }

@@ -1,4 +1,4 @@
-.item-logo{
+.page-logo{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     max-width: 100%;
     margin: 0 auto;
 
-    .item-logo__image{
+    &__image{
         width: 180px;
         height: 100px;
 
@@ -17,17 +17,17 @@
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
-    .item-logo{
-        .item-logo__image {
+    .page-logo{
+        &__image {
             width: 30%;
         }
     }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .item-logo{
+    .page-logo{
         justify-content: center;
-        .item-logo__image {
+        &__image {
             width: 30%;
         }
     }

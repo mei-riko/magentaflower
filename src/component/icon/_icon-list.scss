@@ -3,26 +3,18 @@
     position: relative;
     padding-left: map-get($spacers, 6);
     
-    .icon{
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        background-image: linear-gradient( 45deg, rgb(255,252,220) 0%, rgb(223,197,214) 100%);
+    &__img{
         position: absolute;
         left: 0;
         top: 0;
-    }
-    .icon-list__title{
-        margin-bottom: 10px;
-    }
-    .icon-list__content{
-        width: 200px;
-        max-width: 100%;
-    }
 
-    // Иконка-спираль
-    &_default{
-        .icon{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: $pink-light;
+        
+        //- Модификаторы
+        &_default{
             &:before{
                 content:'';
                 display: block;
@@ -34,53 +26,54 @@
                 left: 22px;
             }
         }
-    }
-    // Иконка-галочка
-    &_check{
-        padding-top: 90px;
-        padding-left: 0;
-        .icon{
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%);
+        &_check{
             &:before{
                 content:'';
                 display: block;
                 width: 100%;
                 height: 100%;
-                background: url('../img/check.svg') no-repeat center / 20px;
+                background: url('../img/check.svg') no-repeat center / 16px;
+
                 position: absolute;
                 top: 0;
                 left: 0;
             }
         }
-        .icon-list__content{
-            margin: 0 auto;
+        &_top{
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
         }
+    }
+    &__title{
+        margin-bottom: 10px;
+    }
+    &__content{
+        width: 200px;
+        max-width: 100%;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .icon-list{
         padding-left: 50px;
-        .icon{
+        &__img{
             width: 30px;
-            height: 30px;       
-        }
-        &_default{
-            .icon{
+            height: 30px;
+
+            //- Модификаторы
+            &_default{
+                width: 50px;
+                height: 50px;
                 &:before{
-                    top: 5px;
-                    left: 7px;
+                    top: calc(50% - 9px);
+                    left: calc(50% - 9px);
                     width: 18px;
                     height: 18px;
                 }
             }
-        }
-        &_check{
-            padding-left: 0;
-            .icon{
-                width: 70px;
-                height: 70px;
+            &_check{
+                width: 60px;
+                height: 60px;
             }
         }
     }
@@ -88,12 +81,12 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .icon-list{
         padding-left: 80px;
-        .icon{
+        &__img{
             width: 50px;
-            height: 50px;    
-        }
-        &_default{
-            .icon{
+            height: 50px;
+            
+            //- Модификаторы
+            &_default{
                 &:before{
                     top: 12px;
                     left: 13px;
@@ -101,21 +94,15 @@
                     height: 26px;
                 }
             }
-        }   
-        &_check{
-            padding-top: 0;
-            text-align: left;
-            width: 280px;
-            margin: 0 auto;
-            .icon{
+            &_check{
                 width: 40px;
                 height: 40px;
                 left: 0;
                 transform: none;
             }
-            .icon-list__content{
-                width: 100%;
-                margin-left: 0;
+            &_top{
+                left: 0;
+                transform: none;
             }
         }
     }

@@ -3,7 +3,8 @@ import $ from 'jquery';
 $(document).ready(() =>{
     // Timetable
     let $mediaElementsAll = $(".timetable__col");
-    let $mediaElements = $(".timetable__col:not(.archive)");
+    let $mediaElements = $(".timetable__col:not(.archive):not(.empty)");
+
     $('.timetable-nav .timetable-nav__link').click(function(e){
         e.preventDefault();
         let filterVal = $(this).data('filter');
@@ -16,7 +17,12 @@ $(document).ready(() =>{
                 $mediaElements.show();
             }else{
                 // hide all then filter the ones to show
-                $mediaElementsAll.hide().filter('.' + filterVal).show();
+                console.log( $mediaElementsAll.filter('.' + filterVal).length );
+                if( $mediaElementsAll.filter('.' + filterVal).length > 0 ){
+                    $mediaElementsAll.hide().filter('.' + filterVal).show();
+                }else{
+                    $mediaElementsAll.hide().filter('.empty').show();
+                }
             }
         }
     });

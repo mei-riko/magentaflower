@@ -41,17 +41,11 @@
         padding-top: map-get($spacers, 1);
         border-top: 1px solid $border-color;
 
-        display: flex;
-        flex-wrap: wrap;
-
-        width: 240px;
-        max-width: 100%;
+        @extend .page-price;
         margin: map-get($spacers, 1) auto 0;
 
-        &__col{
-            flex: 0 0 50%;
-            max-width: 50%;
-
+        &-col{
+            @extend .page-price__col;
             margin-bottom: map-get($spacers, 1);
         }
         .btn{
@@ -61,14 +55,13 @@
     }
 
     &__value{
-        font-size: 1.75rem;
-        font-weight: 700;
+        @extend .page-price__value;
+
         &_old-price{
-            text-decoration: line-through;
-            color: $grey;
+            @extend .page-price__value_old;
         }
         &_new-price{
-            color: $pink;
+            @extend .page-price__value_new;
         }
     }
 

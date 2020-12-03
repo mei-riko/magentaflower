@@ -37,7 +37,7 @@ var gulp = require("gulp"),
   });
 
   gulp.task('scripts', function () {
-    return gulp.src('./src/js/app.js')
+    return gulp.src('./src/component/app.js')
       .pipe(plumber())
       .pipe(webpackStream({
         mode: "production",
@@ -68,7 +68,7 @@ var gulp = require("gulp"),
   });
   
   gulp.task('css', function () {
-    return gulp.src(['./src/css/*.scss'])
+    return gulp.src(['./src/component/*.scss'])
       .pipe(changed('public', { extension: '.css' }))
       .pipe(plumber())
       .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
@@ -83,9 +83,8 @@ var gulp = require("gulp"),
   gulp.task('watch', function () {
     gulp.watch(['./src/*.pug'], gulp.parallel('html'));
     gulp.watch(['./src/*/*.pug'], gulp.parallel('html'));
-    gulp.watch(['./src/js/*.js'], gulp.parallel('scripts'));
-    gulp.watch(['./src/css/*.scss'], gulp.parallel('css'));
-    gulp.watch(['./src/css/*/*.scss'], gulp.parallel('css'));
+    gulp.watch(['./src/component/*.js'], gulp.parallel('scripts'));
+    gulp.watch(['./src/component/*.scss'], gulp.parallel('css'));
     gulp.watch(['./src/component/*/*.scss'], gulp.parallel('css'));
   });
   

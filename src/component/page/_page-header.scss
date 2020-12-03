@@ -4,14 +4,14 @@
     background: $light-grey no-repeat right bottom / contain;
     
     &__subtitle{
-        font-family: "Noto Sans";
-        font-size: 1rem;
         display: inline-block;
-        background: #e2e2e2;
-        color: #797979;
-        padding: 8px 24px 10px;
+        @extend .text-small;
+
+        background:$pink-light;
+        color: $pink;
+
+        padding: 6px 18px 8px;
         border-radius: 28px;
-        margin: 0 0 2rem;
     }
     &__title{
         display: block;

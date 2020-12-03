@@ -12,64 +12,55 @@
   </head>
   <body class="header-fixed">
     <script src="/js/jquery.min.js"></script>
-    <header>
-      <div class="header">
-        <div class="container">
-          <div class="row header__row">
-            <div class="col header__col">
-              <div class="header__line">
-                <ul class="contacts contacts_inline text-bold">
-                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-                </ul>
-              </div>
-              <div class="header__line">
-                <nav class="navbar navbar_left"><a class="navbar__link" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="/sertificate.html">Сертификаты</a></nav>
-              </div>
-            </div><a class="header__logo" href="/"></a>
-            <div class="col header__col">
-              <div class="header__line header__line_right-col"><a class="header-link header__item" href="#">Оплата и доставка</a><a class="header-btn btn btn_default header__item" href="/timetable.html">Расписание</a>
-                <ul class="contacts contacts_inline contacts_header header__item">
-                  <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
-                  <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
-                  <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
-                </ul>
-              </div>
-              <div class="header__line">
-                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="/contact.html">Контакты</a></nav>
-              </div>
+    <header class="header">
+      <div class="header__desktop container">
+        <div class="header__row">
+          <div class="header__col">
+            <div class="header__line">
+              <ul class="contacts contacts_inline text-bold">
+                <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 (812) 317-76-18</a></li>
+                <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 (921) 343-87-30</a></li>
+              </ul>
+            </div>
+            <div class="header__line">
+              <nav class="navbar navbar_left"><a class="navbar__link navbar__link_online" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="/sertificate.html">Сертификаты</a></nav>
+            </div>
+          </div><a class="header__logo" href="/"></a>
+          <div class="header__col">
+            <div class="header__line header__line_additional justify-content-end"><a class="header__item header__link text-small" href="#">Оплата и доставка</a><a class="header__item header__btn btn" href="/timetable.html">Расписание</a>
+              <ul class="header__item contacts contacts_inline contacts_header">
+                <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+                <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+                <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
+              </ul>
+            </div>
+            <div class="header__line justify-content-end">
+              <nav class="navbar navbar_right"><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="/contact.html">Контакты</a></nav>
             </div>
           </div>
         </div>
       </div>
-      <div class="header-mobile-only">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-8"><a class="header__logo" href="/"></a></div>
-            <div class="col-4 text-right">
-              <svg class="nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
-                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
+      <div class="header__mobile"><a class="header__logo header__logo_mobile" href="/"></a>
+        <svg class="header__mobile-menu nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
+          <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
+        </svg>
       </div>
     </header>
     <div class="navbar-mobile">
-      <nav class="navbar">
-        <div class="navbar__item"><a class="navbar__link" href="#">Online-курсы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Очные курсы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">О школе</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Преподаватели</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Портфолио</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="#">Блог</a></div>
-        <div class="navbar__item"><a class="navbar__link" href="/contact.html">Контакты</a></div>
+      <nav class="navbar navbar-mobile__nav">
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link navbar__link_online" href="#">Online-курсы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Очные курсы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">О школе</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Преподаватели</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Портфолио</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Отзывы</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="#">Блог</a></div>
+        <div class="navbar__item navbar-mobile__item"><a class="navbar__link" href="/contact.html">Контакты</a></div>
       </nav>
-      <ul class="contacts">
-        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
-      </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
+      <ul class="contacts navbar-mobile__contacts">
+        <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 800 111-22-33</a></li>
+        <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 800 111-22-33</a></li>
+      </ul><a class="btn btn_default" href="#">Актуальное расписание</a>
     </div>
     <section class="master-class">
       <div class="container">
@@ -135,82 +126,104 @@
       <div class="row justify-content-center mb-40 mb-sm-20 text-center text-sm-left">
         <div class="col-10 col-lg-12">
           <p class="h5 text-bold">Посмотрите, как проходят наши детские мастер-классы:</p>
-          <div class="info video-block mt-40 mb-40"><iframe width="100%" height="480" src="https://www.youtube.com/embed/4BzQQwn1WjI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><a class="btn btn_action" href="#">Присоединиться к обучению</a>
+          <div class="info info_video mt-40 mb-40"><iframe width="100%" height="480" src="https://www.youtube.com/embed/4BzQQwn1WjI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><a class="btn btn_action" href="#">Присоединиться к обучению</a>
         </div>
       </div>
     </section>
-    <section class="container pt-40 pb-40">
-      <h2 class="text-bold text-center">Программа мастер-класса</h2>
-      <p class="text-grey text-center">На протяжении всего занятия преподаватель будет помогать каждому ребенку</p>
-      <div class="row mt-40 mb-40 mb-sm-20">
-        <div class="col-4 col-sm-12 col-lg-6">
-          <div class="item-timetable">
-            <div class="item-timetable__image" style="background-image:url('../img/child.png');"><span class="item-timetable__time">12:00 - 12:45</span></div>
-            <p class="item-timetable__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+    <section class="content bg-light-pink">
+      <div class="container">
+        <h2 class="text-bold text-center">Программа мастер-класса</h2>
+        <p class="text-grey text-center">На протяжении всего занятия преподаватель будет помогать каждому ребенку</p>
+        <div class="row mt-40 mb-40 mb-sm-20">
+          <div class="col-4 col-sm-12 col-lg-6">
+            <div class="timetable-item">
+              <div class="timetable-item__image" style="background-image:url('../img/child.png');"><span class="timetable-item__time">12:00 - 12:45</span></div>
+              <p class="timetable-item__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+            </div>
+          </div>
+          <div class="col-4 col-sm-12 col-lg-6">
+            <div class="timetable-item">
+              <div class="timetable-item__image" style="background-image:url('../img/child.png');"><span class="timetable-item__time">12:00 - 12:45</span></div>
+              <p class="timetable-item__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+            </div>
+          </div>
+          <div class="col-4 col-sm-12 col-lg-6">
+            <div class="timetable-item">
+              <div class="timetable-item__image" style="background-image:url('../img/child.png');"><span class="timetable-item__time">12:00 - 12:45</span></div>
+              <p class="timetable-item__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+            </div>
+          </div>
+          <div class="col-4 col-sm-12 col-lg-6">
+            <div class="timetable-item">
+              <div class="timetable-item__image" style="background-image:url('../img/child.png');"><span class="timetable-item__time">12:00 - 12:45</span></div>
+              <p class="timetable-item__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+            </div>
+          </div>
+          <div class="col-4 col-sm-12 col-lg-6">
+            <div class="timetable-item">
+              <div class="timetable-item__image" style="background-image:url('../img/child.png');"><span class="timetable-item__time">12:00 - 12:45</span></div>
+              <p class="timetable-item__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+            </div>
+          </div>
+          <div class="col-4 col-sm-12 col-lg-6">
+            <div class="timetable-item timetable-item_icon"><img class="timetable-item_icon__img" src="../icon/crown.svg"/>
+              <p class="timetable-item_icon__content">
+                Каждый маленький флорист заберет с&nbsp;собой работу сделанную своими руками и&nbsp;море ярких и&nbsp;положительных эмоций 
+                от&nbsp;занятия творчеством.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-4 col-sm-12 col-lg-6">
-          <div class="item-timetable">
-            <div class="item-timetable__image" style="background-image:url('../img/child.png');"><span class="item-timetable__time">12:00 - 12:45</span></div>
-            <p class="item-timetable__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+        <p class="h5 text-center text-bold">Фотографии с мастер-класса</p>
+        <div class="row no-gutters portfolio mt-40">
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
           </div>
-        </div>
-        <div class="col-4 col-sm-12 col-lg-6">
-          <div class="item-timetable">
-            <div class="item-timetable__image" style="background-image:url('../img/child.png');"><span class="item-timetable__time">12:00 - 12:45</span></div>
-            <p class="item-timetable__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
           </div>
-        </div>
-        <div class="col-4 col-sm-12 col-lg-6">
-          <div class="item-timetable">
-            <div class="item-timetable__image" style="background-image:url('../img/child.png');"><span class="item-timetable__time">12:00 - 12:45</span></div>
-            <p class="item-timetable__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
           </div>
-        </div>
-        <div class="col-4 col-sm-12 col-lg-6">
-          <div class="item-timetable">
-            <div class="item-timetable__image" style="background-image:url('../img/child.png');"><span class="item-timetable__time">12:00 - 12:45</span></div>
-            <p class="item-timetable__content">Знакомство с преподавателем и группой, инструктаж по рабочему месту</p>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
           </div>
-        </div>
-        <div class="col-4 col-sm-12 col-lg-6">
-          <div class="item-timetable item-timetable_icon"><img class="item-timetable_icon__img" src="../icon/crown.svg"/>
-            <p class="item-timetable_icon__content">
-              Каждый маленький флорист заберет с&nbsp;собой работу сделанную своими руками и&nbsp;море ярких и&nbsp;положительных эмоций 
-              от&nbsp;занятия творчеством.
-            </p>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
+          </div>
+          <div class="col-3 col-sm-6 col-md-4">
+            <div class="portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
           </div>
         </div>
       </div>
-      <p class="h5 text-center text-bold">Фотографии с мастер-класса</p>
-      <div class="row no-gutters portfolio mt-40 mb-40">
-        <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
-        <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/02.png"><img class="img-fluid" src="/img/02.png"/></div>
-        <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
-        <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
-        <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/03.png"><img class="img-fluid" src="/img/03.png"/></div>
-        <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/01.png"><img class="img-fluid" src="/img/01.png"/></div>
-        <div class="col-3 col-sm-6 col-md-4 portfolio__item" data-fancybox="gallery" href="/img/04.png"><img class="img-fluid" src="/img/04.png"/></div>
-        <div class="col-3 col-sm-6 col-md-4 portfolio__item"><img class="img-fluid" src="/img/02.png"/></div>
-      </div>
-      <div class="row justify-content-between justify-content-lg-center align-items-center">
-        <div class="col-6 col-lg-12 mb-40">
-          <div class="item item_alert">
-            <p class="item__title item_alert__title">Что входит в стоимость мастер-класса?</p>
-            <ul class="list list_advantage list_advantage--full">
-              <li class="list_advantage__item"><span class="item_alert__subtitle">Материалы</span><span class="d-block">Расходные материалы включены</span></li>
-              <li class="list_advantage__item"><span class="item_alert__subtitle">Материалы</span><span class="d-block">Расходные материалы включены</span></li>
-              <li class="list_advantage__item"><span class="item_alert__subtitle">Материалы</span><span class="d-block">Расходные материалы включены</span></li>
-            </ul>
-            <p class="item_alert__footer">Сопровождающие взрослые бесплатно</p>
+    </section>
+    <section class="pt-40 pb-40">
+      <div class="container">
+        <div class="row justify-content-between justify-content-lg-center align-items-center">
+          <div class="col-6 col-lg-12 mb-40">
+            <div class="item item_alert">
+              <p class="item__title item_alert__title">Что входит в стоимость мастер-класса?</p>
+              <ul class="list list_advantage list_advantage--full">
+                <li class="list_advantage__item"><span class="item_alert__subtitle">Материалы</span><span class="d-block">Расходные материалы включены</span></li>
+                <li class="list_advantage__item"><span class="item_alert__subtitle">Материалы</span><span class="d-block">Расходные материалы включены</span></li>
+                <li class="list_advantage__item"><span class="item_alert__subtitle">Материалы</span><span class="d-block">Расходные материалы включены</span></li>
+              </ul>
+              <p class="item_alert__footer">Сопровождающие взрослые бесплатно</p>
+            </div>
           </div>
-        </div>
-        <div class="col-6 col-lg-8 col-md-12 mb-40">
-          <div class="info info_person info_person--lg bg-light-pink mb-20">
-            <div class="info__img info_person__img" style="background-image: url('../img/Elena.jpg')"></div>
-            <p class="subtitle text-pink text-small mb-0">Ваш преподаватель</p>
-            <p class="info__title">Елена Дмитриева</p>
-            <p class="info__intro text-grey">Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.</p>
+          <div class="col-6 col-lg-8 col-md-12 mb-40">
+            <div class="info info_person info_person--lg bg-light-pink mb-20">
+              <div class="info__img info_person__img" style="background-image: url('../img/Elena.jpg')"></div>
+              <p class="subtitle text-pink text-small mb-0">Ваш преподаватель</p>
+              <p class="info__title">Елена Дмитриева</p>
+              <p class="info__intro text-grey">Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -227,7 +240,7 @@
           <div class="col-3 col-xl-4 col-lg-6 col-sm-12 mb-lg-20">
             <div class="cta-block__info">
               <p class="subtitle">Цена со скидкой</p>
-              <p class="cta-block__info-title"><span class="price-old">2500 р.</span><span class="price h5 text-bold">1800 р.</span></p>
+              <p class="cta-block__info-title"><span class="price-old">2500 р.</span><span class="price-new h5 text-bold">1800 р.</span></p>
               <p class="text-grey text-small mb-0">действительна до 12 июля</p>
             </div>
           </div>
@@ -271,29 +284,29 @@
         </div>
         <div class="slider slider_reviews">
           <div class="info info_review text-center">
-            <div class="info__img" style="background-image: url('../img/test-05.jpg');"></div>
+            <div class="info__img info_review__img" style="background-image: url('../img/test-05.jpg');"></div>
             <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro text-grey text-small text-small">Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit amet. Doloremque laudantium, totam rem aperiam</p>
+            <p class="info__intro info_review__intro text-small">Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit amet. Doloremque laudantium, totam rem aperiam</p>
           </div>
           <div class="info info_review text-center">
-            <div class="info__img info__img_video" data-fancybox="review" data-type="iframe" data-src="https://www.youtube.com/embed/4BzQQwn1WjI?controls=0" style="background-image: url('../img/test-06.png');"></div>
+            <div class="info__img info_review__img info_review__img_video" data-fancybox="review" data-type="iframe" data-src="https://www.youtube.com/embed/4BzQQwn1WjI?controls=0" style="background-image: url('../img/test-06.png');"></div>
             <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro text-grey text-small text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
+            <p class="info__intro info_review__intro text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
           </div>
           <div class="info info_review text-center">
-            <div class="info__img" style="background-image: url('../img/test-07.png');"></div>
+            <div class="info__img info_review__img" style="background-image: url('../img/test-07.png');"></div>
             <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro text-grey text-small text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
+            <p class="info__intro info_review__intro text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
           </div>
           <div class="info info_review text-center">
-            <div class="info__img" style="background-image: url('../img/test-08.png');"></div>
+            <div class="info__img info_review__img" style="background-image: url('../img/test-08.png');"></div>
             <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro text-grey text-small text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
+            <p class="info__intro info_review__intro text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
           </div>
           <div class="info info_review text-center">
-            <div class="info__img" style="background-image: url('../img/test-09.png');"></div>
+            <div class="info__img info_review__img" style="background-image: url('../img/test-09.png');"></div>
             <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro text-grey text-small text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
+            <p class="info__intro info_review__intro text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
           </div>
         </div>
       </div>
@@ -325,11 +338,11 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+          <div class="col-3 col-lg-6 col-sm-12">
             <div class="footer__logo"></div>
             <p class="footer__content text-small mb-0">Санкт-Петербург, Пр. Юрия Гагарина, 7, пом. 25 ЖК "Космос", справа от центрального входа.</p>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-4 mt-sm-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-sm-20">
             <p class="text-bold footer__title">Контакты</p>
             <ul class="contacts">
               <li class="contacts__item contacts__item_phone"> <a class="footer__link" href="tel:88001112233">8 (812) 317-76-18</a></li>
@@ -342,7 +355,7 @@
               <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
             </ul>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-2 mt-md-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-lg-20">
             <p class="text-bold footer__title">Курсы</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Базовый</a></li>
@@ -351,22 +364,25 @@
               <li class="list__item"><a href="#">Базовый</a></li>
             </ul>
           </div>
-          <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-md-20">
+          <div class="col-3 col-lg-6 col-sm-12 mt-lg-20">
             <p class="text-bold footer__title">Блог</p>
             <ul class="list list_circle">
               <li class="list__item"><a href="#">Хочу быть флористом</a></li>
               <li class="list__item"><a href="#">Выбираем школу флористики</a></li>
               <li class="list__item"><a href="#">Мастер-класс по флористике</a></li>
             </ul>
+            <p class="text-bold footer__link mt-20">Часто задаваемые вопросы</p>
           </div>
         </div>
         <div class="row mt-20">
-          <div class="col-7 col-sm-12 col-md-6">
-            <p class="footer__content text-small"><a href="#">Часто задаваемые вопросы</a><br><a href="#">Сведения об образовательной организации</a></p>
-            <p class="footer__content text-small mb-0">Сайт ЧОУ ДПО «АФД «Маджента» составлен согласно требованиям официального сайта Министерства образования и науки Российской Федерации в сети «Интернет» и минобрнауки.рф</p>
+          <div class="col-3 col-sm-12 col-lg-6">
+            <p class="footer__content text-small"><a class="footer__link" href="#">Договор публичной оферты</a></p>
           </div>
-          <div class="col-5 col-sm-12 col-md-6">
-            <p class="footer__content text-right text-md-left text-small mb-0">© 2019. Все права защищены.</p>
+          <div class="col-3 col-sm-12 col-lg-6">
+            <p class="footer__content text-small"><a class="footer__link" href="#">Политика конфиденциальности</a></p>
+          </div>
+          <div class="col-3 col-sm-12 col-lg-6 mt-lg-20">
+            <p class="footer__content text-small mb-0">© 2019. Все права защищены.</p>
           </div>
         </div>
       </div>

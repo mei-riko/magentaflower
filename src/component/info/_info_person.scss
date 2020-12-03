@@ -22,11 +22,11 @@
     &--lg{
         padding-top: 2*$spacer;
         padding-bottom: 2*$spacer;
-        padding-left: 200px;
+        padding-left: 180px;
         .info_person__img{
-            width: 200px;
-            height: 200px;
-            border-radius: 100px;
+            width: 160px;
+            height: 160px;
+            border-radius: 12px;
         }
     }
 }
@@ -47,7 +47,6 @@
             .info_person__img{
                 width: 160px;
                 height: 160px;
-                border-radius: 80px;
             }
         }
     }
@@ -56,12 +55,11 @@
     .info_person{
         padding-left: 200px;
         
-        .info__img{
+        &__img{
             left: 20px;
 
             width: 150px;
             height: 150px;
-            // border-radius: 75px;
         }
     }
 }
@@ -71,17 +69,10 @@
         padding-bottom: $spacer/2;
         padding-left: 80px;
         
-        .info__img{
-            width: 80px;
-            height: 80px;
-            border-radius: 40px;
-            left: -15px;
-        }
-        .info__title{
-            margin-bottom: .75rem;
-        }
-        .info__intro{
-            font-size: 12px;
+        &__img{
+            width: 74px;
+            height: 74px;
+            left: -10px;
         }
     }
 }

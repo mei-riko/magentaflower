@@ -62,20 +62,39 @@
     }
     // Сроки занятий
     &__period{
+        @extend .text-small;
         @extend .text-bold;
         color: $pink;
         padding: 0 20px;
     }
+    // Дополнительный текст
+    &__offer{
+        @extend .text-small;
+        padding: 0 20px;
+    }
+    &__price{
+        @extend .lead;
+        @extend .text-bold;
+        color: $pink;
+        padding: 0 20px;
+
+        .price-old{
+            color: $black;
+            font-weight: 400;
+            text-decoration: line-through;
+            margin-right: 6px;
+        }
+    }
     // Информация о преподавателе
     &__teacher{
+        @extend .text-small;
         padding: 0 20px 20px;
     }
     // Информация о количестве занятий
     &__info{
+        @extend .text-small;
         padding-left: 60px;
         background: url("../img/time-left-light.svg") no-repeat 20px center / 26px;
-        @extend .text-small;
-        color: $dark-grey;
     }
     // Скрытая до наведения кнопка
     &__btn{
@@ -103,12 +122,16 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .timetable{
-        &-block{
+        &__block{
             padding-bottom: 80px;
-            &.mb-md-0{margin-bottom: 0px;}
-            &.mb-md-40{margin-bottom: 40px;}
+            &_preview{
+                padding-bottom: $spacer/2;
+            }
         }
-        &-btn{
+        &__title{
+            font-size: 1.15rem;
+        }
+        &__btn{
             transform: translateY(0);
         }
     }

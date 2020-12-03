@@ -38,17 +38,17 @@
   .header-block .header-block__offer {
     width: 220px;
   }
-  .programm .programm__title {
+  .page-programm .page-programm__title {
     font-size: 1.5rem;
   }
   .sertificate__content {
     width: 400px;
   }
-  .list_advantage .list__item {
+  .list_advantage .list_advantage__item {
     width: 360px;
     font-size: 20px;
   }
-  .list_advantage_full .list__item {
+  .list_advantage_full .list_advantage__item {
     width: 100%;
   }
   .list_advantage_full .list__item .list__item__title {
