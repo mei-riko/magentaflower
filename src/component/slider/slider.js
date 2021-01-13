@@ -10,7 +10,15 @@ $(document).ready(() =>{
             slidesToScroll: 1,
             arrows: true,
             dots: false,
-            asNavFor: '.slider_nav'
+            asNavFor: '.slider_nav',
+            responsive: [
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
         $('.slider_nav').slick({
             slidesToShow: 8,

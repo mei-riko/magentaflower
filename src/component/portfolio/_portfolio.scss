@@ -37,6 +37,19 @@
             &:after{
                 opacity: 1;
             }
+            .portfolio__mark-video{
+                opacity: 0;
+            }
         }
+    }
+    &__mark-video{
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        background: #ffffff url("../icon/play-button.svg") no-repeat center/contain;
+        transition: .4s;
     }
 }

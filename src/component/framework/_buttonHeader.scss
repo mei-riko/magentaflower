@@ -1,23 +1,24 @@
-header .btn{
+header .header__btn{
     border: none;
-    padding: 18px 40px;
     border-radius: 30px;
     outline: none;
+    padding: 4px 15px!important;
+
     text-align: center;
+
     cursor: pointer;
     transition: .4s;
-    
-    &:hover,&:focus{
+        
+    font-size: 12px;
+    font-weight: bold;        
+    text-transform: uppercase;
+    color: $pink;
+    background-color: $pink-light;
+        
+    &:hover, &:focus{
+        color: darken($pink, 10%);
+        background: darken($pink-light, 5%);
         text-decoration: none;
         outline: none;
-    }
-    &_action{
-        background: $pink;
-        color: $white;
-        font-weight: bold;
-        &:hover{
-            color: $white;
-            background: darken($pink, 10%);
-        }
     }
 }

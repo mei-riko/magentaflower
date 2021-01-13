@@ -70,6 +70,8 @@
             font-weight: bold;
             line-height: 1.2;
             margin: .25rem 0 .5rem;
+
+            min-width: 100px;
         }
         &-old-price{
             text-decoration: line-through;

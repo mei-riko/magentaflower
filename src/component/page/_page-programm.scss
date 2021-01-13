@@ -11,6 +11,14 @@
         &_slide{
             padding-right: map-get($spacers, 5);
         }
+
+        // Cостояния
+        &--disable{
+            filter: grayscale(1) opacity(.5);
+        }
+        &--action{
+            border-color: $pink;
+        }
     }
     &__title{
         font-weight: bold;
@@ -36,6 +44,34 @@
             width: 20px;
             height: 20px;
             background: url("../img/time-left-light.svg") no-repeat center / contain;
+        }
+    }
+    &__date{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        &:before{
+            content:'';
+            display: inline-block;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            background: url("../img/time-left.svg") no-repeat center / contain;
+        }
+    }
+    &__course{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        &:before{
+            content:'';
+            display: inline-block;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            background: url("../icon/flower-pink.svg") no-repeat center / contain;
         }
     }
 }

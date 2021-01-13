@@ -1,39 +1,45 @@
 @import "variable.scss";
 
-// @import "framework/gridHeader.scss";
+@import "../component/framework/gridHeader.scss";
+// Contacts
+@import "../component/contacts/contacts";
+@import "../component/contacts/contacts_inline";
+@import "../component/contacts/contacts_header";
+// Header
+@import "../component/header/header";
+@import "../component/header/header-fixed";
+@import "../component/header/header-top";
+// Footer
+@import "../component/footer/footer";
+// Menu
+@import "../component/navbar/navbar";
+@import "../component/navbar/navbar-mobile";
+// MODX
+@import "../component/framework/jGrowl";
+// Form & Input
+@import "../component/form/form";
+@import "../component/form/form-input";
+@import "../component/form/checkbox";
+// List
+@import "../component/list/list";
+@import "../component/list/list_circle";
+// Item Icon
+@import "../component/item/item-icon";
+@import "../component/item/item-icon_information";
+// Slider Style
+@import "../component/slider/slider-container";
+@import "../component/slider/slider";
+@import "../component/slider/slider_link";
+@import "../component/slider/slider_review";
+@import "../component/slider/slider_index";
+@import "../component/slider/slider_nav";
+@import "../component/slider/slider-nav";
 
-// @import "header/header.scss";
-// @import "header/header-btn.scss";
-// @import "header/header-link.scss";
-// @import "header/header-top.scss";
-// @import "header/header-fixed.scss";
-// @import "header/header-mobile-only.scss";
+@import "../component/networks/networks";
 
-// @import "other/footer.scss";
-// @import "other/navbar.scss";
-
-// @import "form/form.scss";
-// @import "form/form-input.scss";
-// @import "form/checkbox.scss";
-
-// @import "contact/contacts.scss";
-// @import "block/networks.scss";
-
-// @import "list/list.scss";
-// @import "list/list_circle.scss";
-
-// @import "item/item-icon.scss";
-
-// @import "slider/slider-container.scss";
-// @import "slider/slider.scss";
-// @import "slider/slider_index.scss";
-// @import "slider/slider_nav.scss";
-// @import "slider/slider-nav.scss";
-
-// @import "other/buttonHeader.scss";
-// @import "other/jGrowl.scss";
-// @import "other/offset.scss";
-
+@import "../component/framework/buttonHeader.scss";
+@import "../component/framework/position.scss";
+@import "../component/framework/offset.scss";
 
 body{
     max-width: 100%; 
@@ -44,6 +50,10 @@ body a {
         color: $link-hover-color;
     }
 }
+
+.text-bold,strong,b{font-weight: 700;}
+.text-small,small,.small{font-size: 12px; line-height: 16px;}
+.lead, .text-lead{font-size: 1.15rem;}
 
 header *, footer.footer *
 .navbar-mobile *, .item-icon *,
@@ -57,6 +67,7 @@ header *, footer.footer *
     color: #fff;
 }
 header *, header *::before, header *::after,
+.header, .header::before, .header::after,
 footer.footer *, footer.footer *::before, footer.footer *::after,
 .info-block *, .info-block *::before, .info-block *::after,
 .item-icon *, .item-icon *::before, .item-icon *::after,
@@ -101,16 +112,40 @@ header .contacts .contacts__item{
     line-height: 18px;
 }
 .header-top.main .header .header__logo {
-    background: url('/manager/templates/magenta2019/img/logo_white.svg') no-repeat center/contain!important;
+    background: url('/manager/templates/magenta2019/img/logo_white.svg') no-repeat left center/contain!important;
 }
 .header__logo{
     display: block;
 }
 .navbar-mobile{
     font-family: 'Roboto';
-    color: #3d3e40;
+    color: #3d3e40;   
 }
+.navbar-mobile .btn.btn_default{
+    font-family: 'Roboto';
+    font-size: 16px;
+    
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    max-width: 100%;
+    text-align: center;
+    max-width: 100%;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    
+    background: #dd5287;
+    color: #ffffff;
+    font-weight: bold;
 
+    &:hover{
+        color: darken($pink, 10%);
+        background: darken($pink-light, 5%);
+    }
+}
 .slider-container .btn{
     font-family: 'Roboto';
     font-size: 16px;
@@ -137,6 +172,7 @@ header .contacts .contacts__item{
     color: #ffffff;
     background: #d3296a;
 }
+
 .slider_index__intro{
     font-family: 'Roboto';
     line-height: 1.4;
@@ -323,7 +359,7 @@ footer.footer{
 
 @media (max-width: 992px){
     .header .header__logo {
-        background: url('/manager/templates/magenta2019/img/logo.svg') no-repeat center/contain!important;
+        background: url('/manager/templates/magenta2019/img/logo.svg') no-repeat left center/contain!important;
     }
     section.main{
         margin-top: 0px;
