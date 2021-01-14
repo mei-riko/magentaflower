@@ -4,8 +4,8 @@ footer .container,
 .slider-container.container{
     width: 100%;
     max-width: map-get($container-max-widths, 'xl');
-    padding-right: $grid-gutter-width/2;
-    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width;
+    padding-left: $grid-gutter-width;
     margin-right: auto;
     margin-left: auto
 }

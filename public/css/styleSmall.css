@@ -4,8 +4,8 @@ footer .container,
 .slider-container.container {
   width: 100%;
   max-width: 1240px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1899,6 +1899,9 @@ header .header__btn:hover, header .header__btn:focus {
   .mt-md-0 {
     margin-top: 0px !important;
   }
+  .mt-md-10 {
+    margin-top: 10px !important;
+  }
   .mt-md-20 {
     margin-top: 20px !important;
   }
@@ -1964,6 +1967,9 @@ header .header__btn:hover, header .header__btn:focus {
 @media all and (max-width: 576px) {
   .mt-sm-0 {
     margin-top: 0px !important;
+  }
+  .mt-sm-10 {
+    margin-top: 10px !important;
   }
   .mt-sm-20 {
     margin-top: 20px !important;

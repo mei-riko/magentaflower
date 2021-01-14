@@ -1,7 +1,7 @@
 .preview-courses{
     padding: $spacer;
     border-radius: 12px;
-    background: $pink-light no-repeat left bottom / cover;
+    background: $pink-light no-repeat left center / cover;
 
     // Заголовок-ссылка
     &__title{
@@ -78,7 +78,7 @@
     // Модификатор
     &_dark{
         color: $white;
-        background-color: $dark-grey;
+        background-color: #1d1d1e;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
@@ -119,7 +119,12 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .preview-courses{
-        background-position: right top;
-        padding: $spacer/2;
+        background-position: left bottom;
+        background-size: 540px;
+        padding: 30px 30px 120px;
+
+        &:after{
+            opacity: .25;
+        }
     }
 }
