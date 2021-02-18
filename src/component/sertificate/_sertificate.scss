@@ -76,6 +76,16 @@
                 border-color: $border-color;
             }
         }
+        // Неактивный блок
+        &_disable {
+            padding: $spacer/2;
+            opacity: .5;
+            cursor: no-drop;
+
+            &:hover, &:focus{
+                border-color: $border-color;
+            }
+        }
         &_modal{
             padding: 20px;
         }
@@ -128,6 +138,10 @@
             max-width: calc(100% - 90px);
             padding-right: 20px;
         }
+        &_disable{
+            flex: 0 0 calc(100% - 90px);
+            max-width: calc(100% - 90px);
+        }
     }
     // Заголовок блока-результата
     &__item-link{
@@ -136,6 +150,12 @@
         text-transform: uppercase;
         text-decoration: underline;
         margin-bottom: 4px;
+
+        min-height: 34px;
+
+        &_disable{
+            text-decoration: none;
+        }
     }
     &__item-buy{
         display: inline-block;

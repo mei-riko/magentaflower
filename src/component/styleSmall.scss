@@ -119,7 +119,20 @@ header .contacts .contacts__item{
 }
 .navbar-mobile{
     font-family: 'Roboto';
-    color: #3d3e40;   
+    color: #3d3e40;  
+    
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .navbar-mobile__nav{
+        margin-top: 40px;
+    }
+    .contacts.contacts_inline{
+        margin-bottom: 40px;
+    }
+    .contacts .contacts__item_phone{
+        white-space: nowrap;
+    }
 }
 .navbar-mobile .btn.btn_default{
     font-family: 'Roboto';
@@ -366,6 +379,10 @@ footer.footer{
     }
     section.main .banner-im{
         background-position-x: calc(50% + 60px);
+    }
+    .navbar-mobile .btn.btn_default{
+        padding: 8px 14px;
+        font-size: 11px;
     }
 }
 @media (max-width: 768px){

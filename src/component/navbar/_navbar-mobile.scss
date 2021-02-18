@@ -1,13 +1,17 @@
 .navbar-mobile{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 101;
 
     padding: 40px 30px;
     background: $white;
-    max-width: calc(100% - 80px);
-    height: 100%;
+    // width: 260px;
+    max-width: calc(100% - 60px);
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+
+    overflow: auto;
 
     transform: translateX(-100%);
     transition: .4s;
@@ -31,5 +35,11 @@
         &:last-child{
             margin-bottom: 0;
         }
+    }
+
+    // For btn
+    .btn{
+        padding: 8px 14px;
+        font-size: 11px;
     }
 }

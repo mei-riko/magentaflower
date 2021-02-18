@@ -23,3 +23,16 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider-container{
+        .slider-nav{
+            opacity: 1;
+        }
+
+        &.container{
+            padding-left: $spacer/2;
+            padding-right: $spacer/2;
+        }
+    }
+}
