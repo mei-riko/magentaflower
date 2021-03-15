@@ -48,7 +48,9 @@ $(document).ready(() =>{
     $(".sertificate.sertificate_modal .sertificate__item.sertificate__item_modal").on("click", function(){
         $.fancybox.close();
         let title = $(this).find(".sertificate_modal__title").text();
+        let link = $(this).find(".sertificate_modal__title").attr("data-link");
         $(".sertificate-action-input").val( title );
+        $(".sertificate-action-input").closest("form").attr("data-link", link );
     });
     // Sertificate Money
     $("#getMoneySertificate").on("click", function(e){
