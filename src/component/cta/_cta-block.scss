@@ -8,12 +8,12 @@
     &__info{
         display: inline-block;
         width: 100%;
-        padding: map-get($spacers, 1) map-get($spacers, 2);
+        padding: map-get($spacers, 2)/2 map-get($spacers, 2);
 
         transform: translateY(-30px);
 
         border: 1px solid $border-color;
-        border-radius: 16px;
+        border-radius: 6px;
         background-color: $white;
 
         .subtitle{

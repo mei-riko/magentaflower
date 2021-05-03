@@ -23,7 +23,11 @@
               </ul>
             </div>
             <div class="header__line">
-              <nav class="navbar navbar_left"><a class="navbar__link navbar__link_online" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="/sertificate.html">Сертификаты</a></nav>
+              <nav class="navbar navbar_left"><a class="navbar__link navbar__link_online" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a>
+                <div class="navbar__link navbar__link_has-child" data-nav="#navbarAbout">О школе
+                  <div class="navbar__children" id="navbarAbout"><a class="navbar__children-link" href="#">Блог школы</a><a class="navbar__children-link" href="#">Что такое «Маджента»?</a><a class="navbar__children-link" href="#">Вопрос-ответ</a></div>
+                </div><a class="navbar__link" href="/sertificate.html">Сертификаты</a>
+              </nav>
             </div>
           </div><a class="header__logo" href="/"></a>
           <div class="header__col">
@@ -219,10 +223,10 @@
           </div>
           <div class="col-6 col-lg-8 col-md-12 mb-40">
             <div class="info info_person info_person--lg bg-light-pink mb-20">
-              <div class="info__img info_person__img" style="background-image: url('../img/Elena.jpg')"></div>
+              <div class="info_person__img" style="background-image: url('../img/Elena.jpg')"></div>
               <p class="subtitle text-pink text-small mb-0">Ваш преподаватель</p>
               <p class="info__title">Елена Дмитриева</p>
-              <p class="info__intro text-grey">Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.</p>
+              <p class="review-child__intro text-grey">Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.</p>
             </div>
           </div>
         </div>
@@ -274,7 +278,7 @@
     <section class="pt-60 pt-sm-40">
       <div class="container">
         <p class="h3 text-bold mb-20"> Отзывы детей и родителей</p>
-        <div class="row align-items-end mb-40">
+        <div class="row align-items-end mb-60">
           <div class="col-6 col-md-12 mb-md-20">
             <p class="text-grey">После каждого праздника родители и дети делятся c нами своими впечатлениями и эмоциями. Обратная связь для нас очень важна.</p>
           </div>
@@ -283,30 +287,35 @@
           </div>
         </div>
         <div class="slider slider_reviews">
-          <div class="info info_review text-center">
-            <div class="info__img info_review__img" style="background-image: url('../img/test-05.jpg');"></div>
-            <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro info_review__intro text-small">Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit amet. Doloremque laudantium, totam rem aperiam</p>
+          <div class="review-child">
+            <div class="review-child__img" style="background-image: url('../img/test-05.jpg');"></div>
+            <p class="review-child__title">Ирина Толстова</p>
+            <p class="review-child__intro text-grey">Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...</p>
+            <p class="review-child__intro text-bold">Читать дальше ></p>
           </div>
-          <div class="info info_review text-center">
-            <div class="info__img info_review__img info_review__img_video" data-fancybox="review" data-type="iframe" data-src="https://www.youtube.com/embed/4BzQQwn1WjI?controls=0" style="background-image: url('../img/test-06.png');"></div>
-            <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro info_review__intro text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
+          <div class="review-child">
+            <div class="review-child__img review-child__img_video" data-fancybox="review" data-type="iframe" data-src="https://www.youtube.com/embed/4BzQQwn1WjI?controls=0" style="background-image: url('../img/test-06.png');"></div>
+            <p class="review-child__title">Ирина Толстова</p>
+            <p class="review-child__intro text-grey">Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...</p>
+            <p class="review-child__intro text-bold">Читать дальше ></p>
           </div>
-          <div class="info info_review text-center">
-            <div class="info__img info_review__img" style="background-image: url('../img/test-07.png');"></div>
-            <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro info_review__intro text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
+          <div class="review-child">
+            <div class="review-child__img" style="background-image: url('../img/test-07.png');"></div>
+            <p class="review-child__title">Ирина Толстова</p>
+            <p class="review-child__intro text-grey">Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...</p>
+            <p class="review-child__intro text-bold">Читать дальше ></p>
           </div>
-          <div class="info info_review text-center">
-            <div class="info__img info_review__img" style="background-image: url('../img/test-08.png');"></div>
-            <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro info_review__intro text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
+          <div class="review-child">
+            <div class="review-child__img" style="background-image: url('../img/test-08.png');"></div>
+            <p class="review-child__title">Ирина Толстова</p>
+            <p class="review-child__intro text-grey">Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...</p>
+            <p class="review-child__intro text-bold">Читать дальше ></p>
           </div>
-          <div class="info info_review text-center">
-            <div class="info__img info_review__img" style="background-image: url('../img/test-09.png');"></div>
-            <p class="text-bold">Ирина Толстова</p>
-            <p class="info__intro info_review__intro text-small">Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.</p>
+          <div class="review-child">
+            <div class="review-child__img review-child__img_video" style="background-image: url('../img/test-09.png');"></div>
+            <p class="review-child__title">Ирина Толстова</p>
+            <p class="review-child__intro text-grey">Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...</p>
+            <p class="review-child__intro text-bold">Читать дальше ></p>
           </div>
         </div>
       </div>
@@ -387,6 +396,7 @@
         </div>
       </div>
     </footer>
+    <div class="overlay overlay--disable"></div>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/jquery.inputmask.js"></script>
     <link href="./css/slick.css" rel="stylesheet"/>

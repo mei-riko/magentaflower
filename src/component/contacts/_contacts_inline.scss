@@ -6,6 +6,9 @@
         margin-top: 0;
         margin-left: map-get($spacers, 1)/2;
     }
+    .contacts__item_phone + .contacts__item_phone{
+        margin-left: 24px;
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){

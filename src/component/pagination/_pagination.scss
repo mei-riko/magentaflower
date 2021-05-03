@@ -7,11 +7,12 @@
         height: 30px;
 
         text-align: center;
-        line-height: 30px;
+        line-height: 28px;
 
         border-radius: 15px;
 
-        background: darken($color: $pink-light, $amount: 5);
+        background: $white;
+        border: 1px solid $border-color;
         color: $grey;
         font-weight: bold;
         margin: 4px;
@@ -22,10 +23,11 @@
         }
 
         &--active{
-            background: darken($color: $pink-light, $amount: 10);
+            background: $pink-light;
             color: $grey;
+
             &:hover, &:focus{
-                background: darken($color: $pink-light, $amount: 10);
+                background: $pink-light;
                 color: $grey;
                 cursor: default;
             }

@@ -139,15 +139,15 @@ html(lang="ru")
                             p.item_alert__footer Сопровождающие взрослые бесплатно
                     .col-6.col-lg-8.col-md-12.mb-40
                         .info.info_person.info_person--lg.bg-light-pink.mb-20
-                            .info__img.info_person__img(style="background-image: url('../img/Elena.jpg')")
+                            .info_person__img(style="background-image: url('../img/Elena.jpg')")
                             p.subtitle.text-pink.text-small.mb-0 Ваш преподаватель
                             p.info__title Елена Дмитриева
-                            p.info__intro.text-grey Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.
+                            p.review-child__intro.text-grey Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.
                         //- .info.info_person.bg-light-pink.mb-20
-                        //-     .info__img.info_person__img(style="background-image: url('../img/Elena.jpg')")
+                        //-     .info_person__img(style="background-image: url('../img/Elena.jpg')")
                         //-     p.subtitle.text-pink.text-small.mb-0 Ваш преподаватель
                         //-     p.info__title Елена Дмитриева
-                        //-     p.info__intro.text-grey Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.
+                        //-     p.review-child__intro.text-grey Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.
         //- Order
         section.cta-block.cta-block_autumn.pb-40
             .container.p-relative
@@ -190,7 +190,7 @@ html(lang="ru")
         section.pt-60.pt-sm-40
             .container
                 p.h3.text-bold.mb-20  Отзывы детей и родителей
-                .row.align-items-end.mb-40
+                .row.align-items-end.mb-60
                     .col-6.col-md-12.mb-md-20
                         p.text-grey После каждого праздника родители и дети делятся c нами своими впечатлениями и эмоциями. Обратная связь для нас очень важна.
                     .col-6.col-md-12
@@ -204,26 +204,31 @@ html(lang="ru")
                             a.networks__item(href="#")
                                 img.img-fluid(src="../icon/send.svg")
                 .slider.slider_reviews
-                    .info.info_review.text-center
-                        .info__img.info_review__img(style="background-image: url('../img/test-05.jpg');")
-                        p.text-bold Ирина Толстова
-                        p.info__intro.info_review__intro.text-small Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit amet. Doloremque laudantium, totam rem aperiam
-                    .info.info_review.text-center
-                        .info__img.info_review__img.info_review__img_video(data-fancybox="review" data-type="iframe" data-src="https://www.youtube.com/embed/4BzQQwn1WjI?controls=0" style="background-image: url('../img/test-06.png');")
-                        p.text-bold Ирина Толстова
-                        p.info__intro.info_review__intro.text-small Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.
-                    .info.info_review.text-center
-                        .info__img.info_review__img(style="background-image: url('../img/test-07.png');")
-                        p.text-bold Ирина Толстова
-                        p.info__intro.info_review__intro.text-small Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.
-                    .info.info_review.text-center
-                        .info__img.info_review__img(style="background-image: url('../img/test-08.png');")
-                        p.text-bold Ирина Толстова
-                        p.info__intro.info_review__intro.text-small Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.
-                    .info.info_review.text-center
-                        .info__img.info_review__img(style="background-image: url('../img/test-09.png');")
-                        p.text-bold Ирина Толстова
-                        p.info__intro.info_review__intro.text-small Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.
+                    .review-child
+                        .review-child__img(style="background-image: url('../img/test-05.jpg');")
+                        p.review-child__title Ирина Толстова
+                        p.review-child__intro.text-grey Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...
+                        p.review-child__intro.text-bold Читать дальше >
+                    .review-child
+                        .review-child__img.review-child__img_video(data-fancybox="review" data-type="iframe" data-src="https://www.youtube.com/embed/4BzQQwn1WjI?controls=0" style="background-image: url('../img/test-06.png');")
+                        p.review-child__title Ирина Толстова
+                        p.review-child__intro.text-grey Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...
+                        p.review-child__intro.text-bold Читать дальше >
+                    .review-child
+                        .review-child__img(style="background-image: url('../img/test-07.png');")
+                        p.review-child__title Ирина Толстова
+                        p.review-child__intro.text-grey Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...
+                        p.review-child__intro.text-bold Читать дальше >
+                    .review-child
+                        .review-child__img(style="background-image: url('../img/test-08.png');")
+                        p.review-child__title Ирина Толстова
+                        p.review-child__intro.text-grey Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...
+                        p.review-child__intro.text-bold Читать дальше >
+                    .review-child
+                        .review-child__img.review-child__img_video(style="background-image: url('../img/test-09.png');")
+                        p.review-child__title Ирина Толстова
+                        p.review-child__intro.text-grey Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit...
+                        p.review-child__intro.text-bold Читать дальше >
         //- FAQ
         section.pt-60.pb-60.pt-sm-40.pb-sm-40
             .container

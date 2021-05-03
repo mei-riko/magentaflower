@@ -10,7 +10,7 @@ import '../../node_modules/bootstrap/js/dist/util';
 import '../../node_modules/bootstrap/js/dist/tooltip';
 
 $(document).ready(() =>{
-    $("a.scroll").click(function() {
+    $(".scroll").on("click",function() {
         $("html, body").animate({
            scrollTop: $($(this).attr("href")).offset().top + "px"
         }, {
@@ -121,5 +121,19 @@ $(document).ready(() =>{
         // прокрутка к форме
         $("html, body").animate({scrollTop: $("#corporateForm").offset().top - 100 + "px"}, {duration: 500,easing: "swing"});
     });
+    // Tags
+    // Show More Tags
+    $('.blog .blog__tags .blog__tags-show').on('click', function(){
+        let tagsShow = $(this);
 
+        if ( !tagsShow.hasClass('blog__tags-show--active') ){
+            tagsShow.addClass('blog__tags-show--active');
+            tagsShow.text('Скрыть теги');
+            tagsShow.parent().addClass('blog__tags--active');
+        }else{
+            tagsShow.removeClass('blog__tags-show--active');
+            tagsShow.text('Показать теги')
+            tagsShow.parent().removeClass('blog__tags--active');
+        }
+    });
 });

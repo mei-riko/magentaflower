@@ -1,9 +1,13 @@
 .navbar{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 
     &__link{
         font-size: 12px;
+        line-height: 1;
+        padding: 8px 0;
+    
         white-space: nowrap;
         text-transform: uppercase;
 
@@ -25,7 +29,42 @@
                 color: $white;
             }
         }
-    }   
+
+        &_has-child{
+            position: relative;
+
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover, &:focus{
+                color: $pink;
+            }
+        }
+    }
+    &__children{
+        display: none;
+
+        position: absolute;
+        left: 0;
+        top: 28px;
+        background: $white;
+        width: 200px;
+        padding: $spacer/2;
+        border: 1px solid $border-color;
+
+        &--active{
+            display: block;
+        }
+    }
+    &__children-link{
+        display: block;
+        padding: 0 0 $spacer/2;
+        text-transform: none;
+
+        &:last-child{
+            padding: 0;
+        }
+    }
 
     &_left{
         .navbar__link:not(:last-child){
@@ -40,16 +79,32 @@
         }
     }
 }
+
+.overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 89;
+
+    background: rgba(0,0,0,.4);
+
+    &--disable{
+        position: inherit;
+        display: none;
+    }
+}
 @media all and (max-width: 1200px){
     .navbar{
         &_left{
             .navbar__link:not(:last-child){
-                margin-right:1.5em;
+                margin-right: 1em;
             }
         }
         &_right{
             .navbar__link + .navbar__link{
-                margin-left: 1.5em;
+                margin-left: 1em;
             }
         }
     }

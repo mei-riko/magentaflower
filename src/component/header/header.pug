@@ -12,7 +12,11 @@ header.header
                     nav.navbar.navbar_left
                         a.navbar__link.navbar__link_online(href="/online.html") Online-курсы
                         a.navbar__link(href="/index.html") Очные курсы
-                        a.navbar__link(href="#") О школе
+                        .navbar__link.navbar__link_has-child(data-nav="#navbarAbout") О школе
+                            .navbar__children#navbarAbout
+                                a.navbar__children-link(href="#") Блог школы
+                                a.navbar__children-link(href="#") Что такое «Маджента»?
+                                a.navbar__children-link(href="#") Вопрос-ответ
                         a.navbar__link(href="/sertificate.html") Сертификаты
             a.header__logo(href="/")
             .header__col

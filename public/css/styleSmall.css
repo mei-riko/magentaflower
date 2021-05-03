@@ -463,7 +463,7 @@ footer .header__row,
 }
 
 .contacts__item {
-  padding-left: 30px;
+  padding-left: 24px;
 }
 
 .contacts__item_networks {
@@ -518,6 +518,10 @@ footer .header__row,
 .contacts_inline .contacts__item + .contacts__item {
   margin-top: 0;
   margin-left: 10px;
+}
+
+.contacts_inline .contacts__item_phone + .contacts__item_phone {
+  margin-left: 24px;
 }
 
 @media all and (max-width: 992px) {
@@ -600,7 +604,7 @@ footer .header__row,
   color: #dd5287;
   background-color: #f9eaf1;
   padding: 4px 15px !important;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -782,10 +786,15 @@ footer .header__row,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navbar__link {
   font-size: 12px;
+  line-height: 1;
+  padding: 8px 0;
   white-space: nowrap;
   text-transform: uppercase;
 }
@@ -808,6 +817,43 @@ footer .header__row,
   color: #ffffff;
 }
 
+.navbar__link_has-child {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.navbar__link_has-child:hover, .navbar__link_has-child:focus {
+  color: #dd5287;
+}
+
+.navbar__children {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  background: #ffffff;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ddc4c3;
+}
+
+.navbar__children--active {
+  display: block;
+}
+
+.navbar__children-link {
+  display: block;
+  padding: 0 0 20px;
+  text-transform: none;
+}
+
+.navbar__children-link:last-child {
+  padding: 0;
+}
+
 .navbar_left .navbar__link:not(:last-child) {
   margin-right: 2em;
 }
@@ -822,12 +868,27 @@ footer .header__row,
   margin-left: 2em;
 }
 
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 89;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay--disable {
+  position: inherit;
+  display: none;
+}
+
 @media all and (max-width: 1200px) {
   .navbar_left .navbar__link:not(:last-child) {
-    margin-right: 1.5em;
+    margin-right: 1em;
   }
   .navbar_right .navbar__link + .navbar__link {
-    margin-left: 1.5em;
+    margin-left: 1em;
   }
 }
 

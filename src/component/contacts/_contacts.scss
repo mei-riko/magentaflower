@@ -4,8 +4,7 @@
     padding: 10px 0 0;
 
     &__item{
-        // font-weight: bold;
-        padding-left: map-get($spacers, 2);
+        padding-left: 24px;
 
         &_networks{
             display: inline-block;

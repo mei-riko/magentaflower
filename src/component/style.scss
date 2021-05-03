@@ -60,6 +60,8 @@
 // @import "../component/info/info_alert";
 // @import "../component/info/info-block";
 
+@import "../component/review/review-child";
+
 @import "../component/icon/icon-block";
 @import "../component/icon/icon-list";
 @import "../component/icon/icon-list_top";
@@ -132,7 +134,8 @@
 @import "../component/timetable/timetable-nav";
 @import "../component/timetable/timetable";
 @import "../component/timetable/timetable-item";
-
+// Blog
+@import "../component/blog/blog";
 // Map
 @import "../component/map/map";
 
