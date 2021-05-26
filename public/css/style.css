@@ -5002,6 +5002,10 @@ a.link-inverse:hover {
   background: #f6f6f6 url("../img/bg-contact-spring.jpg") right center/cover;
 }
 
+.cta-block_digital {
+  background: #f6f6f6 url("../img/bg-contact-digital-compr.jpg") right center/cover;
+}
+
 .cta-block_offset-top {
   padding-top: 60px;
 }
