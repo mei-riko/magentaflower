@@ -12,40 +12,65 @@
   </head>
   <body class="header-fixed">
     <script src="/js/jquery.min.js"></script>
-    <header class="header">
-      <div class="header__desktop container">
-        <div class="header__row">
-          <div class="header__col">
-            <div class="header__line">
-              <ul class="contacts contacts_inline text-bold">
-                <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 (812) 317-76-18</a></li>
-                <li class="contacts__item contacts__item_phone"><a href="tel:88001112233">8 (921) 343-87-30</a></li>
-              </ul>
-            </div>
-            <div class="header__line">
-              <nav class="navbar navbar_left"><a class="navbar__link navbar__link_online" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="/sertificate.html">Сертификаты</a></nav>
-            </div>
-          </div><a class="header__logo" href="/"></a>
-          <div class="header__col">
-            <div class="header__line header__line_additional justify-content-end"><a class="header__item header__link text-small" href="#">Оплата и доставка</a><a class="header__item header__btn btn" href="/timetable.html">Расписание</a>
-              <ul class="header__item contacts contacts_inline contacts_header">
-                <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
-                <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
-                <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="header__link" href="https://vk.com/magentaflower"></a></li>
-              </ul>
-            </div>
-            <div class="header__line justify-content-end">
-              <nav class="navbar navbar_right"><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="/contact.html">Контакты</a></nav>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="row header__row">
+            <div class="col header__col">
+              <div class="header__line">
+                <ul class="contacts contacts_inline text-bold">
+                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+                  <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+                </ul>
+              </div>
+              <div class="header__line">
+                <nav class="navbar navbar_left"><a class="navbar__link" href="/online.html">Online-курсы</a><a class="navbar__link" href="/index.html">Очные курсы</a><a class="navbar__link" href="#">О школе</a><a class="navbar__link" href="/sertificate.html">Сертификаты</a></nav>
+              </div>
+            </div><a class="header__logo" href="/"></a>
+            <div class="col header__col">
+              <div class="header__line header__line_right-col"><a class="header-link header__item" href="#">Оплата и доставка</a><a class="header-btn btn btn_default header__item" href="/timetable.html">Расписание</a>
+                <ul class="contacts contacts_inline contacts_header header__item">
+                  <li class="contacts__item contacts__item_networks contacts__item_vk"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
+                  <li class="contacts__item contacts__item_networks contacts__item_fb"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
+                  <li class="contacts__item contacts__item_networks contacts__item_inst"><a class="footer__link" href="https://vk.com/magentaflower"></a></li>
+                </ul>
+              </div>
+              <div class="header__line">
+                <nav class="navbar navbar_right"><a class="navbar__link" href="#">Отзывы</a><a class="navbar__link" href="#">Преподаватели</a><a class="navbar__link" href="#">Портфолио</a><a class="navbar__link" href="/contact.html">Контакты</a></nav>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="header__mobile"><a class="header__logo header__logo_mobile" href="/"></a>
-        <svg class="header__mobile-menu nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
-          <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
-        </svg>
+      <div class="header-mobile-only">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-8"><a class="header__logo" href="/"></a></div>
+            <div class="col-4 text-right">
+              <svg class="nav-btn" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
+                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
+    <div class="navbar-mobile">
+      <nav class="navbar">
+        <div class="navbar__item"><a class="navbar__link" href="#">Online-курсы</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Очные курсы</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">О школе</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Преподаватели</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Портфолио</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Блог</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="/contact.html">Контакты</a></div>
+      </nav>
+      <ul class="contacts">
+        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+        <li class="contacts__item contacts__item_phone"><a class="header__link" href="tel:88001112233">8 800 111-22-33</a></li>
+      </ul><a class="header-btn btn btn_default" href="#">Актуальное расписание курсов    </a>
+    </div>
     <div class="navbar-mobile">
       <nav class="navbar navbar-mobile__nav">
         <div class="navbar__item navbar-mobile__item"><a class="navbar__link navbar__link_online" href="#">Online-курсы</a></div>
@@ -620,7 +645,7 @@
               <li class="list__item"><a href="#">Выбираем школу флористики</a></li>
               <li class="list__item"><a href="#">Мастер-класс по флористике</a></li>
             </ul>
-            <p class="text-bold footer__link mt-20">Часто задаваемые вопросы</p>
+            <p class="text-bold footer__title mt-20">Часто задаваемые вопросы</p>
           </div>
         </div>
         <div class="row mt-20">

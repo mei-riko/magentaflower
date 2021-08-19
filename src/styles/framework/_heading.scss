@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.h1-lead{
+    font-family: $font-family-heading;
+    font-weight: $font-weight-heading;
+    line-height: $line-height-heading;
+    margin-bottom: map-get($map: $spacers, $key: 1);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
+* + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
+    margin-top: map-get($map: $spacers, $key: 2);
+}
+
+.h1-lead{font-size: 3rem;}
+.h1,h1{font-size: 2.5rem;}
+.h2,h2{font-size: 2.25rem;}
+.h3,h3{font-size: 2rem;}
+.h4,h4{font-size: 1.75rem;}
+.h5,h5{font-size: 1.5rem;}
+.h6,h6{font-size: 1.25rem;}
+
+// Подзаголовок
+.subtitle{
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+    color: $pink;
+
+    &-light{
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .h1-lead{font-size: 3rem;}
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .h1-lead{font-size: 3rem;}
+    .h1,h1{font-size: 2.5rem;}
+    .h2,h2{font-size: 2rem;}
+    .h3,h3{font-size: 1.75rem;}
+    .h4,h4{font-size: 1.5rem;}
+    .h5,h5{font-size: 1.25rem;}
+    .h6,h6{font-size: 1rem;}
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .h1-lead{font-size: 2rem;}
+    .h1,h1{font-size: 1.75rem;}
+    .h2,h2{font-size: 1.75rem;}
+    .h3,h3{font-size: 1.5rem;}
+    .h4,h4{font-size: 1.5rem;}
+    .h5,h5{font-size: 1.25rem;}
+    .h6,h6{font-size: 1rem;}
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){}

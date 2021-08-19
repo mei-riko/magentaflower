@@ -1,0 +1,30 @@
+- var tel = {'item':"8 800 600 44 22",'link':"tel:88006004422"}
+- var email = {'item':"demo@demo.ru",'link':"mailto:demo@demo.ru"}
+
+
+block variables
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        title= pageTitle
+
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet")
+        
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/media.css', rel='stylesheet')
+
+    body
+        script(src="../js/jquery.min.js")
+        include ./header/header.pug
+        include ./navbar/navbar.pug
+        block content
+        include ./footer/footer.pug
+        link(href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css", rel="stylesheet")
+        script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js")
+        script(src="./js/jquery.inputmask.min.js")
+        script(src="./js/app.min.js")

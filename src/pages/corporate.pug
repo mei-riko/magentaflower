@@ -1,0 +1,183 @@
+html(lang="ru")
+    include ../blocks/head.pug
+    body.header-top
+        script(src="/js/jquery.min.js")
+        include ../blocks/header/header.pug
+        include ../blocks/navbar/navbar.pug
+
+        section.content.bg-corporate
+            .container
+                .row
+                    .col-7.col-md-12.mb-40.mb-sm-20.col-lg-6
+                        h1.h1.text-bold.mb-40.mb-md-20 Корпоративные и&nbsp;выездные мастер-классы
+                        ul.list.list_advantage
+                            li.list_advantage__item Расходные материалы включены
+                            li.list_advantage__item Расходные материалы включены
+                            li.list_advantage__item Расходные материалы включены
+                            li.list_advantage__item Расходные материалы включены
+                    .col-5.col-md-12.col-lg-6
+                        .info
+                            p.text-bold.text-pink.text-uppercase Расчет стоимости мастер-класса 
+                            form.form#corporateForm(action="")
+                                input.form__input.form__input_title.d-none(placeholder="")
+                                .form__group
+                                    .form__col.col-6.col-sm-12.mb-sm-20
+                                        .form__label количество человек
+                                        input.form__input(placeholder="" type="number" value="2")
+                                    .form__col.col-6.col-sm-12.mb-sm-20
+                                        .form__label дата мероприятия
+                                        input.form__input(placeholder="" type="date")
+                                input.form__input.form__input_full.form__input_name(placeholder="Имя")
+                                input.form__input.form__input_full.form__input_phone(placeholder="Телефон")
+                                button.btn.btn_action.mt-20(type="submit") Хочу записаться
+                                .form__agree.checkbox
+                                    input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                                    label.checkbox__label(for="agree") согласен с 
+                                        a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+        section.content
+            .container
+                //- Кому подходит
+                h2.text-bold.text-center Для кого 
+                    span.text-pink идеален 
+                    | мастер-класс?
+                .row.text-center.mt-20.mb-60.mb-sm-40.justify-content-center
+                    .col-4.col-md-8.col-sm-12.mt-20.mt-md-0
+                        .info
+                            p.info__title Коллег по работе
+                            p.info__intro.text-grey Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                            img.img-fluid.mt-40.mt-sm-20(src="../img/pic-1.png")
+                    .col-4.col-md-8.col-sm-12.mt-20
+                        .info
+                            p.info__title Коллег по работе
+                            p.info__intro.text-grey Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                            img.img-fluid.mt-40.mt-sm-20(src="../img/pic-2.png")
+                    .col-4.col-md-8.col-sm-12.mt-20
+                        .info
+                            p.info__title Коллег по работе
+                            p.info__intro.text-grey Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе.
+                            img.img-fluid.mt-40.mt-sm-20(src="../img/pic-3.png")
+                //- Портфолио
+                .row.no-gutters.portfolio
+                    .col-12
+                        h4.text-center.text-bold.mb-40 Фотоотчеты с мероприятий
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                            img.img-fluid(src="/img/01.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/02.png")
+                            img.img-fluid(src="/img/02.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                            img.img-fluid(src="/img/03.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                            img.img-fluid(src="/img/04.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                            img.img-fluid(src="/img/03.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                            img.img-fluid(src="/img/01.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                            img.img-fluid(src="/img/04.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item
+                            img.img-fluid(src="/img/02.png")
+        section.content.content_offset-small.bg-light-pink
+            .container.text-center
+                p.h2.text-bold Темы мастер-классов от «Мадженты»
+                p.text-grey.mb-60(style="width:900px;max-width:100%;margin:0 auto;") Eveniet, ut et harum quidem rerum. Ipsam voluptatem, quia non recusandae eligendi. Voluptate velit esse, quam nihil molestiae consequatur, vel illum. Aut reiciendis voluptatibus maiores alias consequatur. Architecto beatae vitae dicta sunt explicabo.
+                .slider.slider_link
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-4.png")
+                            .preview-link__content
+                                p.preview-link__title Букет из&nbsp;сухоцветов
+                                a.preview-link__link(href="#" data-title="1") Заказать >
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-5.png")
+                            .preview-link__content
+                                p.preview-link__title Флорариум
+                                a.preview-link__link(href="#" data-title="2") Заказать >
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-6.png")
+                            .preview-link__content
+                                p.preview-link__title Букет в&nbsp;шляпной коробке
+                                a.preview-link__link(href="#" data-title="3") Заказать >
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-4.png")
+                            .preview-link__content
+                                p.preview-link__title Букет из&nbsp;сухоцветов 2
+                                a.preview-link__link(href="#") Заказать >
+                    .slider__item
+                        .preview-link
+                            img.preview-link__image(src="../img/pic-5.png")
+                            .preview-link__content
+                                p.preview-link__title Флорариум 2
+                                a.preview-link__link(href="#") Заказать >
+                p.preview-info Подарите незабываемые эмоции сейчас!
+        section.content.content_offset-small
+            .container
+                p.h4.text-center.text-sm-left.text-bold.mb-60.mb-md-40 Где провести мастер-класс?
+                .row.justify-content-center
+                    .col-3.col-md-4.col-sm-12.mb-20
+                        .icon-list.icon-list_top.text-center
+                            .icon-list__img.icon-list__img_check.icon-list__img_top
+                            p.icon-list__title.text-bold.text-uppercase В нашей студии
+                            p.icon-list__content.icon-list_top__content продолжительность 2 часа от 1 до 20 человек
+                    .col-3.col-md-4.col-sm-12.mb-20
+                        .icon-list.icon-list_top.text-center
+                            .icon-list__img.icon-list__img_check.icon-list__img_top
+                            p.icon-list__title.text-bold.text-uppercase В нашей студии
+                            p.icon-list__content.icon-list_top__content продолжительность 2 часа от 1 до 20 человек
+                    .col-3.col-md-4.col-sm-12
+                        .icon-list.icon-list_top.text-center
+                            .icon-list__img.icon-list__img_check.icon-list__img_top
+                            p.icon-list__title.text-bold.text-uppercase В нашей студии
+                            p.icon-list__content.icon-list_top__content продолжительность 2 часа от 1 до 20 человек
+        section.content
+            .container
+                .row.justify-content-center
+                    .col-7.col-lg-12.text-center
+                        p.text-bold.h1 Организовали мастер-класс таким компаниям как:
+                    .col-12.mt-40.mb-40
+                        .page-logo
+                            .page-logo__image(style="background-image:url('../img/demo-logo-1.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-2.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-3.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-1.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-2.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-3.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-1.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-2.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-3.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-1.jpg');")
+                            .page-logo__image(style="background-image:url('../img/demo-logo-3.jpg');")
+                    .col-12.text-center
+                        a.btn.btn_action(href="#") Заказать мастер-класс
+        section.content.content_offset-small.bg-light-pink
+            .container
+                .row.justify-content-between.align-items-center.flex-md-column-reverse
+                    .col-5.col-sm-12.col-md-8
+                        img.img-fluid(src="../img/sertificate-gift-2.jpg")
+                    .col-6.col-md-10.col-sm-12.mb-md-40.text-md-center
+                        p.h1.text-bold Мастер-класс для&nbsp;1&nbsp;человека?
+                        p.mb-40.mb-sm-20 Приобретите 
+                            span.text-bold.text-pink подарочный сертификат 
+                            | на любой курс, мастер-класс или&nbsp;индивидуальный урок.
+                        a.btn.btn_default(href="") Узнать больше
+        
+        include ../blocks/footer/footer.pug
+        
+        script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/jquery.inputmask.js")
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+        
+        script(src="./js/app.min.js")

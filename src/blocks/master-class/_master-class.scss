@@ -1,0 +1,112 @@
+.master-class{
+    padding: 230px 0 map-get($spacers, 5);
+
+    &__image{
+        position: relative;
+
+        width: 95%;
+        height: 380px;
+        background: no-repeat center / cover;
+
+        border-radius: 60px 20px 90px 40px;
+
+        &:before{
+            position: absolute;
+            top:0;
+            left:0;
+            content: '';
+            display: block;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            transform: translate(-20px, -20px);
+            border-radius: 80px 30px 100px 60px;
+            border: 5px dotted $pink-light;
+        }
+        &:after{
+            position: absolute;
+            bottom: -110px;
+            left: 15px;
+
+            content: '';
+            display: block;
+
+            width: 50px;
+            height: 70px;
+            transform: rotate(140deg);
+            background: url("../img/arrow-right.png") no-repeat center / contain;
+        }
+    }
+    &__title{
+        font-weight: bold;
+        margin: 0 0 map-get($spacers, 1);
+    }
+    &__intro{
+        margin: 0 0 map-get($spacers, 3);
+    }
+    &__info{
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        margin: .5rem 0;
+        white-space: nowrap;
+    }
+    &__btn{
+        min-width: 200px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .master-class{
+        padding-top: 160px;
+        
+        &__title{
+            font-size: 2.5rem;
+        }
+        &__image{
+            height: 280px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .master-class{
+        padding-top: 140px;
+        &__title{
+            font-size: 2rem;
+        }
+        &__intro{
+            margin-bottom: map-get($spacers, 2);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .master-class{
+        padding: 140px 0 60px;
+
+        &__image{
+            width: calc(100% - 40px);
+            margin: 0 auto;
+            height: 280px;
+
+            &:after{
+                display: none;
+            }
+        }
+        &__title{
+            margin-top: map-get($spacers, 3);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .master-class{
+        padding: 100px 0 40px;
+        &__image{
+            width: calc(100% - 40px);
+            margin: 0 auto;
+            height: 180px;
+
+            &:after{
+                display: none;
+            }
+        }
+    }
+}

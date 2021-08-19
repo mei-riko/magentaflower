@@ -1,0 +1,43 @@
+.d{
+    &-flex{display: flex;}
+    &-none{display: none;}
+    &-block{display: block;}
+}
+
+.flex-wrap{flex-wrap: wrap;}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .d-xl{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){   
+    .d-lg{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .d-md{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .d-sm{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .d-xs{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}

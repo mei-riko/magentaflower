@@ -1,0 +1,99 @@
+html(lang="ru")
+    include ../blocks/head.pug
+    body.header-top
+        script(src="/js/jquery.min.js")
+        include ../blocks/header/header.pug
+        include ../blocks/navbar/navbar.pug
+
+        section.content.content_offset-small
+            .container
+                .row
+                    .col-4.col-lg-12
+                        h1.text-bold.mb-20 Контакты
+                        .row
+                            .col-12.col-lg-4.col-md-12
+                                ul.contacts
+                                    li.contacts__item.contacts__item_phone 
+                                        a.footer__link(href="tel:88001112233") 8 (812) 317-76-18
+                                    li.contacts__item.contacts__item_phone 
+                                        a.footer__link(href="tel:88001112233") 8 (921) 938-09-01
+                                    li.contacts__item.contacts__item_phone 
+                                        a.footer__link(href="tel:88001112233") 8 (921) 964-02-63
+                                    li.contacts__item.contacts__item_email 
+                                        a.footer__link(href="mailto:88001112233") info@magentaflower.ru
+                            .col-12.col-lg-6.col-md-12.mt-40.mt-lg-0.mt-md-20
+                                p.text-bold.mb-0 Адрес школы:
+                                p Санкт-Петербург, Пр. Юрия Гагарина, 7, пом. 25 ЖК "Космос", справа от центрального входа.
+                                p.text-small
+                                    a.scroll.link(href="#enterSchool") Как найти вход в школу?
+                            .col-12.mt-40.mt-md-20
+                                p.text-bold.mb-0 Мы в социальных сетях:
+                                ul.contacts.contacts_inline
+                                    li.contacts__item.contacts__item_networks.contacts__item_vk
+                                        a.footer__link(href="https://vk.com/magentaflower")
+                                    li.contacts__item.contacts__item_networks.contacts__item_fb
+                                        a.footer__link(href="https://vk.com/magentaflower")
+                                    li.contacts__item.contacts__item_networks.contacts__item_inst
+                                        a.footer__link(href="https://vk.com/magentaflower")
+                    .col-8.col-lg-12.mt-lg-40
+                        .map.map_yandex#map
+        section.content.content_offset-small.bg-light-grey
+            .container
+                p.h1.text-bold.mb-40 Как добраться до&nbsp;школы?
+                .row.align-items-center
+                    .col-6.col-md-12.item
+                        p.item__title.text-bold
+                            span.text-pink-secondary 01.
+                            |  На автобусе/троллейбусе
+                        p Lorem ipsum dolor sit amet. Eum fugiat, quo voluptas assumenda est, omnis dolor sit aspernatur. 
+                            | Porro quisquam est, omnis dolor sit, amet, consectetur, adipisci velit.
+                        ul.list.list_circle
+                            li.list__item Eveniet, ut aut rerum facilis est et dolore
+                            li.list__item Consequatur aut reiciendis voluptatibus maiores
+                            li.list__item Ab illo inventore veritatis et molestiae non numquam
+                    .col-6.col-md-12.mt-md-40
+                        .demo(style="width:100%;height:280px;background:grey;")
+                .row.align-items-center.mt-60.flex-md-column-reverse
+                    .col-6.col-md-12.mt-md-40
+                        .demo(style="width:100%;height:280px;background:grey;")
+                    .col-6.col-md-12.item
+                        p.item__title.text-bold
+                            span.text-pink-secondary 02.
+                            |  На метро
+                        p Lorem ipsum dolor sit amet. Eum fugiat, quo voluptas assumenda est, omnis dolor sit aspernatur. 
+                            | Porro quisquam est, omnis dolor sit, amet, consectetur, adipisci velit.
+                        ul.list.list_circle
+                            li.list__item Eveniet, ut aut rerum facilis est et dolore
+                            li.list__item Consequatur aut reiciendis voluptatibus maiores
+                            li.list__item Ab illo inventore veritatis et molestiae non numquam
+                .row.align-items-center.mt-60
+                    .col-6.col-md-12.item
+                        p.item__title.text-bold
+                            span.text-pink-secondary 03.
+                            |  На автомобиле
+                        p Lorem ipsum dolor sit amet. Eum fugiat, quo voluptas assumenda est, omnis dolor sit aspernatur. 
+                            | Porro quisquam est, omnis dolor sit, amet, consectetur, adipisci velit.
+                        ul.list.list_circle
+                            li.list__item Eveniet, ut aut rerum facilis est et dolore
+                            li.list__item Consequatur aut reiciendis voluptatibus maiores
+                            li.list__item Ab illo inventore veritatis et molestiae non numquam
+                    .col-6.col-md-12.mt-md-40
+                        .demo(style="width:100%;height:280px;background:grey;")
+        section.content.content_offset-small#enterSchool
+            .container
+                .row
+                    .col-6.col-md-12
+                        p.h1.text-bold.mb-40 Где находится вход в&nbsp;школу?
+                        ul.list.list_circle
+                            li.list__item Вход в ЖК "Космос" с Кузнецовской улицы
+                            li.list__item Пройдите через главный вход в жилой дом со стеклянными башнями
+                            li.list__item Дверь в школу находится справа от центральной двери жилого комплекса
+                    .col-6.col-md-12.mt-md-40
+                        img.img-fluid(src="../img/enter-to-school.jpg" alt="Как найти вход в школу Маджента" title="Как найти вход в школу Маджента")
+
+        include ../blocks/footer/footer.pug
+
+        script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=79c72616-7091-4150-914c-4d2e2a2ad526" type="text/javascript")
+        script(src="./js/app.min.js")

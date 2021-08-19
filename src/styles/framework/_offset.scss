@@ -1,0 +1,184 @@
+// 0 20 30 40 60 80 100
+
+.mt{
+    &-0{margin-top: map-get($spacers, 0);}
+    &-1{margin-top: map-get($spacers, 1);}
+    &-2{margin-top: map-get($spacers, 2);}
+    &-3{margin-top: map-get($spacers, 3);}
+    &-4{margin-top: map-get($spacers, 4);}
+    &-5{margin-top: map-get($spacers, 5);}
+}
+.mb{
+    &-0{margin-bottom: map-get($spacers, 0);}
+    &-1{margin-bottom: map-get($spacers, 1);}
+    &-2{margin-bottom: map-get($spacers, 2);}
+    &-3{margin-bottom: map-get($spacers, 3);}
+    &-4{margin-bottom: map-get($spacers, 4);}
+    &-5{margin-bottom: map-get($spacers, 5);}
+}
+.pt{
+    &-0{padding-top: map-get($spacers, 0);}
+    &-1{padding-top: map-get($spacers, 1);}
+    &-2{padding-top: map-get($spacers, 2);}
+    &-3{padding-top: map-get($spacers, 3);}
+    &-4{padding-top: map-get($spacers, 4);}
+    &-5{padding-top: map-get($spacers, 5);}
+}
+.pb{
+    &-0{padding-bottom: map-get($spacers, 0);}
+    &-1{padding-bottom: map-get($spacers, 1);}
+    &-2{padding-bottom: map-get($spacers, 2);}
+    &-3{padding-bottom: map-get($spacers, 3);}
+    &-4{padding-bottom: map-get($spacers, 4);}
+    &-5{padding-bottom: map-get($spacers, 5);}
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .mt-xl{
+        &-0{margin-top: map-get($spacers, 0);}
+        &-1{margin-top: map-get($spacers, 1);}
+        &-2{margin-top: map-get($spacers, 2);}
+        &-3{margin-top: map-get($spacers, 3);}
+        &-4{margin-top: map-get($spacers, 4);}
+    }
+    .mb-xl{
+        &-0{margin-bottom: map-get($spacers, 0);}
+        &-1{margin-bottom: map-get($spacers, 1);}
+        &-2{margin-bottom: map-get($spacers, 2);}
+        &-3{margin-bottom: map-get($spacers, 3);}
+        &-4{margin-bottom: map-get($spacers, 4);}
+    }
+    .pt-xl{
+        &-0{padding-top: map-get($spacers, 0);}
+        &-1{padding-top: map-get($spacers, 1);}
+        &-2{padding-top: map-get($spacers, 2);}
+        &-3{padding-top: map-get($spacers, 3);}
+        &-4{padding-top: map-get($spacers, 4);}
+    }
+    .pb-xl{
+        &-0{padding-bottom: map-get($spacers, 0);}
+        &-1{padding-bottom: map-get($spacers, 1);}
+        &-2{padding-bottom: map-get($spacers, 2);}
+        &-3{padding-bottom: map-get($spacers, 3);}
+        &-4{padding-bottom: map-get($spacers, 4);}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .mt-lg{
+        &-0{margin-top: map-get($spacers, 0);}
+        &-1{margin-top: map-get($spacers, 1);}
+        &-2{margin-top: map-get($spacers, 2);}
+        &-3{margin-top: map-get($spacers, 3);}
+        &-4{margin-top: map-get($spacers, 4);}
+    }
+    .mb-lg{
+        &-0{margin-bottom: map-get($spacers, 0);}
+        &-1{margin-bottom: map-get($spacers, 1);}
+        &-2{margin-bottom: map-get($spacers, 2);}
+        &-3{margin-bottom: map-get($spacers, 3);}
+        &-4{margin-bottom: map-get($spacers, 4);}
+    }
+    .pt-lg{
+        &-0{padding-top: map-get($spacers, 0);}
+        &-1{padding-top: map-get($spacers, 1);}
+        &-2{padding-top: map-get($spacers, 2);}
+        &-3{padding-top: map-get($spacers, 3);}
+        &-4{padding-top: map-get($spacers, 4);}
+    }
+    .pb-lg{
+        &-0{padding-bottom: map-get($spacers, 0);}
+        &-1{padding-bottom: map-get($spacers, 1);}
+        &-2{padding-bottom: map-get($spacers, 2);}
+        &-3{padding-bottom: map-get($spacers, 3);}
+        &-4{padding-bottom: map-get($spacers, 4);}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .mt-md{
+        &-0{margin-top: map-get($spacers, 0);}
+        &-1{margin-top: map-get($spacers, 1);}
+        &-2{margin-top: map-get($spacers, 2);}
+        &-3{margin-top: map-get($spacers, 3);}
+        &-4{margin-top: map-get($spacers, 4);}
+    }
+    .mb-md{
+        &-0{margin-bottom: map-get($spacers, 0);}
+        &-1{margin-bottom: map-get($spacers, 1);}
+        &-2{margin-bottom: map-get($spacers, 2);}
+        &-3{margin-bottom: map-get($spacers, 3);}
+        &-4{margin-bottom: map-get($spacers, 4);}
+    }
+    .pt-md{
+        &-0{padding-top: map-get($spacers, 0);}
+        &-1{padding-top: map-get($spacers, 1);}
+        &-2{padding-top: map-get($spacers, 2);}
+        &-3{padding-top: map-get($spacers, 3);}
+        &-4{padding-top: map-get($spacers, 4);}
+    }
+    .pb-md{
+        &-0{padding-bottom: map-get($spacers, 0);}
+        &-1{padding-bottom: map-get($spacers, 1);}
+        &-2{padding-bottom: map-get($spacers, 2);}
+        &-3{padding-bottom: map-get($spacers, 3);}
+        &-4{padding-bottom: map-get($spacers, 4);}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .mt-sm{
+        &-0{margin-top: map-get($spacers, 0);}
+        &-1{margin-top: map-get($spacers, 1);}
+        &-2{margin-top: map-get($spacers, 2);}
+        &-3{margin-top: map-get($spacers, 3);}
+        &-4{margin-top: map-get($spacers, 4);}
+    }
+    .mb-sm{
+        &-0{margin-bottom: map-get($spacers, 0);}
+        &-1{margin-bottom: map-get($spacers, 1);}
+        &-2{margin-bottom: map-get($spacers, 2);}
+        &-3{margin-bottom: map-get($spacers, 3);}
+        &-4{margin-bottom: map-get($spacers, 4);}
+    }
+    .pt-sm{
+        &-0{padding-top: map-get($spacers, 0);}
+        &-1{padding-top: map-get($spacers, 1);}
+        &-2{padding-top: map-get($spacers, 2);}
+        &-3{padding-top: map-get($spacers, 3);}
+        &-4{padding-top: map-get($spacers, 4);}
+    }
+    .pb-sm{
+        &-0{padding-bottom: map-get($spacers, 0);}
+        &-1{padding-bottom: map-get($spacers, 1);}
+        &-2{padding-bottom: map-get($spacers, 2);}
+        &-3{padding-bottom: map-get($spacers, 3);}
+        &-4{padding-bottom: map-get($spacers, 4);}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .mt-xs{
+        &-0{margin-top: map-get($spacers, 0);}
+        &-1{margin-top: map-get($spacers, 1);}
+        &-2{margin-top: map-get($spacers, 2);}
+        &-3{margin-top: map-get($spacers, 3);}
+        &-4{margin-top: map-get($spacers, 4);}
+    }
+    .mb-xs{
+        &-0{margin-bottom: map-get($spacers, 0);}
+        &-1{margin-bottom: map-get($spacers, 1);}
+        &-2{margin-bottom: map-get($spacers, 2);}
+        &-3{margin-bottom: map-get($spacers, 3);}
+        &-4{margin-bottom: map-get($spacers, 4);}
+    }
+    .pt-xs{
+        &-0{padding-top: map-get($spacers, 0);}
+        &-1{padding-top: map-get($spacers, 1);}
+        &-2{padding-top: map-get($spacers, 2);}
+        &-3{padding-top: map-get($spacers, 3);}
+        &-4{padding-top: map-get($spacers, 4);}
+    }
+    .pb-xs{
+        &-0{padding-bottom: map-get($spacers, 0);}
+        &-1{padding-bottom: map-get($spacers, 1);}
+        &-2{padding-bottom: map-get($spacers, 2);}
+        &-3{padding-bottom: map-get($spacers, 3);}
+        &-4{padding-bottom: map-get($spacers, 4);}
+    }
+}

@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  max-width: map-get($container-max-widths, 'xl');
+  padding-right: $grid-gutter-width;
+  padding-left: $grid-gutter-width;
+  margin-right: auto;
+  margin-left: auto
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$grid-gutter-width/2;
+  margin-left: -$grid-gutter-width/2
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0
+}
+.no-gutters>.col,.no-gutters>[class*=col-] {
+  padding-right: 0;
+  padding-left: 0
+}
+
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+  .container {
+    max-width: map-get($map: $container-max-widths, $key: xl);
+  }
+}
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+  .container {
+    max-width: map-get($map: $container-max-widths, $key: lg);
+  }
+}
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+  .container {
+    max-width: map-get($map: $container-max-widths, $key: md);
+  }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+  .container {
+    padding-left: $spacer-gutter;
+    padding-right: $spacer-gutter;
+    max-width: map-get($map: $container-max-widths, $key: sm);
+  }
+}
+// < 420px
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+  .container {
+    max-width: map-get($map: $container-max-widths, $key: xs);
+  }
+  .row{
+    margin-right: -($spacer-gutter/2);
+    margin-left: -($spacer-gutter/2);
+  }
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0
+  }
+  .no-gutters>.col,.no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0
+  }
+}

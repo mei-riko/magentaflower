@@ -1,0 +1,66 @@
+html(lang="ru")
+    include ../blocks/head.pug
+    body.header-fixed
+        script(src="/js/jquery.min.js")
+        
+        include ../blocks/header/header.pug
+        include ../blocks/navbar/navbar.pug
+
+        .container.slider-container
+            .slider.slider_index
+                .slider__item
+                    .slider_index__item
+                        .slider_index__image(style="background-image:url('../img/test-01.jpg');")
+                        .slider_index__content
+                            p.slider_index__title Полный курс современной флористики
+                            p.slider_index__intro - Диплом Школы флористического дизайна "Маджента".
+                                | <br/>- ведущие преподаватели
+                                | <br/>- длительность курса - 315 часов
+                            .slider_index__info(style="background-image:url('../icon/calendar-white.svg');") октябрь-май СПб
+                            a.btn.btn_action(href="#") Узнать больше
+                .slider__item
+                    .slider_index__item
+                        .slider_index__image(style="background-image:url('../img/test-02.jpg');")
+                        .slider_index__content
+                            p.slider_index__title Мастер-класс для&nbsp;детей "Осенняя композиция в&nbsp;корзинке"
+                            p.slider_index__intro - Диплом Школы флористического дизайна "Маджента".
+                                | <br/>- ведущие преподаватели
+                                | <br/>- длительность курса - 315 часов
+                            .slider_index__info(style="background-image:url('../icon/calendar-white.svg');") октябрь-май СПб
+                            a.btn.btn_action(href="#") Узнать больше
+                .slider__item
+                    .slider_index__item
+                        .slider_index__image(style="background-image:url('../img/test-03.jpg');")
+                        .slider_index__content
+                            p.slider_index__title Базовый курс флористики
+                            p.slider_index__intro - Диплом Школы флористического дизайна "Маджента".
+                                | <br/>- ведущие преподаватели
+                                | <br/>- длительность курса - 315 часов
+                            .slider_index__info(style="background-image:url('../icon/calendar-white.svg');") октябрь-май СПб
+                            a.btn.btn_action(href="#") Узнать больше
+            .slider-nav
+                .slider.slider_nav
+                    .slider_nav__item(style="background-image:url('../img/test-01.jpg');")
+                    .slider_nav__item(style="background-image:url('../img/test-02.jpg');")
+                    .slider_nav__item(style="background-image:url('../img/test-03.jpg');")
+            #time
+        //- <div id="jGrowl" class="top-right jGrowl">
+        //-     <div class="jGrowl-notification"></div>
+        //-     <div class="jGrowl-notification alert ui-state-highlight ui-corner-all af-message-success" style="display: block;">
+        //-     <button class="jGrowl-close">×</button>
+        //-     <div class="jGrowl-header"></div>
+        //-     <div class="jGrowl-message">Номер телефона указан не корректно</div>
+        //-     </div>
+        //- </div>
+        
+        include ../blocks/footer/footer.pug
+        
+        script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/jquery.inputmask.js")
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+
+        script(src="./js/app.min.js") 
+        //- link(href='./css/jquery.jgrowl.min.css', rel='stylesheet')

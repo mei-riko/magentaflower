@@ -1,0 +1,154 @@
+html(lang="ru")
+    include ../blocks/head.pug
+    body.header-fixed
+        script(src="/js/jquery.min.js")
+        include ../blocks/header/header.pug
+        include ../blocks/navbar/navbar.pug
+        //- Основной контент страницы
+        section.page
+            //- Первый экран 
+            .page__header-block(style="background-image: url('../img/bg-default.jpg');")
+                .container
+                    a.btn.btn_video(href="javascript;" data-fancybox ) Тизер
+                    h1.page__title Идеальные букеты <br/>и&nbsp;рождественские композиции
+                    p.page__introtext Комплект мастер-классов со скидкой 30%
+                    .page-price.page-price_center.mb-40.mb-sm-20
+                        .page-price__col
+                            .page-price__label обычная цена
+                            p.page-price__value.page-price__value_old 39 000
+                        .page-price__col
+                            .page-price__label.text-pink со скидкой
+                            p.page-price__value.page-price__value_new 35 000
+                    a.btn.btn_action.scroll(href="#complect") Купить комплект
+            .container.content
+                //- Общая информация
+                .row.justify-content-center
+                    .col-7.col-md-10.col-sm-12
+                        p.text-center В комплект входят 5 мастер-классов, благодаря которым вы погрузитесь в стиль Lacy Bird и сможете создавать свои шедевры современной флористики, начиная от круглого букета и завершая асимметричной композицией!
+                .row
+                    .col-4.col-lg-6.col-md-6.col-sm-12.mt-60.mt-lg-40.mt-sm-20
+                        .item-icon
+                            img.item-icon__img.item-icon__img_advantage(src="../icon/flowerpot-pink.svg")
+                            .item-icon__content 
+                                .lead.text-bold 155 минут 
+                                | 3 часа максимального погружения в современные техники сборки
+                    .col-4.col-lg-6.col-md-6.col-sm-12.mt-60.mt-lg-40.mt-sm-20
+                        .item-icon
+                            img.item-icon__img.item-icon__img_advantage(src="../icon/bag-pink.svg")
+                            .item-icon__content 
+                                .lead.text-bold Любой уровень
+                                | Сборка букета и создание композиции не требуют дополнительных навыков
+                    .col-4.col-lg-6.col-md-6.col-sm-12.mt-60.mt-lg-40.mt-sm-20
+                        .item-icon
+                            img.item-icon__img.item-icon__img_advantage(src="../icon/diamond-pink.svg")
+                            .item-icon__content 
+                                .lead.text-bold Онлайн формат
+                                | Все мастер-классы у вас в кармане, доступны в любое время.
+                //- Комплект
+                h3.text-bold.text-center.mt-60.mt-sm-40 Что входит в комплект
+                .row.mt-40.mt-sm-20.mb-40.sertificate.sertificate_outside
+                    .col-6.col-md-12
+                        .sertificate__item.sertificate__item_result
+                            .sertificate__item-image.sertificate__item-image_result(style="background-image: url('../img/pic-5.png');")
+                            .sertificate__item-content
+                                a.sertificate__item-link(href="courses.html") Базовый курс флористики
+                                p.text-small.mb-0 количество часов: 70
+                                p.text-small.mb-0 график: с 12 по 23 октября
+                                p.text-small стоимость: 30 000
+                            a.sertificate__item-buy(href="#" data-toggle="tooltip" data-placement="right" title="Купить отдельно")
+                    .col-6.col-md-12.mt-md-20
+                        .sertificate__item.sertificate__item_result
+                            .sertificate__item-image.sertificate__item-image_result(style="background-image: url('../img/pic-4.png');")
+                            .sertificate__item-content
+                                a.sertificate__item-link(href="courses.html") Полный курс флористики
+                                p.text-small.mb-0 количество часов: 70
+                                p.text-small.mb-0 график: с 12 по 23 октября
+                                p.text-small стоимость: 54 000
+                            a.sertificate__item-buy(href="#" data-toggle="tooltip" data-placement="right" title="Купить отдельно")
+                    .col-6.col-md-12.mt-20
+                        .sertificate__item.sertificate__item_disable
+                            .sertificate__item-image.sertificate__item-image_result(style="background-image: url('../img/pic-4.png');")
+                            .sertificate__item-content.sertificate__item-content_disable
+                                .sertificate__item-link.sertificate__item-link_disable Полный курс флористики
+                                p.text-small.mb-0 количество часов: 70
+                                p.text-small.mb-0 график: с 12 по 23 октября
+                                p.text-small стоимость: 54 000
+                .text-center
+                    a.btn.btn_action.scroll(href="#complect") Купить комплект
+        //- Портфолио
+        section.content.content_offset-small.bg-light-pink
+            .container
+                h3.text-center.text-bold Какие букеты и композиции <br/>вы научитесь делать
+                .row.mt-40.no-gutters.portfolio
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                            img.img-fluid(src="/img/01.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/02.png")
+                            img.img-fluid(src="/img/02.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                            img.img-fluid(src="/img/03.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                            img.img-fluid(src="/img/04.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                            img.img-fluid(src="/img/03.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                            img.img-fluid(src="/img/01.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                            img.img-fluid(src="/img/04.png")
+                    .col-3.col-sm-6.col-md-4
+                        .portfolio__item
+                            img.img-fluid(src="/img/02.png")
+        section.content.content_offset-small
+            .container
+                h4.h1.text-bold Обучение у нас популярно! Почему?
+                .row.mb-40.mb-sm-20
+                    .col-5.col-lg-8.col-md-10.col-sm-12
+                        p Мы — одна из лучших школ флористики России, куда за знаниями обращаются студенты из разных уголков планеты
+                .row
+                    .col-3.col-md-6.mb-md-40.mb-sm-20.item
+                        p.item__title.item__title_num 10 000+
+                        p букетов создаётся в стенах Magenta&nbsp;в&nbsp;год
+                    .col-3.col-md-6.mb-md-40.mb-sm-20.item
+                        p.item__title.item__title_num 320+
+                        p букетов создаётся в стенах Magenta&nbsp;в&nbsp;год
+                    .col-3.col-md-6.mb-md-40.mb-sm-20.item
+                        p.item__title.item__title_num 30+
+                        p букетов создаётся в стенах Magenta&nbsp;в&nbsp;год
+                    .col-3.col-md-6.item
+                        p.item__title.item__title_num x2.5
+                        p букетов создаётся в стенах Magenta&nbsp;в&nbsp;год
+                .row.mt-60.mt-lg-40.mt-md-20.justify-content-center
+                    .col-6.col-xl-6.col-lg-6.col-md-10.col-sm-12
+                        .info.info_person
+                            .info_person__img(style="background-image: url('../img/Elena.jpg')")
+                            p.subtitle.mb-0 преподаватель курса
+                            p.info__title Елена Дмитриева
+                            p.info__intro Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.
+                    .col-6.col-xl-6.col-lg-6.col-md-10.col-sm-12.mt-md-40.mt-md-20
+                        .info.info_person
+                            .info_person__img(style="background-image: url('../img/Tatiana.jpg')")
+                            p.subtitle.mb-0 преподаватель курса
+                            p.info__title Татьяна Воронина
+                            p.info__intro Флорист-дизайнер международного уровня, с&nbsp;опытом работы более 10&nbsp;лет.
+                .info.mt-60.mt-md-40
+                    p Форма с GetCourses
+        //- Networks
+        aside.mb-60.container
+            include ../blocks/networks/networks.pug
+        include ../blocks/footer/footer.pug
+        
+        script(src="./js/jquery.fancybox.min.js")
+
+        script(src="./js/jquery.inputmask.js")
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+
+        script(src="./js/app.min.js") 

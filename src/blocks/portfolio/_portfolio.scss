@@ -1,0 +1,57 @@
+.portfolio{
+    &__item{
+        position: relative;
+        padding: 4px;
+        transition: .4s;
+        
+        // Psedo Element
+        &:before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $pink;
+            opacity: 0;
+            transition: .4s;
+        }
+        &:after{
+            content: '+';
+            display: block;
+            font-size: 60px;
+            color: $white;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            opacity: 0;
+            transition: .4s;
+        }
+        // Status
+        &:hover{
+            cursor: pointer;
+            &:before{
+                opacity: .5;
+            }
+            &:after{
+                opacity: 1;
+            }
+            .portfolio__mark-video{
+                opacity: 0;
+            }
+        }
+    }
+    &__mark-video{
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        background: #ffffff url("../icon/play-button.svg") no-repeat center/contain;
+        transition: .4s;
+    }
+}
