@@ -1,0 +1,36 @@
+.form{
+    &__group{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    &__col{
+        padding: 0 5px;   
+
+        &-input{
+            flex: 0 0 calc(100% - 200px);
+            max-width: calc(100% - 200px);
+        }
+    }
+    // Form LAbel
+    &__label{
+        font-size: map-get($map: $font-size, $key: sm);
+        color: $grey;
+    }
+
+    .form-validation + input{
+        margin-top: $spacer/2;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .form{
+        &__col-input{
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            margin-bottom: $spacer/3;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.label_action{
+    color: $white;
+    background-color: $pink;
+
+    &:hover, &:focus{
+        color: $white;
+        background: darken($pink, 3%);
+    }
+}

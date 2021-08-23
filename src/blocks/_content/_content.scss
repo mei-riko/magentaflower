@@ -1,0 +1,58 @@
+.content{
+    padding-top: map-get($spacers, 5);
+    padding-bottom: map-get($spacers, 5);
+
+    &__title{
+        font-size: 3.375rem;
+    }
+    &__text-top{
+        padding-top: 6px;
+    }
+    
+    // Отступы между смысловыми блоками
+    &__row{
+        padding-top: map-get($spacers, 4);
+
+        &:first-child,
+        &_first{
+            padding-top: 0;
+        }
+    }
+}
+
+// Разделительная черта
+.content-line{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    max-width: 75%;
+    height: 1px;
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .content{
+        padding-top: map-get($spacers, 3);
+        padding-bottom: map-get($spacers, 3);
+
+        &__title{
+            font-size: 2.5rem;
+        }
+
+        &_bg-flowers{padding-bottom: 160px;}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content{
+        &__title{
+            font-size: 1.75rem;
+        }
+        // Отступы между смысловыми блоками
+        &__row{
+            padding-top: map-get($spacers, 3);
+
+            &_first{
+                padding-top: 0;
+            }
+        }
+    }
+}

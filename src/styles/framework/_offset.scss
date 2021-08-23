@@ -1,4 +1,6 @@
 // 0 20 30 40 60 80 100
+.ml-auto{margin-left: auto;}
+.mr-auto{margin-left: auto;}
 
 .mt{
     &-0{margin-top: map-get($spacers, 0);}

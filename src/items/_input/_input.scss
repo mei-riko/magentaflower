@@ -1,0 +1,28 @@
+.input{
+    padding: 13px 30px;
+
+    border: 1px solid $border-color;
+    border-radius: 3*$border-radius;
+    
+    outline: none;
+    cursor: pointer;
+
+    &--full{
+        width: 100%;
+    }
+}
+
+.input_name{
+    padding-left: 34px;
+    background: url("../img/profile.svg") no-repeat left center / 20px;
+}
+
+.input_phone{
+    padding-left: 34px;
+    background: url("../img/telephone.svg") no-repeat left center / 20px;
+}
+
+.input_email{
+    padding-left: 34px;
+    background: url("../img/email.svg") no-repeat left center / 20px;
+}

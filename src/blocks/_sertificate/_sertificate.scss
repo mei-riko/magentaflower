@@ -1,0 +1,11 @@
+.sertificate{
+    &__blockquote{
+        padding-left: map-get($spacers, 5);
+        // font-size: 1.15rem;
+        // line-height: 1.4;
+        // color: #45393e;
+        background: url(../icon/sertificate.svg) no-repeat left center / map-get($spacers, 4);
+        width: 420px;
+        max-width: 100%;
+    }
+}

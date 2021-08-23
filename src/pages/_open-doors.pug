@@ -1,0 +1,149 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 ДОД"
+    - var headerClass = "header_fixed"
+block content
+    //- Первый экран
+    section.page
+        //- Первый экран 
+        .page__header-block(style="background-image: url('../img/bg-default-2.jpg');")
+            .container
+                h1.page__title День открытых дверей <br/>в&nbsp;школе флористики
+                p Бесплатный мастер-класс и розыгрыш 30% скидки!
+                .page__info.mt-3.mb-3
+                    .page__info-col
+                        .subtitle Формат
+                        .page__info-title оффлайн
+                    .page__info-col
+                        .subtitle Ближайшая дата
+                        .page__info-title 24.01.21
+                    .page__info-col
+                        .subtitle Цена 
+                        .page__info-title бесплатно
+                a.btn.btn_action.scroll(href="#buy") Забронировать место
+    section.pt-4
+        .container
+            //- Общая информация
+            .row.justify-content-between.align-items-center
+                .col-6.col-lg-6.col-md-12.col-sm-12
+                    h2.text-bold Что будет на дне открытых&nbsp;дверей?
+                    p Lorem ipsum dolor sit amet. Iste natus error sit voluptatem sequi nesciunt. Deleniti atque corrupti, quos dolores. Reprehenderit, qui in ea voluptate velit esse, quam nihil impedit. Unde omnis iste natus error sit voluptatem sequi nesciunt. Omnis iste natus error sit voluptatem accusantium doloremque. Ex ea commodi autem vel illum, qui blanditiis praesentium voluptatum deleniti. Natus error sit voluptatem sequi nesciunt, neque porro quisquam est.
+                .col-5.col-lg-6.col-md-10.col-sm-12.mt-md-3
+                    .info
+                        p.text-pink.text-uppercase.text-bold Бонусы для участников
+                        .list.list_numeric.mt-1.mt-sm-0
+                            .list_numeric__item бесплатный мастер-класс от знаменитых преподавателей 
+                                span.list_numeric__number 1
+                            .list_numeric__item.mt-1 розыгрышь 30% скидки на любой мастер-класс 
+                                span.list_numeric__number 2
+    section.page-programm
+        .container
+            p.text-uppercase.text-bold Даты дней открытых дверей в&nbsp;2021&nbsp;году
+            .row
+                .col-4.col-md-6.col-sm-12
+                    .page-programm__item.page-programm__item--disable.mt-1
+                        .page-programm__date 
+                            .mb-0 9 января 2021<br/>
+                                .text-small.text-grey с 10.00 до 15.00
+                .col-4.col-md-6.col-sm-12
+                    .page-programm__item.mt-1
+                        .page-programm__date 
+                            .mb-0 21 февраля 2021<br/>
+                                .text-small.text-grey с 11.00 до 16.00
+                .col-4.col-md-6.col-sm-12
+                    .page-programm__item.mt-1
+                        .page-programm__date 
+                            .mb-0 8 марта 2021<br/>
+                                .text-small.text-grey с 10.00 до 15.00
+                .col-4.col-md-6.col-sm-12
+                    .page-programm__item.mt-1
+                        .page-programm__date 
+                            .mb-0 12 мая 2021<br/>
+                                .text-small.text-grey с 11.00 до 16.00
+                .col-4.col-md-6.col-sm-12
+                    .page-programm__item.mt-1
+                        .page-programm__date 
+                            .mb-0 28 июня 2021<br/>
+                                .text-small.text-grey с 10.00 до 15.00
+                
+            .row.pt-4.no-gutters.portfolio
+                .col-2.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                .col-2.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/02.png")
+                        .portfolio__mark-video
+                        img.img-fluid(src="/img/02.png")
+                .col-2.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                .col-2.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                .col-2.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                .col-2.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+            .p-3.text-center
+                a.btn.btn_action.scroll(href="#buy") Забронировать место
+    section.content.content_offset-small.bg-light-pink
+        .container
+            h4.text-bold Расписание ближайшего мероприятия
+            .row
+                .col-3.col-md-4.col-sm-12
+                    .page-programm__item.mt-1
+                        .mb-0 Начало мероприятия<br/>
+                            .mt-md-10.text-small.text-grey 12.00 - 12.30
+                .col-6.col-md-8.col-sm-12
+                    .page-programm__item.mt-1
+                        .mb-0 Знакомство с&nbsp;преподавателями школы и&nbsp;приглашенными мастерами<br/>
+                            .mt-md-10.text-small.text-grey 12.30 - 13.00
+                .col-3.col-md-4.col-sm-12
+                    .page-programm__item.mt-1
+                        .mb-0 Презентация курсов<br/>
+                            .mt-md-10.text-small.text-grey 13.00 - 14.00
+                .col-6.col-md-8.col-sm-12
+                    .page-programm__item.page-programm__item--action.mt-1
+                        .page-programm__course
+                            .mb-0 
+                                span.text-bold.text-pink Бесплатный мастер-класс 
+                                | по&nbsp;созданию каркасного букета<br/>
+                                .mt-md-10.text-small.text-grey 14.00 - 16.00
+                .col-6.col-md-8.col-sm-12
+                    .page-programm__item.mt-1
+                        .mb-0
+                            span.text-bold.text-pink Розыгрыш 30% скидки 
+                            | на любой мастер-класс школы<br/>
+                            .mt-md-10.text-small.text-grey 16.00 - 16.30
+    section.content.content_offset-small
+        .container
+            .row.align-items-center.align-items-xl-start.flex-md-column-reverse
+                .col-5.col-xl-4.col-lg-5.col-md-12.mt-sm-1.mt-md-3
+                    img.img-fluid.img-radius(src="../img/sertificate-mockup.jpg")
+                .col-7.col-xl-8.col-lg-7.col-md-12.col-lg-7.mt-sm-1#test
+                    h3.text-bold Запишись на день открытых дверей и прими участие в розыгрыше 30% скидки
+                    p Только люди, записавшиеся онлайн, смогут учавствовать в борбе за скидку в 30% на любой мастер-класс и курс в школе флористики Маджента
+                    form.form.info.mt-3(action="")
+                        p.text-pink.text-uppercase.text-bold Оставить заявку на участие
+                        .radio-btn
+                            input.radio-btn__input(type="radio" value="1" name="date" id="date1" checked="checked") 
+                            label.radio-btn__label(for="date1") 21.01.21
+                        .radio-btn
+                            input.radio-btn__input(type="radio" value="1" name="date" id="date2") 
+                            label.radio-btn__label(for="date2") 01.02.21
+                        .radio-btn
+                            input.radio-btn__input(type="radio" value="1" name="date" id="date3") 
+                            label.radio-btn__label(for="date3") 08.03.21
+                        input.form-input.form-input--full.mt-1.mb-1(placeholder="Ваше имя")
+                        input.form-input.form-input--full.mb-1.phone(placeholder="Телефон")
+                        button.btn.btn_action(type="submit") Забронировать место
+                        .form__agree.checkbox
+                            input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                            label.checkbox__label(for="agree") согласен с 
+                                a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+    //- Networks
+    aside.mb-4.container
+        include ../blocks/networks/networks.pug

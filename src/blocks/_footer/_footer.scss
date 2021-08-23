@@ -1,0 +1,50 @@
+.footer{
+    padding: map-get($spacers, 4) 0;
+    background: $pink-light;
+    border-top: 1px solid $border-color;
+    overflow: hidden;
+
+    &__logo{
+        background: url("../img/logo.svg") no-repeat left center / contain;
+        
+        max-width: 100%;
+        width: 180px;
+        height: 110px;
+
+        display: block;
+        margin-bottom: map-get($spacers, 2);
+    }
+    // Элементы колонок
+    &__title{
+        color: $pink;
+        filter: opacity(.6);
+        margin-bottom: map-get($spacers, 1);
+    }
+    &__link{
+        text-decoration: underline;
+    }
+    &__content{
+        color: $grey;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .footer{
+        padding: map-get($spacers, 2) 0;
+
+        &__logo{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__content{
+            text-align: center;
+        }
+
+        // // Column content center
+        // .col-sm-12{
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        // }
+    }
+}

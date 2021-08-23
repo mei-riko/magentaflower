@@ -1,8 +1,8 @@
 import $ from 'jquery';
-import '../blocks/navbar/nav';
+import '../blocks/_navbar/nav';
 import '../blocks/sertificate/sertificate'
 import '../items/slider/slider'
-import '../blocks/timetable/timetable'
+import '../blocks/_timetable/timetable'
 import '../blocks/map/map'
 
 import 'popper.js/dist/umd/popper';
@@ -53,10 +53,16 @@ $(document).ready(() =>{
         }
     });
     // Slide Info
-    $(".item-slide").on("click", function(){
-        $(this).toggleClass("item-slide--active");
-        $(this).find(".item-slide__content").slideToggle();
+    $(".toggle").on("click", function(){
+        $(this).toggleClass("toggle--active");
+        $(this).find(".toggle__content").slideToggle();
+
+        if( $(this).hasClass("toggle_programm") ){
+            $(this).toggleClass("toggle_programm--active");
+        }
     });
+
+
     // Show more theme
     $(".show-theme").on("click", function(e){
         e.preventDefault();

@@ -1,0 +1,164 @@
+// Новый стиль страниц BEM
+.page{
+    // Стиль первого экрана с фоном
+    &__header-block{
+        position: relative;
+        padding: 200px 0 map-get($spacers, 5);
+        background: no-repeat center / cover;
+        text-align: center;
+
+        &:after{
+            content: "";
+            display: block;
+
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0; 
+            left: 0;
+            z-index: 1;
+
+            background: linear-gradient(180deg, $light-grey 0%, rgba(249, 234, 241, 0.7) 70%);
+        }
+
+        & > *{
+            position: relative;
+            z-index: 11;
+        }
+    }
+    
+    // Основной заголовок
+    &__title{
+        font-weight: $font-weight-bold;
+
+        width: 680px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    // Подзаголовок / Label
+    &__subtitle{
+        display: inline-block;
+    }
+    // Аннотация страницы
+    &__introtext{
+        line-height: $line-height-base;
+
+        width: 480px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    // Краткая информация
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-col{
+            padding: 0 10px;
+        }
+        &-title{
+            font-family: $font-family-heading;
+            font-size: map-get($map: $font-size, $key: lg);
+            font-weight: $font-weight-bold;
+            line-height: $line-height-heading;
+            margin: .25rem 0 .5rem;
+
+            min-width: 100px;
+        }
+        &-old-price{
+            text-decoration: line-through;
+            margin-right: 6px;
+        }
+    }
+    // Слайдер контента на всю ширину
+    &__slider-container{
+        position: relative;
+        z-index: 11;
+        overflow: hidden;
+
+        margin-top: -$spacer;
+        padding-bottom: $spacer;
+    }
+    &__slider{
+        max-width: map-get($container-max-widths, 'xl');
+        margin-left: calc( (100% - 1240px)/2 );
+
+        // Slick
+        .slick-list{
+            overflow: visible;
+        }
+        .slick-slide{
+            opacity: .5;
+
+            &.slick-active{
+                opacity: 1;
+            }
+        }
+        .slick-prev{
+            z-index: 101;
+            left: -12px;        
+        }
+        .slick-next{
+            z-index: 101;
+            right: -12px;        
+        }
+    }
+}
+// 1400
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .page{
+        &__slider{
+            max-width: map-get($container-max-widths, 'lg');
+            margin-left: calc( (100% - 960px)/2 );
+        }
+    }
+}
+// 992
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .page{
+        // Стиль первого экрана
+        &__header-block{
+            padding-top: 160px;
+        }
+        // Слайдер контента на всю ширину
+        &__slider{
+            max-width: 80%;
+            margin-left: 10%;
+        }
+    }
+}
+// 768
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .page{
+        // Слайдер контента на всю ширину
+        &__slider{
+            max-width: 70%;
+            margin-left: 15%;
+        }
+    }
+}
+// 576
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .page{
+        // Стиль первого экрана
+        &__header-block{
+            padding-top: 140px;
+            padding-bottom: $spacer;
+        }
+        &__info-title{
+            font-size: 1.25rem;
+        }
+        // Слайдер контента на всю ширину
+        &__slider-container{
+            padding-top: $spacer/2;
+            padding-bottom: $spacer/2;
+        }
+        &__slider{
+            max-width: 90%;
+            margin-left: 5%;
+        }
+    }
+}

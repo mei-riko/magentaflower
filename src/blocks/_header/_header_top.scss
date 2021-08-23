@@ -1,0 +1,27 @@
+// Разграничительная линия после меню
+.header_top{
+    position: relative;
+    z-index: 1;
+
+    &:after{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 1px;
+
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+
+        background: linear-gradient(#f9eaf1, darken(#f9eaf1, 4) );
+        z-index: -1;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .header_top{
+        background: linear-gradient(#f9eaf1, #f0c9d8);
+        &:after{
+            display: none;
+        }
+    }
+}

@@ -59,7 +59,7 @@
 
         &-title{
             margin: map-get($map: $spacers, $key: 1) 0 map-get($map: $spacers, $key: 1)/2;
-            font-family: $font-family-serif;
+            font-family: $font-family-heading;
         }
         &-intro{
             flex-grow: 1;

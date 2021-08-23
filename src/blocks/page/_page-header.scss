@@ -5,7 +5,7 @@
     
     &__subtitle{
         display: inline-block;
-        @extend .text-small;
+        font-size: map-get($map: $font-size, $key: sm);
 
         background:$pink-light;
         color: $pink;
@@ -21,7 +21,7 @@
     }
     &__offer{
         color: $dark-grey;
-        @extend .text-small;
+        font-size: map-get($map: $font-size, $key: sm);
         width: 150px;
         max-width: 100%;
     }

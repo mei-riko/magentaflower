@@ -1,0 +1,34 @@
+.radio{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin-right: $spacer/4;
+    margin-top: $spacer/4;
+
+    &__input{
+        display: none;
+
+        &:checked + .radio-btn__label {
+            background-color: $pink-light;
+            border-color: $border-color;
+        }
+    }
+    &__label{
+        position: relative;
+        margin: 0;
+        line-height: 12px;
+        padding: 12px 20px;
+        border: 1px solid $grey;
+        border-radius: 4px;
+
+        cursor: pointer;
+    }
+    &__link{
+        text-decoration: underline;
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+}

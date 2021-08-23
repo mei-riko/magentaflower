@@ -1,4 +1,5 @@
-- var tel = {'item':"8 800 600 44 22",'link':"tel:88006004422"}
+- var telMain = {'item':"8 (812) 317-76-18",'link':"tel:88006004422"}
+- var telAd = {'item':"8 (812) 317-76-18",'link':"tel:8 (921) 343-87-30"}
 - var email = {'item':"demo@demo.ru",'link':"mailto:demo@demo.ru"}
 
 
@@ -14,17 +15,24 @@ html(lang="ru")
         link(rel="preconnect" href="https://fonts.gstatic.com")
         link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet")
         
-        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
-        link(href='./css/style.css', rel='stylesheet')
-        link(href='./css/media.css', rel='stylesheet')
+        link(href='./css/framework.css', rel='stylesheet')
+        link(href='./css/main.css', rel='stylesheet')
+        //- link(href='./css/media.css', rel='stylesheet')
 
-    body
+    body(class=headerClass)
         script(src="../js/jquery.min.js")
-        include ./header/header.pug
-        include ./navbar/navbar.pug
+        include ./_header/header.pug
+        include ./_navbar/navbar.pug
         block content
-        include ./footer/footer.pug
-        link(href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css", rel="stylesheet")
-        script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js")
-        script(src="./js/jquery.inputmask.min.js")
+        include ./_footer/footer.pug
+        
+        link(href="./css/jquery.fancybox.min.css", rel="stylesheet")
+        script(src="./js/jquery.fancybox.min.js")
+        
+        script(src="./js/jquery.inputmask.js")
+        
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+
         script(src="./js/app.min.js")

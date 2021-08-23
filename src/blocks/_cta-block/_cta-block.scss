@@ -1,0 +1,20 @@
+.cta-block{
+    &__row{
+        display: grid;
+        grid-gap: $grid-gutter-width;
+        grid-template-columns: repeat(3, 1fr);
+    }
+        // Доп. блоки с информацией
+        &__info{
+            padding: map-get($spacers, 2)/2 map-get($spacers, 2);
+    
+            border: 1px solid $border-color;
+            border-radius: $border-radius;
+            background-color: $white;
+            
+            &-title{
+                margin-top: $spacer-gutter/3;
+                margin-bottom: $spacer-gutter;
+            }
+        }
+}

@@ -1,0 +1,7 @@
+.toggle_programm{
+    border: 1px solid $border-color;
+    // JS Status
+    &--active{
+        border-color: $pink;
+    }
+}

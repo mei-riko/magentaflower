@@ -1,0 +1,27 @@
+// Блоки с иконками на круглом фоне
+.list-icon_top{
+    padding-top: 90px;
+    padding-left: 0;
+
+    &__content{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .list-icon_top{
+        padding-top: 70px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .list-icon_top{
+        padding-top: 0;
+        padding-left: 60px;
+        text-align: left;
+
+        &__content{
+            margin-left: 0;
+        }
+    }
+}

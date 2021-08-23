@@ -1,0 +1,86 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 Online"
+    - var headerClass = "header_fixed"
+block content
+    section.page
+        //- Первый экран 
+        .page__header-block(style="background-image: url('../img/bg-default.jpg');")
+            .container
+                h1.page__title Дистанционное </br>обучение флористике
+                p.page__introtext Cоздавайте свои шедевры современной флористики, начиная от круглого букета и завершая асимметричной композицией!
+                .page__info.mt-1
+                    .page__info-col.mt-1
+                        a.btn.btn_action.scroll(href="#courses") Online-курсы
+                    .page__info-col.mt-1
+                        a.btn.btn_action.scroll(href="#classes") Мастер-классы
+        .container#courses
+            .preview-courses.mt-3(style="background-image: url('../img/bg-light.png');")
+                .row.justify-content-end.justify-content-md-center
+                    .col-6.col-lg-7.col-md-9.col-sm-12
+                        a.h3.preview-courses__title(href="online.html") Online-курс флористики
+                        .preview-courses__link
+                            a.preview-courses__link-item.preview-courses__link-item_info(href="javascript;" data-fancybox ) Программа курса
+                            a.preview-courses__link-item.preview-courses__link-item_video(href="javascript;" data-fancybox ) Тизер
+                        .preview-courses__tags
+                            span.preview-courses__tags-item 3 тарифа
+                            span.preview-courses__tags-item чат с преподавателями
+                            span.preview-courses__tags-item проверка д/з
+                        p.preview-courses__intro Инструмент флориста, который помогает выйти на новый уровень и увеличить стоимость своих работ в 3 раза.
+                        .preview-courses__price.page-price
+                            .page-price__col
+                                .page-price__label обычная цена
+                                p.page-price__value.page-price__value_old 39 000
+                            .page-price__col
+                                .page-price__label.text-pink со скидкой
+                                p.page-price__value.page-price__value_new 35 000
+                        a.btn.btn_action.scroll(href="online.html") Подробнее
+            .preview-courses.preview-courses_dark.mt-3(style="background-image: url('../img/bg-dark.png');")
+                .row.justify-content-end.justify-content-md-center
+                    .col-6.col-lg-7.col-md-9.col-sm-12
+                        a.h3.preview-courses__title.preview-courses__title_dark(href="online.html") Online-курс флористики
+                        .preview-courses__link
+                            a.preview-courses__link-item.preview-courses__link-item_info.preview-courses__link-item_dark(href="javascript;" data-fancybox ) Программа курса
+                            a.preview-courses__link-item.preview-courses__link-item_video.preview-courses__link-item_dark(href="javascript;" data-fancybox ) Тизер
+                        .preview-courses__tags.preview-courses__tags_dark
+                            span.preview-courses__tags-item 3 тарифа
+                            span.preview-courses__tags-item чат с преподавателями
+                            span.preview-courses__tags-item проверка д/з
+                        p.preview-courses__intro Инструмент флориста, который помогает выйти на новый уровень и увеличить стоимость своих работ в 3 раза.
+                        .preview-courses__price.page-price
+                            .page-price__col
+                                .page-price__label.preview-courses__label-dark обычная цена
+                                p.page-price__value.page-price__value_old 39 000
+                            .page-price__col
+                                .page-price__label.text-pink со скидкой
+                                p.page-price__value.page-price__value_new 35 000
+                        a.btn.btn_action.scroll(href="online.html") Подробнее
+            h4.text-bold.text-center.mt-4.mb-40#classes Доступные мастер-классы
+            .row.timetable
+                .col-4.col-lg-6.col-sm-12.timetable__col
+                    .timetable__block.timetable__block_preview
+                        .timetable__img(style="background-image: url('./img/test-01.jpg');")
+                        a.timetable__title(href="MK.html") «Коммерческие букеты»
+                        .timetable__offer Уровень: для начинающих 
+                        .timetable__offer Сроки: 35 минут
+                        .timetable__price.mt-1 1200 р.
+                .col-4.col-lg-6.col-sm-12.timetable__col
+                    .timetable__block.timetable__block_preview
+                        .timetable__img(style="background-image: url('./img/test-02.jpg');")
+                        a.timetable__title(href="MK.html") «Летние букеты и разнообразные  техники плетения из трав»
+                        .timetable__offer Уровень: для начинающих 
+                        .timetable__offer Сроки: 35 минут
+                        .timetable__price.mt-1 
+                            span.price-old 2000 
+                            | 1200 р.
+                .col-4.col-lg-6.col-sm-12.timetable__col
+                    .timetable__block.timetable__block_preview
+                        .timetable__img(style="background-image: url('./img/test-03.jpg');")
+                        a.timetable__title(href="MK.html") «Коммерческие букеты»
+                        .timetable__offer Уровень: для начинающих 
+                        .timetable__offer Сроки: 35 минут
+                        .timetable__price.mt-1 1200 р.
+    //- Networks
+    aside.mb-4.container
+        include ../blocks/networks/networks.pug

@@ -2,7 +2,7 @@ $white                : #ffffff;
 $black                : #000000;
 
 $light-grey           : #f6f6f6;
-$grey                 : #726d72;
+$grey                 : #726D72;
 $dark-grey            : #3d3e40;
 
 $red                  : #ef081e;
@@ -12,11 +12,15 @@ $pink-secondary       : #f296b9;
 $pink-light           : #f9eaf1;
 
 $border-color         : #ddc4c3 !default;
+$border-radius        : 10px;
 
 $link-color           : $dark-grey !default;
 $link-hover-color     : $pink      !default;
 $link-decoration      : none       !default;
 $link-hover-decoration: underline  !default;
+
+$body-color           : $black;
+$body-bg              : $white;
 
 $grid-breakpoints: (
   xs: 420px,
@@ -34,18 +38,28 @@ $container-max-widths: (
   xl: 1240px,
 ) !default;
 
-$body-color: $black;
-$body-bg   : $white;
-
-$font-family-base     : "Noto Sans",    "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base     : "Noto Sans", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo,            Monaco, Consolas,   "Liberation Mono",   "Courier New",    monospace !default;
-$font-family-serif    : 'Noto Serif', serif;
+$font-family-heading  : 'Noto Serif', serif;
+
+$line-height          : 1.4;
+$letter-spacing       : 0.2em;
 
 $font-size-base       : 14px;
 $font-weight-base     : 400;
+$line-height-base     : 1.6;
+
 $font-weight-bolder   : 600;
 $font-weight-bold     : 700;
-$line-height-base     : 1.6;
+
+$font-weight-heading  : $font-weight-bold;
+$line-height-heading  : 1.2 !default;
+$font-size: (
+    xs: 11px,
+    sm: 12px,
+    md: 13px,
+    lg: 16px,
+);
 
 $dt-font-weight: $font-weight-bold !default;
 
@@ -75,7 +89,7 @@ $headings-font-weight   : 400 !default;
 $headings-line-height   : 1.2 !default;
 $headings-color         : null !default;
 
-$paragraph-margin-bottom: 30px !default;
+$paragraph-margin-bottom: 20px !default;
 
 $table-cell-padding     : 10px !default;
 $table-cell-padding-sm  : 6px !default;

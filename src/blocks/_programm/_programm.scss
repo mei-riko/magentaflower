@@ -1,0 +1,103 @@
+.programm{
+    padding: map-get($spacers, 4) 0;
+
+    // Пункт программы
+    &__item{
+        padding: map-get($spacers, 1) map-get($spacers, 2);
+        background: $white;
+        // border: 1px solid $border-color;
+        border-radius: 8px;
+
+        // Модификатор
+        &_slide{
+            padding-right: map-get($spacers, 5);
+        }
+
+        // Cостояния
+        &--disable{
+            filter: grayscale(1) opacity(.5);
+        }
+        &--action{
+            border-color: $pink;
+        }
+    }
+    // Заголовок пункта
+    &__title{
+        font-weight: bold;
+        font-size: 1.15rem;
+        line-height: 1.2;
+        margin-bottom: 0;
+        i{
+            font-weight: normal;
+        }
+    }
+    // Информация о часах обучения
+    &__time{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        font-size: 13px;
+        color: $grey;
+        
+        &:before{
+            content:'';
+            display: inline-block;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            background: url("../img/time-left-light.svg") no-repeat center / contain;
+        }
+    }
+    
+    // &__date{
+    //     display: flex;
+    //     align-items: center;
+    //     flex-wrap: nowrap;
+
+    //     &:before{
+    //         content:'';
+    //         display: inline-block;
+    //         margin-right: 10px;
+    //         width: 20px;
+    //         height: 20px;
+    //         background: url("../img/time-left.svg") no-repeat center / contain;
+    //     }
+    // }
+    // &__course{
+    //     display: flex;
+    //     align-items: center;
+    //     flex-wrap: nowrap;
+
+    //     &:before{
+    //         content:'';
+    //         display: inline-block;
+    //         margin-right: 20px;
+    //         width: 20px;
+    //         max-width: 20px;
+    //         flex: 0 0 20px;
+    //         height: 20px;
+    //         background: url("../icon/flower-pink.svg") no-repeat center / contain;
+    //     }
+    // }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .programm{
+        padding: map-get($spacers, 3) 0;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .programm{
+        &__item {
+            padding: map-get($spacers, 1);
+            padding-right: map-get($spacers, 4);
+        }
+        &__title{
+            margin-bottom: map-get($spacers, 1);
+        }
+        &__time{
+            justify-content: flex-start;
+        }
+    }
+}

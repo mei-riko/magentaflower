@@ -1,0 +1,52 @@
+.courses{
+    background: #FAF4F6;
+    padding: 200px 0 map-get($spacers, 5);
+
+    &__info{
+        &-title{
+            font-family: $font-family-heading;
+            line-height: $line-height-heading;
+            font-weight: $font-weight-bold;
+
+            font-size: 18px;
+            margin: 5px 0 10px;
+        }
+        &-intro{
+            color: $dark-grey;
+        }
+    }
+
+    &__image{
+        &-grid{
+            display: grid;
+            grid-gap: map-get($map: $spacers, $key: 1);
+            grid-template-columns: 220px 280px;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        &-additional{
+            width: 100%;
+            height: 340px;
+            border-radius: 180px 0px 0px 0px;
+            background: no-repeat center / cover;
+        }
+        &-main{
+            width: 100%;
+            height: 380px;
+            border-radius: 0px 0px 180px 0px;
+            background: no-repeat center / cover;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .courses{
+        padding-top: 160px;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .courses{
+        padding-top: 140px;
+    }
+}

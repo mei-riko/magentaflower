@@ -1,0 +1,229 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 Курс"
+    - var headerClass = "header_fixed"
+block content
+    //- Первый экран 
+    section.courses
+        .courses__header
+            .container
+                .row.align-items-end
+                    .col-6.col-sm-12
+                        span.label.text-bold ОЧНЫЙ КУРС
+                        h1.courses__title.mt-2.mb-2 Курс 
+                            i интенсив 
+                            | по&nbsp;современной флористике
+                        p.courses__introtext.mb-2 Наш курс разработан для тех, кто хочет с нуля освоить новую специальность, погрузиться в сферу флористического дизайна
+                        .row
+                            .col-4.col-sm-12.mb-3.mb-sm-1
+                                .subtitle.text-uppercase Сроки
+                                .courses__info-title 40 ак. часов
+                                .courses__info-intro 80% практики и&nbsp;20%&nbsp;теории
+                            .col-4.col-sm-12.mb-3.mb-sm-0
+                                .subtitle.text-uppercase Уровень
+                                .courses__info-title обучение с нуля
+                                .courses__info-intro лучший способ начать освоение профессии
+                        a.btn.btn_action(href="#") Забронировать место
+                    .col-6.col-sm-12
+                        .courses__image-grid
+                            .courses__image-additional(style="background-image:url('./img/01.png');")
+                            .courses__image-main(style="background-image:url('./img/02.png');")
+    //- Кому подходит
+    section.content
+        .container
+            p.h2.mb-3.text-bold Кому подходит экспресс-курс?
+            .row.content__row.content__row_first
+                .col-4.col-lg-6.col-sm-10.mb-sm-1
+                    .list-icon
+                        .list-icon__img.list-icon__img_default
+                        p Тем, кто хочет освоить азы флористики и получить специализированные знания  
+                .col-4.col-lg-6.col-sm-10.mb-sm-1
+                    .list-icon
+                        .list-icon__img.list-icon__img_default
+                        p Желающим попробовать себя в новой профессии – флориста
+                .col-4.col-lg-6.col-sm-10
+                    .list-icon
+                        .list-icon__img.list-icon__img_default
+                        p Работающим флористам, желающим получить профессиональные знания для карьерного роста
+            .row.content__row
+                .col-4.col-lg-8.col-md-12
+                    p.h4.text-bold Как устроено обучение в&nbsp;школе «Маджента»? 
+                .col-8.col-lg-10.col-md-12
+                    p.content__text-top Весь процесс обучения на флориста на Базовом курсе построен так, чтобы студент даже за короткое время приобрел профессиональные навыки и знания, которые потребуются при работе флористом. На нашем курсе флориста теоретические знания дополняются интенсивной практикой, в ходе которой ученики вырабатывают ценный навык работы с живыми цветами, а также осваивают техники составления букетов и цветочных композиций, которые так высоко ценятся работодателями.
+    //- После курса
+    section.content.bg-light-pink
+        .container
+            p.h1.text-bold.mb-4.mb-md-3 После курса вы 
+                i сможете:
+            .row
+                .col-4.col-lg-6.col-sm-12.col-lg-6.mb-3.mb-lg-1
+                    .list-icon
+                        .list-icon__img.list-icon__img_check
+                        p Правильно подбирать цветы к каждой работе, учитывая фактуру, цвет и&nbsp;законы композиции
+                .col-4.col-lg-6.col-sm-12.col-lg-6.mb-3.mb-lg-1
+                    .list-icon
+                        .list-icon__img.list-icon__img_check
+                        p Делать композиции в кашпо и коробках в различных стилях и техниках
+                .col-4.col-lg-6.col-sm-12.col-lg-6.mb-3.mb-lg-1
+                    .list-icon
+                        .list-icon__img.list-icon__img_check
+                        p Составлять букеты и модно их упаковывать. Профессионально работать с флористической губкой
+                .col-4.col-lg-6.col-sm-12.col-lg-6.mb-3.mb-lg-1
+                    .list-icon
+                        .list-icon__img.list-icon__img_check
+                        p Креативно исполнять свадебные букеты (на своих ногах и в портбукетнице)
+                .col-4.col-lg-6.col-sm-12.col-lg-6
+                    .list-icon
+                        .list-icon__img.list-icon__img_check
+                        p Устроиться на работу на должности «Флорист» (помощник флориста)
+    //- Портфолио
+    section.content
+        .container
+            p.h2.text-center.text-bold.mb-3 Работы выпускников экспресс-курса
+            .row.no-gutters.portfolio.mb-3
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/02.png")
+                        img.img-fluid(src="/img/02.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item
+                        img.img-fluid(src="/img/02.png")
+            .text-center
+                a.btn.btn_action(href="#") Хочу записаться
+    //- Программа курса
+    section.programm.bg-light-pink
+        .container
+            p.h2.text-center.text-bold.mb-3 Программа курса
+            .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                .row.align-items-center
+                    p.programm__title.col-7.col-sm-12.col-md-6 1 день: «Инструменты и материалы»
+                    p.programm__time.col-5.mb-0.col-sm-12.col-md-6 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    .row
+                        .col-8.col-sm-12
+                            p.mb-0.subtitle Теория
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                            p.mb-0.subtitle Практика
+                            p.mb-0 спиральная техника
+                        .col-4.col-sm-12.mt-sm-40
+                            img.img-fluid.ml-auto(src="../img/01.png")
+            .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                .row.align-items-center
+                    p.programm__title.col-7.col-sm-12.col-md-6 2 день: «Свежесрезанные цветы»
+                    p.programm__time.col-5.mb-0.col-sm-12.col-md-6 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    p.mb-0.subtitle Теория
+                    p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    p.mb-0.subtitle Практика
+                    p.mb-0 спиральная техника
+            .programm__item.programm__item_slide.toggle.toggle_programm
+                .row.align-items-center
+                    p.programm__title.col-7.col-sm-12.col-md-6 3 день: «Цвет и настроение»
+                    p.programm__time.col-5.mb-0.col-sm-12.col-md-6 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    p.mb-0.subtitle Теория
+                    p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    p.mb-0.subtitle Практика
+                    p.mb-0 спиральная техника
+    //- Сертификат и преимущества
+    section.content
+        .container
+            //- Сертификат
+            .row.justify-content-between.flex-sm-column-reverse
+                .col-4.col-sm-12.col-md-5
+                    img.img-fluid(src="/img/sertificate.jpg", alt="")
+                .col-7.col-md-7.col-sm-12.mb-sm-3
+                    p.h4.text-bold.mb-3 Вот чем мы лучше многих:
+                    ul.list.list_advantage
+                        li.list_advantage__item.mb-1 Преподаватели с 10-летним&nbsp;опытом
+                        li.list_advantage__item.mb-1 После наших курсов открывают свой&nbsp;бизнес
+                        li.list_advantage__item.mb-1 Помогаем с&nbsp;трудоустройством и&nbsp;конкурсами
+                        li.list_advantage__item.mb-1 Выдаем сертификат
+                        li.list_advantage__item.mb-1 Работаем со свежими живыми&nbsp;цветами
+                        li.list_advantage__item 80% времени — практика, 20%&nbsp;—&nbsp;теория
+                    .sertificate.mt-4.mt-lg-3
+                        .lead.sertificate__blockquote 100% работодателей отдадут предпочтение сотруднику прошедшему обучение у нас
+            //- Карта
+            .row.mt-4
+                .col-5.col-md-12
+                    p.h3.text-bold
+                        span.text-pink Более&nbsp;3500 
+                        | человек из&nbsp;разных городов остались довольны
+                .col-7.col-md-12.mt-md-3
+                    p.content__text-top Наш учебный центр расположен в Санкт-Петербурге и не смотря на это, около 10% всех наших студентов приезжают к нам из других городов.
+                    p
+                        a.link-inverse.text-uppercase.text-bold(href="#") + отзывы наших выпускников 
+                    //- img.img-fluid(src="/img/maps-point.jpg")
+            //- .content__map.mt-4
+    //- Форма
+    section.cta-block
+        .container
+            .cta-block__row
+                .cta-block__info
+                    .cta-block__info-label 
+                        span.label Следующая группа
+                    p.subtitle.mb-0 Ближайшая группа
+                    p.h6.text-bold.cta-block__info-title с 15 июля по 19 июля
+                    p.text-small.text-grey Следующая группа стартует 20 января
+                        a.cta-block__info-link(href="#") + подробное расписание
+                .cta-block__info
+                    p.subtitle.mb-0 Цена со скидкой
+                    p.cta-block__info-title
+                        span.cta-block__info-price.cta-block__info-price_old 19 000 р.
+                        span.cta-block__info-price.cta-block__info-price_new 15 800 р.
+                    p.text-small.text-grey не обязательно вносить сумму за весь уч.год, мы предоставляем рассрочку 23500 руб./мес.
+                .cta-block__info
+                    p.subtitle.mb-0 ВРЕМЯ ЗАНЯТИЙ
+                    p.h6.text-bold.cta-block__info-title 5-6 раз в месяц / в будни с 10 до 17
+                    p.text-small.text-grey расписание будет известно на весь уч. год и вы сможете планировать всё заранее.
+                        a.cta-block__info-link(href="#") + подробное расписание
+            .cta-block__form
+                p.h1.cta-block__title Оставьте заявку на&nbsp;обучение
+                p.cta-block__offer Запишитесь на курс online и&nbsp;
+                    span.text-bold.text-pink получите скидку 15%!
+                form.form.cta-block__form(action="")
+                    input.input.input_name(placeholder="Ваше имя")
+                    input.input.input_phone(placeholder="Телефон")
+                    button.btn.btn_action(type="submit") Хочу записаться
+                    .checkbox.checkbox_agree
+                        input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                        label.checkbox__label(for="agree") согласен с 
+                            a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+    //- section.content
+    //-     .container
+    //-         p.h1.text-bold.mb-40.mb-sm-20 Популярные вопросы
+    //-         .toggle.toggle_faq
+    //-             .toggle__title Какие инструменты нужны для занятий?
+    //-             .toggle__content
+    //-                 p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+    //-         .toggle.toggle_faq
+    //-             .toggle__title Какие инструменты нужны для занятий?
+    //-             .toggle__content
+    //-                 p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+    //-         .toggle.toggle_faq
+    //-             .toggle__title Какие инструменты нужны для занятий?
+    //-             .toggle__content
+    //-                 p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+    //-         p.mb-0.mt-40
+    //-             a.link-inverse.text-uppercase.text-bold(href="#") + Все вопросы
+    //- aside.mb-60
+    //-     .container
+    //-         include ../blocks/networks/networks.pug

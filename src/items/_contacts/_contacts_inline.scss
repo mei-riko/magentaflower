@@ -1,0 +1,30 @@
+.contacts_inline{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item{
+        margin-top: 0;
+        margin-right: map-get($spacers, 1)/2;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+
+        &_phone{
+            margin-right: 24px;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .contacts_inline{
+        &__item{
+            &_phone{
+                font-size: map-get($map: $font-size, $key: sm);
+            }
+        }
+    }
+}
