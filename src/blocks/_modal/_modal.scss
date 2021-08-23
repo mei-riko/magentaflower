@@ -1,6 +1,7 @@
 .modal{
     display: none;
     max-width: 100%;
+    padding: map-get($map: $spacers, $key: 2);
 }
 .compensate-for-scrollbar{
     width: auto;

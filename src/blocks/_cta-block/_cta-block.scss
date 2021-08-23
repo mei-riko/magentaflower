@@ -1,20 +1,183 @@
 .cta-block{
     &__row{
         display: grid;
-        grid-gap: $grid-gutter-width;
+        grid-gap: map-get($spacers, 1);
         grid-template-columns: repeat(3, 1fr);
+
+        margin-bottom: map-get($spacers, 1);
     }
-        // Доп. блоки с информацией
-        &__info{
-            padding: map-get($spacers, 2)/2 map-get($spacers, 2);
-    
-            border: 1px solid $border-color;
-            border-radius: $border-radius;
-            background-color: $white;
-            
-            &-title{
-                margin-top: $spacer-gutter/3;
-                margin-bottom: $spacer-gutter;
+    // Цена и график
+    &__grid{
+        display: grid;
+        grid-gap: map-get($spacers, 1);
+        grid-template-columns: repeat(3, 1fr);
+
+        &-time{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        &-type{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        &-price-1{
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        &-price-2{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+    // Доп. блоки с информацией
+    &__info{
+        position: relative;
+        padding: map-get($spacers, 1) map-get($spacers, 2);
+
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        background-color: $white;
+        
+        &-title{
+            margin-top: $spacer-gutter/3;
+            margin-bottom: $spacer-gutter;
+
+            font-size: 1.25rem;
+            font-family: $font-family-heading;
+            font-weight: $font-weight-bold;
+            line-height: $line-height-heading;
+        }
+        &-label{
+            position: absolute;
+            top: 0;
+            right: map-get($spacers, 1);
+            transform: translateY(-50%);
+        }
+        &-price{
+            display: inline-block;
+
+            &_old{
+                font-weight: $font-weight-base;
+                text-decoration: line-through;
+                margin-right: $spacer-gutter/3;
             }
         }
+    }
+    // Форма
+    &__form{
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        padding: map-get($spacers, 3) map-get($spacers, 4);
+
+        background: $light-grey url("../img/bg-demo-contact.jpg") right center / cover;
+
+        // Модификаторы фонового фото
+        &_summer{
+            background: $light-grey url("../img/bg-contact-warm.jpg") right center / cover;
+        }
+        &_winter{
+            background: $light-grey url("../img/bg-contact-cold.jpg") right center / cover;
+        }
+        &_autumn{
+            background: $light-grey url("../img/bg-contact-autumn.jpg") right center / cover;
+        }
+        &_spring{
+            background: $light-grey url("../img/bg-contact-spring.jpg") right center / cover;
+        }
+        &_digital{
+            background: $light-grey url("../img/bg-contact-digital-compr.jpg") right center / cover;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .cta-block{
+        // Цена и график
+        &__grid{
+            grid-template-columns: repeat(2, 1fr);
+
+            &-time{
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            &-type{
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+
+            &-price-1{
+                grid-column-start: 1;
+                grid-column-end: 2;
+
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            &-price-2{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .cta-block{
+        &__form{
+            padding: map-get($spacers, 3);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .cta-block{
+        &__row{
+            grid-template-columns: 1fr;
+        }
+        &__grid{
+            grid-template-columns: 1fr;
+
+            &-time{
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            &-type{
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+    
+            &-price-1{
+                grid-column-start: 1;
+                grid-column-end: 2;
+
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            &-price-2{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+        }
+        &__info{
+            padding: $spacer-gutter map-get($map: $spacers, $key: 1);
+        }
+        &__form{
+            background-position-x: left;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .cta-block{
+        &__form{
+            padding: map-get($spacers, 3) map-get($spacers, 2);
+        }
+    }
 }

@@ -4,7 +4,7 @@
     align-items: center;
 
     &__link{
-        font-size: map-get($map: $font-size, $key: xs);
+        font-size: map-get($map: $font-size, $key: sm);
         line-height: $line-height-heading;
         padding: 4px 0;
     

@@ -1,7 +1,6 @@
 .info_alert{
-    background: $light-grey url("../img/bg-alert.png") no-repeat right center / 60%;
     padding: map-get($spacers, 3) map-get($spacers, 4);
-    box-shadow: none;
+    background: $light-grey url("../img/bg-alert.png") no-repeat right center / 60%;
 
     &__content{
         width: 320px;
@@ -11,16 +10,16 @@
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .info_alert{
         padding: map-get($spacers, 3);
-        // background-position-x: 360px;
         background-position-x: 100%;
         background-size: contain;
     }
 }
-@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
     .info_alert{
         padding: map-get($spacers, 3) map-get($spacers, 2);
         background: linear-gradient(#f9eaf1, #f0c9d8);
         text-align: center;
+        
         &__content{
             margin-left: auto;
             margin-right: auto;
@@ -28,9 +27,11 @@
     }
 }
 
-
+//  Full HD
 @media (min-width: 1920px){
-    .info_alert__content {
-        width: 420px;
+    .info_alert{
+        &__content {
+            width: 420px;
+        }
     }
 }

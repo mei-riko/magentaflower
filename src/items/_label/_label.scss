@@ -1,4 +1,5 @@
 .label{
+    display: inline-block;
     color: $pink;
     background-color: $pink-light;
 
@@ -10,7 +11,9 @@
     text-transform: uppercase;
 
     border-radius: $border-radius;
+}
 
+a.label{
     &:hover, &:focus{
         text-decoration: none;
         color: darken($pink, 8%);

@@ -60,6 +60,9 @@ $(document).ready(() =>{
         if( $(this).hasClass("toggle_programm") ){
             $(this).toggleClass("toggle_programm--active");
         }
+        if( $(this).hasClass("toggle_faq") ){
+            $(this).find(".toggle__title").toggleClass("toggle__title--active");
+        }
     });
 
 

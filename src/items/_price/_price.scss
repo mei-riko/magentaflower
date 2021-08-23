@@ -1,0 +1,66 @@
+.price{
+    position: relative;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background-color: $white;
+    // box-shadow: 0px 0px 15px 0px rgba(240, 213, 221, 1);
+
+    padding: map-get($spacers, 1) map-get($spacers, 2);
+
+    // Elements
+    &__label{
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%) translateY(-50%);
+    }
+    &__subtitle{
+        color: $grey;
+        margin-bottom: map-get($map: $spacers, $key: 1);
+    }
+    &__title{
+        font-size: 1.25rem;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-heading;
+        margin-bottom: map-get($spacers, 1)/2;
+    }
+    &__value{
+        font-size: 1.25rem;
+        line-height: $line-height-heading;
+
+        &_new{
+            font-weight: $font-weight-bold;
+        }
+        &_old{
+            text-decoration: line-through;
+        }
+    } 
+    
+    // Rows
+    &__info{
+        margin-top: map-get($spacers, 1);
+        padding-top: map-get($spacers, 1);
+        border-top: 1px solid $border-color;
+
+        display: grid;
+        grid-gap: map-get($spacers, 1)/2;
+        grid-template-columns: repeat(2, 1fr);
+
+        justify-content: center;
+    }
+    &__btns{
+        margin-top: map-get($spacers, 1);
+
+        display: grid;
+        grid-gap: map-get($spacers, 1)/2;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .price{
+        &__btns{
+            grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+        }
+    }
+}

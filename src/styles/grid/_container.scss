@@ -42,26 +42,16 @@
 // < 576px
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
   .container {
-    padding-left: $spacer-gutter;
-    padding-right: $spacer-gutter;
+    // padding-left: $spacer-gutter;
+    // padding-right: $spacer-gutter;
     max-width: map-get($map: $container-max-widths, $key: sm);
   }
 }
 // < 420px
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
   .container {
+    padding-right: $grid-gutter-width/2;
+    padding-left: $grid-gutter-width/2;
     max-width: map-get($map: $container-max-widths, $key: xs);
-  }
-  .row{
-    margin-right: -($spacer-gutter/2);
-    margin-left: -($spacer-gutter/2);
-  }
-  .no-gutters {
-    margin-right: 0;
-    margin-left: 0
-  }
-  .no-gutters>.col,.no-gutters>[class*=col-] {
-    padding-right: 0;
-    padding-left: 0
   }
 }

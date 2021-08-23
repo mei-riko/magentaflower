@@ -39,14 +39,54 @@
     }
 }
 
-@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .courses{
         padding-top: 160px;
+
+        &__image-grid{
+            grid-template-columns: 1fr 240px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .courses{
+        // padding-top: 100px;
+        &__image-grid{
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .courses{
+        // padding-top: 140px;
+        &__image-grid{
+            margin-top: map-get($map: $spacers, $key: 2);
+        }
+        &__image-main,
+        &__image-additional{
+            height: 340px;
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .courses{
         padding-top: 140px;
+        
+        &__image-main,
+        &__image-additional{
+            height: 280px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .courses{  
+        &__image-grid{
+            grid-gap: map-get($map: $spacers, $key: 1)/2;
+        }      
+        &__image-main,
+        &__image-additional{
+            height: 220px;
+        }
     }
 }

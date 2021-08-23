@@ -20,7 +20,7 @@
                 display: block;
                 width: 26px;
                 height: 26px;
-                background: url('../img/icon-circle.svg') no-repeat center / contain;
+                background: url('../icon/icon-circle.svg') no-repeat center / contain;
                 position: absolute;
                 top: 22px;
                 left: 22px;
@@ -32,7 +32,7 @@
                 display: block;
                 width: 100%;
                 height: 100%;
-                background: url('../img/check.svg') no-repeat center / 16px;
+                background: url('../icon/check.svg') no-repeat center / 16px;
 
                 position: absolute;
                 top: 0;
@@ -54,13 +54,11 @@
         grid-template-columns: 50px 1fr;
 
         &__img{
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
 
             //- Модификаторы
             &_default{
-                width: 50px;
-                height: 50px;
                 &:before{
                     top: calc(50% - 9px);
                     left: calc(50% - 9px);
@@ -68,36 +66,34 @@
                     height: 18px;
                 }
             }
-            &_check{
-                width: 60px;
-                height: 60px;
-            }
         }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .list-icon{
-        grid-gap: map-get($map: $spacers, $key: 2);
-        grid-template-columns: 80px 1fr;
+        grid-gap: map-get($map: $spacers, $key: 1);
+        grid-template-columns: 40px 1fr;
         
         &__img{
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             
             //- Модификаторы
             &_default{
                 &:before{
                     top: 12px;
                     left: 13px;
-                    width: 26px;
-                    height: 26px;
+                    width: 16px;
+                    height: 16px;
                 }
             }
             &_check{
-                width: 40px;
-                height: 40px;
                 left: 0;
                 transform: none;
+
+                &:before{
+                    background-size: 12px;
+                }
             }
         }
     }

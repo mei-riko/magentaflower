@@ -10,6 +10,10 @@
     &__title{
         color: $dark-grey;
         transition: .4s;
+
+        &--active{
+            color: $pink;
+        }
     }
     &__content{
         display: none;
@@ -19,7 +23,7 @@
     &:after{
         display: block;
         content:'';
-        background: url('../img/arrow-down.svg') no-repeat right center / 20px;
+        background: url('../icon/arrow-down.svg') no-repeat right center / 20px;
         width: 24px;
         height: 24px;
 

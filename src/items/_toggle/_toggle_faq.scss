@@ -1,0 +1,11 @@
+.toggle_faq{
+    padding: map-get($spacers, 1) map-get($spacers, 2);
+    background: $white;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+
+    // JS Status
+    &--active{
+        border-color: $pink;
+    }
+}

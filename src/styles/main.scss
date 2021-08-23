@@ -4,6 +4,8 @@
 
 // Form & Input
 @import "../items/_form/form";
+@import "../items/_form/form_inline";
+@import "../items/_form/form_column";
 
 @import "../items/_input/input";
 @import "../items/_input/checkbox";
@@ -12,9 +14,9 @@
 // All Button
 @import "../items/_btn/btn";
 @import "../items/_btn/btn-group";
-// @import "../items/btn/btn_default";
+@import "../items/_btn/btn_default";
 @import "../items/_btn/btn_action";
-// @import "../items/btn/btn_secondary";
+@import "../items/_btn/btn_secondary";
 // @import "../items/btn/btn_absolute";
 // @import "../items/btn/btn_link";
 // @import "../items/btn/btn_video";
@@ -47,10 +49,10 @@
 // @import "../items/item-icon/item-icon_information";
 
 // Info Item
-// @import "../items/info/info";
+@import "../items/_info/info";
 // @import "../items/info/info_promo";
 // @import "../items/info/info_person";
-// @import "../items/info/info_alert";
+@import "../items/_info/info_alert";
 // @import "../items/info/info_review";
 // @import "../items/info/info_video";
 
@@ -59,7 +61,8 @@
 // Review Item
 // @import "../items/review-child/review-child";
 // Price Item
-// @import "../items/price/price";
+@import "../items/_price/price";
+@import "../items/_price/price_courses";
 // Teacher Item
 // @import "../items/teacher/teacher";
 // @import "../items/teacher/teacher_inside";
@@ -75,7 +78,7 @@
 // @import "../items/tooltip/tooltip";
 // Toggle Slide
 @import "../items/_toggle/toggle";
-// @import "../items/_toggle/toggle_faq";
+@import "../items/_toggle/toggle_faq";
 @import "../items/_toggle/toggle_programm";
 
 // ========================  List  ========================  //
@@ -99,13 +102,13 @@
 // Footer
 @import "../blocks/_footer/footer";
 // Modal
-// @import "../blocks/modal/modal";
-// @import "../blocks/modal/modal_form";
+@import "../blocks/_modal/modal";
+@import "../blocks/_modal/modal_form";
 
 // ========================  Inside Blocks  ========================  //
 
 // Networks
-// @import "../blocks/networks/networks";
+@import "../blocks/_networks/networks";
 // Blog
 // @import "../blocks/blog/blog";
 // Map
@@ -159,6 +162,4 @@
 // Nav
 // @import "../items/slider-nav/slider-nav";
 
-
-
-
+@import "../styles/framework/offset";

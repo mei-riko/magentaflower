@@ -14,12 +14,12 @@
     }
     // Логотип
     &__logo{
-        background: url("../img/logo.svg") no-repeat center 0px/ contain;
+        background: url("../icon/logo.svg") no-repeat center 0px/ contain;
         
         flex: 0 0 230px;
         max-width: 230px;
 
-        height: 120px;
+        height: 140px;
         margin: 0 auto;
         display: block;
 
@@ -77,11 +77,11 @@
     // Контакты
     &__contacts-list{
         font-weight: $font-weight-bold;
-        font-size: map-get($map: $font-size, $key: sm);
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: 24px;
+        
         padding-top: 0;
     }
-
-    
 }
 @media all and (max-width: 1200px){
     .header{
@@ -106,7 +106,7 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .header{
-        padding: 10px $grid-gutter-width/2;
+        padding: 10px 0;
         
         &__desktop{
             display: none;
@@ -116,6 +116,36 @@
             flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
+
+            width: 100%;
+            max-width: map-get($map: $container-max-widths, $key: lg);
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: $grid-gutter-width;
+            padding-right: $grid-gutter-width;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .header{
+        &__mobile{
+            max-width: map-get($map: $container-max-widths, $key: md);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .header{
+        &__mobile{
+            max-width: map-get($map: $container-max-widths, $key: sm);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .header{
+        &__mobile{
+            padding-right: $grid-gutter-width/2;
+            padding-left: $grid-gutter-width/2;
+            max-width: map-get($map: $container-max-widths, $key: xs);
         }
     }
 }

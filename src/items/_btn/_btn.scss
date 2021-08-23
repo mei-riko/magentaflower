@@ -1,11 +1,13 @@
 .btn{
-    border: none;
     outline: none;
 
     font-size: map-get($map: $font-size, $key: md);
+    line-height: map-get($map: $font-size, $key: lg);
+
     text-align: center;
 
-    padding: 15px 30px 16px;
+    padding: 14px 30px 15px;
+    border: 3px solid;
     border-radius: 30px;
     max-width: 100%;
     

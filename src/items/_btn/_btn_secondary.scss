@@ -1,8 +1,8 @@
 .btn_secondary{
     background: inherit;
-    border: 3px solid $pink;
+    border-color: $pink;
     color: $pink;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
 
     &:hover, &:focus{
         color: darken($pink, 10%);

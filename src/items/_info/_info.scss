@@ -1,7 +1,7 @@
 .info{
-    border: 1px solid $border-color;
-    border-radius: 8px;
     padding: map-get($spacers, 2) map-get($spacers, 3);
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
 
     color: $black;
     background-color: $white;
@@ -10,9 +10,10 @@
     // Заголовок блока
     &__title{
         font-size: 1.25rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        line-height: 1.2;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-heading;
+        margin-bottom: $paragraph-margin-bottom;
+
         transition: .3s;
 
         &_small{
@@ -23,13 +24,13 @@
     // Активный элемент
     &--active{
         border-color: $pink;
-        .info__title{
-            color: $pink;
-        }
+        // .info__title{
+        //     color: $pink;
+        // }
     }
+
     // Отступы
-    &_offset-small,
-    &_small{
+    &_offset-small{
         padding: map-get($spacers, 1) map-get($spacers, 2);
     }
 }

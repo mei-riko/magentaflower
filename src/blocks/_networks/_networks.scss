@@ -1,0 +1,15 @@
+.networks{
+    display: grid;
+    grid-gap: map-get($map: $spacers, $key: 1);
+    grid-template-columns: repeat(auto-fit, 34px);
+
+    &__item{
+        // padding: 0 15px;
+        transition: .3s;
+
+        &:hover, &:focus{
+            // padding: 0 12px;
+            transform: scale(.85);
+        }
+    }
+}

@@ -1,8 +1,12 @@
 .input{
-    padding: 13px 30px;
+    padding: 18px 30px;
+    max-width: 100%;
 
     border: 1px solid $border-color;
     border-radius: 3*$border-radius;
+
+    font-size: map-get($map: $font-size, $key: md);
+    line-height: map-get($map: $font-size, $key: lg);
     
     outline: none;
     cursor: pointer;
@@ -13,16 +17,16 @@
 }
 
 .input_name{
-    padding-left: 34px;
-    background: url("../img/profile.svg") no-repeat left center / 20px;
+    padding-left: 44px;
+    background: url("../icon/profile.svg") no-repeat 14px center / 18px;
 }
 
 .input_phone{
-    padding-left: 34px;
-    background: url("../img/telephone.svg") no-repeat left center / 20px;
+    padding-left: 44px;
+    background: url("../icon/telephone.svg") no-repeat 14px center / 18px;
 }
 
 .input_email{
-    padding-left: 34px;
-    background: url("../img/email.svg") no-repeat left center / 20px;
+    padding-left: 44px;
+    background: url("../icon/email.svg") no-repeat 14px center / 18px;
 }
