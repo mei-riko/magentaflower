@@ -1,0 +1,10 @@
+.label_nav{
+    font-size: 13px;
+}
+
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .label_nav{
+        font-size: map-get($map: $font-size, $key: xs);
+    }
+}

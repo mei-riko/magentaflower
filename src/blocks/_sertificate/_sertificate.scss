@@ -1,11 +1,133 @@
 .sertificate{
+    // Примечание на странице курса
     &__blockquote{
-        padding-left: map-get($spacers, 5);
-        // font-size: 1.15rem;
-        // line-height: 1.4;
-        // color: #45393e;
-        background: url(../icon/sertificate.svg) no-repeat left center / map-get($spacers, 4);
         width: 420px;
         max-width: 100%;
+        padding-left: map-get($spacers, 5);
+        background: url(../icon/sertificate.svg) no-repeat left center / map-get($spacers, 4);
+    }
+    // Шаг теста
+    &__step{
+        display: none;
+        &--active{
+            display: block;
+        }
+    }
+    // Заголовок шага теста
+    &__title{
+        font-size: 1.25rem;
+        font-weight: $font-weight-bold;
+    }
+    // Индикатор прохождения теста
+    &__fill{
+        width: calc(100% - 60px);
+        height: 20px;
+        border-radius: 8px;
+        background-color: $pink-light;
+
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        z-index: 10;
+    }
+    &__fill-active{
+        width: 0;
+        height: 20px;
+        border-radius: 8px;
+        background-color: $pink;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 11;
+    }
+    // Элемент теста
+    &__item{
+        display: grid;
+        align-items: center;
+        grid-gap: $grid-gutter-width/2;
+        grid-template-columns: 90px 1fr;
+        
+        padding: $grid-gutter-width/2;
+        // justify-content: space-between;
+        // flex-wrap: nowrap;
+            
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: .4s;
+
+        &:hover, &:focus{
+            border-color: $pink;
+        }
+
+        // Модификации
+        &_image{
+            padding: 4px;
+        }
+        &_icon{}
+        &_modal{}
+
+        &_result{
+            grid-template-columns: 90px 1fr 40px;
+            cursor: default;
+
+            &:hover, &:focus{
+                border-color: $border-color;
+            }
+        }
+        // Неактивный блок
+        &_disable {
+            padding: $spacer/2;
+            opacity: .5;
+            cursor: no-drop;
+
+            &:hover, &:focus{
+                border-color: $border-color;
+            }
+        }
+        
+        // JS State
+        &--active{
+            border-color: $pink;
+            background-color: $pink-light;
+        }
+    }
+    // Картинка-превью
+    &__item-image{
+        width: 90px;
+        height: 90px;
+        border-radius: 8px;
+        background: no-repeat center / cover;
+    }
+    // Иконка
+    &__item-icon{
+        width: 90px;
+        height: 20px;
+        border-radius: 8px;
+        background: no-repeat center / contain;
+    }
+    // Заголовок блока-результата
+    &__item-link{
+        font-weight: $font-weight-bold;
+        line-height: $line-height-heading;
+        text-transform: uppercase;
+        text-decoration: underline;
+
+        margin-bottom: 4px;
+        min-height: 34px;
+
+        &_disable{
+            text-decoration: none;
+        }
+    }
+    // Кнопка купить
+    &__item-buy{
+        display: inline-block;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background: $pink url("../icon/add-cart.svg") no-repeat center/16px;
     }
 }

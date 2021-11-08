@@ -19,8 +19,13 @@ html(lang="ru")
         link(href='./css/main.css', rel='stylesheet')
         //- link(href='./css/media.css', rel='stylesheet')
 
-    body(class=headerClass)
+    body(class=headerBodyClass)
         script(src="../js/jquery.min.js")
+        .advt
+            .container
+                .advt__row
+                    .advt__text Мы запустили online марафон
+                    a.advt__btn(href='https://school.magentaflower.ru/pronovogvenki?gcmes=17686893230&amp;gcmlg=5877439') Присоединиться
         include ./_header/header.pug
         include ./_navbar/navbar.pug
         block content

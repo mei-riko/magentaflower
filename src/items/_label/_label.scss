@@ -5,7 +5,7 @@
 
     padding: 4px 14px;
 
-    font-size: map-get($map: $font-size, $key: xs);
+    font-size: 13px;
     // font-weight: $font-weight-bold;
     line-height: $line-height-heading;
     text-transform: uppercase;
@@ -18,5 +18,12 @@ a.label{
         text-decoration: none;
         color: darken($pink, 8%);
         background: darken($pink-light, 3%);
+    }
+}
+
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .label_nav{
+        font-size: map-get($map: $font-size, $key: xs);
     }
 }

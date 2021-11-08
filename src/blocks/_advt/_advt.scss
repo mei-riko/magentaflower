@@ -1,0 +1,48 @@
+.advt{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 401;
+
+    background-color: $pink;
+
+    &__row{
+        display: grid;
+        grid-template-columns: auto 140px;
+        grid-gap: $spacer-gutter;
+
+        justify-content: center;
+        align-items: center;
+
+        height: 34px;
+    }
+    &__text{
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: map-get($map: $font-size, $key: lg);
+        text-transform: uppercase;
+        color: $white;
+    }
+    &__btn{
+        background-color: $white;
+        color: $pink;
+
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: map-get($map: $font-size, $key: lg);
+        font-weight: $font-weight-bold;
+
+        text-align: center;
+        width: 100%;
+
+        padding: 4px 10px;
+        border-radius: 12px;
+
+        &:hover{
+            text-decoration: none;
+            background-color: $pink-light;
+        }
+    }
+}
+
+.advt + .header_fixed{
+    top: 34px;
+}

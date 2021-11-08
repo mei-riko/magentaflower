@@ -1,11 +1,11 @@
 .input{
-    padding: 18px 30px;
+    padding: 20px 30px 21px;
     max-width: 100%;
 
     border: 1px solid $border-color;
     border-radius: 3*$border-radius;
 
-    font-size: map-get($map: $font-size, $key: md);
+    font-size: 15px;
     line-height: map-get($map: $font-size, $key: lg);
     
     outline: none;
@@ -29,4 +29,11 @@
 .input_email{
     padding-left: 44px;
     background: url("../icon/email.svg") no-repeat 14px center / 18px;
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .input{
+        font-size: map-get($map: $font-size, $key: md);
+        padding: 16px 30px 17px;
+    }
 }

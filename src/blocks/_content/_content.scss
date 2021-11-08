@@ -1,9 +1,9 @@
 .content{
-    padding-top: map-get($spacers, 5);
-    padding-bottom: map-get($spacers, 5);
+    padding-top: 120px;
+    padding-bottom: 120px;
 
     &__title{
-        font-size: 3.375rem;
+        font-size: 3.75rem;
     }
     &__text-top{
         padding-top: 6px;
@@ -11,24 +11,55 @@
     
     // Отступы между смысловыми блоками
     &__row{
-        padding-top: map-get($spacers, 4);
+        padding-top: map-get($spacers, 5);
 
         &:first-child,
         &_first{
             padding-top: 0;
         }
     }
+
+    // Преимущества
+    &__advantages{
+        display: grid;
+        grid-gap: $grid-gutter-width/2;
+        grid-template-columns: repeat(4, 1fr);
+
+        &-item{
+            display: flex;
+            align-items: stretch;
+        }
+        &-title{
+            color: $pink;
+            margin-bottom: 0;
+        }
+        &-subtitle{
+            // font-weight: $font-weight-bolder;
+            color: $pink;
+            margin-bottom: $grid-gutter-width/2;
+        }
+    }
 }
 
-// Разделительная черта
-.content-line{
-    display: block;
-    margin: 0 auto;
-    width: 500px;
-    max-width: 75%;
-    height: 1px;
-}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .content{
+        padding-top: map-get($spacers, 5);
+        padding-bottom: map-get($spacers, 5);
 
+        &__title{
+            font-size: 3.375rem;
+        }
+        // Отступы между смысловыми блоками
+        &__row{
+            padding-top: map-get($spacers, 4);
+
+            &:first-child,
+            &_first{
+                padding-top: 0;
+            }
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .content{
         padding-top: map-get($spacers, 3);

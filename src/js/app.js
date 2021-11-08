@@ -2,7 +2,7 @@ import $ from 'jquery';
 import '../blocks/_navbar/nav';
 import '../blocks/sertificate/sertificate'
 import '../items/slider/slider'
-import '../blocks/_timetable/timetable'
+// import '../blocks/_timetable/timetable'
 import '../blocks/map/map'
 
 import 'popper.js/dist/umd/popper';

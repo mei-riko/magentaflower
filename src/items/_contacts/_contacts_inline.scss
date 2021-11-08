@@ -4,7 +4,7 @@
 
     &__item{
         margin-top: 0;
-        margin-right: map-get($spacers, 1)/2;
+        margin-right: map-get($spacers, 1);
 
         &:last-of-type{
             margin-right: 0;
@@ -15,6 +15,15 @@
             &:last-of-type{
                 margin-right: 0;
             }
+        }
+    }
+}
+
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .contacts_inline{
+        &__item{
+            margin-right: map-get($spacers, 1)/2;
         }
     }
 }

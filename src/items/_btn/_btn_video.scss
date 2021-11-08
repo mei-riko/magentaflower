@@ -1,0 +1,30 @@
+.btn_video{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0;
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:after{
+        content: '';
+        display: inline-block;
+
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        margin-left: 10px;
+
+        background: $pink url("../icon/play.svg") no-repeat 9px center/8px;
+        color: $white;
+        transition: .4s;
+    }
+
+    &:hover, &:focus{
+        color: darken($pink, 15%);
+        &:after{
+            background-color: darken($color: $pink, $amount: 15);
+        }
+    }
+}

@@ -19,12 +19,13 @@
 @import "../items/_btn/btn_secondary";
 // @import "../items/btn/btn_absolute";
 // @import "../items/btn/btn_link";
-// @import "../items/btn/btn_video";
-// @import "../items/btn/btn_more";
+@import "../items/_btn/btn_video";
+@import "../items/_btn/btn_more";
 
 // Label Btn
 @import "../items/_label/label";
 @import "../items/_label/label_action";
+@import "../items/_label/label_nav";
 
 // ========================  Navigation  ========================  //
 
@@ -72,7 +73,12 @@
 // Preview Pages
 // @import "../items/preview/preview-link";
 // @import "../items/preview/preview-info";
-// @import "../items/preview/preview-courses";
+@import "../items/_preview/preview-courses";
+@import "../items/_preview/preview-mc";
+
+// Price Items
+@import "../items/_page-price/page-price";
+@import "../items/_page-price/page-price_center";
 
 // Tooltip
 // @import "../items/tooltip/tooltip";
@@ -86,6 +92,7 @@
 // List
 @import "../items/_list/list";
 @import "../items/_list/list_advantage";
+@import "../items/_list/list_numeric";
 // Contact List
 @import "../items/_contacts/contacts";
 @import "../items/_contacts/contacts_inline";
@@ -95,6 +102,8 @@
 
 // ========================  Main Block  ========================  //
 
+// Advt
+@import "../blocks/_advt/advt";
 // Header
 @import "../blocks/_header/header";
 @import "../blocks/_header/header_fixed";
@@ -125,21 +134,23 @@
 // @import "../blocks/master-class/master-class";
 // Page Block
 @import "../blocks/_page/page";
+@import "../blocks/_page/page";
 // @import "../blocks/page/page-header";
 // @import "../blocks/page/page-header_col";
 @import "../blocks/_programm/programm";
 // @import "../blocks/page/page-logo";
-// @import "../blocks/page/page-price";
+
 // New Courses Page
 @import "../blocks/_courses/courses";
 // Sertificate
 @import "../blocks/_sertificate/sertificate";
-// @import "../blocks/sertificate/sertificate_modal";
+@import "../blocks/_sertificate/sertificate_modal";
+@import "../blocks/_sertificate/sertificate_poll";
 // @import "../blocks/sertificate/sertificate-action-input";
 // @import "../blocks/sertificate/sertificate-content";
 // Timetable
-// @import "../blocks/_timetable/timetable-nav";
-// @import "../blocks/_timetable/timetable";
+// @import "../blocks/timetable/timetable-nav";
+// @import "../blocks/timetable/timetable";
 // @import "../items/timetable-item/timetable-item";
 
 // ========================  Content  ========================  //
@@ -148,6 +159,8 @@
 @import "../blocks/_content/content_heading";
 @import "../blocks/_content/content_offset-small";
 @import "../blocks/_content/content_inside";
+
+@import "../blocks/_content/content-line";
 
 // ========================  Slider  ========================  //
 

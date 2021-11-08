@@ -1,12 +1,12 @@
 .btn{
     outline: none;
 
-    font-size: map-get($map: $font-size, $key: md);
+    font-size: 15px;
     line-height: map-get($map: $font-size, $key: lg);
 
     text-align: center;
 
-    padding: 14px 30px 15px;
+    padding: 18px 30px 19px;
     border: 3px solid;
     border-radius: 30px;
     max-width: 100%;
@@ -25,5 +25,12 @@
     &--disable{
         filter: grayscale(.75);
         cursor: not-allowed;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .btn{
+        font-size: map-get($map: $font-size, $key: md);
+        padding: 14px 30px 15px;
     }
 }

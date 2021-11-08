@@ -37,33 +37,33 @@ block content
                                 span.list_numeric__number 1
                             .list_numeric__item.mt-1 розыгрышь 30% скидки на любой мастер-класс 
                                 span.list_numeric__number 2
-    section.page-programm
+    section.programm
         .container
             p.text-uppercase.text-bold Даты дней открытых дверей в&nbsp;2021&nbsp;году
             .row
                 .col-4.col-md-6.col-sm-12
-                    .page-programm__item.page-programm__item--disable.mt-1
-                        .page-programm__date 
+                    .programm__item.programm__item--disable.mt-1
+                        .programm__date 
                             .mb-0 9 января 2021<br/>
                                 .text-small.text-grey с 10.00 до 15.00
                 .col-4.col-md-6.col-sm-12
-                    .page-programm__item.mt-1
-                        .page-programm__date 
+                    .programm__item.mt-1
+                        .programm__date 
                             .mb-0 21 февраля 2021<br/>
                                 .text-small.text-grey с 11.00 до 16.00
                 .col-4.col-md-6.col-sm-12
-                    .page-programm__item.mt-1
-                        .page-programm__date 
+                    .programm__item.mt-1
+                        .programm__date 
                             .mb-0 8 марта 2021<br/>
                                 .text-small.text-grey с 10.00 до 15.00
                 .col-4.col-md-6.col-sm-12
-                    .page-programm__item.mt-1
-                        .page-programm__date 
+                    .programm__item.mt-1
+                        .programm__date 
                             .mb-0 12 мая 2021<br/>
                                 .text-small.text-grey с 11.00 до 16.00
                 .col-4.col-md-6.col-sm-12
-                    .page-programm__item.mt-1
-                        .page-programm__date 
+                    .programm__item.mt-1
+                        .programm__date 
                             .mb-0 28 июня 2021<br/>
                                 .text-small.text-grey с 10.00 до 15.00
                 
@@ -87,33 +87,34 @@ block content
                 .col-2.col-sm-6.col-md-4
                     .portfolio__item(data-fancybox="gallery" href="/img/01.png")
                         img.img-fluid(src="/img/01.png")
-            .p-3.text-center
+            .pt-3.text-center
                 a.btn.btn_action.scroll(href="#buy") Забронировать место
+    //- Расписание
     section.content.content_offset-small.bg-light-pink
         .container
             h4.text-bold Расписание ближайшего мероприятия
             .row
                 .col-3.col-md-4.col-sm-12
-                    .page-programm__item.mt-1
+                    .programm__item.mt-3
                         .mb-0 Начало мероприятия<br/>
                             .mt-md-10.text-small.text-grey 12.00 - 12.30
                 .col-6.col-md-8.col-sm-12
-                    .page-programm__item.mt-1
+                    .programm__item.mt-3
                         .mb-0 Знакомство с&nbsp;преподавателями школы и&nbsp;приглашенными мастерами<br/>
                             .mt-md-10.text-small.text-grey 12.30 - 13.00
                 .col-3.col-md-4.col-sm-12
-                    .page-programm__item.mt-1
+                    .programm__item.mt-3
                         .mb-0 Презентация курсов<br/>
                             .mt-md-10.text-small.text-grey 13.00 - 14.00
                 .col-6.col-md-8.col-sm-12
-                    .page-programm__item.page-programm__item--action.mt-1
-                        .page-programm__course
+                    .programm__item.programm__item--action.mt-3
+                        .programm__course
                             .mb-0 
                                 span.text-bold.text-pink Бесплатный мастер-класс 
                                 | по&nbsp;созданию каркасного букета<br/>
                                 .mt-md-10.text-small.text-grey 14.00 - 16.00
                 .col-6.col-md-8.col-sm-12
-                    .page-programm__item.mt-1
+                    .programm__item.mt-3
                         .mb-0
                             span.text-bold.text-pink Розыгрыш 30% скидки 
                             | на любой мастер-класс школы<br/>
@@ -128,17 +129,19 @@ block content
                     p Только люди, записавшиеся онлайн, смогут учавствовать в борбе за скидку в 30% на любой мастер-класс и курс в школе флористики Маджента
                     form.form.info.mt-3(action="")
                         p.text-pink.text-uppercase.text-bold Оставить заявку на участие
-                        .radio-btn
-                            input.radio-btn__input(type="radio" value="1" name="date" id="date1" checked="checked") 
-                            label.radio-btn__label(for="date1") 21.01.21
-                        .radio-btn
-                            input.radio-btn__input(type="radio" value="1" name="date" id="date2") 
-                            label.radio-btn__label(for="date2") 01.02.21
-                        .radio-btn
-                            input.radio-btn__input(type="radio" value="1" name="date" id="date3") 
-                            label.radio-btn__label(for="date3") 08.03.21
-                        input.form-input.form-input--full.mt-1.mb-1(placeholder="Ваше имя")
-                        input.form-input.form-input--full.mb-1.phone(placeholder="Телефон")
+                        .form__row
+                            .radio
+                                input.radio__input(type="radio" value="1" name="date" id="date1" checked="checked") 
+                                label.radio__label(for="date1") 21.01.21
+                            .radio
+                                input.radio__input(type="radio" value="1" name="date" id="date2") 
+                                label.radio__label(for="date2") 01.02.21
+                            .radio
+                                input.radio__input(type="radio" value="1" name="date" id="date3") 
+                                label.radio__label(for="date3") 08.03.21
+                        
+                        input.input.input--full.mt-1.mb-1(placeholder="Ваше имя")
+                        input.input.input--full.mb-1.phone(placeholder="Телефон")
                         button.btn.btn_action(type="submit") Забронировать место
                         .form__agree.checkbox
                             input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")

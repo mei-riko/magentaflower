@@ -3,7 +3,7 @@
     // Стиль первого экрана с фоном
     &__header-block{
         position: relative;
-        padding: 200px 0 map-get($spacers, 5);
+        padding: 220px 0 map-get($spacers, 5);
         background: no-repeat center / cover;
         text-align: center;
 
@@ -27,7 +27,6 @@
             z-index: 11;
         }
     }
-    
     // Основной заголовок
     &__title{
         font-weight: $font-weight-bold;
@@ -45,6 +44,13 @@
     &__introtext{
         line-height: $line-height-base;
 
+        width: 480px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    // Группа кнопок
+    &__btn-group{
         width: 480px;
         max-width: 100%;
         margin-left: auto;
@@ -86,6 +92,11 @@
         max-width: map-get($container-max-widths, 'xl');
         margin-left: calc( (100% - 1240px)/2 );
 
+        &:not(.slick-initialized){
+            display: grid;
+            grid-gap: $spacer-gutter;
+            grid-template-columns: repeat(3, 1fr);
+        }
         // Slick
         .slick-list{
             overflow: visible;
@@ -106,8 +117,18 @@
             right: -12px;        
         }
     }
+    &__slider-col{
+        display: flex;
+        align-items: stretch;
+        padding: 0 $grid-gutter-width/2;
+
+        &.slick-slide{
+            display: flex;
+            height: fit-content;
+        }
+    }
 }
-// 1400
+// 1440px
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .page{
         &__slider{
@@ -116,7 +137,7 @@
         }
     }
 }
-// 992
+// 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .page{
         // Стиль первого экрана
@@ -130,7 +151,7 @@
         }
     }
 }
-// 768
+// 768px
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .page{
         // Слайдер контента на всю ширину
@@ -140,7 +161,7 @@
         }
     }
 }
-// 576
+// 576px
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .page{
         // Стиль первого экрана

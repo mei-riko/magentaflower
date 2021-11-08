@@ -36,6 +36,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1240px,
+  hd: 1440px,
 ) !default;
 
 $font-family-base     : "Noto Sans", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -47,7 +48,7 @@ $letter-spacing       : 0.2em;
 
 $font-size-base       : 14px;
 $font-weight-base     : 400;
-$line-height-base     : 1.6;
+$line-height-base     : 1.7;
 
 $font-weight-bolder   : 600;
 $font-weight-bold     : 700;

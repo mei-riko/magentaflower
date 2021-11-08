@@ -1,5 +1,5 @@
 html,body {
-    font-size: map-get($font-size, 'md');
+    font-size: map-get($font-size, 'lg');
     font-weight: $font-weight-base;
     // line-height: $line-height-base;
     box-sizing: border-box;
@@ -102,7 +102,7 @@ table{
 
 .text-bolder            {font-weight: $font-weight-bolder;}
 .text-bold,strong,b     {font-weight: $font-weight-bold;}
-.text-small,small,.small{font-size: map-get($map: $font-size, $key: sm); line-height: $line-height-base;}
+.text-small,small,.small{font-size: map-get($map: $font-size, $key: md); line-height: $line-height-base;}
 .lead, .text-lead       {font-size: map-get($map: $font-size, $key: lg);}
 
 .text-uppercase{text-transform: uppercase;}
@@ -161,11 +161,15 @@ blockquote, .blockquote{
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    html,body {
+        font-size: map-get($font-size, 'md');
+    }
     .text-xl{
         &-left{text-align: left;}
         &-center{text-align: center;}
         &-right{text-align: right;}
     }
+    .text-small,small,.small{font-size: map-get($map: $font-size, $key: sm);}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .text-lg{

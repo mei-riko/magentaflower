@@ -9,7 +9,7 @@
     &__input{
         display: none;
 
-        &:checked + .radio-btn__label {
+        &:checked + .radio__label {
             background-color: $pink-light;
             border-color: $border-color;
         }

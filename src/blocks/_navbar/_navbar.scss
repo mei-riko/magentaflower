@@ -4,7 +4,7 @@
     align-items: center;
 
     &__link{
-        font-size: map-get($map: $font-size, $key: sm);
+        font-size: 14px;
         line-height: $line-height-heading;
         padding: 4px 0;
     
@@ -69,6 +69,14 @@
     }
 }
 
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .navbar{
+        &__link{
+            font-size: map-get($map: $font-size, $key: sm);
+        }
+    }
+}
 @media all and (max-width: 1200px){
     .navbar{
         &_left{
@@ -83,12 +91,13 @@
         }
     }
 }
+// < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .navbar{
         flex-wrap: wrap;
         
-        .navbar__link{
-            font-size: 16px;
+        &__link{
+            font-size: map-get($map: $font-size, $key: lg);
             text-transform: none;
 
             &_online{

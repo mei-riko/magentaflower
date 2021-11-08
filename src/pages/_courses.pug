@@ -3,6 +3,7 @@ extends ../blocks/main.pug
 block variables
     - var pageTitle = "2021 Курс"
     - var headerClass = "header_fixed"
+    - var headerBodyClass = "header-fixed"
 block content
     //- Первый экран 
     section.courses
@@ -26,7 +27,7 @@ block content
                                 .courses__info-intro лучший способ начать освоение профессии
                         a.btn.btn_action(href="#") Забронировать место
                     .col-6.col-md-12
-                        .courses__image-grid
+                        .courses__image-grid._courses__image-grid_single
                             .courses__image-additional(style="background-image:url('./img/01.png');")
                             .courses__image-main(style="background-image:url('./img/02.png');")
     //- Кому подходит

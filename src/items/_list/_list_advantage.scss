@@ -5,7 +5,7 @@
         padding-left: 48px;
         margin-bottom: $spacer-gutter;
 
-        width: 380px;
+        width: 440px;
         max-width: 100%;
         
         &:last-child{
@@ -41,6 +41,13 @@
     }
     &__content{
         color: $pink-light;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .list_advantage{
+        &__item{
+            width: 380px;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){

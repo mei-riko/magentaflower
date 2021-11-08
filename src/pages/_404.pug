@@ -1,0 +1,42 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 Страница ошибки"
+    //- - var headerClass = "header_fixed"
+    //- - var headerBodyClass = "header-fixed"
+block content
+    section.content.content_heading.page
+        .container
+            h1.page__title Страница не найдена
+            p.page__introtext Cоздавайте свои шедевры современной флористики, начиная от круглого букета и завершая асимметричной композицией!
+            .btn-group.page__btn-group
+                a.btn.btn_default(href="#") Online-курсы
+                a.btn.btn_default(href="#") Очные курсы
+    aside.content.content_offset-small
+        .container 
+            .content__advantages
+                .content__advantages-item
+                    .info
+                        .content__advantages-title.h4 15 000
+                        .content__advantages-subtitle часов обучения
+                        p.text-small Проведено за годы преподавания в школе флористики
+                .content__advantages-item
+                    .info
+                        .content__advantages-title.h4 12
+                        .content__advantages-subtitle лет успешной работы
+                        p.text-small Мы одна из лучших школ флористики в России
+                .content__advantages-item
+                    .info
+                        .content__advantages-title.h4 Более 190
+                        .content__advantages-subtitle публикаций
+                        p.text-small Работы наших преподавателей печатают лучшие российские и зарубежные издания
+                .content__advantages-item
+                    .info
+                        .content__advantages-title.h4 Более 45
+                        .content__advantages-subtitle флористических тем
+                        p.text-small Мы готовы предложить нашим ученикам большой выбор курсов по флористике
+
+    aside.mb-4
+        .container
+            include ../blocks/_networks/networks.pug
+    

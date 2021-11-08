@@ -3,6 +3,7 @@ extends ../blocks/main.pug
 block variables
     - var pageTitle = "2021 Online"
     - var headerClass = "header_fixed"
+    - var headerBodyClass = "header-fixed"
 block content
     section.page
         //- Первый экран 
@@ -56,31 +57,31 @@ block content
                                 .page-price__label.text-pink со скидкой
                                 p.page-price__value.page-price__value_new 35 000
                         a.btn.btn_action.scroll(href="online.html") Подробнее
-            h4.text-bold.text-center.mt-4.mb-40#classes Доступные мастер-классы
-            .row.timetable
-                .col-4.col-lg-6.col-sm-12.timetable__col
-                    .timetable__block.timetable__block_preview
-                        .timetable__img(style="background-image: url('./img/test-01.jpg');")
-                        a.timetable__title(href="MK.html") «Коммерческие букеты»
-                        .timetable__offer Уровень: для начинающих 
-                        .timetable__offer Сроки: 35 минут
-                        .timetable__price.mt-1 1200 р.
-                .col-4.col-lg-6.col-sm-12.timetable__col
-                    .timetable__block.timetable__block_preview
-                        .timetable__img(style="background-image: url('./img/test-02.jpg');")
-                        a.timetable__title(href="MK.html") «Летние букеты и разнообразные  техники плетения из трав»
-                        .timetable__offer Уровень: для начинающих 
-                        .timetable__offer Сроки: 35 минут
-                        .timetable__price.mt-1 
-                            span.price-old 2000 
+            h4.text-bold.text-center.mt-4.mb-3#classes Доступные мастер-классы
+            .row
+                .col-4.col-lg-6.col-sm-12.preview-mc.mb-3
+                    .preview-mc__inside
+                        .preview-mc__img(style="background-image: url('./img/test-01.jpg');")
+                        a.preview-mc__title(href="MK.html") «Коммерческие букеты»
+                        .preview-mc__intro Уровень: для начинающих 
+                        .preview-mc__intro Сроки: 35 минут
+                        .preview-mc__price.mt-1 1200 р.
+                .col-4.col-lg-6.col-sm-12.preview-mc.mb-3
+                    .preview-mc__inside
+                        .preview-mc__img(style="background-image: url('./img/test-02.jpg');")
+                        a.preview-mc__title(href="MK.html") «Летние букеты и разнообразные  техники плетения из трав»
+                        .preview-mc__intro Уровень: для начинающих 
+                        .preview-mc__intro Сроки: 35 минут
+                        .preview-mc__price.mt-1 
+                            span.preview-mc__price_old 2000 
                             | 1200 р.
-                .col-4.col-lg-6.col-sm-12.timetable__col
-                    .timetable__block.timetable__block_preview
-                        .timetable__img(style="background-image: url('./img/test-03.jpg');")
-                        a.timetable__title(href="MK.html") «Коммерческие букеты»
-                        .timetable__offer Уровень: для начинающих 
-                        .timetable__offer Сроки: 35 минут
-                        .timetable__price.mt-1 1200 р.
+                .col-4.col-lg-6.col-sm-12.preview-mc.mb-3
+                    .preview-mc__inside
+                        .preview-mc__img(style="background-image: url('./img/test-03.jpg');")
+                        a.preview-mc__title(href="MK.html") «Коммерческие букеты»
+                        .preview-mc__intro Уровень: для начинающих 
+                        .preview-mc__intro Сроки: 35 минут
+                        .preview-mc__price.mt-1 1200 р.
     //- Networks
     aside.mb-4.container
-        include ../blocks/networks/networks.pug
+        include ../blocks/_networks/networks.pug

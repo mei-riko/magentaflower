@@ -2,4 +2,12 @@
 .content_heading{
     background: #faf4f6 url("../img/pattern-wave-light.png") repeat left top / 260px;
     text-align: center;
+
+    margin-top: -40px;
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content_heading{
+        margin-top: 0;
+    }
 }
