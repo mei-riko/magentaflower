@@ -1,0 +1,25 @@
+.teacher_inside{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-gap: $grid-gutter-width;
+
+    padding: map-get($spacers, 2) map-get($spacers, 3);
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    &__photo{
+        margin-bottom: 0;
+
+        &:before{
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .teacher_inside{
+        padding: $spacer/2;
+    }
+}

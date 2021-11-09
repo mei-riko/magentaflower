@@ -1,0 +1,103 @@
+.category{
+    &__tags{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: -4px;
+
+        padding: map-get($map: $spacers, $key: 2) 0;
+        // border: 1px solid $border-color;
+        // border-radius: 8px;
+
+        &-item{
+            font-size: map-get($map: $font-size, $key: sm);
+            line-height: map-get($map: $font-size, $key: md);
+            white-space: nowrap;
+
+            margin: 4px;
+            padding: 4px 8px;
+            border-radius: 10px;
+            border: 1px solid $pink-light;
+
+            &_all{
+                background: $pink-light;
+            }
+
+            &--active{
+                font-weight: $font-weight-bold;
+            }
+
+            &:nth-child(n+14) {
+                display: none;
+            }
+        }
+        &-show{
+            font-size: map-get($map: $font-size, $key: sm);
+            line-height: map-get($map: $font-size, $key: md);
+            white-space: nowrap;
+            margin: 4px;
+
+            color: $pink;
+            font-weight: $font-weight-bold;
+
+            &--active{
+                color: $grey;
+            }
+        }
+
+        &--active{
+            .category__tags-item{
+                display: inline-block;
+            }
+        }
+    }
+    &__title{
+        margin: 0 0 map-get($map: $spacers, $key: 3);
+    }
+    &__item{
+        display: grid;
+        grid-gap: map-get($map: $spacers, $key: 1);
+
+        margin-bottom: map-get($map: $spacers, $key: 3);
+
+        // Превью
+        &-img{
+            border-radius: $border-radius;
+            overflow: hidden;
+        }
+        // Видео
+        &-video{
+            width: 100%;
+            height: 240px;
+        }
+        // Заголовок
+        &-title{
+            font-size: map-get($map: $font-size, $key: xl);
+            font-weight: $font-weight-bold;
+            line-height: $line-height-heading;
+            margin-bottom: 0;
+        }
+        // Дополнительный текст
+        &-intro{
+            font-size: map-get($map: $font-size, $key: md);
+            margin-bottom: 0;
+        }
+        // Ссылка «Далее»
+        &-link{
+            font-weight: $font-weight-bold;
+            // max-width: 144px;
+            text-align: center;
+
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .category{
+        &__item{
+            margin-bottom: map-get($map: $spacers, $key: 2);
+        }
+    }
+}

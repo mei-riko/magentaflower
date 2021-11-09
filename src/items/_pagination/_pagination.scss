@@ -5,21 +5,19 @@
     &__item{
         width: 30px;
         height: 30px;
+        margin: 4px;
 
         text-align: center;
         line-height: 28px;
-
-        border-radius: 15px;
+        color: $grey;
 
         background: $white;
         border: 1px solid $border-color;
-        color: $grey;
-        font-weight: bold;
-        margin: 4px;
+        border-radius: $border-radius;
 
         &:hover, &:focus{
             text-decoration: none;
-            background: darken($color: $pink-light, $amount: 10);
+            border-color: $pink;
         }
 
         &--active{
@@ -28,6 +26,7 @@
 
             &:hover, &:focus{
                 background: $pink-light;
+                border-color: $border-color;
                 color: $grey;
                 cursor: default;
             }

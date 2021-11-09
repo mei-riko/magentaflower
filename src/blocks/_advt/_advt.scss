@@ -46,3 +46,23 @@
 .advt + .header_fixed{
     top: 34px;
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .advt{
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        &__row{
+            grid-template-columns: 1fr;
+            grid-gap: 2px;
+            height: 54px;
+        }
+        &__text{
+            text-align: center;
+        }
+    }
+
+    .advt + .header_fixed{
+        top: 66px;
+    }
+}

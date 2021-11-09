@@ -35,5 +35,12 @@
     .input{
         font-size: map-get($map: $font-size, $key: md);
         padding: 16px 30px 17px;
+        padding-left: 40px;
+
+        &_name,
+        &_phone,
+        &_email{
+            background-position-x: 10px;
+        }
     }
 }

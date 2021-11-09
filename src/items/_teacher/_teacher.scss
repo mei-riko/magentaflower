@@ -15,6 +15,7 @@
         height: fit-content;
 
         background: url("../img/Elena.jpg") no-repeat center / cover;
+        border-radius: $border-radius;
         margin-bottom: $spacer/2;
 
         &:before{
@@ -22,6 +23,8 @@
             display: block;
             width: calc(100% + 20px);
             height: 90px;
+            border-radius: $border-radius;
+
             background-color: $pink-light;
             transition: .4s;
 
@@ -40,23 +43,23 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    &__name{
-        font-size: 1.5rem;
-        // font-family: $font-family-serif;
-        font-weight: bold;
-        margin-bottom: 0;
-        line-height: 1.2;
-    }
+    &__name,
     &__surname{
-        font-size: 1.5rem;
-        // font-family: $font-family-serif;
-        font-weight: bold;
-        line-height: 1.2;
-        margin-bottom: $spacer/4;
+        font-size: 22px;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-heading;
+        margin-bottom: 0;
+    }
+    &__subtitle{
+        font-size: map-get($map: $font-size, $key: md);
+        color: $dark-grey;
+        margin: $spacer/4 0;
+        color: $pink;
     }
     &__intro{
         color: $dark-grey;        
     }
+
     // Status
     &:hover, &:focus{
         text-decoration: none;
@@ -79,7 +82,7 @@
             padding-left: $spacer/2;
         }
         &__name, &__surname{
-            font-size: 1.25rem;
+            font-size: 18px;
             display: inline-block;
         }
     }

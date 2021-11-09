@@ -132,17 +132,17 @@ $(document).ready(() =>{
     });
 
     // Show More Tags
-    $('.blog .blog__tags .blog__tags-show').on('click', function(){
+    $('.category .category__tags .category__tags-show').on('click', function(){
         let tagsShow = $(this);
 
-        if ( !tagsShow.hasClass('blog__tags-show--active') ){
-            tagsShow.addClass('blog__tags-show--active');
+        if ( !tagsShow.hasClass('category__tags-show--active') ){
+            tagsShow.addClass('category__tags-show--active');
             tagsShow.text('Скрыть теги');
-            tagsShow.parent().addClass('blog__tags--active');
+            tagsShow.parent().addClass('category__tags--active');
         }else{
-            tagsShow.removeClass('blog__tags-show--active');
+            tagsShow.removeClass('category__tags-show--active');
             tagsShow.text('Показать теги')
-            tagsShow.parent().removeClass('blog__tags--active');
+            tagsShow.parent().removeClass('category__tags--active');
         }
     });
 });

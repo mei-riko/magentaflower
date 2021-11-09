@@ -34,7 +34,7 @@
 @import "../blocks/_navbar/navbar-mobile";
 
 // Pagination
-// @import "../items/pagination/pagination";
+@import "../items/_pagination/pagination";
 
 
 // ========================  Items  ========================  //
@@ -65,8 +65,8 @@
 @import "../items/_price/price";
 @import "../items/_price/price_courses";
 // Teacher Item
-// @import "../items/teacher/teacher";
-// @import "../items/teacher/teacher_inside";
+@import "../items/_teacher/teacher";
+@import "../items/_teacher/teacher_inside";
 // Courses Item
 // @import "../items/item-cources/item-cources";
 
@@ -118,8 +118,9 @@
 
 // Networks
 @import "../blocks/_networks/networks";
-// Blog
-// @import "../blocks/blog/blog";
+// Category
+@import "../blocks/_category/category";
+@import "../blocks/_category/category_review";
 // Map
 // @import "../blocks/map/map";
 // CTA

@@ -1,0 +1,110 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 Блог"
+    //- - var headerClass = "header_fixed"
+    //- - var headerBodyClass = "header-fixed"
+block content
+    section.content.content_heading.page
+        .container
+            h1.page__title Блог школы флористики
+    section.category.mb-4
+        .container
+            .category__tags
+                a.category__tags-item.category__tags-item_all(href="#") Все публикации
+                a.category__tags-item.category__tags-item--active(href="#") #познавательное
+                a.category__tags-item(href="#") #стойкие цветы
+                a.category__tags-item(href="#") #исполняем мечты
+                a.category__tags-item(href="#") #курсы флористики онлайн
+                a.category__tags-item(href="#") #онлайн обучение флористике
+                a.category__tags-item(href="#") #онлайн школа флористики
+                a.category__tags-item(href="#") #самые дорогие цветы
+                a.category__tags-item(href="#") #обучение
+                a.category__tags-item(href="#") #курсы обучения флористов
+                a.category__tags-item(href="#") #день рождения школы флористики
+                a.category__tags-item(href="#") #безопасные цветы
+                a.category__tags-item(href="#") #цветы для аллергиков
+                a.category__tags-item(href="#") #флористика дистанционно
+                a.category__tags-item(href="#") #цвет букета
+                a.category__tags-item(href="#") #как составить букет
+                a.category__tags-item(href="#") #мастер-класс по флористике
+                a.category__tags-item(href="#") #видео
+                a.category__tags-item(href="#") #видео уроки флористики
+                a.category__tags-item(href="#") #рождественская флористика
+                a.category__tags-item(href="#") #флористика на новый год
+                a.category__tags-item(href="#") #история успеха
+                a.category__tags-item(href="#") #как открыть цветочный магазин
+                a.category__tags-item(href="#") #бизнес цветочный магазин
+                a.category__tags-item(href="#") #ошибки начинающего флориста
+                a.category__tags-item(href="#") #ожидание и реальность
+                a.category__tags-item(href="#") #фото флористики
+                a.category__tags-item(href="#") #факты о цветах
+                a.category__tags-item(href="#") #интересные факты о цветах
+                a.category__tags-item(href="#") #фестиваль цветов
+                a.category__tags-item(href="#") #праздник цветов
+                a.category__tags-item(href="#") #керамическая флористика
+                a.category__tags-item(href="#") #интерьерная флористика
+                a.category__tags-item(href="#") #курс флориста дистанционно
+                a.category__tags-item(href="#") #флористика онлайн
+                a.category__tags-item(href="#") #флористика онлайн для начинающих
+                a.category__tags-item(href="#") #флористика для начинающих
+                a.category__tags-item(href="#") #стать флористом
+                a.category__tags-item(href="#") #курс флористики
+                a.category__tags-item(href="#") #флористика мастер-класс
+                a.category__tags-item(href="#") #пот-э-флер
+                a.category__tags-item(href="#") #цветущий горшок
+                a.category__tags-item(href="#") #мастер-класс с флористом
+                a.category__tags-item(href="#") #мастер-класс по флористике в подарок
+                a.category__tags-item(href="#") #сертификат на занятие с флористом
+                a.category__tags-item(href="#") #тимбилдинг
+                a.category__tags-item(href="#") #флористика на тимбилдинг
+                a.category__tags-item(href="#") #флористика на корпоратив
+                a.category__tags-item(href="#") #корпоративная флористика
+                a.category__tags-item(href="#") #оформление цветами офиса
+                a.category__tags-item(href="#") #портфолио
+                a.category__tags-item(href="#") #портфолио флориста
+                a.category__tags-item(href="#") #как составить портфолио
+                a.category__tags-item(href="#") #как упаковать букет
+                a.category__tags-item(href="#") #стили флористики
+                a.category__tags-item(href="#") #корейская флористика
+                a.category__tags-item(href="#") #новости школы
+                a.category__tags-item(href="#") #свадебная флористика
+                a.category__tags-item(href="#") #сезонная флористика
+                a.category__tags-item(href="#") #колористика
+                a.category__tags-item(href="#") #работа флористом
+                a.category__tags-item(href="#") #как сохранить букет
+                a.category__tags-item(href="#") #уход за цветами
+                a.category__tags-item(href="#") #композиции из суккулентов 
+                a.category__tags-show(data-trigger="click" href="javascript:;") Показать все теги
+            p.h6.category__title Все записи в категории: #курсы флористики онлайн
+            .row 
+                .col-4.col-md-6.col-sm-12.category__item
+                    a.category__item-img(href="#")
+                        img.img-fluid(src="./img/test-01.jpg" alt="" title="")
+                    a.category__item-title.text-bold(href="#") Чем заняться после курсов флористики в Петербурге?
+                    p.category__item-intro После курсов флористики в Петербурге перед специалистом открывается много возможностей!
+                    .category__item-link
+                        a.label(href="#") Далее...
+                .col-4.col-md-6.col-sm-12.category__item
+                    a.category__item-img(href="#")
+                        img.img-fluid(src="./img/test-02.jpg" alt="" title="")
+                    a.category__item-title.text-bold(href="#") ТОП самых дорогих цветов
+                    p.category__item-intro Рассказываем о цветах, на которые придется раскошелиться
+                    .category__item-link
+                        a.label(href="#") Далее...
+                .col-4.col-md-6.col-sm-12.category__item
+                    a.category__item-img(href="#")
+                        img.img-fluid(src="./img/test-03.jpg" alt="" title="")
+                    a.category__item-title.text-bold(href="#") С днем рождения, Маджента
+                    p.category__item-intro Школе флористики Маджента 1 февраля 2021 года исполнилось 11 лет
+                    .category__item-link
+                        a.label(href="#") Далее...
+            .pagination.mt-2
+                a.pagination__item(href="#") 1
+                a.pagination__item(href="#") 2
+                a.pagination__item(href="#") 3
+                a.pagination__item.pagination__item--active(href="#") 4
+                a.pagination__item(href="#") 5
+    aside.mb-4
+        .container
+            include ../blocks/_networks/networks.pug

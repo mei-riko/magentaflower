@@ -120,11 +120,11 @@
     &__slider-col{
         display: flex;
         align-items: stretch;
-        padding: 0 $grid-gutter-width/2;
 
         &.slick-slide{
             display: flex;
             height: fit-content;
+            padding: 0 $grid-gutter-width/2;
         }
     }
 }

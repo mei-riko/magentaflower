@@ -35,7 +35,7 @@
     }
     // Дополнительный текст
     &__intro{
-        font-size: map-get($map: $font-size, $key: sm);
+        font-size: map-get($map: $font-size, $key: md);
         padding: 0 map-get($spacers,1);
     }
     // Цена 
