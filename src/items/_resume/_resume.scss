@@ -1,0 +1,14 @@
+.resume{
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background-color: lighten($pink-light, 3%);
+    padding: map-get($spacers, 3);
+
+    &__title{
+        font-size: 1.25em;
+        font-weight: $font-weight-bold;
+    }
+    &__subtitle{
+        margin: $spacer-gutter 0 0;
+    }
+}

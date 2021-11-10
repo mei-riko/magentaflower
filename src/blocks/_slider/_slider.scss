@@ -1,0 +1,82 @@
+// Slick
+.slider{
+    .slick-slide{
+        height: auto;
+        outline: none;
+    }
+    .slick-dots{
+        li{
+            width: 10px;
+            height: 10px;
+            button{
+                width: 100%;
+                height: 100%;
+                background-color: #eed9e5;
+                border-radius: 50%;
+                &:before{
+                    display: none;
+                }
+            }
+            &.slick-active{
+                button{
+                    background-color: $pink;
+                }
+            }
+        }
+    }
+    .slick-prev{
+        width: 20px;
+        height: 20px;
+        left: -20px;
+        background: url("../icon/arrow-left.svg") no-repeat center / contain;
+
+        &:before{
+            display: none;
+        }
+        &:focus,
+        &:hover{
+            background: url("../icon/arrow-left.svg") no-repeat center / contain;
+        }
+    }
+    .slick-next{
+        width: 20px;
+        height: 20px;
+        right: -20px;
+        background: url("../icon/arrow-right.svg") no-repeat center / contain;
+        &:before{
+            display: none;
+        }
+        &:focus,
+        &:hover{
+            background: url("../icon/arrow-right.svg") no-repeat center / contain;
+        }
+    }
+    .slick-arrow{
+        &.slick-disabled{
+            opacity: 0;
+            cursor: default;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider{
+        .slick-prev{
+            left: -15px;
+        }
+        .slick-next{
+            right: -15px;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider{
+        .slick-prev{
+            left: 0px;
+        }
+        .slick-next{
+            right: 0px;
+        }
+    }
+}

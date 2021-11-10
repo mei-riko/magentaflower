@@ -1,0 +1,31 @@
+.list_circle{
+    &__item{
+        position: relative;
+        padding-left: map-get($spacers, 1);
+        margin-bottom: map-get($spacers, 1)/2;
+
+        &:before{
+            content:'';
+            display: block;
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            background: $pink;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &_disabled{
+            opacity: .5;
+            color: $grey;
+            
+            &:before{
+                background: $border-color;
+            }
+        }
+    }
+}

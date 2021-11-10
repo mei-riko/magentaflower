@@ -1,25 +1,11 @@
 .form{
     margin-bottom: 0;
     
-    // &__group{
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     margin-left: -5px;
-    //     margin-right: -5px;
-    // }
-    // &__col{
-    //     padding: 0 5px;   
-
-    //     &-input{
-    //         flex: 0 0 calc(100% - 200px);
-    //         max-width: calc(100% - 200px);
-    //     }
-    // }
     // One-line
     &__grid{
         display: grid;
         grid-gap: $grid-gutter-width/2;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 220px;
     }
     // Form Label
     &__label{

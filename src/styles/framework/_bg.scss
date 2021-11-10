@@ -1,4 +1,7 @@
 // Варианты фона
+.bg-black{background-color: $black;}
+.bg-white{background-color: $white;}
+
 .bg-light-grey{background-color: $light-grey;}
 .bg-light-pink{
     background-color: lighten($pink-light, 3%);
@@ -24,8 +27,10 @@
         background: $pink-secondary;
     }
 }
-.bg-wave{
-    background: #faf4f6 url("../img/pattern-wave-light.png") repeat left top/260px;
+.bg-wave{background: #faf4f6 url("../img/pattern-wave-light.png") repeat left top/260px;}
+.bg-cta{
+    background: $dark-grey url("../img/bg-cta.png") no-repeat center / cover;
+    color: $white;
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){

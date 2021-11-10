@@ -1,0 +1,440 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 Online Курс"
+    - var headerClass = "header_fixed"
+    - var headerBodyClass = "header-fixed"
+block content
+    //- Первый экран
+    section.courses
+        .courses__header
+            .container
+                .row.align-items-end
+                    .col-6.col-md-12
+                        span.label.text-bold ONLINE КУРС
+                        h1.courses__title.mt-2.mb-2.mt-sm-1 Базовый online-курс флористики
+                        p.text-bold.text-pink Освойте профессию флориста за 2 месяца
+                        ul.list.list_circle.mb-2
+                            li.list__item.list_circle__item 38 уникальных текстовых и видео-уроков
+                            li.list__item.list_circle__item Системный подход в обучении
+                            li.list__item.list_circle__item Обратная связь от профессионалов
+                            li.list__item.list_circle__item Специальные бонусы для участников курса
+                        //- p.courses__introtext.mb-2 Наш курс разработан для тех, кто хочет с нуля освоить новую специальность, погрузиться в сферу флористического дизайна
+                        .row
+                            .col-4.col-xl-6.col-sm-12.mb-1
+                                .subtitle.text-uppercase Когда
+                                .courses__info-title доступ сразу
+                                //- .courses__info-intro 80% практики и&nbsp;20%&nbsp;теории
+                            .col-4.col-xl-6.col-sm-12.mb-1
+                                .subtitle.text-uppercase Уровень
+                                .courses__info-title обучение с нуля
+                                //- .courses__info-intro лучший способ начать освоение профессии
+                        .row
+                            .col-4.col-xl-6.col-sm-12.mb-1
+                                .subtitle.text-uppercase ФОРМАТ
+                                .courses__info-title online-курс
+                            .col-4.col-xl-6.col-sm-12.mb-1
+                                .subtitle.text-uppercase ДОКУМЕНТ
+                                .courses__info-title сертификат
+                        a.btn.btn_action(href="#") Выбрать тариф
+                    .col-6.col-md-12
+                        .courses__image-grid._courses__image-grid_single
+                            .courses__image-additional(style="background-image:url('./img/01.png');")
+                            .courses__image-main(style="background-image:url('./img/02.png');")
+    //- Кому подходит
+    section.content.content_offset-small
+        .container
+            .row.mb-4.mb-sm-2
+                .col-7.col-lg-10.col-sm-12
+                    p.h1.text-bold Кому идеально подойдет этот курс    
+            .row.category.justify-content-center
+                .col-3.col-md-6.col-sm-12.category__item.category__item_top
+                    .category__item-img
+                        img.img-fluid(src="./img/02.png" alt="" title="")
+                    .category__item-title.text-bold Начинающим флористам
+                    ul.list.list_circle.category__item-intro
+                        li.list__item.list_circle__item даст отличную теоретическую и практическую базу
+                        li.list__item.list_circle__item станет хорошим стартом для Вашего творческого развития
+                        li.list__item.list_circle__item даст общее представление о том, как устроен флористический бизнес
+                        li.list__item.list_circle__item научит как правильно оборудовать цветочный магазин и подготовить его к открытию
+                .col-3.col-md-6.col-sm-12.category__item.category__item_top
+                    .category__item-img
+                        img.img-fluid(src="./img/01.png" alt="" title="")
+                    .category__item-title.text-bold Флористам с&nbsp;опытом работы
+                    ul.list.list_circle.category__item-intro
+                        li.list__item.list_circle__item даст отличную теоретическую и практическую базу
+                        li.list__item.list_circle__item станет хорошим стартом для Вашего творческого развития
+                        li.list__item.list_circle__item даст общее представление о том, как устроен флористический бизнес
+                .col-3.col-md-6.col-sm-12.category__item.category__item_top
+                    .category__item-img
+                        img.img-fluid(src="./img/04.png" alt="" title="")
+                    .category__item-title.text-bold Владельцам бизнесаботы
+                    ul.list.list_circle.category__item-intro
+                        li.list__item.list_circle__item даст отличную теоретическую и практическую базу
+                        li.list__item.list_circle__item станет хорошим стартом для Вашего творческого развития
+                        li.list__item.list_circle__item даст общее представление о том, как устроен флористический бизнес
+                .col-3.col-md-6.col-sm-12.category__item.category__item_top
+                    .category__item-img
+                        img.img-fluid(src="./img/03.png" alt="" title="")
+                    .category__item-title.text-bold Всем творческим людям
+                    ul.list.list_circle.category__item-intro
+                        li.list__item.list_circle__item даст отличную теоретическую и практическую базу
+                        li.list__item.list_circle__item станет хорошим стартом для Вашего творческого развития
+                        li.list__item.list_circle__item даст общее представление о том, как устроен флористический бизнес
+            //- Таймер до начала вебинара
+            .info.info_promo.text-center.bg-corporate.mt-4.mb-4
+                p.info_promo__subtitle БЕСПЛАТЫЙ ВЕБИНАР
+                p.info_promo__title 7 ключевых навыков современного флориста
+                p.info_promo__content.mb-0 До начала вебинара:
+                .info_promo__timer.timer.mt-20.mb-20(id="countdown" data-time="12/12/2020 10:30")
+                a.btn.btn_default(href="#") Присоединиться
+            //- Эффективность
+            p.h4.text-bold.mb-0 Что вы получите на online-курсе?
+            .list.list_numeric.row.mt-3.mb-1.mb-sm-0
+                .col-4.col-xl-5.col-lg-6.col-sm-12.mb-1
+                    .list_numeric__item Опыт закупки и правильного хранения цветов 
+                        span.list_numeric__number 1
+                .col-4.col-xl-5.col-lg-6.col-sm-12.mb-1
+                    .list_numeric__item Поддержку и комментарии от&nbsp;известных преподавателей  
+                        span.list_numeric__number 2
+                .col-4.col-xl-5.col-lg-6.col-sm-12.mb-1
+                    .list_numeric__item Собственное портфолио 
+                        span.list_numeric__number 3
+                .col-4.col-xl-5.col-lg-6.col-sm-12.mb-1
+                    .list_numeric__item Навыки создания букетов в&nbsp;профессиональной технике 
+                        span.list_numeric__number 4
+                .col-4.col-xl-5.col-lg-6.col-sm-12.mb-1
+                    .list_numeric__item Сертификат школы, который ценится в&nbsp;Европе и&nbsp;РФ  
+                        span.list_numeric__number 5
+                .col-4.col-xl-5.col-lg-6.col-sm-12.mb-1
+                    .list_numeric__item Бесплатный вебинар с чемпионом Европы по флористике 
+                        span.list_numeric__number 6
+            a.btn.btn_action(href="#") Выбрать тариф
+    section.content.content_offset-small.bg-light-pink.bg-border
+        .container
+            //- Навыки после учебы
+            p.h2.text-center.text-bold После обучения вы сможете
+            p.text-center.text-grey Устроиться на должность «помощник флориста», «флорист» или даже открыть цветочный бизнес
+            .row.mt-4.mt-sm-2
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/bouquet-pink.svg")
+                        .list-icon_adv__content Составлять букеты и композиции в кашпо, коробках и корзинах в различных стилях и техниках
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/bag-pink.svg")
+                        .list-icon_adv__content Правильно ухаживать за свежими цветами, продлевая им жизнь и сохраняя внешний вид
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/flower-pink.svg")
+                        .list-icon_adv__content Делать букет невесты в самых популярных техниках (на своих ногах и в портбукетнице)
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/bouquet-pink.svg")
+                        .list-icon_adv__content Составлять букеты и композиции в кашпо, коробках и корзинах в различных стилях и техниках
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/bag-pink.svg")
+                        .list-icon_adv__content Правильно ухаживать за свежими цветами, продлевая им жизнь и сохраняя внешний вид
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/flower-pink.svg")
+                        .list-icon_adv__content Делать букет невесты в самых популярных техниках (на своих ногах и в портбукетнице)
+            //- Портфолио
+            p.h4.text-center.text-bold.mb-3 Работы выпускников online-курса
+            .row.no-gutters.portfolio.mb-3
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/02.png")
+                        img.img-fluid(src="/img/02.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item
+                        img.img-fluid(src="/img/02.png")
+    //- Преимущества
+    section.content
+        .container
+            p.h1.text-bold.mb-3 Обучение у нас популярно! Почему?
+            .row
+                .col-4.col-lg-6.col-md-12.col-sm-12.mb-lg-3
+                    .subtitle — 01
+                    p.text-lead.text-bold Поддержка от экспертов
+                    p После каждого практического занятия вы фотографируете свою работу и получаете обратную связь 
+                        | от преподавателя в&nbsp;течение&nbsp;48&nbsp;часов
+                .col-4.col-lg-6.col-md-12.col-sm-12.mb-lg-3
+                    .subtitle — 02
+                    p.text-lead.text-bold Сертификат школы
+                    p Курс завершается экзаменом. Вы получаете Сертификат Школы «Маджента», который ценится не только в России, но и за рубежом
+                .col-4.col-lg-6.col-md-12.col-sm-12
+                    .subtitle — 03
+                    p.text-lead.text-bold Полные базовые навыки
+                    p Lorem ipsum dolor sit amet. Amet, consectetur, adipisci velit, sed ut perspiciatis, unde omnis dolor. Sint, obcaecati cupiditate non numquam eius.
+            .row.mt-2.mt-md-1.justify-content-center
+                .col-6.col-xl-6.col-lg-6.col-md-12.col-sm-12.mt-2
+                    .info
+                        .row.align-items-center.justify-content-between
+                            .col-7.col-sm-12.col-md-12.col-lg-6.mb-md-3
+                                p.subtitle.mb-0 преподаватель курса
+                                p.h4.text-bold Елена Дмитриева
+                                p.text-grey Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.
+                            .col-5.col-sm-12.col-md-9.col-lg-6.col-xl-5
+                                img.img-fluid(src="./img/Elena.jpg")
+                .col-6.col-xl-6.col-lg-6.col-md-12.col-sm-12.mt-2
+                    .info
+                        .row.align-items-center.justify-content-between
+                            .col-7.col-sm-12.col-md-12.col-lg-6
+                                p.subtitle.mb-0 преподаватель курса
+                                p.h4.text-bold Татьяна Воронина
+                                p.text-grey Флорист-дизайнер международного уровня, с&nbsp;опытом работы более&nbsp;10 лет.
+                            .col-5.col-sm-12.col-md-9.col-lg-6.col-xl-5
+                                img.img-fluid(src="./img/Tatiana.jpg")
+    //- Программа
+    section.programm.bg-light-pink.bg-border
+        .container
+            p.h2.text-center.text-bold.mb-3 Программа online-курса
+            .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                .row.align-items-center
+                    p.programm__title.col-7.col-md-7.col-sm-12 1 день: «Инструменты и материалы»
+                    p.programm__time.col-5.col-md-5.col-sm-12.mb-0 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    .row
+                        .col-8.col-sm-12
+                            p.mb-0.subtitle Теория
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                            p.mb-0.subtitle Практика
+                            p.mb-0 спиральная техника
+                        .col-4.col-sm-12.mt-sm-40
+                            img.img-fluid.ml-auto(src="../img/01.png")
+            .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                .row.align-items-center
+                    p.programm__title.col-7.col-md-7.col-sm-12 2 день: «Свежесрезанные цветы»
+                    p.programm__time.col-5.col-md-5.col-sm-12.mb-0 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    p.mb-0.subtitle Теория
+                    p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    p.mb-0.subtitle Практика
+                    p.mb-0 спиральная техника
+            .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                .row.align-items-center
+                    p.programm__title.col-7.col-md-7.col-sm-12 3 день: «Цвет и настроение»
+                    p.programm__time.col-5.col-md-5.col-sm-12.mb-0 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    p.mb-0.subtitle Теория
+                    p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    p.mb-0.subtitle Практика
+                    p.mb-0 спиральная техника
+            .hidden-theme.hidden-theme--hidden(style="display:none;")
+                .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                    .row.align-items-center
+                        p.programm__title.col-7.col-md-7.col-sm-12 2 день: «Свежесрезанные цветы»
+                        p.programm__time.col-5.col-md-5.col-sm-12.mb-0 2 часа теории   +   4 часа практики
+                    .programm__content.toggle__content
+                        p.mb-0.subtitle Теория
+                        p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                        p.mb-0.subtitle Практика
+                        p.mb-0 спиральная техника
+            .text-center.pt-2
+                a.btn.btn_secondary.show-theme.show-theme--active(href="#") Показать ещё темы
+    section.content
+        .container
+            //- Обучение
+            p.h1.text-bold.mb-4 Как проходит обучение?
+            .row.mb-4
+                .col-3.col-lg-6.col-sm-12.step.mb-lg-3
+                    .step__content
+                        p.step__title Занятия
+                        p.step__intro Lorem ipsum dolor sit amet. Amet, consectetur, adipisci velit, sed ut perspiciatis, unde omnis dolor. Sint, obcaecati cupiditate non numquam eius. Eos, qui ratione voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                    p.step__number 01
+                .col-3.col-lg-6.col-sm-12.step.mb-lg-3
+                    .step__content
+                        p.step__title Практика
+                        p.step__intro Amet, consectetur, adipisci velit, sed quia dolor. Autem quibusdam et aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus. Perferendis doloribus asperiores repellat. numquam eius modi tempora incidunt.
+                    p.step__number 02
+                .col-3.col-lg-6.col-sm-12.step.mb-sm-3
+                    .step__content
+                        p.step__title Обратная связь
+                        p.step__intro Temporibus autem vel eum fugiat, quo minus. Esse, quam nihil molestiae consequatur, vel illum.
+                        .info.info_offset-small.d-inline-block
+                            span.subtitle Бонус!
+                            span.text-small Получите бесплатный вебинар с&nbsp;флористами
+                    p.step__number 03
+                .col-3.col-lg-6.col-sm-12.step.step--last
+                    .step__content
+                        p.step__title Работа мечты
+                        p.step__intro Vitae dicta sunt, explicabo iste natus error. Itaque earum rerum necessitatibus saepe eveniet, ut labore et quas molestias excepturi. Reprehenderit, qui in culpa, qui dolorem eum fugiat, quo minus.
+                    p.step__number 04
+            //- FAQ
+            p.h4.text-bold.mb-3.mb-sm-1 Популярные вопросы
+            .row
+                .col-6.col-md-12
+                    .toggle.toggle_faq.mb-1
+                        .toggle__title Какие инструменты нужны для прохождения курса?
+                        .toggle__content
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    .toggle.toggle_faq.mb-1
+                        .toggle__title Какие материалы понадобятся для обучения?
+                        .toggle__content
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    .toggle.toggle_faq.mb-1
+                        .toggle__title Какие инструменты нужны для занятий?
+                        .toggle__content
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                .col-6.col-md-12
+                    .toggle.toggle_faq.mb-1
+                        .toggle__title Для кого рассчитан этот курс?
+                        .toggle__content
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    .toggle.toggle_faq.mb-1
+                        .toggle__title Какие инструменты нужны для прохождения курса?
+                        .toggle__content
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    .toggle.toggle_faq.mb-1
+                        .toggle__title Какие материалы понадобятся для обучения?
+                        .toggle__content
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+            .info.mt-4.mb-4
+                .row.align-items-center
+                    .col-5.col-xl-5.col-lg-12
+                        p.step__title Рекомендации по&nbsp;набору инструментов 
+                        p.step__intro Подготовили для&nbsp;вас чек-лист по&nbsp;необходимым инструментам для&nbsp;обучения и&nbsp;начала работы
+                    .col-7.col-xl-7.col-lg-12.mt-lg-1
+                        form.form.form_download(action="")
+                            .form__grid
+                                input.input.input--full(type="text" placeholder="Укажите ваш e-mail")
+                                a.btn.btn--full.btn_default(href="#") Скачать чек-лист
+            //- Резюме
+            p.h2.text-bold.mb-3.mb-sm-2 Ваше резюме после курса
+            .resume
+                .row.justify-content-end
+                    .col-2.col-md-3.col-sm-12
+                        img.img-fluid.resume__img(src="../img/pic.png" alt="" title="")
+                    .col-8.col-xl-7.col-lg-10.col-md-9.col-sm-12
+                        p.subtitle.resume__subtitle Должность
+                        p.resume__title Флорист, помощник флориста
+                        p.text-bold.mt-2 КЛЮЧЕВЫЕ НАВЫКИ
+                        .row
+                            .col-6.col-md-12.mb-md-1
+                                ul.list.list_circle
+                                    li.list__item.list_circle__item Опыт закупки цветов
+                                    li.list__item.list_circle__item Умение правильного хранения цветов 
+                                    li.list__item.list_circle__item Опыт восстановления внешнего вида
+                            .col-6.col-md-12
+                                ul.list.list_circle
+                                    li.list__item.list_circle__item Опыт закупки цветов
+                                    li.list__item.list_circle__item Умение правильного хранения цветов 
+                                    li.list__item.list_circle__item Опыт восстановления внешнего вида
+                    .col-2.col-xl-3.col-lg-10.col-md-9.col-sm-12.mt-lg-1
+                        p.subtitle.resume__subtitle Зарплата от
+                        p.resume__title 40 000 р.
+    //- Pricelist
+    section.content.content_offset-small.bg-wave
+        .container
+            p.h4.text-bold.text-center.mb-5.mb-sm-3 Доступные варианты онлайн-обучения
+            .row.align-items-center.justify-content-center
+                .col-4.col-lg-8.col-md-12.mb-lg-3
+                    .price
+                        .price__title «Полное погружение»
+                        ul.list.list_circle.price__list
+                            li.list__item.list_circle__item доступен 12 месяцев
+                            li.list__item.list_circle__item бесплатный вебинар
+                            li.list__item.list_circle__item обратная связь от преподавателей
+                            li.list__item.list_circle__item 1 час общения с преподавателем
+                        .price__info
+                            .price__info-col
+                                p.mb-0.text-grey.text-small обычная цена
+                                p.price__value.price__value_old 38 000
+                            .price__info-col
+                                p.mb-0.text-pink.text-small со скидкой
+                                p.price__value.price__value_new 35 000
+                            .price__info-btn
+                                a.btn.btn_default.btn--full(href="#") Принять участие
+                .col-4.col-lg-8.col-md-12.mb-lg-3
+                    .price.price_popular
+                        .price__label Популярный
+                        .price__title «Оптимальный»
+                        ul.list.list_circle.price__list
+                            li.list__item.list_circle__item доступен 12 месяцев
+                            li.list__item.list_circle__item бесплатный вебинар
+                            li.list__item.list_circle__item обратная связь от преподавателей
+                            li.list__item.list_circle__item.list__item_disabled 1 час общения с преподавателем
+                        .price__info
+                            .price__info-col
+                                p.mb-0.text-grey.text-small обычная цена
+                                p.price__value.price__value_old 38 000
+                            .price__info-col
+                                p.mb-0.text-pink.text-small со скидкой
+                                p.price__value.price__value_new 35 000
+                            .price__info-btn
+                                a.btn.btn_default.btn--full(href="#") Принять участие
+                .col-4.col-lg-8.col-md-12
+                    .price
+                        .price__title «Самостоятельный»
+                        ul.list.list_circle.price__list
+                            li.list__item.list_circle__item доступен 12 месяцев
+                            li.list__item.list_circle__item бесплатный вебинар
+                            li.list__item.list_circle__item.list__item_disabled обратная связь от преподавателей
+                            li.list__item.list_circle__item.list__item_disabled 1 час общения с преподавателем
+                        .price__info
+                            .price__info-col
+                                p.mb-0.text-grey.text-small обычная цена
+                                p.price__value.price__value_old 38 000
+                            .price__info-col
+                                p.mb-0.text-pink.text-small со скидкой
+                                p.price__value.price__value_new 35 000
+                            .price__info-btn
+                                a.btn.btn_default.btn--full(href="#") Принять участие
+            .text-center.mt-2 
+                a.text-small.text-underline(href="#") Ознакомиться с договором публичной оферты
+    //- Отзывы
+    section.content.content_offset-small
+        .container
+            .slider.slider_reviews
+                .slider_reviews__slide
+                    .info.review.text-center
+                        .review__img
+                            img.img-fluid(src="../img/test-05.jpg")
+                        p.text-bold 1 Ирина Толстова
+                        p.review__intro Iure reprehenderit, qui blanditiis praesentium voluptatum deleniti atque corrupti. Eum fugiat, quo voluptas sit amet. Doloremque laudantium, totam rem aperiam
+                .slider_reviews__slide
+                    .info.review.text-center
+                        .review__img
+                            img.img-fluid(src="../img/test-05.jpg")
+                        p.text-bold 2 Ирина Толстова
+                        p.review__intro Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.
+                .slider_reviews__slide
+                    .info.review.text-center
+                        .review__img.review__img_video
+                            img.img-fluid(src="../img/test-05.jpg")
+                        p.text-bold 3 Ирина Толстова
+                        p.review__intro Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.
+                .slider_reviews__slide
+                    .info.review.text-center
+                        .review__img
+                            img.img-fluid(src="../img/test-05.jpg")
+                        p.text-bold Ирина Толстова
+                        p.review__intro Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.
+                .slider_reviews__slide
+                    .info.review.text-center
+                        .review__img
+                            img.img-fluid(src="../img/test-05.jpg")
+                        p.text-bold Ирина Толстова
+                        p.review__intro Lorem ipsum dolor sit amet. Accusamus et accusamus et expedita distinctio tempore. Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo. Corrupti, quos dolores et quas.
+    aside.mb-4
+        .container
+            include ../blocks/_networks/networks.pug

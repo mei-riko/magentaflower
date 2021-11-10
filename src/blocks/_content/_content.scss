@@ -39,6 +39,17 @@
             margin-bottom: $grid-gutter-width/2;
         }
     }
+
+    // Внутрення блога
+    &__blog-inside{
+        img{
+            max-width: 100%;
+            height: auto;
+
+            border-radius: $border-radius;
+            border: 1px solid $border-color;
+        }
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){

@@ -87,9 +87,6 @@ table{
     }
 }
 
-.bg-black{background-color: $black;}
-.bg-white{background-color: $white;}
-
 .text-white         {color: $white;}
 .text-black         {color: $black;}
 .text-grey          {color: $grey;}
@@ -103,7 +100,7 @@ table{
 .text-bolder            {font-weight: $font-weight-bolder;}
 .text-bold,strong,b     {font-weight: $font-weight-bold;}
 .text-small,small,.small{font-size: map-get($map: $font-size, $key: md); line-height: $line-height-base;}
-.lead, .text-lead       {font-size: map-get($map: $font-size, $key: lg);}
+.lead, .text-lead       {font-size: map-get($map: $font-size, $key: xl);}
 
 .text-uppercase{text-transform: uppercase;}
 .text-underline{text-decoration: underline;}
@@ -169,7 +166,6 @@ blockquote, .blockquote{
         &-center{text-align: center;}
         &-right{text-align: right;}
     }
-    .text-small,small,.small{font-size: map-get($map: $font-size, $key: sm);}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .text-lg{
@@ -177,6 +173,7 @@ blockquote, .blockquote{
         &-center{text-align: center;}
         &-right{text-align: right;}
     }
+    .text-small,small,.small{font-size: map-get($map: $font-size, $key: sm);}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){  
     .text-md{
@@ -200,7 +197,7 @@ blockquote, .blockquote{
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     html, body {
         background-color: $white;
-        font-size: map-get($font-size, 'sm');
+        // font-size: map-get($font-size, 'sm');
     }
     .text-xs{
         &-left{text-align: left;}

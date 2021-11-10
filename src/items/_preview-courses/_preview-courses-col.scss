@@ -1,0 +1,57 @@
+.preview-courses-col{
+    display: flex;
+    align-items: stretch;
+
+    // margin-bottom: map-get($map: $spacers, $key: 3);
+    &__inside{
+        position: relative;
+        width: 100%;
+    
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        background-color: $white;
+        overflow: hidden;
+        
+        padding-top: 180px;
+        padding-bottom: 24px;
+    }
+    // Изображение-иллюстрация
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+
+        background-position: center;
+        background-size: cover;
+    }
+    // Заголовок
+    &__title{
+        font-size: map-get($map: $font-size, $key: lg);
+        font-weight: $font-weight-bold;
+        line-height: $line-height-heading;
+        padding: map-get($spacers,1) map-get($spacers,1) map-get($spacers,1)/2;
+    }
+    // Дополнительный текст
+    &__intro{
+        font-size: map-get($map: $font-size, $key: md);
+        padding: 0 map-get($spacers,1);
+    }
+    // Цена 
+    &__price{
+        font-size: map-get($map: $font-size, $key: lg);
+        font-weight: $font-weight-bold;
+
+        color: $pink;
+        padding: 0 map-get($spacers,1);
+
+        &_old{
+            text-decoration: line-through;
+
+            color: $black;
+            font-weight: $font-weight-base;
+            margin-right: 6px;
+        }
+    }
+}

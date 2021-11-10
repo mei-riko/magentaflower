@@ -28,6 +28,14 @@
         //     color: $pink;
         // }
     }
+    // Эффект при наведении
+    &--hovered{
+        cursor: pointer;
+
+        &:hover{
+            border-color: $pink;
+        }
+    }
 
     // Отступы
     &_offset-small{

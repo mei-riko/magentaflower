@@ -1,0 +1,11 @@
+.preview-courses_dark{
+    color: $white;
+    background-color: #1d1d1e;
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .preview-courses_dark{
+        &:after{
+            background-color: $dark-grey;
+        }
+    }
+}

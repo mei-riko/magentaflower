@@ -17,8 +17,8 @@
         height: 34px;
     }
     &__text{
-        font-size: map-get($map: $font-size, $key: md);
-        line-height: map-get($map: $font-size, $key: lg);
+        font-size: map-get($map: $font-size, $key: sm);
+        line-height: map-get($map: $font-size, $key: md);
         text-transform: uppercase;
         color: $white;
     }
@@ -26,8 +26,8 @@
         background-color: $white;
         color: $pink;
 
-        font-size: map-get($map: $font-size, $key: md);
-        line-height: map-get($map: $font-size, $key: lg);
+        font-size: map-get($map: $font-size, $key: sm);
+        line-height: map-get($map: $font-size, $key: md);
         font-weight: $font-weight-bold;
 
         text-align: center;

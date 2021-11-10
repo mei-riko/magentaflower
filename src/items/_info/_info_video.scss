@@ -1,0 +1,23 @@
+.info_video{
+    padding: $grid-gutter-width/2;
+
+    iframe{
+        max-height:100vh;
+        border-radius:12px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .info_video{
+        iframe{
+            height:360px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .info_video{
+        padding: $grid-gutter-width/4;
+        iframe{
+            height:280px;
+        }
+    }
+}

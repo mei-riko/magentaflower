@@ -1,0 +1,60 @@
+// .review_child{
+//     position: relative;
+//     text-align: center;
+
+//     &__img{
+//         position: relative;
+//         width: 200px;
+//         height: 200px;
+//         border-radius: 50%;
+//         border: 6px solid $pink;
+
+//         background: no-repeat center / cover;
+
+//         margin-left: auto;
+//         margin-right: auto;
+
+//         &:before{
+//             content: '';
+//             display: block;
+//             width: 100%;
+//             height: 74px;
+//             background: url(../icon/rating.svg) no-repeat center/contain;
+//             position: absolute;
+//             left: 0;
+//             right: 0;
+//             bottom: -30px;
+//         }
+
+//         &_video{
+//             cursor: pointer;
+
+//             &:after{
+//                 content: '';
+//                 display: block;
+//                 width: 30px;
+//                 height: 30px;
+//                 border-radius: 50%;
+//                 background: $white url("../icon/play-button.svg") no-repeat center / contain;
+
+//                 position: absolute;
+//                 left: 50%;
+//                 top: 50%;
+//                 transform: translateX(-50%) translateY(-50%);
+
+//                 // filter: opacity(.5);
+//             }
+
+//         }     
+//     }
+
+//     &__title{
+//         margin: $spacer 0 $spacer/2;
+//         color: $pink;
+//         font-weight: $font-weight-bold;
+//         line-height: $headings-line-height;
+//     }
+//     &__intro{
+//         font-size: 13px;
+//     }
+// }

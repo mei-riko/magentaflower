@@ -1,0 +1,36 @@
+.item-icon{
+    position: relative;
+    padding-left: 70px;
+    
+    &__img{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 46px;
+        height: 46px;
+
+        background-color: $white;
+        padding: 10px;
+        border-radius: 8px;
+
+        &_information{
+            left: map-get($spacers, 3);
+        }
+
+        &_advantage{
+            background-color: $pink-light;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .item_with-icon{
+        &__img{
+          &_information{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.timetable_content{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: $grid-gutter-width;
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .timetable_content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .timetable_content{
+        grid-gap: $grid-gutter-width/2;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .timetable_content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: $grid-gutter-width;
+    }
+}

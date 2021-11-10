@@ -1,0 +1,32 @@
+.timetable_nav{
+    grid-gap: $spacer/4;
+    grid-template-columns: repeat(auto-fit,180px);
+    justify-content: center;
+
+    &__link{
+        width: 100%;
+        white-space: nowrap;
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: map-get($map: $font-size, $key: md);
+        text-align: center;
+
+        padding: 8px 12px;
+        border-radius: $border-radius;
+        border: 1px solid $pink-light;
+        text-decoration: none;
+
+        &:hover, &:focus{
+            color: $pink;
+            text-decoration: none;
+        }
+
+        &--active{
+            color: $pink;
+            background-color: $pink-light;
+
+            &:hover, &:focus{
+                text-decoration: none;
+            }
+        }
+    }
+}

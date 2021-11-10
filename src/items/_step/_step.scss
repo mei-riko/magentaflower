@@ -1,0 +1,43 @@
+.step{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &__title{
+        font-size: 1.25em;
+        font-weight: $font-weight-bold;
+    }
+    &__number{
+        position: relative;
+
+        font-size: 3.75em;
+        font-family: $font-family-heading;
+        font-weight: $font-weight-bold;
+        color: $pink;
+
+        margin-top: map-get($map: $spacers, $key: 2);
+
+        &:after {
+            display: block;
+            content: '';
+            width: calc( 100% - 100px);
+            height: 6px;
+            background-color: $pink-light;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 3px);
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .step{
+        &__number{
+            &:after{
+                width: calc( 100% - 60px);
+                height: 4px;
+            }
+        }
+    }
+}

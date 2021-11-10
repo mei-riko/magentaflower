@@ -1,0 +1,17 @@
+.map{
+    width: 100%;
+    min-height: 460px; 
+    border: 1px solid $border-color;
+    padding-top: 0!important;
+}
+
+@media (max-width: map-get($grid-breakpoints, 'md')) {
+    .map{
+        min-height: 400px;
+    }
+}
+@media (max-width: map-get($grid-breakpoints, 'sm')) {
+    .map{
+        min-height: 440px;
+    }
+}

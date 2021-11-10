@@ -1,0 +1,176 @@
+.timetable{
+    display: grid;
+    // Основная область
+    &__col{
+        display: grid;
+        grid-gap: $spacer/4;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px 34px 1fr 40px 40px;
+
+        &.archive{
+            filter: grayscale(1);
+        }
+
+        &_without-info{
+            // grid-template-rows: 180px 34px 1fr 40px;
+        }
+    }
+    // // Одиночный элемент расписания
+    // &__block{
+    //     position: relative;
+
+    //     width: 100%;
+
+    //     border: 1px solid $border-color;
+    //     border-radius: 8px;
+    //     background-color: $white;
+        
+    //     padding-top: 180px;
+    //     padding-bottom: 24px;
+    //     overflow: hidden;
+    //     margin-bottom: map-get($map: $spacers, $key: 3);
+
+    //     &:hover, &:focus{
+    //         .timetable__btn{
+    //             transform: translateY(0);
+    //         }
+    //     }
+    // }
+    // Изображение-иллюстрация
+    &__img{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 100%;
+        height: 180px;
+
+        background-position: center;
+        background-size: cover;
+
+        border-radius: $border-radius;
+    }
+    // Тип элемента расписания
+    &__category{
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: map-get($map: $font-size, $key: md);
+        text-transform: uppercase;
+        color: $pink;
+
+        padding: map-get($map: $spacers, $key: 1)/2 map-get($map: $spacers, $key: 1);
+        border-radius: $border-radius;
+
+        &_type-1{background: $pink-light;}
+        &_type-2{background: lighten($color: $pink, $amount: 30%);}
+        &_type-3{background: lighten($color: $pink, $amount: 34%);}
+        &_type-4{background: lighten($color: $pink, $amount: 38%);}
+        &_type-5{color: $grey; background: $light-grey;}
+    }
+    // Заголовок
+    &__title{
+        font-size: map-get($map: $font-size, $key: xl);
+        font-weight: $font-weight-bold;
+        line-height: $line-height-heading;
+    }
+    // Сроки занятий
+    &__period{
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: 20px;
+        font-weight: $font-weight-bold;
+        color: $pink;
+    }
+    // Дополнительный текст
+    &__offer{
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: 20px;
+    }
+    // &__price{
+    //     font-size: map-get($map: $font-size, $key: lg);
+    //     font-weight: $font-weight-bold;
+    //     color: $pink;
+    //     padding: 0 20px;
+
+    //     .price-old{
+    //         color: $black;
+    //         font-weight: 400;
+    //         text-decoration: line-through;
+    //         margin-right: 6px;
+    //     }
+    // }
+    // Информация о преподавателе
+    &__teacher{
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: 20px;
+    }
+    // Информация о количестве занятий
+    &__info{
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: 20px;
+        padding-left: 40px;
+        background: url("../icon/time-left-light.svg") no-repeat left center / 26px;
+    }
+    // Скрытая до наведения кнопка
+    &__btn{
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: map-get($map: $font-size, $key: xl);
+        font-weight: $font-weight-bold;
+        color: $white;
+        background-color: $pink;
+
+        padding: map-get($map: $spacers, $key: 1)/4 map-get($map: $spacers, $key: 1);
+        border-radius: 20px;
+
+        margin-top: map-get($map: $spacers, $key: 1);
+        margin-right: map-get($map: $spacers, $key: 1);
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: -2px;
+    //     font-weight: $font-weight-bold;
+    //     text-align: center;
+    //     display: block;
+    //     width: 100%;
+    //     background: $pink;
+    //     color: $white;
+    //     padding: 16px 20px 18px;
+    //     text-transform: uppercase;
+    //     transform: translateY(100%);
+
+    //     cursor: pointer;
+
+        &:hover{
+            color: $white;
+            text-decoration: none;
+            background: darken($pink, 10%);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .timetable{
+        &__category{
+            font-size: map-get($map: $font-size, $key: sm);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .timetable{
+        &__col{
+            grid-template-rows: 180px 30px 1fr 40px 40px;
+        }
+        &__category{
+            font-size: map-get($map: $font-size, $key: sm);
+            line-height: map-get($map: $font-size, $key: sm);
+        }
+        &__title{
+            font-size: map-get($map: $font-size, $key: lg);
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .timetable{
+        &__col{
+            &_without-info{
+                grid-template-rows: 180px 30px 1fr 40px;
+            }
+        }
+    }
+}

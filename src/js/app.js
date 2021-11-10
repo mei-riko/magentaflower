@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import '../blocks/_navbar/nav';
-import '../blocks/sertificate/sertificate'
-import '../items/slider/slider'
-// import '../blocks/_timetable/timetable'
-import '../blocks/map/map'
+import '../blocks/_sertificate/sertificate'
+import '../blocks/_slider/slider'
+import '../blocks/_timetable/timetable'
+import '../blocks/_map/map'
 
 import 'popper.js/dist/umd/popper';
 import 'bootstrap/js/dist/util';

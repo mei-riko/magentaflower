@@ -1,0 +1,30 @@
+// Блоки с иконками на круглом фоне
+.list-icon_adv{
+    &__img{
+        width: 70px;
+        height: 70px;
+
+        padding: $spacer-gutter;
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+        background-color: $white;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .list-icon_adv{
+        &__img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .list-icon_adv{
+        &__img{
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+        }
+    }
+}

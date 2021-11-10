@@ -1,0 +1,146 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 Мастер-класс"
+    - var headerClass = "header_fixed"
+block content
+    //- Первый экран
+    section.page
+        .page__header-block(style="background-image: url('../img/bg-default-2.jpg');")
+            .container
+                span.label онлайн мастер-класс
+                .mt-2.mb-2
+                    a.btn.btn_video(href="#") Тизер
+                h1.page__title Вариации букетов и&nbsp;упаковки ко&nbsp;дню Св.&nbsp;Валентина и&nbsp;8&nbsp;марта
+                p с Чемпионкой России Анастасией Шехериной
+                .page__info.mt-3.mb-3
+                    .page__info-col
+                        .subtitle Сроки
+                        .page__info-title 3 ак. часа
+                    .page__info-col
+                        .subtitle Уровень
+                        .page__info-title базовые знания
+                    .page__info-col
+                        .subtitle Стоимость 
+                        .page__info-title 
+                            span.page__info-old-price 12 700
+                            | 10 000 р.
+                a.btn.btn_action.scroll(href="#buy") Забронировать место
+    //- Общая информация
+    section.content
+        .container
+            .row.justify-content-center.content__row.content__row_first
+                .col-8.col-xl-9.col-md-10.col-sm-12.text-center
+                    p.text-lead Уникальный мастер-класс с победителем Чемпионата России по профессиональной 
+                        | флористике. В программе креативные букеты к 14 февраля и коммерческие к 8 марта, 
+                        | различные способы упаковки одного цветка и моно-букетов, композиций и горшечных растений.
+            //- Чему вы научитесь
+            .row.content__row
+                .col-12
+                    p.h3.text-bold.mb-0.text-center Чему вы научитесь на мастер-классе?
+                    .row.mt-2.mt-sm-0.list.list_numeric
+                        .col-4.col-xl-5.col-lg-6.col-sm-12.mt-1
+                            .list_numeric__item Опыт закупки и правильного хранения цветов 
+                                span.list_numeric__number 1
+                        .col-4.col-xl-5.col-lg-6.col-sm-12.mt-1
+                            .list_numeric__item Поддержку и комментарии от&nbsp;известных преподавателей  
+                                span.list_numeric__number 2
+                        .col-4.col-xl-5.col-lg-6.col-sm-12.mt-1
+                            .list_numeric__item Собственное портфолио 
+                                span.list_numeric__number 3
+                        .col-4.col-xl-5.col-lg-6.col-sm-12.mt-1
+                            .list_numeric__item Навыки создания букетов в&nbsp;профессиональной технике 
+                                span.list_numeric__number 4
+                        .col-4.col-xl-5.col-lg-6.col-sm-12.mt-1
+                            .list_numeric__item Сертификат школы, который ценится в&nbsp;Европе и&nbsp;РФ  
+                                span.list_numeric__number 5
+                        .col-4.col-xl-5.col-lg-6.col-sm-12.mt-1
+                            .list_numeric__item Бесплатный вебинар с чемпионом Европы по флористике 
+                                span.list_numeric__number 6
+            //- CTA
+            .info.info_promo.bg-cta.mt-5.mt-md-3
+                .row.justify-content-center
+                    .col-8.col-md-12.text-center
+                        p.h3.text-bold Узнайте, как&nbsp;создаётся коммерческий букет и&nbsp;о&nbsp;видах его&nbsp;упаковки.
+                        p.mb-2 с Чемпионкой России Анастасией Шехериной
+                        a.btn.btn_action.scroll(href="#buy") Купить мастер-класс
+            //- Кому подходит
+            .row.content__row
+                .col-12
+                    p.h1.text-bold.mb-0.text-center Кому подходит мастер-класс?
+                    .row.mt-4.mt-sm-2
+                        .col-4.col-lg-6.col-md-10.col-sm-12.mb-lg-1
+                            .list-icon
+                                .list-icon__img.list-icon__img_default
+                                p 
+                                    span.d-block.text-bold(style="margin-bottom:6px;") Начинающим флористам
+                                    span Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе 
+                        .col-4.col-lg-6.col-md-10.col-sm-12.mb-lg-1
+                            .list-icon
+                                .list-icon__img.list-icon__img_default
+                                p 
+                                    span.d-block.text-bold(style="margin-bottom:6px;") Флористам с опытом
+                                    span Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе
+                        .col-4.col-lg-6.col-md-10.col-sm-12
+                            .list-icon
+                                .list-icon__img.list-icon__img_default
+                                p 
+                                    span.d-block.text-bold(style="margin-bottom:6px;") Владельцам бизнеса
+                                    span Поздравьте сотрудников с помощью выездного творческого мастер-класса или проведите его прямо в офисе
+            //- Преподаватель
+            .info.mt-5.mt-md-3
+                .row.align-items-center.justify-content-between
+                    .col-7.col-sm-12.col-md-12.col-lg-6.col-xl-7
+                        p.subtitle.mb-1 Ведущая мастер-класса
+                        p.h4.text-bold Елена Дмитриева
+                        p Хранительница стиля и традиций Lacy Bird, Оксана уже 8-й год подряд посвящает себя флористическому искусству. Любовь к творчеству, умение просто объяснять сложные вещи и неуемный оптимизм сделали Оксану прекрасным педагогом, к которому стремятся попасть и начинающие, и опытные флористы.
+                        p Впитывает новые тенденции и перерабатывает их в своей особой манере, что позволяет Оксане изобретать уникальные методики, которыми она щедро делится с учениками LBA. В совершенстве владея техникой, считает интуицию важной составляющей работы флориста.
+                        p Природа, трепетное отношение ко всему живому – вот что вдохновляет Оксану на создание коллекций авторских букетов и композиций, за которыми охотится вся Москва
+                    .col-4.col-sm-12.col-md-9.col-lg-6.col-xl-5
+                        img.img-fluid(src="../img/Elena-Dmitrieva.png")
+    //- Программа
+    section.mb-5.mb-lg-4 
+        .container
+            p.h2.text-center.text-bold.mb-3 Программа online-курса
+            .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                .row.align-items-center
+                    p.programm__title.col-7.col-md-7.col-sm-12 1 день: «Инструменты и материалы»
+                    p.programm__time.col-5.col-md-5.col-sm-12.mb-0 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    .row
+                        .col-8.col-sm-12
+                            p.mb-0.subtitle Теория
+                            p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                            p.mb-0.subtitle Практика
+                            p.mb-0 спиральная техника
+                        .col-4.col-sm-12.mt-sm-40
+                            img.img-fluid.ml-auto(src="../img/01.png")
+            .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                .row.align-items-center
+                    p.programm__title.col-7.col-md-7.col-sm-12 2 день: «Свежесрезанные цветы»
+                    p.programm__time.col-5.col-md-5.col-sm-12.mb-0 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    p.mb-0.subtitle Теория
+                    p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    p.mb-0.subtitle Практика
+                    p.mb-0 спиральная техника
+            .programm__item.programm__item_slide.toggle.toggle_programm.mb-1
+                .row.align-items-center
+                    p.programm__title.col-7.col-md-7.col-sm-12 3 день: «Цвет и настроение»
+                    p.programm__time.col-5.col-md-5.col-sm-12.mb-0 2 часа теории   +   4 часа практики
+                .programm__content.toggle__content
+                    p.mb-0.subtitle Теория
+                    p инструменты и материалы. Способы ухода за свежесрезанными цветами. Техники составления букета. 
+                    p.mb-0.subtitle Практика
+                    p.mb-0 спиральная техника
+    //- Networks
+    aside.mb-4
+        .container
+            //- Сторонняя форма
+            .info.mb-3
+                p Форма с GetCourses
+            .info.info_alert
+                p.h4.text-bold.mb-20 Хочешь сэкономить?
+                p.info_alert__content Предлагаем комплект мастер-классов 
+                    span.text-pink.text-bold со&nbsp;скидкой&nbsp;30%
+                a.btn.btn_action(href="MK-complect.html") Узнать подробности

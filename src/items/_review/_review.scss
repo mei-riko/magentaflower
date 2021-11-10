@@ -1,0 +1,45 @@
+.review{
+    padding: map-get($map: $spacers, $key: 1);
+    
+    &__img{
+        position: relative;
+
+        width: 100%;
+        border-radius: $border-radius;
+        overflow: hidden;
+
+        margin-bottom: map-get($map: $spacers, $key: 1);
+
+        &_video{
+            cursor: pointer;
+
+            &:before{
+                content: '';
+                display: block;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                z-index: 99;
+
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+
+                background: $white url('../icon/play-button.svg') no-repeat center / contain;
+
+                transition: 0.4s;
+            }
+
+            &:hover, &:focus{
+                &::before{
+                    filter: opacity(.6);
+                }
+            }
+        }
+    }
+    &__intro{
+        font-size: map-get($map: $font-size, $key: md);
+    }
+}

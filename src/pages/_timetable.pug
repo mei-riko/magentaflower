@@ -1,0 +1,101 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 Расписание"
+    //- - var headerClass = "header_fixed"
+    //- - var headerBodyClass = "header-fixed"
+block content
+    //- Первый экран 
+    section.content.content_offset-small
+        .container
+            h1.text-center.text-bold Актуальное расписание курсов
+            //- Nav
+            .timetable.timetable_nav.mb-3
+                .timetable_nav__item
+                    a.timetable_nav__link.timetable_nav__link--active(href="#" data-filter="all") Все курсы
+                .timetable_nav__item
+                    a.timetable_nav__link(href="#" data-filter="basic") Базовые курсы
+                .timetable_nav__item
+                    a.timetable_nav__link(href="#" data-filter="wedding") Свадебные курсы
+                .timetable_nav__item
+                    a.timetable_nav__link(href="#" data-filter="seminar") Семинары
+                .timetable_nav__item
+                    a.timetable_nav__link(href="#" data-filter="masterclass") Мастер-классы
+                .timetable_nav__item
+                    a.timetable_nav__link.timetable_nav__link--disable(href="#" data-filter="archive") Архив курсов
+            //- Content
+            .timetable.timetable_content
+                .timetable__col.basic
+                    .timetable__img(style="background-image: url('./img/test-01.jpg');")
+                        a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 1") Записаться
+                    .timetable__category.timetable__category_type-1 Базовые курсы
+                    .timetable__title Базовый курс флористики
+                    .timetable__row
+                        .timetable__period 21.11.2019 - 21.01.2020
+                        .timetable__teacher Анна Литвинова
+                    .timetable__info
+                        .timetable__info-item 5 часов теории
+                        .timetable__info-item 12 часов практики
+                .timetable__col.timetable__col_without-info.wedding
+                    .timetable__img(style="background-image: url('./img/test-01.jpg');")
+                        a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 2") Записаться
+                    .timetable__category.timetable__category_type-2 Свадебные курсы
+                    .timetable__title Экспресс-курс флористики
+                    .timetable__row
+                        .timetable__period 21.11.2019 - 21.01.2020
+                        .timetable__teacher Анна Литвинова
+                .timetable__col.timetable__col_without-info.seminar
+                    .timetable__img(style="background-image: url('./img/test-01.jpg');")
+                        a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 3") Записаться
+                    .timetable__category.timetable__category_type-3 Семинары
+                    .timetable__title Рождественские композиции со свечами
+                    .timetable__row
+                        .timetable__period 21.11.2019 - 21.01.2020
+                        .timetable__teacher Анна Литвинова
+                .timetable__col.masterclass
+                    .timetable__img(style="background-image: url('./img/test-01.jpg');")
+                        a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 4") Записаться
+                    .timetable__category.timetable__category_type-4 Мастер-классы
+                    .timetable__title Online-курс "Основы композиции"
+                    .timetable__row
+                        .timetable__period доступ сразу
+                        .timetable__teacher Анна Литвинова
+                    .timetable__info
+                        .timetable__info-item 5 часов теории
+                        .timetable__info-item 12 часов практики
+                .timetable__col.archive
+                    .timetable__img(style="background-image: url('./img/test-01.jpg');")
+                        //- a.timetable__btn.scroll(href="#ctaForm" data-title="Курс 4") Записаться
+                    .timetable__category.timetable__category_type-4 Архив курсов
+                    .timetable__title Рождественские композиции со свечами
+                    .timetable__row
+                        .timetable__period доступ сразу
+                        .timetable__teacher Анна Литвинова
+                    .timetable__info
+                        .timetable__info-item 5 часов теории
+                        .timetable__info-item 12 часов практики
+    //- Форма
+    section.cta-block.mb-4#ctaForm
+        .container
+            .cta-block__form
+                p.h1.cta-block__title Оставьте заявку на&nbsp;обучение
+                p.cta-block__offer Запишитесь на курс online и&nbsp;
+                    span.text-bold.text-pink получите скидку 15%!
+                .row
+                    .col-5.col-lg-7.col-md-10.col-sm-12
+                        form.form.form_column(action="")
+                            input.form_column__input.input.input_title.d-none(data-action="title" data-title="")
+                            input.form_column__input.input.input_name(placeholder="Ваше имя")
+                            input.form_column__input.input.input_phone(placeholder="Телефон")
+                            .form_column__group
+                                .btn-group
+                                    //- button.btn.btn_action(type="submit") Оплатить курс
+                                    button.btn.btn_secondary(type="submit") Записаться
+                            .checkbox.checkbox_agree
+                                input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                                label.checkbox__label(for="agree") согласен с 
+                                    a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+    aside.mb-4
+        .container
+            include ../blocks/_networks/networks.pug
+    

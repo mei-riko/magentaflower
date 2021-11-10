@@ -358,7 +358,7 @@ template {
   padding-left: 0;
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1580px) {
   .container {
     max-width: 1240px;
   }
@@ -490,7 +490,7 @@ template {
   max-width: 100%;
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1580px) {
   .col-xl-1 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 8.33333%;
@@ -985,7 +985,7 @@ template {
   align-self: stretch !important;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1580px) {
   .flex-xl-column, .flex-xl-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -1835,7 +1835,7 @@ template {
   width: 34px;
   height: 34px;
   border-radius: 17px;
-  background: #dd5287 url("../img/close.svg") no-repeat center/12px;
+  background: #dd5287 url("../icon/close.svg") no-repeat center/12px;
   color: #fff;
   outline: 0;
 }
@@ -1982,14 +1982,6 @@ table td {
   padding: 8px 15px;
 }
 
-.bg-black {
-  background-color: #000000;
-}
-
-.bg-white {
-  background-color: #ffffff;
-}
-
 .text-white {
   color: #ffffff;
 }
@@ -2031,12 +2023,12 @@ table td {
 }
 
 .text-small, small, .small {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
 .lead, .text-lead {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .text-uppercase {
@@ -2122,9 +2114,9 @@ blockquote, .blockquote {
   border-left: 4px solid #726D72;
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1580px) {
   html, body {
-    font-size: 13px;
+    font-size: 14px;
   }
   .text-xl-left {
     text-align: left;
@@ -2134,9 +2126,6 @@ blockquote, .blockquote {
   }
   .text-xl-right {
     text-align: right;
-  }
-  .text-small, small, .small {
-    font-size: 12px;
   }
 }
 
@@ -2149,6 +2138,9 @@ blockquote, .blockquote {
   }
   .text-lg-right {
     text-align: right;
+  }
+  .text-small, small, .small {
+    font-size: 12px;
   }
 }
 
@@ -2185,7 +2177,6 @@ blockquote, .blockquote {
 @media all and (max-width: 420px) {
   html, body {
     background-color: #ffffff;
-    font-size: 12px;
   }
   .text-xs-left {
     text-align: left;
@@ -2217,7 +2208,7 @@ blockquote, .blockquote {
   flex-wrap: wrap;
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1580px) {
   .d-xl-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2404,6 +2395,14 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
   }
 }
 
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
 .bg-light-grey {
   background-color: #f6f6f6;
 }
@@ -2454,6 +2453,11 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 .bg-wave {
   background: #faf4f6 url("../img/pattern-wave-light.png") repeat left top/260px;
+}
+
+.bg-cta {
+  background: #3d3e40 url("../img/bg-cta.png") no-repeat center/cover;
+  color: #ffffff;
 }
 
 @media all and (max-width: 1024px) {
