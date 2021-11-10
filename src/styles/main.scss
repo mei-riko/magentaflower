@@ -33,6 +33,8 @@
 @import "../blocks/_navbar/navbar";
 @import "../blocks/_navbar/navbar-mobile";
 
+// Breadcrumb
+@import "../items/_breadcrumb/breadcrumb";
 // Pagination
 @import "../items/_pagination/pagination";
 
@@ -51,30 +53,33 @@
 
 // Info Item
 @import "../items/_info/info";
-// @import "../items/info/info_promo";
+@import "../items/_info/info_promo";
 // @import "../items/info/info_person";
 @import "../items/_info/info_alert";
 // @import "../items/info/info_review";
-// @import "../items/info/info_video";
+@import "../items/info/info_video";
 
 // ========================  Special Items  ========================  //
 
 // Review Item
-// @import "../items/review-child/review-child";
+@import "../items/_review/review";
 // Price Item
 @import "../items/_price/price";
 @import "../items/_price/price_courses";
+@import "../items/_price/price_popular";
 // Teacher Item
 @import "../items/_teacher/teacher";
 @import "../items/_teacher/teacher_inside";
 // Courses Item
 // @import "../items/item-cources/item-cources";
-
+// CV
+@import "../items/_resume/resume";
 // Preview Pages
 // @import "../items/preview/preview-link";
 // @import "../items/preview/preview-info";
-@import "../items/_preview/preview-courses";
-@import "../items/_preview/preview-mc";
+@import "../items/_preview-courses/preview-courses";
+@import "../items/_preview-courses/preview-courses_dark";
+@import "../items/_preview-courses/preview-courses-col";
 
 // Price Items
 @import "../items/_page-price/page-price";
@@ -93,12 +98,16 @@
 @import "../items/_list/list";
 @import "../items/_list/list_advantage";
 @import "../items/_list/list_numeric";
+@import "../items/_list/list_circle";
 // Contact List
 @import "../items/_contacts/contacts";
 @import "../items/_contacts/contacts_inline";
 // List With Icon
 @import "../items/_list-icon/list-icon";
 @import "../items/_list-icon/list-icon_top";
+@import "../items/_list-icon/list-icon_adv";
+// Step
+@import "../items/_step/step";
 
 // ========================  Main Block  ========================  //
 
@@ -113,6 +122,7 @@
 // Modal
 @import "../blocks/_modal/modal";
 @import "../blocks/_modal/modal_form";
+@import "../blocks/_modal/modal_content";
 
 // ========================  Inside Blocks  ========================  //
 
@@ -122,7 +132,7 @@
 @import "../blocks/_category/category";
 @import "../blocks/_category/category_review";
 // Map
-// @import "../blocks/map/map";
+@import "../blocks/_map/map";
 // CTA
 // @import "../blocks/cta/cta";
 @import "../blocks/_cta-block/cta-block";
@@ -150,8 +160,9 @@
 // @import "../blocks/sertificate/sertificate-action-input";
 // @import "../blocks/sertificate/sertificate-content";
 // Timetable
-// @import "../blocks/timetable/timetable-nav";
-// @import "../blocks/timetable/timetable";
+@import "../blocks/_timetable/timetable";
+@import "../blocks/_timetable/timetable_nav";
+@import "../blocks/_timetable/timetable_content";
 // @import "../items/timetable-item/timetable-item";
 
 // ========================  Content  ========================  //
@@ -168,9 +179,9 @@
 // Container
 // @import "../items/slider-container/slider-container";
 // Inside
-// @import "../items/slider/slider";
+@import "../blocks/_slider/slider";
 // @import "../items/slider/slider_link";
-// @import "../items/slider/slider_review";
+@import "../blocks/_slider/slider_review";
 // @import "../items/slider/slider_index";
 // @import "../items/slider/slider_nav";
 // Nav
