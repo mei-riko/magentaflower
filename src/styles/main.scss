@@ -58,11 +58,13 @@
 @import "../items/_info/info_alert";
 // @import "../items/info/info_review";
 @import "../items/_info/info_video";
+@import "../items/_info/info_child";
 
 // ========================  Special Items  ========================  //
 
 // Review Item
 @import "../items/_review/review";
+@import "../items/_review/review_child";
 // Price Item
 @import "../items/_price/price";
 @import "../items/_price/price_courses";
@@ -163,7 +165,9 @@
 @import "../blocks/_timetable/timetable";
 @import "../blocks/_timetable/timetable_nav";
 @import "../blocks/_timetable/timetable_content";
-// @import "../items/timetable-item/timetable-item";
+// Program Witn Timing
+@import "../items/program-timing/program-timing";
+@import "../items/program-timing/program-timing_icon";
 
 // ========================  Content  ========================  //
 

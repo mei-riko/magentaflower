@@ -1,0 +1,52 @@
+.info_child{
+    position: relative;
+    border: 5px dotted $pink-light;
+
+    &__title{
+        font-size: 1.75em;
+
+        position: relative;
+        &:after {
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+
+            content: '';
+            display: block;
+            width: 50px;
+            height: 70px;
+
+            transform: rotate(180deg);
+            background: url('../icon/arrow-left.png') no-repeat center/contain;
+        }
+    }
+
+    &__subtitle{
+        font-weight: $font-weight-bold;
+        color: $pink;
+    }
+
+    &__footer {
+        background-color: $pink;
+        color: $white;
+
+        font-weight: $font-weight-bold;
+
+        height: $grid-gutter-width;
+        line-height: $grid-gutter-width;
+
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+
+        position: absolute;
+        left: 40px;
+        bottom: -20px;
+        width: calc(100% - 80px);
+
+        border-radius: $border-radius;
+
+        padding: 0 $spacer-gutter;
+        overflow: hidden;
+    }
+}

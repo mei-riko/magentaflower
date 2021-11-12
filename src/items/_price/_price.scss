@@ -8,6 +8,13 @@
     padding: map-get($spacers, 1) map-get($spacers, 2);
 
     // Elements
+    &__status{
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%) translateY(-50%);
+    }
     &__label{
         position: absolute;
         top: 0;
