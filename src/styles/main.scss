@@ -42,19 +42,12 @@
 // ========================  Items  ========================  //
 
 // Element
-// @import "../items/item/item";
-// @import "../items/item/item_step";
-// @import "../items/item/item_resume";
-// @import "../items/item/item_alert";
-
-// Element With Icon
-// @import "../items/item-icon/item-icon";
-// @import "../items/item-icon/item-icon_information";
+@import "../items/_advantage/advantage";
 
 // Info Item
 @import "../items/_info/info";
 @import "../items/_info/info_promo";
-// @import "../items/info/info_person";
+@import "../items/_info/info_secondary";
 @import "../items/_info/info_alert";
 // @import "../items/info/info_review";
 @import "../items/_info/info_video";
@@ -88,7 +81,7 @@
 @import "../items/_page-price/page-price_center";
 
 // Tooltip
-// @import "../items/tooltip/tooltip";
+@import "../items/_tooltip/tooltip";
 // Toggle Slide
 @import "../items/_toggle/toggle";
 @import "../items/_toggle/toggle_faq";
@@ -159,15 +152,13 @@
 @import "../blocks/_sertificate/sertificate";
 @import "../blocks/_sertificate/sertificate_modal";
 @import "../blocks/_sertificate/sertificate_poll";
-// @import "../blocks/sertificate/sertificate-action-input";
-// @import "../blocks/sertificate/sertificate-content";
 // Timetable
 @import "../blocks/_timetable/timetable";
 @import "../blocks/_timetable/timetable_nav";
 @import "../blocks/_timetable/timetable_content";
 // Program Witn Timing
-@import "../items/program-timing/program-timing";
-@import "../items/program-timing/program-timing_icon";
+@import "../items/_program-timing/program-timing";
+@import "../items/_program-timing/program-timing_icon";
 
 // ========================  Content  ========================  //
 

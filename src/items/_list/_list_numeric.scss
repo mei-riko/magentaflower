@@ -37,7 +37,6 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .list_numeric{
         &__item{
-            
             font-size: map-get($map: $font-size, $key: md);
         }
     }

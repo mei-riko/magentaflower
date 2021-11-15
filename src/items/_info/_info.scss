@@ -20,7 +20,29 @@
             font-size: 1rem;
         }
     }
-    
+    // Подзаголовок
+    &__subtitle{
+        color: $pink;
+
+        font-family: $font-family-heading;
+        font-style: italic;
+    }
+    // Иконки
+    &__icon-all{
+        width: $grid-gutter-width;
+        height: $grid-gutter-width;
+        background: $light-grey url('../icon/advant_icon1.png') no-repeat center / contain;
+        border-radius: 50%;
+        margin-bottom: $spacer-gutter;
+    }
+    &__icon-school{
+        width: $grid-gutter-width;
+        height: $grid-gutter-width;
+        background: $light-grey url('../icon/advant_icon2.svg') no-repeat center / contain;
+        border-radius: 50%;
+        border: 1px solid $border-color;
+        margin-bottom: $spacer-gutter;
+    }
     // Активный элемент
     &--active{
         border-color: $pink;

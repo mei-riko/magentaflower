@@ -1,0 +1,152 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "2021 Комплект"
+    - var headerClass = "header_fixed"
+block content
+    //- Первый экран
+    section.page
+        .page__header-block(style="background-image: url('../img/bg-default-2.jpg');")
+            .container
+                span.label Комплект мастер-классов
+                .mt-2.mb-2
+                    a.btn.btn_video(href="#") Тизер
+                h1.page__title Вариации букетов и&nbsp;упаковки ко&nbsp;дню Св.&nbsp;Валентина и&nbsp;8&nbsp;марта
+                p с Чемпионкой России Анастасией Шехериной
+                .page-price.page-price_center.mt-3.mb-3
+                    .page-price__col
+                        .page-price__label обычная цена
+                        p.page-price__value.page-price__value_old 39 000
+                    .page-price__col
+                        .page-price__label.text-pink со скидкой
+                        p.page-price__value.page-price__value_new 35 000
+                a.btn.btn_action.scroll(href="#complect") Купить комплект
+    //- Общая информация
+    section.content
+        .container
+            .row.justify-content-center.mb-3
+                .col-7.col-md-10.col-sm-12
+                    p.text-center В комплект входят 5 мастер-классов, благодаря которым вы погрузитесь в стиль Lacy Bird и сможете создавать свои шедевры современной флористики, начиная от круглого букета и завершая асимметричной композицией!
+            .row
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/flower-pink.svg")
+                        .list-icon_adv__content 
+                            .text-bold 155 минут 
+                            | 3 часа максимального погружения в современные техники сборки
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/bag-pink.svg")
+                        .list-icon_adv__content 
+                            .text-bold Любой уровень
+                            | Сборка букета и создание композиции не требуют дополнительных навыков
+                .col-4.col-lg-6.col-md-6.col-sm-12.mb-3
+                    .list-icon.list-icon_adv
+                        img.list-icon_adv__img(src="../icon/diamond-pink.svg")
+                        .list-icon_adv__content 
+                            .text-bold Онлайн формат
+                            | Все мастер-классы у вас в кармане, доступны в любое время.
+            //- Комплект
+            h3.text-bold.text-center.mb-3 Что входит в комплект
+            .row.mb-3.sertificate.sertificate_outside
+                .col-6.col-md-12
+                    .sertificate__item.sertificate__item_result
+                        .sertificate__item-image.sertificate__item-image_result(style="background-image: url('../img/pic-5.png');")
+                        .sertificate__item-content
+                            a.sertificate__item-link(href="courses.html") Базовый курс флористики
+                            p.text-small.mb-0 количество часов: 70
+                            p.text-small.mb-0 график: с 12 по 23 октября
+                            p.text-small стоимость: 30 000
+                        a.sertificate__item-buy(href="#" data-toggle="tooltip" data-placement="right" title="Купить отдельно")
+                .col-6.col-md-12.mt-md-1
+                    .sertificate__item.sertificate__item_result
+                        .sertificate__item-image.sertificate__item-image_result(style="background-image: url('../img/pic-4.png');")
+                        .sertificate__item-content
+                            a.sertificate__item-link(href="courses.html") Полный курс флористики
+                            p.text-small.mb-0 количество часов: 70
+                            p.text-small.mb-0 график: с 12 по 23 октября
+                            p.text-small стоимость: 54 000
+                        a.sertificate__item-buy(href="#" data-toggle="tooltip" data-placement="right" title="Купить отдельно")
+                .col-6.col-md-12.mt-1
+                    .sertificate__item.sertificate__item_disable
+                        .sertificate__item-image.sertificate__item-image_result(style="background-image: url('../img/pic-4.png');")
+                        .sertificate__item-content.sertificate__item-content_disable
+                            .sertificate__item-link.sertificate__item-link_disable Полный курс флористики
+                            p.text-small.mb-0 количество часов: 70
+                            p.text-small.mb-0 график: с 12 по 23 октября
+                            p.text-small стоимость: 54 000
+            .text-center
+                a.btn.btn_action.scroll(href="#complect") Купить комплект
+    //- Портфолио
+    section.content.bg-light-pink
+        .container
+            h3.text-center.text-bold.mb-3 Какие букеты и композиции <br/>вы научитесь делать
+            .row.no-gutters.portfolio
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/02.png")
+                        img.img-fluid(src="/img/02.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/03.png")
+                        img.img-fluid(src="/img/03.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/01.png")
+                        img.img-fluid(src="/img/01.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item(data-fancybox="gallery" href="/img/04.png")
+                        img.img-fluid(src="/img/04.png")
+                .col-3.col-sm-6.col-md-4
+                    .portfolio__item
+                        img.img-fluid(src="/img/02.png")
+    section.content.content_offset-small
+        .container
+            h4.h1.text-bold Обучение у нас популярно! Почему?
+            .row.mb-3
+                .col-5.col-lg-8.col-md-10.col-sm-12
+                    p Мы — одна из лучших школ флористики России, куда за знаниями обращаются студенты из разных уголков планеты
+            .row
+                .col-3.col-md-6.mb-3.advantage
+                    p.advantage__num 10 000+
+                    p.advantage__intro букетов создаётся в стенах Magenta&nbsp;в&nbsp;год
+                .col-3.col-md-6.mb-3.advantage
+                    p.advantage__num 320+
+                    p.advantage__intro букетов создаётся в стенах Magenta&nbsp;в&nbsp;год
+                .col-3.col-md-6.mb-3.advantage
+                    p.advantage__num 30+
+                    p.advantage__intro букетов создаётся в стенах Magenta&nbsp;в&nbsp;год
+                .col-3.col-md-6.advantage
+                    p.advantage__num x2.5
+                    p.advantage__intro букетов создаётся в стенах Magenta&nbsp;в&nbsp;год
+            .row.mt-4.justify-content-center
+                .col-6.col-md-12.mb-3
+                    .info
+                        .row.align-items-center.justify-content-between
+                            .col-7.col-sm-12.col-md-12.col-lg-6.col-xl-7
+                                p.subtitle.mb-1 Ведущая мастер-класса
+                                p.h4.text-bold Елена Дмитриева
+                                p.text-grey.text-lead Мастер-флорист. Большой опыт работы в сфере детского досуга
+                            .col-4.col-sm-12.col-md-9.col-lg-6.col-xl-5
+                                img.img-fluid(src="../img/Elena.jpg")
+                .col-6.col-md-12.mb-3
+                    .info
+                        .row.align-items-center.justify-content-between
+                            .col-7.col-sm-12.col-md-12.col-lg-6.col-xl-7
+                                p.subtitle.mb-1 Ведущая мастер-класса
+                                p.h4.text-bold Елена Дмитриева
+                                p.text-grey.text-lead Мастер-флорист. Большой опыт работы в сфере детского досуга
+                            .col-4.col-sm-12.col-md-9.col-lg-6.col-xl-5
+                                img.img-fluid(src="../img/Elena.jpg")
+            .info.mt-4.mt-md-3
+                p Форма с GetCourses
+    //- Networks
+    aside.mb-4
+        .container
+            include ../blocks/_networks/networks.pug

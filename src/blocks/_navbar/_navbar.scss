@@ -74,6 +74,14 @@
     .navbar{
         &__link{
             font-size: map-get($map: $font-size, $key: sm);
+
+            &_label{
+                font-size: map-get($map: $font-size, $key: sm);
+
+                & > * {
+                    font-size: map-get($map: $font-size, $key: sm);
+                }
+            }
         }
     }
 }
