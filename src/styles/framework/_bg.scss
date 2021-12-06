@@ -33,6 +33,22 @@
     color: $white;
 }
 
+.bg-overlay{
+    position: relative;
+
+    &:after{
+        content: '';
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+    }
+}
+
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .bg-flowers_01{
         padding-bottom: 160px;

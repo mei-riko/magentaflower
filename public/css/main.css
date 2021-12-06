@@ -459,9 +459,6 @@ a.label:hover, a.label:focus {
   .navbar__link_label {
     font-size: 12px;
   }
-  .navbar__link_label > * {
-    font-size: 12px;
-  }
 }
 
 @media all and (max-width: 1200px) {
@@ -1288,11 +1285,14 @@ a.label:hover, a.label:focus {
 @media all and (max-width: 576px) {
   .preview-courses {
     background-position: left bottom;
-    background-size: 540px;
-    padding: 30px 30px 120px;
+    padding: 30px;
   }
-  .preview-courses:after {
-    opacity: .25;
+}
+
+@media all and (max-width: 420px) {
+  .preview-courses {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1316,6 +1316,13 @@ a.label:hover, a.label:focus {
   align-items: stretch;
 }
 
+.preview-courses-col__label {
+  position: absolute;
+  z-index: 11;
+  top: 15px;
+  left: 15px;
+}
+
 .preview-courses-col__inside {
   position: relative;
   width: 100%;
@@ -1325,6 +1332,19 @@ a.label:hover, a.label:focus {
   overflow: hidden;
   padding-top: 180px;
   padding-bottom: 24px;
+}
+
+.preview-courses-col__inside_recommend {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 30px;
+}
+
+.preview-courses-col__inside_recommend:hover, .preview-courses-col__inside_recommend:focus {
+  color: inherit;
+  text-decoration: none;
+  border-color: #f296b9;
 }
 
 .preview-courses-col__img {
@@ -1338,6 +1358,7 @@ a.label:hover, a.label:focus {
 }
 
 .preview-courses-col__title {
+  display: block;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
@@ -1374,6 +1395,7 @@ a.label:hover, a.label:focus {
 .page-price__label {
   font-size: 12px;
   display: inline-block;
+  white-space: nowrap;
   padding: 2px 10px 4px;
   background: #ffffff;
   border-radius: 12px;
@@ -2274,7 +2296,7 @@ a.label:hover, a.label:focus {
   .header__mobile {
     padding-right: 20px;
     padding-left: 20px;
-    max-width: 320px;
+    max-width: 100%;
   }
 }
 

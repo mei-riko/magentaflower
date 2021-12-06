@@ -2,6 +2,12 @@
     display: flex;
     align-items: stretch;
 
+    &__label{
+        position: absolute;
+        z-index: 11;
+        top: $spacer-gutter;
+        left: $spacer-gutter;
+    }
     // margin-bottom: map-get($map: $spacers, $key: 3);
     &__inside{
         position: relative;
@@ -14,6 +20,19 @@
         
         padding-top: 180px;
         padding-bottom: 24px;
+
+        &_recommend{
+            display: grid;
+            grid-gap: $spacer-gutter;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 30px;
+
+            &:hover, &:focus{
+                color: inherit;
+                text-decoration: none;
+                border-color: $pink-secondary;
+            }
+        }
     }
     // Изображение-иллюстрация
     &__img{
@@ -28,6 +47,8 @@
     }
     // Заголовок
     &__title{
+        display: block;
+
         font-size: map-get($map: $font-size, $key: lg);
         font-weight: $font-weight-bold;
         line-height: $line-height-heading;

@@ -386,7 +386,7 @@ template {
   .container {
     padding-right: 20px;
     padding-left: 20px;
-    max-width: 320px;
+    max-width: 100%;
   }
 }
 
@@ -2458,6 +2458,20 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 .bg-cta {
   background: #3d3e40 url("../img/bg-cta.png") no-repeat center/cover;
   color: #ffffff;
+}
+
+.bg-overlay {
+  position: relative;
+}
+
+.bg-overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 @media all and (max-width: 1024px) {

@@ -116,11 +116,18 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .preview-courses{
         background-position: left bottom;
-        background-size: 540px;
-        padding: 30px 30px 120px;
+        // background-size: 540px;
+        padding: 30px;
 
-        &:after{
-            opacity: .25;
-        }
+        // &:after{
+            // opacity: .25;
+        // }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .preview-courses{
+        padding-left: $spacer-gutter;
+        padding-right: $spacer-gutter;
     }
 }
