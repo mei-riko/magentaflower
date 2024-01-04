@@ -1,7 +1,8 @@
 .footer{
+    font-size: 14px;
+
     padding: map-get($spacers, 4) 0;
-    background: $pink-light;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid $pink-light;
     overflow: hidden;
 
     &__logo{
@@ -9,15 +10,17 @@
         
         max-width: 100%;
         width: 180px;
-        height: 110px;
+        height: 100px;
 
         display: block;
         margin-bottom: map-get($spacers, 2);
     }
     // Элементы колонок
     &__title{
-        color: $pink;
-        filter: opacity(.6);
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: $font-weight-bold;
+        // color: $grey;
         margin-bottom: map-get($spacers, 1);
     }
     &__link{
@@ -26,25 +29,19 @@
     &__content{
         color: $grey;
     }
+
+    // Contacts
+    &__contacts{
+        margin-bottom: map-get($map: $spacers, $key: 2);
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .footer{
         padding: map-get($spacers, 2) 0;
-
-        // &__logo{
-        //     margin-left: auto;
-        //     margin-right: auto;
-        // }
-        // &__content{
-        //     text-align: center;
-        // }
-
-        // // Column content center
-        // .col-sm-12{
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        // }
     }
 }

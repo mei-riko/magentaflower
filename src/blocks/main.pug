@@ -12,8 +12,9 @@ html(lang="ru")
 
         title= pageTitle
 
-        link(rel="preconnect" href="https://fonts.gstatic.com")
-        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet")
         
         link(href='./css/framework.css', rel='stylesheet')
         link(href='./css/main.css', rel='stylesheet')
@@ -24,8 +25,8 @@ html(lang="ru")
         .advt
             .container
                 .advt__row
-                    .advt__text Мы запустили online марафон
-                    a.advt__btn(href='https://school.magentaflower.ru/pronovogvenki?gcmes=17686893230&amp;gcmlg=5877439') Присоединиться
+                    .advt__text 👉 Мы запустили online марафон
+                    a.advt__btn(href='https://school.magentaflower.ru/pronovogvenki?gcmes=17686893230&amp;gcmlg=5877439') Присоединиться →
         include ./_header/header.pug
         include ./_navbar/navbar.pug
         block content

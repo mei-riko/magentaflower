@@ -11,16 +11,16 @@
 
         &:checked + .radio__label {
             background-color: $pink-light;
-            border-color: $border-color;
+            border-color: $pink;
         }
     }
     &__label{
         position: relative;
         margin: 0;
         line-height: 12px;
-        padding: 12px 20px;
+        padding: 12px;
         border: 1px solid $grey;
-        border-radius: 4px;
+        border-radius: 8px;
 
         cursor: pointer;
     }

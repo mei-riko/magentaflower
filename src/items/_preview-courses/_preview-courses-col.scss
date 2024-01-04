@@ -14,7 +14,7 @@
         width: 100%;
     
         border: 1px solid $border-color;
-        border-radius: 8px;
+        border-radius: $border-radius;
         background-color: $white;
         overflow: hidden;
         
@@ -32,6 +32,14 @@
                 text-decoration: none;
                 border-color: $pink-secondary;
             }
+        }
+        &_archive{
+            display: grid;
+            grid-gap: $spacer-gutter;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 30px;
+
+            filter: grayscale(1);
         }
     }
     // Изображение-иллюстрация
@@ -52,12 +60,12 @@
         font-size: map-get($map: $font-size, $key: lg);
         font-weight: $font-weight-bold;
         line-height: $line-height-heading;
-        padding: map-get($spacers,1) map-get($spacers,1) map-get($spacers,1)/2;
+        padding: map-get($spacers,1) map-get($spacers,2) map-get($spacers,1)/2;
     }
     // Дополнительный текст
     &__intro{
         font-size: map-get($map: $font-size, $key: md);
-        padding: 0 map-get($spacers,1);
+        padding: 0 map-get($spacers,2);
     }
     // Цена 
     &__price{
@@ -65,7 +73,7 @@
         font-weight: $font-weight-bold;
 
         color: $pink;
-        padding: 0 map-get($spacers,1);
+        padding: 0 map-get($spacers,2);
 
         &_old{
             text-decoration: line-through;

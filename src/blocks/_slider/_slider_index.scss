@@ -1,0 +1,84 @@
+.slider_index{
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr 560px;
+        grid-gap: 20px;
+    }
+    &__image{
+        background-color: $light-grey;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        border-radius: $border-radius;
+
+        width: 100%;
+        height: 100%;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 3);
+        border-radius: $border-radius;
+
+        color: $white;
+        background-color: $dark-grey;
+
+        height: 520px;
+        overflow: hidden;
+    }
+    &__title{
+        font-size: 32px;
+
+        font-family: $font-family-heading;
+        font-weight: $font-weight-heading;
+        line-height: $line-height-heading;
+        margin-bottom: map-get($map: $spacers, $key: 1);
+    }
+    &__info{
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+
+        padding-left: 32px;
+        margin-bottom: map-get($map: $spacers, $key: 1);
+    }
+
+    // Slick
+    .slick-arrow {
+        opacity: .5;
+        transition: .4s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+      
+    .slick-prev {
+        left: 20px;
+        z-index: 11;
+    }
+      
+    .slick-next {
+        left: calc(100% - 620px);
+        z-index: 11;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .slider_index{
+        &__item{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        &__image{
+            height: 360px;
+        }
+        &__content{
+            height: auto;
+        }
+    }
+}

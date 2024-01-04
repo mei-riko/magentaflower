@@ -4,3 +4,9 @@
 
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .btn-group{
+        grid-template-columns: 1fr;
+    }
+}

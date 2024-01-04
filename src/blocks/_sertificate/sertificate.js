@@ -39,14 +39,17 @@ $(document).ready(() =>{
     });
     // Sertificate Modal
     $(".sertificate-action-input").on("click", function(){
-        $.fancybox.open({ 
-            src: "#sertificateModal",
-            touch: false,
-            autoFocus: false
-         });
+        new Fancybox([
+            {
+                src: "#sertificateModal",
+                touch: false,
+                autoFocus: false
+            },
+        ]);
     });
     $(".sertificate.sertificate_modal .sertificate__item.sertificate__item_modal").on("click", function(){
-        $.fancybox.close();
+        Fancybox.close();
+        
         let title = $(this).find(".sertificate_modal__title").text();
         let link = $(this).find(".sertificate_modal__title").attr("data-link");
         $(".sertificate-action-input").val( title );
@@ -55,11 +58,14 @@ $(document).ready(() =>{
     // Sertificate Money
     $("#getMoneySertificate").on("click", function(e){
         e.preventDefault();
-        $.fancybox.open({ 
-            src: "#sertificateMoney",
-            touch: false,
-            autoFocus: false
-        });
+
+        new Fancybox([
+            {
+                src: "#sertificateMoney",
+                touch: false,
+                autoFocus: false
+            },
+        ]);
 
         let value = $(this).closest(".form").find("#getSertificateValue").val();
         $("#sertificateValue").val( value );

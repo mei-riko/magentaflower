@@ -3,21 +3,22 @@
 
     // Обертка меню
     &__row{
-        // @extend .row;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
     }
     // Колонка со ссылками
     &__col{
         // @extend .col;
-        flex: 0 0 calc( 50% - 115px);
-        max-width: calc( 50% - 115px);
+        // flex: 0 0 calc( 50% - 115px);
+        // max-width: calc( 50% - 115px);
     }
     // Логотип
     &__logo{
         background: url("../icon/logo.svg") no-repeat center 0px/ contain;
         
-        flex: 0 0 230px;
-        max-width: 230px;
+        // flex: 0 0 230px;
+        width: 200px;
+        max-width: 100%;
 
         height: 140px;
         margin: 0 auto;
@@ -50,7 +51,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-bottom: map-get($map: $spacers, $key: 1);
+        margin-bottom: $spacer-gutter;
 
         &:last-child{
             margin-bottom: 0;
@@ -62,61 +63,61 @@
     }
     // Ссылка в header
     &__link{
-        // text-decoration: underline;
-        // color: $grey;
-        margin-right: map-get($spacers, 1);
+        &_schedule{
+            position: relative;
 
-        &_last{
-            margin-right: 0;
+            font-size: 12px;
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            grid-gap: 8px;
+
+            margin-right: map-get($map: $spacers, $key: 1);
+
+            &:before{
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+
+                transition: 0.3s;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill="%23DD5287" fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" /></svg>');
+            }
         }
         
         &:hover, &:focus{
             color: $pink;
+            text-decoration: none;
         }
     }
     // Контакты
     &__contacts-list{
         font-weight: $font-weight-bold;
-        font-size: map-get($map: $font-size, $key: lg);
-        line-height: 24px;
-        
-        padding-top: 0;
+    }
+    &__networks-list{
+        grid-gap: 10px;
     }
 }
 // < 1440px
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .header{
-        // Контакты
-        &__contacts-list{
-            font-size: map-get($map: $font-size, $key: md);
-        }
-    }
-}
-@media all and (max-width: 1200px){
-    .header{
-        &__logo{
-            flex: 0 0 140px;
-            max-width: 140px;
-            height: 90px;
-            background-position-y: bottom;
-
-            &_mobile{
-                flex: 0 0 calc(100% - 80px);
-                max-width: 100%;
-                height: 80px;
-                background-position-y: center;
-            }
-        }
-        &__col{
-            flex: 0 0 calc( 50% - 70px);
-            max-width: calc( 50% - 70px);
+        &__row{
+            display: grid;
+            grid-template-columns: 1fr 120px 1fr;
         }
     }
 }
 // < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .header{
-        padding: 10px 0;
+        padding: $spacer-gutter 0;
         
         &__desktop{
             display: none;

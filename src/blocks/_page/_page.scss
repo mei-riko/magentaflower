@@ -1,7 +1,7 @@
 // Новый стиль страниц BEM
 .page{
     // Стиль первого экрана с фоном
-    &__header-block{
+    &__hero{
         position: relative;
         padding: 220px 0 map-get($spacers, 5);
         background: no-repeat center / cover;
@@ -36,22 +36,24 @@
         margin-left: auto;
         margin-right: auto;
     }
-    // Подзаголовок / Label
-    &__subtitle{
-        display: inline-block;
-    }
     // Аннотация страницы
     &__introtext{
         line-height: $line-height-base;
 
-        width: 480px;
+        width: 680px;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
     // Группа кнопок
     &__btn-group{
-        width: 480px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        grid-gap: $spacer-gutter;
+
+        width: 440px;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -63,7 +65,7 @@
         justify-content: center;
 
         &-col{
-            padding: 0 10px;
+            padding: 0 12px;
         }
         &-title{
             font-family: $font-family-heading;
@@ -141,7 +143,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .page{
         // Стиль первого экрана
-        &__header-block{
+        &__hero{
             padding-top: 160px;
         }
         // Слайдер контента на всю ширину
@@ -165,7 +167,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .page{
         // Стиль первого экрана
-        &__header-block{
+        &__hero{
             padding-top: 140px;
             padding-bottom: $spacer;
         }

@@ -46,8 +46,10 @@
 
 // Info Item
 @import "../items/_info/info";
-@import "../items/_info/info_promo";
+@import "../items/_info/info_accent";
 @import "../items/_info/info_secondary";
+
+@import "../items/_info/info_promo";
 @import "../items/_info/info_alert";
 // @import "../items/info/info_review";
 @import "../items/_info/info_video";
@@ -140,7 +142,6 @@
 // @import "../blocks/master-class/master-class";
 // Page Block
 @import "../blocks/_page/page";
-@import "../blocks/_page/page";
 // @import "../blocks/page/page-header";
 // @import "../blocks/page/page-header_col";
 @import "../blocks/_programm/programm";
@@ -157,8 +158,8 @@
 @import "../blocks/_timetable/timetable_nav";
 @import "../blocks/_timetable/timetable_content";
 // Program Witn Timing
-@import "../items/_program-timing/program-timing";
-@import "../items/_program-timing/program-timing_icon";
+@import "../items/_programm-timing/programm-timing";
+@import "../items/_programm-timing/programm-timing_icon";
 
 // ========================  Content  ========================  //
 
@@ -169,6 +170,10 @@
 
 @import "../blocks/_content/content-line";
 
+// ========================  Post  ========================  //
+
+@import "../blocks/_post/post";
+
 // ========================  Slider  ========================  //
 
 // Container
@@ -177,8 +182,8 @@
 @import "../blocks/_slider/slider";
 // @import "../items/slider/slider_link";
 @import "../blocks/_slider/slider_review";
-// @import "../items/slider/slider_index";
-// @import "../items/slider/slider_nav";
+@import "../blocks/_slider/slider_index";
+@import "../blocks/_slider/slider_nav";
 // Nav
 // @import "../items/slider-nav/slider-nav";
 

@@ -18,6 +18,7 @@
     }
     &__value{
         font-size: 1.5rem;
+        white-space: nowrap;
 
         &_old{
             text-decoration: line-through;

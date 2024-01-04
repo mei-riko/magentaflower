@@ -1,7 +1,7 @@
 .sertificate{
     // Примечание на странице курса
     &__blockquote{
-        width: 420px;
+        width: 480px;
         max-width: 100%;
         padding-left: map-get($spacers, 5);
         background: url(../icon/sertificate.svg) no-repeat left center / map-get($spacers, 4);
@@ -115,7 +115,7 @@
         text-decoration: underline;
 
         margin-bottom: 4px;
-        min-height: 34px;
+        // min-height: 34px;
 
         &_disable{
             text-decoration: none;

@@ -38,7 +38,7 @@ html,body {
 .p-sticky{position: sticky; top: 0; left: 0; z-index: 101; background: $white;}
 
 p {
-    font-size: 1rem;
+    font-size: 1em;
     margin-top: 0;
     margin-bottom: $paragraph-margin-bottom;
 
@@ -139,7 +139,7 @@ table{
     max-width: 100%;
 }
 .img-radius{
-    border-radius: 12px;
+    border-radius: $border-radius;
 }
 .img-border{
     border: 1px solid $border-color;
@@ -158,9 +158,6 @@ blockquote, .blockquote{
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
-    html,body {
-        font-size: map-get($font-size, 'md');
-    }
     .text-xl{
         &-left{text-align: left;}
         &-center{text-align: center;}
@@ -175,7 +172,10 @@ blockquote, .blockquote{
     }
     .text-small,small,.small{font-size: map-get($map: $font-size, $key: sm);}
 }
-@media all and (max-width: map-get($grid-breakpoints, 'md')){  
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    html,body {
+        font-size: map-get($font-size, 'md');
+    }
     .text-md{
         &-left{text-align: left;}
         &-center{text-align: center;}

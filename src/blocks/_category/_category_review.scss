@@ -1,9 +1,14 @@
-.category_review{
+.category_review{    
     &__item{
         align-content: flex-start;
+        margin-bottom: 40px;
+    }
+    &__intro{
+        font-size: map-get($map: $font-size, $key: md);
+        margin-bottom: 0;
     }
     &__author{
         font-family: $font-family-heading;
-        font-style: italic;
+        font-weight: $font-weight-bold;
     }
 }

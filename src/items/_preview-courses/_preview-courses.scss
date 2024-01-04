@@ -1,6 +1,6 @@
 .preview-courses{
     padding: $spacer;
-    border-radius: 12px;
+    border-radius: $border-radius;
     background: $pink-light no-repeat left center / cover;
 
     // Заголовок-ссылка
@@ -75,7 +75,7 @@
     }
     // Цены
     &__price{
-        text-align: center;
+        // text-align: center;
         margin: 0 0 map-get($map: $spacers, $key: 2);
     }
     // Фон около цены

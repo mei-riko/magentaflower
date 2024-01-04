@@ -1,18 +1,19 @@
 $white                : #ffffff;
 $black                : #000000;
 
-$light-grey           : #f6f6f6;
-$grey                 : #726D72;
-$dark-grey            : #3d3e40;
+$light-grey           : #FAF8F7;
+$grey                 : #7A7376;
+$dark-grey            : #3B3739;
 
 $red                  : #ef081e;
 
 $pink                 : #dd5287;
 $pink-secondary       : #f296b9;
-$pink-light           : #f9eaf1;
+// $pink-light           : #f9eaf1;
+$pink-light           :#faf4f6;
 
-$border-color         : #ddc4c3 !default;
-$border-radius        : 10px;
+$border-color         : #efe1e1 !default;
+$border-radius        : 32px;
 
 $link-color           : $dark-grey !default;
 $link-hover-color     : $pink      !default;
@@ -27,7 +28,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 1024px,
-  xl: 1580px,
+  xl: 1280px,
 ) !default;
 
 $container-max-widths: (
@@ -41,7 +42,7 @@ $container-max-widths: (
   hd: 1440px,
 ) !default;
 
-$font-family-base     : "Noto Sans", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base     : "Mulish", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo,            Monaco, Consolas,   "Liberation Mono",   "Courier New",    monospace !default;
 $font-family-heading  : 'Noto Serif', serif;
 

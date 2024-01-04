@@ -4,7 +4,8 @@
 
 .bg-light-grey{background-color: $light-grey;}
 .bg-light-pink{
-    background-color: lighten($pink-light, 3%);
+    background-color: $pink-light;
+    
     .btn_default{
         background-color: darken($pink-light, 4%);;
         &:hover{

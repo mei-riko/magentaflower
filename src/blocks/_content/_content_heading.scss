@@ -1,9 +1,20 @@
 // Экран с заголовком
 .content_heading{
+    padding-top: 200px;
+    padding-bottom: 60px;
+
     background: #faf4f6 url("../img/pattern-wave-light.png") repeat left top / 260px;
     text-align: center;
 
-    margin-top: -40px;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+
+    &__description{
+        width: 100%;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){

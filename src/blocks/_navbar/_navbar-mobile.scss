@@ -6,7 +6,7 @@
 
     padding: 40px 30px;
     background: $white;
-    // width: 260px;
+    
     max-width: calc(100% - 60px);
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
@@ -19,19 +19,23 @@
     &__nav{
         flex-direction: column;
     }
+
     &__contacts{
-        margin: map-get($spacers, 2) 0;
-        padding: map-get($spacers, 2) 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: map-get($spacers, 2) 0!important;
+        padding: map-get($spacers, 2) 0!important;
+
         border-top: 1px solid $pink-light;
         border-bottom: 1px solid $pink-light;
+
+        // .contacts__item{
+        //     display: inline-block;
+        // }
     }
-    &__item{
-        margin-bottom: map-get($spacers, 1);
-        
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
+    
     &__btn{
         padding: 8px 14px;
         font-size: 11px;
@@ -41,5 +45,13 @@
     &--active{
         filter: drop-shadow(2px 0px 8px #919191);
         transform: translateX(0);
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .navbar-mobile{
+        &__nav{
+            grid-row-gap: 12px;
+        }
     }
 }

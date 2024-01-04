@@ -1,6 +1,7 @@
 .timetable_nav{
     grid-gap: $spacer/4;
-    grid-template-columns: repeat(auto-fit,180px);
+    // grid-template-columns: repeat(auto-fit,180px);
+    grid-template-columns: repeat(auto-fit,160px);
     justify-content: center;
 
     &__link{

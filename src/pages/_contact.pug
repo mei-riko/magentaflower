@@ -5,11 +5,11 @@ block variables
     //- - var headerClass = "header_fixed"
     //- - var headerBodyClass = "header-fixed"
 block content
-    section.content.content_offset-small
+    section.content
         .container
             .row
                 .col-4.col-lg-12
-                    h1.text-bold.mb-0 Контакты
+                    h1.text-bold.mb-2 Контакты
                     .row
                         .col-12.col-lg-4.col-md-12
                             ul.contacts
@@ -22,12 +22,12 @@ block content
                                 li.contacts__item.contacts__item_email 
                                     a(href="mailto:88001112233") info@magentaflower.ru
                         .col-12.col-lg-6.col-md-12.mt-2.mt-lg-0.mt-md-1
-                            p.text-bold Адрес школы:
+                            p.text-bold.mb-1 Адрес школы:
                             p Санкт-Петербург, Пр. Юрия Гагарина, 7, пом. 25 ЖК "Космос", справа от центрального входа.
                             p.text-small
                                 a.scroll.link(href="#enterSchool") Как найти вход в школу?
                         .col-12.mt-2.mt-md-1
-                            p.text-bold.mb-0 Мы в социальных сетях:
+                            p.text-bold.mb-1 Мы в социальных сетях:
                             ul.contacts.contacts_inline
                                 a.contacts__item.contacts__item_networks.contacts__item_vk.contacts_inline__item(href="#")
                                 a.contacts__item.contacts__item_networks.contacts__item_fb.contacts_inline__item(href="#")
@@ -35,7 +35,7 @@ block content
                                 a.contacts__item.contacts__item_networks.contacts__item_tlg.contacts_inline__item(href="#")
                 .col-8.col-lg-12.mt-lg-3
                     .map.map_yandex#map
-    section.content.content_offset-small.bg-light-grey
+    section.content.bg-light-grey
         .container
             p.h1.text-bold.mb-3 Как добраться до&nbsp;школы?
             .row.align-items-center
@@ -51,7 +51,7 @@ block content
                         li.list__item.list_circle__item Ab illo inventore veritatis et molestiae non numquam
                 .col-6.col-md-12.mt-md-3
                     .demo(style="width:100%;height:280px;background:grey;")
-            .row.align-items-center.mt-4.flex-md-column-reverse
+            .row.align-items-center.mt-5.flex-md-column-reverse
                 .col-6.col-md-12.mt-md-3
                     .demo(style="width:100%;height:280px;background:grey;")
                 .col-6.col-md-12.item
@@ -64,7 +64,7 @@ block content
                         li.list__item.list_circle__item Eveniet, ut aut rerum facilis est et dolore
                         li.list__item.list_circle__item Consequatur aut reiciendis voluptatibus maiores
                         li.list__item.list_circle__item Ab illo inventore veritatis et molestiae non numquam
-            .row.align-items-center.mt-4
+            .row.align-items-center.mt-5
                 .col-6.col-md-12.item
                     p.item__title.text-bold
                         span.text-pink-secondary 03.
@@ -77,9 +77,9 @@ block content
                         li.list__item.list_circle__item Ab illo inventore veritatis et molestiae non numquam
                 .col-6.col-md-12.mt-md-3
                     .demo(style="width:100%;height:280px;background:grey;")
-    section.content.content_offset-small#enterSchool
+    section.content#enterSchool
         .container
-            .row
+            .row.align-items-center
                 .col-6.col-md-12
                     p.h1.text-bold.mb-3 Где находится вход в&nbsp;школу?
                     ul.list.list_circle
@@ -87,5 +87,5 @@ block content
                         li.list__item.list_circle__item Пройдите через главный вход в жилой дом со стеклянными башнями
                         li.list__item.list_circle__item Дверь в школу находится справа от центральной двери жилого комплекса
                 .col-6.col-md-12.mt-md-3
-                    img.img-fluid(src="../img/enter-to-school.jpg" alt="Как найти вход в школу Маджента" title="Как найти вход в школу Маджента")
+                    img.img-fluid.img-radius(src="../img/enter-to-school.jpg" alt="Как найти вход в школу Маджента" title="Как найти вход в школу Маджента")
     script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=79c72616-7091-4150-914c-4d2e2a2ad526" type="text/javascript")

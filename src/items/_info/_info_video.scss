@@ -1,9 +1,10 @@
 .info_video{
-    padding: $grid-gutter-width/2;
+    padding: $grid-gutter-width;
+    background-color: $pink-light;
 
     iframe{
-        max-height:100vh;
-        border-radius:12px;
+        // max-height: 100vh;
+        border-radius: $border-radius;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
@@ -15,7 +16,7 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .info_video{
-        padding: $grid-gutter-width/4;
+        padding: $grid-gutter-width/2;
         iframe{
             height:280px;
         }

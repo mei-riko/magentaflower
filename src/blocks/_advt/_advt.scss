@@ -7,38 +7,27 @@
     background-color: $pink;
 
     &__row{
-        display: grid;
-        grid-template-columns: auto 140px;
+        display: flex;
         grid-gap: $spacer-gutter;
 
         justify-content: center;
         align-items: center;
+        padding: 6px $spacer-gutter;
 
-        height: 34px;
-    }
-    &__text{
         font-size: map-get($map: $font-size, $key: sm);
         line-height: map-get($map: $font-size, $key: md);
-        text-transform: uppercase;
+    }
+    &__text{
         color: $white;
     }
     &__btn{
-        background-color: $white;
-        color: $pink;
 
-        font-size: map-get($map: $font-size, $key: sm);
-        line-height: map-get($map: $font-size, $key: md);
         font-weight: $font-weight-bold;
-
-        text-align: center;
-        width: 100%;
-
-        padding: 4px 10px;
-        border-radius: 12px;
+        color: $white;
 
         &:hover{
-            text-decoration: none;
-            background-color: $pink-light;
+            text-decoration: underline;
+            color: $white;
         }
     }
 }
@@ -53,16 +42,14 @@
         padding-bottom: 6px;
 
         &__row{
-            grid-template-columns: 1fr;
-            grid-gap: 2px;
-            height: 54px;
+            flex-wrap: wrap;
+            grid-gap: 8px;
         }
         &__text{
             text-align: center;
         }
     }
-
-    .advt + .header_fixed{
-        top: 66px;
-    }
+    // .advt + .header_fixed{
+    //     top: 66px;
+    // }
 }

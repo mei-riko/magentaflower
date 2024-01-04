@@ -1,6 +1,6 @@
 .info{
     padding: map-get($spacers, 2) map-get($spacers, 3);
-    border: 1px solid $border-color;
+    // border: 1px solid $border-color;
     border-radius: $border-radius;
 
     color: $black;
@@ -25,23 +25,24 @@
         color: $pink;
 
         font-family: $font-family-heading;
-        font-style: italic;
+        font-weight: $font-weight-bolder;
+        margin-bottom: map-get($map: $spacers, $key: 1)/2;
     }
     // Иконки
     &__icon-all{
         width: $grid-gutter-width;
         height: $grid-gutter-width;
-        background: $light-grey url('../icon/advant_icon1.png') no-repeat center / contain;
+        background: $white url('../icon/advant-icon1.png') no-repeat center / contain;
         border-radius: 50%;
-        margin-bottom: $spacer-gutter;
+        margin-bottom: map-get($map: $spacers, $key: 1);
     }
     &__icon-school{
         width: $grid-gutter-width;
         height: $grid-gutter-width;
-        background: $light-grey url('../icon/advant_icon2.svg') no-repeat center / contain;
+        background: $white url('../icon/advant-icon2.svg') no-repeat center / 24px;
         border-radius: 50%;
-        border: 1px solid $border-color;
-        margin-bottom: $spacer-gutter;
+        border: 1px solid $pink-light;
+        margin-bottom: map-get($map: $spacers, $key: 1);
     }
     // Активный элемент
     &--active{
@@ -53,9 +54,10 @@
     // Эффект при наведении
     &--hovered{
         cursor: pointer;
+        transition: 0.3s;
 
         &:hover{
-            border-color: $pink;
+            transform: scale(1.05);
         }
     }
 

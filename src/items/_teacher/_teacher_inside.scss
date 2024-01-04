@@ -5,8 +5,9 @@
     grid-template-columns: 25% 1fr;
     grid-gap: $grid-gutter-width;
 
-    padding: map-get($spacers, 2) map-get($spacers, 3);
-    border: 1px solid $border-color;
+    padding: map-get($spacers, 3);
+    background-color: #faf4f6;
+    // border: 1px solid $border-color;
     border-radius: $border-radius;
 
     &__photo{

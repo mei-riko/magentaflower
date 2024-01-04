@@ -1,4 +1,4 @@
-.program-timing{
+.programm-timing{
     text-align: center;
     margin-bottom: $grid-gutter-width;
 
@@ -36,7 +36,7 @@
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .program-timing{
+    .programm-timing{
         // text-align: left;
         &__content{
             width: 320px;

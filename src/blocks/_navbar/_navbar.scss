@@ -3,115 +3,140 @@
     flex-wrap: wrap;
     align-items: center;
 
+    grid-gap: map-get($map: $spacers, $key: 1); 
+
+    // General Link
     &__link{
-        font-size: 14px;
+        font-size: 15px;
+        font-weight: $font-weight-bolder;
         line-height: $line-height-heading;
-        padding: 4px 0;
+        padding: 8px 0;
     
         white-space: nowrap;
-        text-transform: uppercase;
+        // text-transform: uppercase;
 
         &:hover, &:focus{
             text-decoration: none;
         }
 
-        &_label{
-            padding: 0;
-        }
+        //Parent Link
         &_has-child{
             position: relative;
+
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            grid-gap: 6px;
 
             cursor: pointer;
             transition: .3s;
 
+            &:after{
+                content: '';
+                display: block;
+                width: 14px;
+                height: 14px;
+
+                transition: 0.3s;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>');
+            }
+
             &:hover, &:focus{
                 color: $pink;
+
+                &:after{
+                    filter: opacity(0.5);
+                }
+            }
+        }
+        // Accent
+        &_accent{
+            position: relative;
+
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            grid-gap: 4px;
+
+            font-weight: $font-weight-bolder;
+
+            &:before{
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+
+                transition: 0.3s;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill="%23dd5287" fill-rule="evenodd" d="M13.5 4.938a7 7 0 11-9.006 1.737c.202-.257.59-.218.793.039.278.352.594.672.943.954.332.269.786-.049.773-.476a5.977 5.977 0 01.572-2.759 6.026 6.026 0 012.486-2.665c.247-.14.55-.016.677.238A6.967 6.967 0 0013.5 4.938zM14 12a4 4 0 01-4 4c-1.913 0-3.52-1.398-3.91-3.182-.093-.429.44-.643.814-.413a4.043 4.043 0 001.601.564c.303.038.531-.24.51-.544a5.975 5.975 0 011.315-4.192.447.447 0 01.431-.16A4.001 4.001 0 0114 12z" clip-rule="evenodd" /></svg>');
+            }
+
+            &:hover, &:focus{
+                &:after{
+                    filter: hue-rotate(25deg);
+                }
             }
         }
     }
+    // Dropdown block
     &__children{
         display: none;
 
+        flex-direction: column;
+        grid-gap: 6px;
+
         position: absolute;
         left: 0;
-        top: 28px;
+        top: 34px;
+
         background: $white;
-        width: 200px;
-        padding: $spacer/2;
-        border: 1px solid $border-color;
+        border: 1px solid #fff2f8;
+        min-width: 200px;
+        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+
+        border-radius: $border-radius/2;
+        // border: 1px solid $border-color;
 
         &--active{
-            display: block;
+            display: flex;
         }
     }
+    // Link in dropdown block
     &__children-link{
-        display: block;
-        padding: 0 0 $spacer/2;
-        text-transform: none;
+        padding: 6px 0;
+        &:hover, &:focus{
+            color: $pink;
+            text-decoration: none;
 
-        &:last-child{
-            padding: 0;
         }
     }
 
-    // Position
+    // Style depends on position
     &_left{
-        .navbar__link:not(:last-child){
-            margin-right: map-get($map: $spacers, $key: 1);
-        }
+        justify-content: flex-start;
     }
     &_right{
         justify-content: flex-end;
-
-        .navbar__link + .navbar__link{
-            margin-left: map-get($map: $spacers, $key: 1);
-        }
     }
 }
 
-// < 1440px
+// < 1280px
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .navbar{
-        &__link{
-            font-size: map-get($map: $font-size, $key: sm);
-
-            &_label{
-                font-size: map-get($map: $font-size, $key: sm);
-
-                // & > * {
-                //     font-size: map-get($map: $font-size, $key: sm);
-                // }
-            }
-        }
+        grid-row-gap: 4px;
     }
 }
-@media all and (max-width: 1200px){
-    .navbar{
-        &_left{
-            .navbar__link:not(:last-child){
-                margin-right: 1em;
-            }
-        }
-        &_right{
-            .navbar__link + .navbar__link{
-                margin-left: 1em;
-            }
-        }
-    }
-}
+
 // < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .navbar{
-        flex-wrap: wrap;
-        
         &__link{
-            font-size: map-get($map: $font-size, $key: lg);
-            text-transform: none;
-
-            &_online{
-                padding: 4px 10px;
-                border-radius: 20px;
-            }
+            font-size: 18px;
         }
     }
 }

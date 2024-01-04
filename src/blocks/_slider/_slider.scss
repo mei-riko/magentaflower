@@ -57,6 +57,25 @@
             cursor: default;
         }
     }
+    &-container{
+        position: relative;
+
+        &:hover, &:focus{
+            .slider-nav{
+                opacity: 1;
+            }
+        }
+    }
+    &-nav{
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        width: 100%;
+        max-width: calc(100% - 660px);
+
+        opacity: 0;
+        transition: .4s;
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
@@ -66,6 +85,10 @@
         }
         .slick-next{
             right: -15px;
+        }
+
+        &-nav{
+            opacity: 1;
         }
     }
 }

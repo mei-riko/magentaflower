@@ -1,0 +1,35 @@
+.post{
+    &__header{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-gap: $spacer;
+
+        align-items: flex-start;
+
+        padding: $spacer;
+        background-color: #fcf4f8 ;
+        border-radius: $border-radius;
+
+        margin-bottom: map-get($map: $spacers, $key: 4);
+    }
+    &__content{
+        font-size: map-get($map: $font-size, $key: xl);
+
+        max-width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__image{
+        border-radius: $border-radius;
+        overflow: hidden;
+    }
+    &__intro{
+        font-size: 1.1rem;
+    }
+    &__data{
+        font-size: map-get($map: $font-size, $key: md);
+        font-weight: $font-weight-bolder;
+        margin-bottom: 0;
+        color: $grey;
+    }
+}

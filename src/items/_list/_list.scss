@@ -20,9 +20,12 @@
                 display: block;
                 width: 6px;
                 height: 6px;
+                border-radius: 3px;
+
                 position: absolute;
                 left: 0;
-                top: 8px;
+                top: 10px;
+                
                 background: $pink;
             }
         }

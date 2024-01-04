@@ -22,10 +22,10 @@ $(document).ready(() =>{
     // Подсказка
 	$('[data-toggle="tooltip"]').tooltip();
     // Fancybox
-    $('[data-fancybox]').fancybox({
-        touch: false,
-        autoFocus: false
-      });
+    // $('[data-fancybox]').fancybox({
+    //     touch: false,
+    //     autoFocus: false
+    //   });
     // Input mask
     if( $('.phone').length > 0 ) {
         $(".phone").inputmask({

@@ -2,7 +2,9 @@
     padding: map-get($spacers, 1) map-get($spacers, 2);
     background: $white;
     border: 1px solid $border-color;
-    border-radius: 8px;
+    border-radius: $border-radius;
+
+    text-align: left;
 
     // JS Status
     &--active{

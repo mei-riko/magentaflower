@@ -10,11 +10,11 @@ header.header(class=headerClass)
                             a(href=telAd.link)=telAd.item
                 .header__line
                     nav.navbar.navbar_left
-                        a.navbar__link.navbar__link_label(href="/online.html") 
-                            span.label.label_action.label_nav Online-курсы
+                        a.navbar__link.navbar__link_accent(href="/online.html") Online-курсы
                         a.navbar__link(href="/index.html") Очные курсы
                         .navbar__link.navbar__link_has-child(data-nav="#navbarAbout") О школе
                             .navbar__children#navbarAbout
+                                a.navbar__children-link(href="#") Преподаватели
                                 a.navbar__children-link(href="#") Блог школы
                                 a.navbar__children-link(href="#") Что такое «Маджента»?
                                 a.navbar__children-link(href="#") Вопрос-ответ
@@ -22,9 +22,8 @@ header.header(class=headerClass)
             a.header__logo(href="/")
             .col.header__col
                 .header__line.header__line_additional.justify-content-end
-                    a.header__link.text-small.text-grey(href="#") Оплата и доставка
-                    a.header__link.label.text-bold(href="/timetable.html") Расписание
-                    .contacts.contacts_inline.header__contacts-list
+                    a.header__link.header__link_schedule(href="/timetable.html") Расписание
+                    .contacts.contacts_inline.header__networks-list
                         a.contacts__item.contacts__item_networks.contacts__item_vk.contacts_inline__item(href="#")
                         a.contacts__item.contacts__item_networks.contacts__item_fb.contacts_inline__item(href="#")
                         a.contacts__item.contacts__item_networks.contacts__item_inst.contacts_inline__item(href="#")
@@ -32,7 +31,7 @@ header.header(class=headerClass)
                 .header__line.justify-content-end
                     nav.navbar.navbar_right
                         a.navbar__link(href="#") Отзывы
-                        a.navbar__link(href="#") Преподаватели
+                        a.navbar__link(href="#") Оплата и доставка
                         a.navbar__link(href="#") Портфолио
                         a.navbar__link(href="/contact.html") Контакты
     .header__mobile

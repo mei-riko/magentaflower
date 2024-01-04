@@ -5,6 +5,8 @@
     max-height: 90vh;
     border-radius: 0;
 
+    overflow: auto;
+
     &__title{
         font-weight: $font-weight-bold;
         line-height: $line-height-heading;

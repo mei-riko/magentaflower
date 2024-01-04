@@ -2,17 +2,18 @@
     display: grid;
     // Основная область
     &__col{
-        display: grid;
-        grid-gap: $spacer/4;
-        grid-template-columns: 1fr;
-        grid-template-rows: 180px 34px 1fr 40px 40px;
+        // display: grid;
+        // grid-gap: $spacer/4;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 180px auto 1fr 1fr 40px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: $spacer/2;
+        align-items: flex-start;
 
         &.archive{
             filter: grayscale(1);
-        }
-
-        &_without-info{
-            // grid-template-rows: 180px 34px 1fr 40px;
+            // grid-template-rows: auto 1fr 1fr 40px;
         }
     }
     // // Одиночный элемент расписания
@@ -51,19 +52,22 @@
     }
     // Тип элемента расписания
     &__category{
-        font-size: map-get($map: $font-size, $key: md);
-        line-height: map-get($map: $font-size, $key: md);
+        font-size: map-get($map: $font-size, $key: sm);
+        line-height: map-get($map: $font-size, $key: sm);
+        font-weight: $font-weight-bold;
         text-transform: uppercase;
         color: $pink;
 
-        padding: map-get($map: $spacers, $key: 1)/2 map-get($map: $spacers, $key: 1);
+        padding: 8px 16px;
         border-radius: $border-radius;
-
-        &_type-1{background: $pink-light;}
-        &_type-2{background: lighten($color: $pink, $amount: 30%);}
-        &_type-3{background: lighten($color: $pink, $amount: 34%);}
-        &_type-4{background: lighten($color: $pink, $amount: 38%);}
-        &_type-5{color: $grey; background: $light-grey;}
+        
+        &_type-1{background: #F9EAF1;}
+        &_type-2{background: #F9EBFA;}
+        &_type-3{background: #FAEEEB;}
+        &_type-4{background: #FAEBF2;}
+        &_type-5{color: $grey; background: #CFD6C9;}
+        &_type-6{color: $grey; background: $light-grey;} //archive
+        &_type-7{background: #D6C9CB;}
     }
     // Заголовок
     &__title{
@@ -153,7 +157,8 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .timetable{
         &__col{
-            grid-template-rows: 180px 30px 1fr 40px 40px;
+            // grid-template-rows: 180px 30px 1fr 40px 40px;
+            grid-template-rows:180px 30px 1fr 1fr 40px;
         }
         &__category{
             font-size: map-get($map: $font-size, $key: sm);

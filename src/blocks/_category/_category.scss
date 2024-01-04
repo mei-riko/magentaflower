@@ -1,36 +1,46 @@
 .category{
+    // Navigation tags
     &__tags{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
         margin: -4px;
+        // padding: map-get($map: $spacers, $key: 2) 0;
 
-        padding: map-get($map: $spacers, $key: 2) 0;
-        // border: 1px solid $border-color;
-        // border-radius: 8px;
-
+        // Single tag
         &-item{
             font-size: map-get($map: $font-size, $key: sm);
             line-height: map-get($map: $font-size, $key: md);
             white-space: nowrap;
 
             margin: 4px;
-            padding: 4px 8px;
-            border-radius: 10px;
+            padding: 4px 10px;
+            background-color: $white;
+            border-radius: 16px;
             border: 1px solid $pink-light;
 
             &_all{
-                background: $pink-light;
-            }
-
-            &--active{
                 font-weight: $font-weight-bold;
             }
-
+            &:hover{
+                border-color: $pink;
+                text-decoration: none;
+            }
             &:nth-child(n+14) {
                 display: none;
             }
+
+            &--active{
+                border-color: $pink;
+                background: $pink;
+                color: $white;
+                &:hover{
+                    color: $white;
+                }
+            }
         }
+        // JS trigger to show more
         &-show{
             font-size: map-get($map: $font-size, $key: sm);
             line-height: map-get($map: $font-size, $key: md);
@@ -44,21 +54,28 @@
                 color: $grey;
             }
         }
-
+        // Showed all tags
         &--active{
             .category__tags-item{
                 display: inline-block;
             }
         }
     }
+    // Category title
     &__title{
         margin: 0 0 map-get($map: $spacers, $key: 3);
     }
+    //Grid
+    &__row{
+        display: grid;
+        grid-gap: map-get($map: $spacers, $key: 3);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    // Single post
     &__item{
         display: grid;
         grid-gap: map-get($map: $spacers, $key: 1);
-
-        margin-bottom: map-get($map: $spacers, $key: 3);
+        grid-template-rows: 240px auto 1fr;
 
         // Превью
         &-img{
@@ -102,31 +119,29 @@
         }
         // Заголовок
         &-title{
-            font-size: map-get($map: $font-size, $key: xl);
+            font-size: 21px;
             font-weight: $font-weight-bold;
             line-height: $line-height-heading;
             margin-bottom: 0;
         }
         // Дополнительный текст
         &-intro{
-            font-size: map-get($map: $font-size, $key: md);
+            font-size: map-get($map: $font-size, $key: lg);
             margin-bottom: 0;
         }
         // Ссылка «Далее»
         &-link{
             font-weight: $font-weight-bold;
-            // max-width: 144px;
-            text-align: center;
-
-            display: flex;
-            align-items: flex-end;
+            color: $pink;
+            text-decoration: underline;
         }
 
         // Modification
         &_row{
-            align-items: baseline;
+            align-items: flex-start;
             align-content: flex-start;
-            grid-template-columns: 280px 1fr;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto;
 
             &-content{
                 display: grid;
@@ -137,6 +152,14 @@
 
                 align-content: flex-start;
             }
+        }
+    }
+    &__link{
+        transition: 0.3s;
+        &:hover{
+            color: inherit;
+            text-decoration: none;
+            transform: scale(1.02);
         }
     }
 }

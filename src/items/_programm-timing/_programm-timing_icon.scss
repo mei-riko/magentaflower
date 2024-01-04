@@ -1,12 +1,12 @@
-.program-timing_icon{
+.programm-timing_icon{
     position: relative;
     background-color: $pink;
     color: $white;
     text-align: center;
-    border-radius: 10px;
+    border-radius: $border-radius;
     padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 2);
 
-    &__img{
+    &__image{
         position: absolute;
         top: 0;
         left: 50%;

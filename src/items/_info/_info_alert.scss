@@ -1,6 +1,6 @@
 .info_alert{
     padding: map-get($spacers, 3) map-get($spacers, 4);
-    background: $light-grey url("../img/bg-alert.png") no-repeat right center / 60%;
+    background: #fcf4f8 url("../img/bg-alert.png") no-repeat right center / 60%;
 
     &__content{
         width: 320px;
